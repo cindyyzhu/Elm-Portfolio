@@ -1,19 +1,105 @@
-module Pages.Home_ exposing (page)
+module Pages.Home_ exposing (Model, Msg, page)
 
 import Html exposing (..)
 import Html.Attributes exposing (..)
+import Html.Events exposing (onClick)
+import Page exposing (Page)
 import View exposing (View)
 
 
-page : View msg
+page : Page Model Msg
 page =
-    { title = "Elm Portfolio"
-    , body = [ view ]
+    Page.sandbox
+        { init = init
+        , update = update
+        , view = view
+        }
+
+
+
+-- MODEL
+
+
+type alias Model =
+    { fullscreen : Maybe String
     }
 
 
-view : Html msg
-view =
+init : Model
+init =
+    { fullscreen = Nothing
+    }
+
+
+
+-- UPDATE
+
+
+type Msg
+    = OpenExemplar String
+    | CloseExemplar
+
+
+update : Msg -> Model -> Model
+update msg model =
+    case msg of
+        OpenExemplar name ->
+            { model | fullscreen = Just name }
+
+        CloseExemplar ->
+            { model | fullscreen = Nothing }
+
+
+
+-- EXEMPLARS
+-- Replace these with your actual .elm filenames (without the .elm extension)
+
+
+exemplars : List String
+exemplars : List String
+exemplars =
+    [ "AnglerFish"
+    , "AnimationPiecesExit"
+    , "CrabInSpace"
+    , "CurveCreator"
+    , "DiversityMatters"
+    , "ElmAnimations"
+    , "FoxInForest"
+    , "Mermaid"
+    , "PolygonCreator"
+    , "PredatorPrey"
+    , "RobotDance"
+    , "SELena"
+    , "SinCosTan"
+    , "SnowingSnowman"
+    , "StarfishGradient"
+    , "Turtle"
+    , "UnderwaterGame"
+    , "WhaleWiggle"
+    , "WordByHues"
+    ]
+
+
+
+-- VIEW
+
+
+view : Model -> View Msg
+view model =
+    { title = "Elm Portfolio"
+    , body =
+        [ case model.fullscreen of
+            Just name ->
+                viewFullscreen name
+
+            Nothing ->
+                viewMain
+        ]
+    }
+
+
+viewMain : Html Msg
+viewMain =
     div [ class "page home" ]
         [ header [ class "hero" ]
             [ div [ class "hero-inner" ]
@@ -37,4 +123,57 @@ view =
                     ]
                 ]
             ]
+        , section [ class "exemplars" ]
+            [ div [ class "exemplars-inner" ]
+                [ h2 [] [ text "Exemplars" ]
+                , div [ class "exemplars-grid" ]
+                    (List.map viewCard exemplars)
+                ]
+            ]
+        ]
+
+
+viewCard : String -> Html Msg
+viewCard name =
+    div
+        [ class "exemplar-card"
+        , onClick (OpenExemplar name)
+        , style "cursor" "pointer"
+        ]
+        [ iframe
+            [ src ("/exemplars-built/" ++ name ++ "/index.html")
+            , style "width" "100%"
+            , style "height" "300px"
+            , style "border" "none"
+            , style "pointer-events" "none"
+            , attribute "scrolling" "no"
+            ] []
+        , p [ class "exemplar-label" ] [ text name ]
+        ]
+
+
+viewFullscreen : String -> Html Msg
+viewFullscreen name =
+    div
+        [ style "position" "fixed"
+        , style "inset" "0"
+        , style "background" "#000"
+        , style "z-index" "100"
+        ]
+        [ button
+            [ onClick CloseExemplar
+            , style "position" "absolute"
+            , style "top" "16px"
+            , style "left" "16px"
+            , style "z-index" "101"
+            , style "padding" "8px 16px"
+            , style "cursor" "pointer"
+            ]
+            [ text "← Back" ]
+        , iframe
+            [ src ("/exemplars-built/" ++ name ++ "/index.html")
+            , style "width" "100%"
+            , style "height" "100%"
+            , style "border" "none"
+            ] []
         ]
