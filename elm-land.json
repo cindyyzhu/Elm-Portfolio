@@ -1,0 +1,31 @@
+{
+  "app": {
+    "elm": {
+      "development": { "debugger": true },
+      "production": { "debugger": false }
+    },
+    "env": [],
+    "html": {
+      "attributes": {
+        "html": { "lang": "en" },
+        "head": {}
+      },
+      "title": "Elm Portfolio",
+      "meta": [
+        { "charset": "UTF-8" },
+        { "http-equiv": "X-UA-Compatible", "content": "IE=edge" },
+        { "name": "viewport", "content": "width=device-width, initial-scale=1.0" }
+      ],
+      "link": [
+        { "rel": "stylesheet", "href": "/styles.css" },
+        { "rel": "preconnect", "href": "https://fonts.googleapis.com" },
+        { "rel": "stylesheet", "href": "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" }
+      ],
+      "script": []
+    },
+    "router": {
+      "useHashRouting": false
+    },
+    "proxy": null
+  }
+}
