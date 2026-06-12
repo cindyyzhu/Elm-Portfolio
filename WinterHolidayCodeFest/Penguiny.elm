@@ -67,3 +67,6 @@ penguin = group [
   |> rotate (degrees 30)
   |> move (-10, 18)
   ]
+
+pair = (myShapes, word)
+

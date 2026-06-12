@@ -32,3 +32,6 @@ myShapes t =
     |> scale 2
     |> move (-7, 20)
   ]
+
+pair = (myShapes, word)
+

@@ -59,3 +59,6 @@ myShapes t =
     |> rotate (degrees -5)
     |> scaleX 0.5
   ]
+
+pair = (myShapes, word)
+

@@ -167,8 +167,7 @@ jellyfish t = group
   
   
  
-  ] 
-  
-  
-  
-  
+  ]
+
+pair = (myShapes, word)
+

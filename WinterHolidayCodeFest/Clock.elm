@@ -95,3 +95,6 @@ ticks = group [
       |> move (0,25)
       |> rotate (degrees 30)
   ]
+
+pair = (myShapes, word)
+

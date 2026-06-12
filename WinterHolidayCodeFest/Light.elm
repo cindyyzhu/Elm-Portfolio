@@ -30,3 +30,6 @@ myShapes t =
     |> outlined (solid 1) white
     |> move (0, 14)
   ]
+
+pair = (myShapes, word)
+

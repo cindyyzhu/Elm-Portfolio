@@ -70,3 +70,6 @@ zebra =
     |> move (0, 27)
   ]
     |> group
+
+pair = (myShapes, word)
+

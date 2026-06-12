@@ -13,3 +13,6 @@ myShapes t =
     |> filled green
     |> rotate (degrees 30)    
   ]
+
+pair = (myShapes, word)
+

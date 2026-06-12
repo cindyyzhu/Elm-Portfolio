@@ -19,3 +19,6 @@ myShapes t =
     |> move (0,-10)
     |> move (0,-35 + 16 * (1.5998 + sin t))
   ]
+
+pair = (myShapes, word)
+

@@ -1,5 +1,6 @@
 module WinterHolidayCodeFest.Can exposing (..)
-
+import GraphicSVG exposing (..)
+pair = (myShapes, word)
 -- 1. type your word in between the "can"s
 word = "can"
 
@@ -18,4 +19,7 @@ myShapes t =
         |>move (-4.8,30)
      
         
-  ]  
+  ]
+
+pair = (myShapes, word)
+

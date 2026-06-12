@@ -59,3 +59,6 @@ cherries =
       |> scale 0.25
   ]
   |> group
+
+pair = (myShapes, word)
+

@@ -1,5 +1,6 @@
 module WinterHolidayCodeFest.Candle exposing (..)
-
+import GraphicSVG exposing (..)
+pair = (myShapes, word)
 -- 1. type your word in between the ""s
 word = "candle"
 
@@ -38,3 +39,6 @@ candle =
     |> move (0,32)
   ]
     |> group
+
+pair = (myShapes, word)
+

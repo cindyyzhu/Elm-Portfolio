@@ -108,3 +108,6 @@ eyelashes = group [
     |> rotate (degrees 170)
     |> move (-15, -15)
   ]
+
+pair = (myShapes, word)
+

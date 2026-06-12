@@ -1,5 +1,6 @@
 module WinterHolidayCodeFest.Bridge exposing (..)
-
+import GraphicSVG exposing (..)
+pair = (myShapes, word)
 -- 1. type your word in between the ""s
 word = "bridge"
 
@@ -122,5 +123,5 @@ waves t = group [
     |> filled blue
     ]
 
-   
-   
+pair = (myShapes, word)
+

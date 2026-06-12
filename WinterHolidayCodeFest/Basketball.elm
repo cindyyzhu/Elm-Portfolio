@@ -1,5 +1,6 @@
 module WinterHolidayCodeFest.Basketball exposing (..)
-
+import GraphicSVG exposing (..)
+pair = (myShapes, word)
 -- 1. type your word in between the ""s
 word = "basketball"
 
@@ -21,3 +22,6 @@ myShapes t =
                   |> rotate 190
                   |> move (-5,0)
   ]
+
+pair = (myShapes, word)
+

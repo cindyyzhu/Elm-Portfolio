@@ -1,5 +1,6 @@
 module WinterHolidayCodeFest.Blink exposing (..)
-
+import GraphicSVG exposing (..)
+pair = (myShapes, word)
 -- 1. type your word in between the ""s
 word = "blink"
 
@@ -48,5 +49,5 @@ blink =
     ]
     |> group
 
+pair = (myShapes, word)
 
- 

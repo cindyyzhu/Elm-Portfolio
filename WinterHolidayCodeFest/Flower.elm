@@ -86,3 +86,6 @@ core = group
     circle 10
       |> filled (hsl (degrees hsl_d_core) 0.5 0.5)
   ]
+
+pair = (myShapes, word)
+

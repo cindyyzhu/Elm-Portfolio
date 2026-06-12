@@ -121,3 +121,6 @@ headlights = group [
     |> move (35,-7)
     
   ]
+
+pair = (myShapes, word)
+

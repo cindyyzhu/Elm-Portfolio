@@ -36,5 +36,6 @@ myShapes t =
     |> scaleX 1.25
     |> rotate (degrees 30)
     |> move (10,-35)]
-    
-    
+
+pair = (myShapes, word)
+

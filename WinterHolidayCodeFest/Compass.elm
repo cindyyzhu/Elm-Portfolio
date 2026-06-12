@@ -69,4 +69,6 @@ myShapes t =
     |> filled (hsl (degrees 140) 0.379 0.25)
    
  ]
-  
+
+pair = (myShapes, word)
+

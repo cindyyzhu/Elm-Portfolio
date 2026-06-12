@@ -208,3 +208,6 @@ pinksnail = group[
 {- /\____/\
   | * ^ * |
   \_______/ -}
+
+pair = (myShapes, word)
+

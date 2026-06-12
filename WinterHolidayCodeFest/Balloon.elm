@@ -1,5 +1,6 @@
 module WinterHolidayCodeFest.Balloon exposing (..)
-
+import GraphicSVG exposing (..)
+pair = (myShapes, word)
 -- 1. type your word in between the "Balloon"s
 word = "Balloon"
 
@@ -159,4 +160,6 @@ explodingballoon = group
   curve (-6.124,-19.90) [Pull (6.0315,-24.80) (-0.612,-29.70),Pull (-23.43,-39.19) (-17.45,-48.68)]
   |> outlined (solid 2  ) white
     ]
+
+pair = (myShapes, word)
 

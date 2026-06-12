@@ -32,3 +32,6 @@ myShapes model =
    
 
   ]
+
+pair = (myShapes, word)
+

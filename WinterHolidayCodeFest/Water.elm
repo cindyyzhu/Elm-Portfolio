@@ -26,3 +26,6 @@ water = group
     ,circle 9.5
     |> filled (rgb 0 200 255)
   ]
+
+pair = (myShapes, word)
+

@@ -26,3 +26,6 @@ thermometer = group
     |> outlined (solid 1) black
     |> move (0,5)
   ]
+
+pair = (myShapes, word)
+

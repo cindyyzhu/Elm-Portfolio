@@ -154,4 +154,5 @@ egg = group
     |> scaleY 1
     ]
 
-  
+pair = (myShapes, word)
+

@@ -34,3 +34,6 @@ goldfish =
     |> move (-4,-1)
     ]
     |> group
+
+pair = (myShapes, word)
+

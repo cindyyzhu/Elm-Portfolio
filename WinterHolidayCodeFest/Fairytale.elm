@@ -24,3 +24,6 @@ myShapes t =
     |> scaleX 3.75
     |> move (0,-14)
   ]
+
+pair = (myShapes, word)
+

@@ -1,5 +1,6 @@
 module WinterHolidayCodeFest.Butterfly exposing (..)
-
+import GraphicSVG exposing (..)
+pair = (myShapes, word)
 -- 1. type your word in between the ""s
 word = "Butterfly"
 
@@ -80,3 +81,6 @@ butterfly = group
   |> filled black
   |> move (0,-2.5)
   ]
+
+pair = (myShapes, word)
+

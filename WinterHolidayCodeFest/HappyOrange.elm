@@ -31,3 +31,6 @@ myShapes t =
     |> filled red
     |> move (10,-7)
     ]
+
+pair = (myShapes, word)
+

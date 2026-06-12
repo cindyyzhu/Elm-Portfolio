@@ -183,3 +183,6 @@ squirrel = group
   |> rotate (degrees -30)
   |> move (8,7)
   ]
+
+pair = (myShapes, word)
+

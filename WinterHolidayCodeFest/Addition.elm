@@ -1,4 +1,8 @@
 module WinterHolidayCodeFest.Addition exposing (..)-- 1. type your word in between the ""s
+
+import GraphicSVG exposing (..)
+pair = (myShapes, word)
+
 word = "Addition"
 
 -- 2. draw your word using Shapes
@@ -10,3 +14,6 @@ myShapes t =
     |> filled black
     |> rotate (degrees 90)
   ]
+
+pair = (myShapes, word)
+

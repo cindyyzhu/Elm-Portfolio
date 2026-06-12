@@ -1,5 +1,6 @@
 module WinterHolidayCodeFest.Anger exposing (..)
-
+import GraphicSVG exposing (..)
+pair = (myShapes, word)
 -- 1. type your word in between the ""s
 word = "anger"
 
@@ -45,4 +46,6 @@ steam t = group
     |> filled gray
     |> move (20,-15)
     ]
-    
+
+pair = (myShapes, word)
+

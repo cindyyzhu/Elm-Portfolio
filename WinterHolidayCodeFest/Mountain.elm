@@ -26,3 +26,6 @@ bee = group [
     |> rotate (degrees 90)
     |> move(0, 20)
   ]
+
+pair = (myShapes, word)
+

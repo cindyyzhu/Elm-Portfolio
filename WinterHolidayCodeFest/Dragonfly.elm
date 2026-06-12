@@ -76,3 +76,6 @@ dragonfly = group
   |> move (9.5,1.5)
   |> mirrorX
   ]
+
+pair = (myShapes, word)
+

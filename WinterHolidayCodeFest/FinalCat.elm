@@ -44,3 +44,6 @@ cat = group [
   |> outlined (solid 1) black
   
   ]
+
+pair = (myShapes, word)
+

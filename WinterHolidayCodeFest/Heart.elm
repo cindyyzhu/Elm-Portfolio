@@ -26,3 +26,6 @@ heart = group
     |> rotate (degrees 30)
     |> move(-17,24)
   ]
+
+pair = (myShapes, word)
+

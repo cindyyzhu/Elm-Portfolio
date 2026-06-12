@@ -66,3 +66,6 @@ snowflake = group
   |> rotate (degrees 760)
   |> move (2,2)
   ]
+
+pair = (myShapes, word)
+

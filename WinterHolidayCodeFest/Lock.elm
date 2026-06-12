@@ -63,3 +63,6 @@ lockbody = group
     |> rotate (degrees -30)
     |> move (0,-1)
     ]
+
+pair = (myShapes, word)
+

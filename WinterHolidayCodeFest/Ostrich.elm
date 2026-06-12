@@ -36,8 +36,6 @@ bodyNeck = group [
    |> filled (hsl (degrees 0) 0.765 0.887)
    |> move (1,-15)
    ]
- 
-    
-    
-    
-    
+
+pair = (myShapes, word)
+

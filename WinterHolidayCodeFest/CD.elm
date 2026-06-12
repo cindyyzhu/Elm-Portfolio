@@ -13,3 +13,6 @@ myShapes t =
     |> filled white
     |> move (0,0)
   ]
+
+pair = (myShapes, word)
+

@@ -43,3 +43,6 @@ ghost = [
         |> filled red |> move (15,-30)          
   ]
       |> group
+
+pair = (myShapes, word)
+

@@ -209,3 +209,6 @@ hair = group
       |> move(-8, 18)
       
   ]
+
+pair = (myShapes, word)
+

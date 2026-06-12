@@ -69,4 +69,6 @@ volleyball t=group[   circle 10
     |> scale 0.75
     |> move (5,-4)
   ]
-  
+
+pair = (myShapes, word)
+

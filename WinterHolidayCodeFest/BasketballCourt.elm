@@ -1,5 +1,6 @@
 module WinterHolidayCodeFest.BasketballCourt exposing (..)
-
+import GraphicSVG exposing (..)
+pair = (myShapes, word)
 -- 1. type your word in between the ""s
 word = "basketball"
 
@@ -83,3 +84,6 @@ ball =
     |> rotate (degrees 135)
   ]
     |> group
+
+pair = (myShapes, word)
+

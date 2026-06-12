@@ -76,8 +76,6 @@ lemon =
     |> move (0,11)
   ]
     |> group
-  
-    
-    
-  
+
+pair = (myShapes, word)
 

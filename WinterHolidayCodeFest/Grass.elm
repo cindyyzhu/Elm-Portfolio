@@ -154,12 +154,6 @@ myShapes t =
     
     
     ]
-    
- 
-  
-  
-  
 
-    
-    
-     
+pair = (myShapes, word)
+

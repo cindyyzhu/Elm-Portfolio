@@ -57,3 +57,6 @@ tongue=group
   |> move (-42,-9.5)
  
   ]
+
+pair = (myShapes, word)
+

@@ -1,5 +1,6 @@
 module WinterHolidayCodeFest.Cactus exposing (..)
-
+import GraphicSVG exposing (..)
+pair = (myShapes, word)
 -- 1. type your word in between the ""s
 word = "cactus"
   
@@ -95,3 +96,6 @@ pot= group [
     |> filled (hsl (degrees 57) 0.347 0.628)
     |> move (0,-23)
     ]
+
+pair = (myShapes, word)
+

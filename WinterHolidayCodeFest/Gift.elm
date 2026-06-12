@@ -46,3 +46,6 @@ myShapes t =
     |> rotate (degrees 160)
     |> move (-6, 8)
   ]
+
+pair = (myShapes, word)
+

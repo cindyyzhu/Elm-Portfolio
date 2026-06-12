@@ -1,5 +1,6 @@
 module WinterHolidayCodeFest.Boots exposing (..)
-
+import GraphicSVG exposing (..)
+pair = (myShapes, word)
 -- 1. type your word in between the ""s
 word = "Boots"
 
@@ -19,3 +20,6 @@ myShapes t =
     |> filled (hsl (degrees 25) 0.472 0.416)
     |> move (20,-18)
   ]
+
+pair = (myShapes, word)
+

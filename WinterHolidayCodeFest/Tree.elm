@@ -21,3 +21,6 @@ myShapes t =
      |> move (50,42)
  
  ]
+
+pair = (myShapes, word)
+

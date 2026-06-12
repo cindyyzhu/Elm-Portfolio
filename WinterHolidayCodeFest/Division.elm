@@ -16,3 +16,6 @@ myShapes t =
     |> filled black
     |> move(-3, -7)
   ]
+
+pair = (myShapes, word)
+

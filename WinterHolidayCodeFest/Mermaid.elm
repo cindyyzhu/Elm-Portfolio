@@ -298,3 +298,6 @@ animationPieces intervals finalAnimation time =
           animationPieces rest finalAnimation (time - duration)
     [] ->
         finalAnimation time
+
+pair = (myShapes, word)
+

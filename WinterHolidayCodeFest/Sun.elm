@@ -93,3 +93,6 @@ sun =
      |> move (25,-11)
    ]
     |> group
+
+pair = (myShapes, word)
+

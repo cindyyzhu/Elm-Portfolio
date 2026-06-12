@@ -1,5 +1,6 @@
 module WinterHolidayCodeFest.Baby exposing (..)
-
+import GraphicSVG exposing (..)
+pair = (myShapes, word)
 -- 1. type your word in between the ""s
 word = "baby"
 
@@ -75,4 +76,5 @@ baby = group
     
     ]
 
+pair = (myShapes, word)
 

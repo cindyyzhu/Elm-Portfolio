@@ -131,3 +131,6 @@ crab = group [-- right middle leg
   , curve (-9.442,1.9484) [Pull (0.2508,-8.751) (7.3442,3.1475)]
   |> outlined (solid 2.5) black
   ]
+
+pair = (myShapes, word)
+

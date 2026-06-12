@@ -23,4 +23,6 @@ wave = group [
     |> scale 5
     |> move (-150,-50)
     ]
-  
+
+pair = (myShapes, word)
+

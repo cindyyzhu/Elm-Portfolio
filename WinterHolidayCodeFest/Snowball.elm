@@ -93,3 +93,6 @@ myShapes t =
     |> move (45,tan -t*30+50)
 
   ]
+
+pair = (myShapes, word)
+

@@ -57,3 +57,6 @@ ladybug = group
   |> filled black
   |> move (-3,-7)
   ]
+
+pair = (myShapes, word)
+

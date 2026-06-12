@@ -18,4 +18,6 @@ myShapes t =
     |> outlined (dotted 10.5) black
       
   ]
-  
+
+pair = (myShapes, word)
+

@@ -68,3 +68,6 @@ partyHat colour1 colour2 colour3 colour4 colour5 colour6 = group [
     |> filled colour3
     |> addOutline (solid 1) black
     ]
+
+pair = (myShapes, word)
+

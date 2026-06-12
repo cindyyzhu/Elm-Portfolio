@@ -134,3 +134,6 @@ plotGraph f time =
 
         |> move (-96+20* time - 200 * toFloat (floor (time / 10)),f (time))
     ]
+
+pair = (myShapes, word)
+

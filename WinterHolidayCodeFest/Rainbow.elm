@@ -42,3 +42,5 @@ myShapes t =
     |> scale 0.4
   ]
 
+pair = (myShapes, word)
+

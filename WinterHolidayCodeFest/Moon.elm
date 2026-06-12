@@ -77,3 +77,6 @@ myShapes t =
     |> filled (hsl (degrees 60) 0.8 0.822)
     |> move (30,35)
   ]
+
+pair = (myShapes, word)
+

@@ -1,5 +1,6 @@
 module WinterHolidayCodeFest.Bubble exposing (..)
-
+import GraphicSVG exposing (..)
+pair = (myShapes, word)
 -- 1. type your word in between the ""s
 word = "bubble"
 
@@ -55,4 +56,6 @@ bubble = group
     |> scale -0.5
     |> move (5,4)
     ]
-  
+
+pair = (myShapes, word)
+
