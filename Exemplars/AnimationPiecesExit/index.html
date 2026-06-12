@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Main</title>
+  <title>AnimationPiecesExit</title>
   <style>body { padding: 0; margin: 0; }</style>
 </head>
 
@@ -4430,7 +4430,7 @@ function _Time_getZoneName()
 		callback(_Scheduler_succeed(name));
 	});
 }
-var $author$project$Main$Tick = F2(
+var $author$project$AnimationPiecesExit$Tick = F2(
 	function (a, b) {
 		return {$: 'Tick', a: a, b: b};
 	});
@@ -9261,8 +9261,8 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$App$gameApp = F2(
 				}
 			});
 	});
-var $author$project$Main$init = {time: 0};
-var $author$project$Main$update = F2(
+var $author$project$AnimationPiecesExit$init = {time: 0};
+var $author$project$AnimationPiecesExit$update = F2(
 	function (msg, model) {
 		var t = msg.a;
 		return _Utils_update(
@@ -9273,7 +9273,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$collage = F3(
 	function (w, h, shapes) {
 		return A3($MacCASOutreach$graphicsvg$GraphicSVG$Collage, w, h, shapes);
 	});
-var $author$project$Main$add = F2(
+var $author$project$AnimationPiecesExit$add = F2(
 	function (_v0, _v1) {
 		var x = _v0.a;
 		var y = _v0.b;
@@ -9281,7 +9281,7 @@ var $author$project$Main$add = F2(
 		var v = _v1.b;
 		return _Utils_Tuple2(x + u, y + v);
 	});
-var $author$project$Main$animationPieces = F3(
+var $author$project$AnimationPiecesExit$animationPieces = F3(
 	function (pieces, _default, t) {
 		animationPieces:
 		while (true) {
@@ -9334,7 +9334,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$outlined = F3(
 		return A3($MacCASOutreach$graphicsvg$GraphicSVG$Secret$Inked, $elm$core$Maybe$Nothing, lineStyle, stencil);
 	});
 var $MacCASOutreach$graphicsvg$GraphicSVG$red = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 204, 0, 0, 1);
-var $author$project$Main$scale = F2(
+var $author$project$AnimationPiecesExit$scale = F2(
 	function (s, _v0) {
 		var x = _v0.a;
 		var y = _v0.b;
@@ -9346,7 +9346,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Unbroken = function (a) {
 var $MacCASOutreach$graphicsvg$GraphicSVG$solid = function (th) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Unbroken(th);
 };
-var $author$project$Main$sub = F2(
+var $author$project$AnimationPiecesExit$sub = F2(
 	function (_v0, _v1) {
 		var x = _v0.a;
 		var y = _v0.b;
@@ -9397,7 +9397,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$wedge = F2(
 						]))) : _List_Nil);
 	});
 var $MacCASOutreach$graphicsvg$GraphicSVG$yellow = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 237, 212, 0, 1);
-var $author$project$Main$myShapes = function (model) {
+var $author$project$AnimationPiecesExit$myShapes = function (model) {
 	return _List_fromArray(
 		[
 			$MacCASOutreach$graphicsvg$GraphicSVG$graphPaper(10),
@@ -9426,239 +9426,239 @@ var $author$project$Main$myShapes = function (model) {
 			var y0 = _Utils_Tuple2(-50, 40);
 			var newFun = function (x) {
 				return A3(
-					$author$project$Main$animationPieces,
+					$author$project$AnimationPiecesExit$animationPieces,
 					_List_fromArray(
 						[
 							_Utils_Tuple2(
 							1,
 							function (t) {
 								return A2(
-									$author$project$Main$add,
+									$author$project$AnimationPiecesExit$add,
 									y0,
 									A2(
-										$author$project$Main$scale,
+										$author$project$AnimationPiecesExit$scale,
 										t,
-										A2($author$project$Main$sub, y1, y0)));
+										A2($author$project$AnimationPiecesExit$sub, y1, y0)));
 							}),
 							_Utils_Tuple2(
 							1,
 							function (t) {
 								return A2(
-									$author$project$Main$add,
+									$author$project$AnimationPiecesExit$add,
 									y1,
 									A2(
-										$author$project$Main$scale,
+										$author$project$AnimationPiecesExit$scale,
 										t,
-										A2($author$project$Main$sub, y2, y1)));
+										A2($author$project$AnimationPiecesExit$sub, y2, y1)));
 							}),
 							_Utils_Tuple2(
 							1,
 							function (t) {
 								return A2(
-									$author$project$Main$add,
+									$author$project$AnimationPiecesExit$add,
 									y2,
 									A2(
-										$author$project$Main$scale,
+										$author$project$AnimationPiecesExit$scale,
 										t,
-										A2($author$project$Main$sub, y3, y2)));
+										A2($author$project$AnimationPiecesExit$sub, y3, y2)));
 							}),
 							_Utils_Tuple2(
 							1,
 							function (t) {
 								return A2(
-									$author$project$Main$add,
+									$author$project$AnimationPiecesExit$add,
 									y3,
 									A2(
-										$author$project$Main$scale,
+										$author$project$AnimationPiecesExit$scale,
 										t,
-										A2($author$project$Main$sub, y4, y3)));
+										A2($author$project$AnimationPiecesExit$sub, y4, y3)));
 							}),
 							_Utils_Tuple2(
 							1,
 							function (t) {
 								return A2(
-									$author$project$Main$add,
+									$author$project$AnimationPiecesExit$add,
 									y4,
 									A2(
-										$author$project$Main$scale,
+										$author$project$AnimationPiecesExit$scale,
 										t,
-										A2($author$project$Main$sub, y5, y4)));
+										A2($author$project$AnimationPiecesExit$sub, y5, y4)));
 							}),
 							_Utils_Tuple2(
 							1,
 							function (t) {
 								return A2(
-									$author$project$Main$add,
+									$author$project$AnimationPiecesExit$add,
 									y5,
 									A2(
-										$author$project$Main$scale,
+										$author$project$AnimationPiecesExit$scale,
 										t,
-										A2($author$project$Main$sub, y6, y5)));
+										A2($author$project$AnimationPiecesExit$sub, y6, y5)));
 							}),
 							_Utils_Tuple2(
 							1,
 							function (t) {
 								return A2(
-									$author$project$Main$add,
+									$author$project$AnimationPiecesExit$add,
 									y6,
 									A2(
-										$author$project$Main$scale,
+										$author$project$AnimationPiecesExit$scale,
 										t,
-										A2($author$project$Main$sub, y7, y6)));
+										A2($author$project$AnimationPiecesExit$sub, y7, y6)));
 							}),
 							_Utils_Tuple2(
 							1,
 							function (t) {
 								return A2(
-									$author$project$Main$add,
+									$author$project$AnimationPiecesExit$add,
 									y7,
 									A2(
-										$author$project$Main$scale,
+										$author$project$AnimationPiecesExit$scale,
 										t,
-										A2($author$project$Main$sub, y8, y7)));
+										A2($author$project$AnimationPiecesExit$sub, y8, y7)));
 							}),
 							_Utils_Tuple2(
 							1,
 							function (t) {
 								return A2(
-									$author$project$Main$add,
+									$author$project$AnimationPiecesExit$add,
 									y8,
 									A2(
-										$author$project$Main$scale,
+										$author$project$AnimationPiecesExit$scale,
 										t,
-										A2($author$project$Main$sub, y9, y8)));
+										A2($author$project$AnimationPiecesExit$sub, y9, y8)));
 							}),
 							_Utils_Tuple2(
 							1,
 							function (t) {
 								return A2(
-									$author$project$Main$add,
+									$author$project$AnimationPiecesExit$add,
 									y9,
 									A2(
-										$author$project$Main$scale,
+										$author$project$AnimationPiecesExit$scale,
 										t,
-										A2($author$project$Main$sub, y10, y9)));
+										A2($author$project$AnimationPiecesExit$sub, y10, y9)));
 							}),
 							_Utils_Tuple2(
 							1,
 							function (t) {
 								return A2(
-									$author$project$Main$add,
+									$author$project$AnimationPiecesExit$add,
 									y10,
 									A2(
-										$author$project$Main$scale,
+										$author$project$AnimationPiecesExit$scale,
 										t,
-										A2($author$project$Main$sub, y11, y10)));
+										A2($author$project$AnimationPiecesExit$sub, y11, y10)));
 							}),
 							_Utils_Tuple2(
 							1,
 							function (t) {
 								return A2(
-									$author$project$Main$add,
+									$author$project$AnimationPiecesExit$add,
 									y11,
 									A2(
-										$author$project$Main$scale,
+										$author$project$AnimationPiecesExit$scale,
 										t,
-										A2($author$project$Main$sub, y12, y11)));
+										A2($author$project$AnimationPiecesExit$sub, y12, y11)));
 							}),
 							_Utils_Tuple2(
 							1,
 							function (t) {
 								return A2(
-									$author$project$Main$add,
+									$author$project$AnimationPiecesExit$add,
 									y12,
 									A2(
-										$author$project$Main$scale,
+										$author$project$AnimationPiecesExit$scale,
 										t,
-										A2($author$project$Main$sub, y13, y12)));
+										A2($author$project$AnimationPiecesExit$sub, y13, y12)));
 							}),
 							_Utils_Tuple2(
 							1,
 							function (t) {
 								return A2(
-									$author$project$Main$add,
+									$author$project$AnimationPiecesExit$add,
 									y13,
 									A2(
-										$author$project$Main$scale,
+										$author$project$AnimationPiecesExit$scale,
 										t,
-										A2($author$project$Main$sub, y14, y13)));
+										A2($author$project$AnimationPiecesExit$sub, y14, y13)));
 							}),
 							_Utils_Tuple2(
 							1,
 							function (t) {
 								return A2(
-									$author$project$Main$add,
+									$author$project$AnimationPiecesExit$add,
 									y14,
 									A2(
-										$author$project$Main$scale,
+										$author$project$AnimationPiecesExit$scale,
 										t,
-										A2($author$project$Main$sub, y15, y14)));
+										A2($author$project$AnimationPiecesExit$sub, y15, y14)));
 							}),
 							_Utils_Tuple2(
 							1,
 							function (t) {
 								return A2(
-									$author$project$Main$add,
+									$author$project$AnimationPiecesExit$add,
 									y15,
 									A2(
-										$author$project$Main$scale,
+										$author$project$AnimationPiecesExit$scale,
 										t,
-										A2($author$project$Main$sub, y16, y15)));
+										A2($author$project$AnimationPiecesExit$sub, y16, y15)));
 							}),
 							_Utils_Tuple2(
 							1,
 							function (t) {
 								return A2(
-									$author$project$Main$add,
+									$author$project$AnimationPiecesExit$add,
 									y16,
 									A2(
-										$author$project$Main$scale,
+										$author$project$AnimationPiecesExit$scale,
 										t,
-										A2($author$project$Main$sub, y17, y16)));
+										A2($author$project$AnimationPiecesExit$sub, y17, y16)));
 							}),
 							_Utils_Tuple2(
 							1,
 							function (t) {
 								return A2(
-									$author$project$Main$add,
+									$author$project$AnimationPiecesExit$add,
 									y17,
 									A2(
-										$author$project$Main$scale,
+										$author$project$AnimationPiecesExit$scale,
 										t,
-										A2($author$project$Main$sub, y18, y17)));
+										A2($author$project$AnimationPiecesExit$sub, y18, y17)));
 							}),
 							_Utils_Tuple2(
 							1,
 							function (t) {
 								return A2(
-									$author$project$Main$add,
+									$author$project$AnimationPiecesExit$add,
 									y18,
 									A2(
-										$author$project$Main$scale,
+										$author$project$AnimationPiecesExit$scale,
 										t,
-										A2($author$project$Main$sub, y19, y18)));
+										A2($author$project$AnimationPiecesExit$sub, y19, y18)));
 							}),
 							_Utils_Tuple2(
 							1,
 							function (t) {
 								return A2(
-									$author$project$Main$add,
+									$author$project$AnimationPiecesExit$add,
 									y19,
 									A2(
-										$author$project$Main$scale,
+										$author$project$AnimationPiecesExit$scale,
 										t,
-										A2($author$project$Main$sub, y20, y19)));
+										A2($author$project$AnimationPiecesExit$sub, y20, y19)));
 							}),
 							_Utils_Tuple2(
 							1,
 							function (t) {
 								return A2(
-									$author$project$Main$add,
+									$author$project$AnimationPiecesExit$add,
 									y20,
 									A2(
-										$author$project$Main$scale,
+										$author$project$AnimationPiecesExit$scale,
 										t,
-										A2($author$project$Main$sub, y21, y20)));
+										A2($author$project$AnimationPiecesExit$sub, y21, y20)));
 							})
 						]),
 					function (t) {
@@ -9708,21 +9708,21 @@ var $author$project$Main$myShapes = function (model) {
 		}()
 		]);
 };
-var $author$project$Main$view = function (model) {
+var $author$project$AnimationPiecesExit$view = function (model) {
 	return A3(
 		$MacCASOutreach$graphicsvg$GraphicSVG$collage,
 		192,
 		128,
-		$author$project$Main$myShapes(model));
+		$author$project$AnimationPiecesExit$myShapes(model));
 };
-var $author$project$Main$main = A2(
+var $author$project$AnimationPiecesExit$main = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$App$gameApp,
-	$author$project$Main$Tick,
-	{model: $author$project$Main$init, title: 'EXIT', update: $author$project$Main$update, view: $author$project$Main$view});
-_Platform_export({'Main':{'init':$author$project$Main$main(
+	$author$project$AnimationPiecesExit$Tick,
+	{model: $author$project$AnimationPiecesExit$init, title: 'EXIT', update: $author$project$AnimationPiecesExit$update, view: $author$project$AnimationPiecesExit$view});
+_Platform_export({'AnimationPiecesExit':{'init':$author$project$AnimationPiecesExit$main(
 	$elm$json$Json$Decode$succeed(_Utils_Tuple0))(0)}});}(this));
 
-  var app = Elm.Main.init({ node: document.getElementById("elm") });
+  var app = Elm.AnimationPiecesExit.init({ node: document.getElementById("elm") });
 }
 catch (e)
 {

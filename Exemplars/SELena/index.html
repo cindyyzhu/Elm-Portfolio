@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Main</title>
+  <title>SELena</title>
   <style>body { padding: 0; margin: 0; }</style>
 </head>
 
@@ -4430,7 +4430,7 @@ function _Time_getZoneName()
 		callback(_Scheduler_succeed(name));
 	});
 }
-var $author$project$Main$Tick = F2(
+var $author$project$SELena$Tick = F2(
 	function (a, b) {
 		return {$: 'Tick', a: a, b: b};
 	});
@@ -9261,24 +9261,24 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$App$gameApp = F2(
 				}
 			});
 	});
-var $author$project$Main$Welcome = function (a) {
+var $author$project$SELena$Welcome = function (a) {
 	return {$: 'Welcome', a: a};
 };
-var $author$project$Main$init = {
+var $author$project$SELena$init = {
 	startTime: 0,
-	state: $author$project$Main$Welcome(true),
+	state: $author$project$SELena$Welcome(true),
 	time: 0
 };
-var $author$project$Main$Scene1 = {$: 'Scene1'};
-var $author$project$Main$Scene2 = {$: 'Scene2'};
-var $author$project$Main$Scene2End = {$: 'Scene2End'};
-var $author$project$Main$Scene3 = {$: 'Scene3'};
-var $author$project$Main$Scene4 = {$: 'Scene4'};
-var $author$project$Main$Scene4End = {$: 'Scene4End'};
-var $author$project$Main$Scene4half = {$: 'Scene4half'};
-var $author$project$Main$Scene5 = {$: 'Scene5'};
-var $author$project$Main$SceneEnd = {$: 'SceneEnd'};
-var $author$project$Main$update = F2(
+var $author$project$SELena$Scene1 = {$: 'Scene1'};
+var $author$project$SELena$Scene2 = {$: 'Scene2'};
+var $author$project$SELena$Scene2End = {$: 'Scene2End'};
+var $author$project$SELena$Scene3 = {$: 'Scene3'};
+var $author$project$SELena$Scene4 = {$: 'Scene4'};
+var $author$project$SELena$Scene4End = {$: 'Scene4End'};
+var $author$project$SELena$Scene4half = {$: 'Scene4half'};
+var $author$project$SELena$Scene5 = {$: 'Scene5'};
+var $author$project$SELena$SceneEnd = {$: 'SceneEnd'};
+var $author$project$SELena$update = F2(
 	function (msg, model) {
 		switch (msg.$) {
 			case 'Tick':
@@ -9293,7 +9293,7 @@ var $author$project$Main$update = F2(
 						model,
 						{
 							startTime: model.time,
-							state: $author$project$Main$Welcome(false)
+							state: $author$project$SELena$Welcome(false)
 						});
 				} else {
 					var otherwise = _v1;
@@ -9304,7 +9304,7 @@ var $author$project$Main$update = F2(
 				if (_v2.$ === 'Welcome') {
 					return _Utils_update(
 						model,
-						{startTime: model.time, state: $author$project$Main$Scene1});
+						{startTime: model.time, state: $author$project$SELena$Scene1});
 				} else {
 					var otherwise = _v2;
 					return model;
@@ -9404,7 +9404,7 @@ var $author$project$Main$update = F2(
 				if (_v12.$ === 'Scene1') {
 					return _Utils_update(
 						model,
-						{startTime: model.time, state: $author$project$Main$Scene2});
+						{startTime: model.time, state: $author$project$SELena$Scene2});
 				} else {
 					var otherwise = _v12;
 					return model;
@@ -9414,7 +9414,7 @@ var $author$project$Main$update = F2(
 				if (_v13.$ === 'Scene1') {
 					return _Utils_update(
 						model,
-						{startTime: model.time, state: $author$project$Main$Scene3});
+						{startTime: model.time, state: $author$project$SELena$Scene3});
 				} else {
 					var otherwise = _v13;
 					return model;
@@ -9424,7 +9424,7 @@ var $author$project$Main$update = F2(
 				if (_v14.$ === 'Scene2') {
 					return _Utils_update(
 						model,
-						{startTime: model.time, state: $author$project$Main$Scene2End});
+						{startTime: model.time, state: $author$project$SELena$Scene2End});
 				} else {
 					var otherwise = _v14;
 					return model;
@@ -9434,7 +9434,7 @@ var $author$project$Main$update = F2(
 				if (_v15.$ === 'Scene2') {
 					return _Utils_update(
 						model,
-						{startTime: model.time, state: $author$project$Main$Scene3});
+						{startTime: model.time, state: $author$project$SELena$Scene3});
 				} else {
 					var otherwise = _v15;
 					return model;
@@ -9444,7 +9444,7 @@ var $author$project$Main$update = F2(
 				if (_v16.$ === 'Scene3') {
 					return _Utils_update(
 						model,
-						{startTime: model.time, state: $author$project$Main$Scene4});
+						{startTime: model.time, state: $author$project$SELena$Scene4});
 				} else {
 					var otherwise = _v16;
 					return model;
@@ -9454,7 +9454,7 @@ var $author$project$Main$update = F2(
 				if (_v17.$ === 'Scene3') {
 					return _Utils_update(
 						model,
-						{startTime: model.time, state: $author$project$Main$Scene5});
+						{startTime: model.time, state: $author$project$SELena$Scene5});
 				} else {
 					var otherwise = _v17;
 					return model;
@@ -9464,7 +9464,7 @@ var $author$project$Main$update = F2(
 				if (_v18.$ === 'Scene4') {
 					return _Utils_update(
 						model,
-						{startTime: model.time, state: $author$project$Main$Scene4End});
+						{startTime: model.time, state: $author$project$SELena$Scene4End});
 				} else {
 					var otherwise = _v18;
 					return model;
@@ -9474,7 +9474,7 @@ var $author$project$Main$update = F2(
 				if (_v19.$ === 'Scene4') {
 					return _Utils_update(
 						model,
-						{startTime: model.time, state: $author$project$Main$Scene4half});
+						{startTime: model.time, state: $author$project$SELena$Scene4half});
 				} else {
 					var otherwise = _v19;
 					return model;
@@ -9484,7 +9484,7 @@ var $author$project$Main$update = F2(
 				if (_v20.$ === 'Scene4half') {
 					return _Utils_update(
 						model,
-						{state: $author$project$Main$Scene5});
+						{state: $author$project$SELena$Scene5});
 				} else {
 					var otherwise = _v20;
 					return model;
@@ -9494,7 +9494,7 @@ var $author$project$Main$update = F2(
 				if (_v21.$ === 'Scene5') {
 					return _Utils_update(
 						model,
-						{state: $author$project$Main$SceneEnd});
+						{state: $author$project$SELena$SceneEnd});
 				} else {
 					var otherwise = _v21;
 					return model;
@@ -9505,7 +9505,7 @@ var $author$project$Main$update = F2(
 					return _Utils_update(
 						model,
 						{
-							state: $author$project$Main$Welcome(false)
+							state: $author$project$SELena$Welcome(false)
 						});
 				} else {
 					var otherwise = _v22;
@@ -9517,7 +9517,7 @@ var $author$project$Main$update = F2(
 					return _Utils_update(
 						model,
 						{
-							state: $author$project$Main$Welcome(false)
+							state: $author$project$SELena$Welcome(false)
 						});
 				} else {
 					var otherwise = _v23;
@@ -9529,35 +9529,35 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$collage = F3(
 	function (w, h, shapes) {
 		return A3($MacCASOutreach$graphicsvg$GraphicSVG$Collage, w, h, shapes);
 	});
-var $author$project$Main$Cody = {$: 'Cody'};
-var $author$project$Main$Either = {$: 'Either'};
-var $author$project$Main$End2ToWelcome = {$: 'End2ToWelcome'};
-var $author$project$Main$End4ToWelcome = {$: 'End4ToWelcome'};
-var $author$project$Main$HideInstructions = {$: 'HideInstructions'};
-var $author$project$Main$Mermaid = {$: 'Mermaid'};
-var $author$project$Main$Nar = {$: 'Nar'};
-var $author$project$Main$Or = {$: 'Or'};
-var $author$project$Main$Pixar = {$: 'Pixar'};
-var $author$project$Main$Restart1 = {$: 'Restart1'};
-var $author$project$Main$Restart2 = {$: 'Restart2'};
-var $author$project$Main$Restart2end = {$: 'Restart2end'};
-var $author$project$Main$Restart3 = {$: 'Restart3'};
-var $author$project$Main$Restart4 = {$: 'Restart4'};
-var $author$project$Main$Restart4end = {$: 'Restart4end'};
-var $author$project$Main$Restart4half = {$: 'Restart4half'};
-var $author$project$Main$Restart5 = {$: 'Restart5'};
-var $author$project$Main$Restartend = {$: 'Restartend'};
-var $author$project$Main$T1to2 = {$: 'T1to2'};
-var $author$project$Main$T1to3 = {$: 'T1to3'};
-var $author$project$Main$T2to3 = {$: 'T2to3'};
-var $author$project$Main$T2toend = {$: 'T2toend'};
-var $author$project$Main$T3to4 = {$: 'T3to4'};
-var $author$project$Main$T3to5 = {$: 'T3to5'};
-var $author$project$Main$T4halfto5 = {$: 'T4halfto5'};
-var $author$project$Main$T4to4half = {$: 'T4to4half'};
-var $author$project$Main$T4toend = {$: 'T4toend'};
-var $author$project$Main$T5toFINALend = {$: 'T5toFINALend'};
-var $author$project$Main$WelcomeTo1 = {$: 'WelcomeTo1'};
+var $author$project$SELena$Cody = {$: 'Cody'};
+var $author$project$SELena$Either = {$: 'Either'};
+var $author$project$SELena$End2ToWelcome = {$: 'End2ToWelcome'};
+var $author$project$SELena$End4ToWelcome = {$: 'End4ToWelcome'};
+var $author$project$SELena$HideInstructions = {$: 'HideInstructions'};
+var $author$project$SELena$Mermaid = {$: 'Mermaid'};
+var $author$project$SELena$Nar = {$: 'Nar'};
+var $author$project$SELena$Or = {$: 'Or'};
+var $author$project$SELena$Pixar = {$: 'Pixar'};
+var $author$project$SELena$Restart1 = {$: 'Restart1'};
+var $author$project$SELena$Restart2 = {$: 'Restart2'};
+var $author$project$SELena$Restart2end = {$: 'Restart2end'};
+var $author$project$SELena$Restart3 = {$: 'Restart3'};
+var $author$project$SELena$Restart4 = {$: 'Restart4'};
+var $author$project$SELena$Restart4end = {$: 'Restart4end'};
+var $author$project$SELena$Restart4half = {$: 'Restart4half'};
+var $author$project$SELena$Restart5 = {$: 'Restart5'};
+var $author$project$SELena$Restartend = {$: 'Restartend'};
+var $author$project$SELena$T1to2 = {$: 'T1to2'};
+var $author$project$SELena$T1to3 = {$: 'T1to3'};
+var $author$project$SELena$T2to3 = {$: 'T2to3'};
+var $author$project$SELena$T2toend = {$: 'T2toend'};
+var $author$project$SELena$T3to4 = {$: 'T3to4'};
+var $author$project$SELena$T3to5 = {$: 'T3to5'};
+var $author$project$SELena$T4halfto5 = {$: 'T4halfto5'};
+var $author$project$SELena$T4to4half = {$: 'T4to4half'};
+var $author$project$SELena$T4toend = {$: 'T4toend'};
+var $author$project$SELena$T5toFINALend = {$: 'T5toFINALend'};
+var $author$project$SELena$WelcomeTo1 = {$: 'WelcomeTo1'};
 var $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Pull = F2(
 	function (a, b) {
 		return {$: 'Pull', a: a, b: b};
@@ -10050,13 +10050,13 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$oval = F2(
 	function (w, h) {
 		return A2($MacCASOutreach$graphicsvg$GraphicSVG$Secret$Oval, w, h);
 	});
-var $author$project$Main$fractionalModBy = F2(
+var $author$project$SELena$fractionalModBy = F2(
 	function (m, x) {
 		return x - (m * $elm$core$Basics$floor(x / m));
 	});
-var $author$project$Main$repeatDuration = F4(
+var $author$project$SELena$repeatDuration = F4(
 	function (duration, start, end, t) {
-		return start + (((end - start) * A2($author$project$Main$fractionalModBy, duration, t)) / duration);
+		return start + (((end - start) * A2($author$project$SELena$fractionalModBy, duration, t)) / duration);
 	});
 var $MacCASOutreach$graphicsvg$GraphicSVG$rotate = F2(
 	function (theta, shape) {
@@ -10071,7 +10071,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$scaleX = F2(
 		return A3($MacCASOutreach$graphicsvg$GraphicSVG$Secret$Scale, s, 1, shape);
 	});
 var $MacCASOutreach$graphicsvg$GraphicSVG$lightGreen = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 138, 226, 52, 1);
-var $author$project$Main$seaweedRock = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$SELena$seaweedRock = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -10166,7 +10166,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$wedge = F2(
 						]))) : _List_Nil);
 	});
 var $MacCASOutreach$graphicsvg$GraphicSVG$yellow = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 237, 212, 0, 1);
-var $author$project$Main$treasureChess = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$SELena$treasureChess = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A3(
@@ -10223,11 +10223,11 @@ var $author$project$Main$treasureChess = $MacCASOutreach$graphicsvg$GraphicSVG$g
 					$MacCASOutreach$graphicsvg$GraphicSVG$yellow,
 					A2($MacCASOutreach$graphicsvg$GraphicSVG$rect, 3.5, 3))))
 		]));
-var $author$project$Main$MyCurve = F2(
+var $author$project$SELena$MyCurve = F2(
 	function (a, b) {
 		return {$: 'MyCurve', a: a, b: b};
 	});
-var $author$project$Main$addTurtle = F2(
+var $author$project$SELena$addTurtle = F2(
 	function (_v0, _v1) {
 		var x = _v0.a;
 		var y = _v0.b;
@@ -10235,7 +10235,7 @@ var $author$project$Main$addTurtle = F2(
 		var v = _v1.b;
 		return _Utils_Tuple2(x + u, y + v);
 	});
-var $author$project$Main$addPull = F2(
+var $author$project$SELena$addPull = F2(
 	function (_v0, _v1) {
 		var p0 = _v0.a;
 		var p1 = _v0.b;
@@ -10243,21 +10243,21 @@ var $author$project$Main$addPull = F2(
 		var p3 = _v1.b;
 		return A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$Secret$Pull,
-			A2($author$project$Main$addTurtle, p0, p2),
-			A2($author$project$Main$addTurtle, p1, p3));
+			A2($author$project$SELena$addTurtle, p0, p2),
+			A2($author$project$SELena$addTurtle, p1, p3));
 	});
-var $author$project$Main$addCurve = F2(
+var $author$project$SELena$addCurve = F2(
 	function (_v0, _v1) {
 		var p0 = _v0.a;
 		var pulls0 = _v0.b;
 		var p1 = _v1.a;
 		var pulls1 = _v1.b;
 		return A2(
-			$author$project$Main$MyCurve,
-			A2($author$project$Main$addTurtle, p0, p1),
-			A3($elm$core$List$map2, $author$project$Main$addPull, pulls0, pulls1));
+			$author$project$SELena$MyCurve,
+			A2($author$project$SELena$addTurtle, p0, p1),
+			A3($elm$core$List$map2, $author$project$SELena$addPull, pulls0, pulls1));
 	});
-var $author$project$Main$animationPieces = F3(
+var $author$project$SELena$animationPieces = F3(
 	function (pieces, _default, t) {
 		animationPieces:
 		while (true) {
@@ -10291,15 +10291,15 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$circle = function (r) {
 };
 var $MacCASOutreach$graphicsvg$GraphicSVG$darkBrown = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 143, 89, 2, 1);
 var $MacCASOutreach$graphicsvg$GraphicSVG$darkGreen = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 78, 154, 6, 1);
-var $author$project$Main$drawCurve = function (_v0) {
+var $author$project$SELena$drawCurve = function (_v0) {
 	var p0 = _v0.a;
 	var pulls = _v0.b;
 	return A2($MacCASOutreach$graphicsvg$GraphicSVG$curve, p0, pulls);
 };
-var $author$project$Main$flippersTurtle = _List_fromArray(
+var $author$project$SELena$flippersTurtle = _List_fromArray(
 	[
 		A2(
-		$author$project$Main$MyCurve,
+		$author$project$SELena$MyCurve,
 		_Utils_Tuple2(-21.45, 2.7042),
 		_List_fromArray(
 			[
@@ -10377,7 +10377,7 @@ var $author$project$Main$flippersTurtle = _List_fromArray(
 				_Utils_Tuple2(-21.45, 2.7042))
 			])),
 		A2(
-		$author$project$Main$MyCurve,
+		$author$project$SELena$MyCurve,
 		_Utils_Tuple2(-21.45, 2.7042),
 		_List_fromArray(
 			[
@@ -10455,7 +10455,7 @@ var $author$project$Main$flippersTurtle = _List_fromArray(
 				_Utils_Tuple2(-21.45, 2.7042))
 			])),
 		A2(
-		$author$project$Main$MyCurve,
+		$author$project$SELena$MyCurve,
 		_Utils_Tuple2(-21.45, 2.7042),
 		_List_fromArray(
 			[
@@ -10533,7 +10533,7 @@ var $author$project$Main$flippersTurtle = _List_fromArray(
 				_Utils_Tuple2(-21.45, 2.7042))
 			])),
 		A2(
-		$author$project$Main$MyCurve,
+		$author$project$SELena$MyCurve,
 		_Utils_Tuple2(-21.45, 2.7042),
 		_List_fromArray(
 			[
@@ -10611,7 +10611,7 @@ var $author$project$Main$flippersTurtle = _List_fromArray(
 				_Utils_Tuple2(-21.45, 2.7042))
 			])),
 		A2(
-		$author$project$Main$MyCurve,
+		$author$project$SELena$MyCurve,
 		_Utils_Tuple2(-21.81, 2.7042),
 		_List_fromArray(
 			[
@@ -10689,7 +10689,7 @@ var $author$project$Main$flippersTurtle = _List_fromArray(
 				_Utils_Tuple2(-21.81, 2.7042))
 			])),
 		A2(
-		$author$project$Main$MyCurve,
+		$author$project$SELena$MyCurve,
 		_Utils_Tuple2(-22.17, 2.7042),
 		_List_fromArray(
 			[
@@ -10767,7 +10767,7 @@ var $author$project$Main$flippersTurtle = _List_fromArray(
 				_Utils_Tuple2(-22.17, 2.7042))
 			])),
 		A2(
-		$author$project$Main$MyCurve,
+		$author$project$SELena$MyCurve,
 		_Utils_Tuple2(-22.53, 2.7042),
 		_List_fromArray(
 			[
@@ -10845,7 +10845,7 @@ var $author$project$Main$flippersTurtle = _List_fromArray(
 				_Utils_Tuple2(-22.53, 2.7042))
 			]))
 	]);
-var $author$project$Main$hindLimb = function (model) {
+var $author$project$SELena$hindLimb = function (model) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
@@ -10968,7 +10968,7 @@ var $author$project$Main$hindLimb = function (model) {
 							]))))
 			]));
 };
-var $author$project$Main$mkAnimationPieceVS = F4(
+var $author$project$SELena$mkAnimationPieceVS = F4(
 	function (addVS, subVS, scaleVS, listOfVectors) {
 		if (listOfVectors.b && listOfVectors.b.b) {
 			var p0 = listOfVectors.a;
@@ -10989,7 +10989,7 @@ var $author$project$Main$mkAnimationPieceVS = F4(
 								A2(subVS, p1, p0)));
 					}),
 				A4(
-					$author$project$Main$mkAnimationPieceVS,
+					$author$project$SELena$mkAnimationPieceVS,
 					addVS,
 					subVS,
 					scaleVS,
@@ -10998,34 +10998,34 @@ var $author$project$Main$mkAnimationPieceVS = F4(
 			return _List_Nil;
 		}
 	});
-var $author$project$Main$scaleTurtle = F2(
+var $author$project$SELena$scaleTurtle = F2(
 	function (s, _v0) {
 		var x = _v0.a;
 		var y = _v0.b;
 		return _Utils_Tuple2(s * x, s * y);
 	});
-var $author$project$Main$scalePull = F2(
+var $author$project$SELena$scalePull = F2(
 	function (s, _v0) {
 		var p2 = _v0.a;
 		var p3 = _v0.b;
 		return A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$Secret$Pull,
-			A2($author$project$Main$scaleTurtle, s, p2),
-			A2($author$project$Main$scaleTurtle, s, p3));
+			A2($author$project$SELena$scaleTurtle, s, p2),
+			A2($author$project$SELena$scaleTurtle, s, p3));
 	});
-var $author$project$Main$scaleCurve = F2(
+var $author$project$SELena$scaleCurve = F2(
 	function (s, _v0) {
 		var p1 = _v0.a;
 		var pulls1 = _v0.b;
 		return A2(
-			$author$project$Main$MyCurve,
-			A2($author$project$Main$scaleTurtle, s, p1),
+			$author$project$SELena$MyCurve,
+			A2($author$project$SELena$scaleTurtle, s, p1),
 			A2(
 				$elm$core$List$map,
-				$author$project$Main$scalePull(s),
+				$author$project$SELena$scalePull(s),
 				pulls1));
 	});
-var $author$project$Main$subTurtle = F2(
+var $author$project$SELena$subTurtle = F2(
 	function (_v0, _v1) {
 		var x = _v0.a;
 		var y = _v0.b;
@@ -11033,7 +11033,7 @@ var $author$project$Main$subTurtle = F2(
 		var v = _v1.b;
 		return _Utils_Tuple2(x - u, y - v);
 	});
-var $author$project$Main$subPull = F2(
+var $author$project$SELena$subPull = F2(
 	function (_v0, _v1) {
 		var p0 = _v0.a;
 		var p1 = _v0.b;
@@ -11041,21 +11041,21 @@ var $author$project$Main$subPull = F2(
 		var p3 = _v1.b;
 		return A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$Secret$Pull,
-			A2($author$project$Main$subTurtle, p0, p2),
-			A2($author$project$Main$subTurtle, p1, p3));
+			A2($author$project$SELena$subTurtle, p0, p2),
+			A2($author$project$SELena$subTurtle, p1, p3));
 	});
-var $author$project$Main$subCurve = F2(
+var $author$project$SELena$subCurve = F2(
 	function (_v0, _v1) {
 		var p0 = _v0.a;
 		var pulls0 = _v0.b;
 		var p1 = _v1.a;
 		var pulls1 = _v1.b;
 		return A2(
-			$author$project$Main$MyCurve,
-			A2($author$project$Main$subTurtle, p0, p1),
-			A3($elm$core$List$map2, $author$project$Main$subPull, pulls0, pulls1));
+			$author$project$SELena$MyCurve,
+			A2($author$project$SELena$subTurtle, p0, p1),
+			A3($elm$core$List$map2, $author$project$SELena$subPull, pulls0, pulls1));
 	});
-var $author$project$Main$turtle = function (model) {
+var $author$project$SELena$turtle = function (model) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
@@ -11331,18 +11331,18 @@ var $author$project$Main$turtle = function (model) {
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 				$MacCASOutreach$graphicsvg$GraphicSVG$darkGreen,
-				$author$project$Main$drawCurve(
+				$author$project$SELena$drawCurve(
 					A3(
-						$author$project$Main$animationPieces,
-						A4($author$project$Main$mkAnimationPieceVS, $author$project$Main$addCurve, $author$project$Main$subCurve, $author$project$Main$scaleCurve, $author$project$Main$flippersTurtle),
+						$author$project$SELena$animationPieces,
+						A4($author$project$SELena$mkAnimationPieceVS, $author$project$SELena$addCurve, $author$project$SELena$subCurve, $author$project$SELena$scaleCurve, $author$project$SELena$flippersTurtle),
 						function (t) {
 							return A2(
-								$author$project$Main$MyCurve,
+								$author$project$SELena$MyCurve,
 								_Utils_Tuple2(0, 0),
 								_List_Nil);
 						},
 						3 + (3 * $elm$core$Basics$cos(model.time))))),
-				$author$project$Main$hindLimb(model),
+				$author$project$SELena$hindLimb(model),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 				$MacCASOutreach$graphicsvg$GraphicSVG$darkBrown,
@@ -11520,7 +11520,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$rotateGradient = F2(
 		}
 	});
 var $elm$core$Basics$sqrt = _Basics_sqrt;
-var $author$project$Main$water = function (brightness) {
+var $author$project$SELena$water = function (brightness) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
@@ -11548,22 +11548,22 @@ var $author$project$Main$water = function (brightness) {
 				A2($MacCASOutreach$graphicsvg$GraphicSVG$rect, 500, 500))
 			]));
 };
-var $author$project$Main$backgroundElements = F3(
+var $author$project$SELena$backgroundElements = F3(
 	function (brightness, schoolOfFish, model) {
 		return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 			_List_fromArray(
 				[
-					$author$project$Main$water(brightness),
+					$author$project$SELena$water(brightness),
 					schoolOfFish(model),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
-						A4($author$project$Main$repeatDuration, -3, 500, 100, model.time),
+						A4($author$project$SELena$repeatDuration, -3, 500, 100, model.time),
 						35),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.3,
-						$author$project$Main$turtle(model))),
+						$author$project$SELena$turtle(model))),
 					function () {
 					var seaweed = F2(
 						function (idx, rawThickness) {
@@ -11690,7 +11690,7 @@ var $author$project$Main$backgroundElements = F3(
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-45, -38),
-					$author$project$Main$seaweedRock),
+					$author$project$SELena$seaweedRock),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-75, -35),
@@ -11722,23 +11722,23 @@ var $author$project$Main$backgroundElements = F3(
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(75, -40),
-					$author$project$Main$treasureChess),
+					$author$project$SELena$treasureChess),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(45, -45),
-					$author$project$Main$seaweedRock),
+					$author$project$SELena$seaweedRock),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(60, -62),
-					$author$project$Main$seaweedRock),
+					$author$project$SELena$seaweedRock),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-70, -57),
-					$author$project$Main$seaweedRock)
+					$author$project$SELena$seaweedRock)
 				]));
 	});
 var $MacCASOutreach$graphicsvg$GraphicSVG$blue = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 52, 101, 164, 1);
-var $author$project$Main$fish = function (colour) {
+var $author$project$SELena$fish = function (colour) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
@@ -11824,7 +11824,7 @@ var $author$project$Main$fish = function (colour) {
 						])))
 			]));
 };
-var $author$project$Main$fishTail = function (colour) {
+var $author$project$SELena$fishTail = function (colour) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
@@ -11863,7 +11863,7 @@ var $author$project$Main$fishTail = function (colour) {
 						])))
 			]));
 };
-var $author$project$Main$leftFin = function (colour) {
+var $author$project$SELena$leftFin = function (colour) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
@@ -11907,7 +11907,7 @@ var $author$project$Main$leftFin = function (colour) {
 			]));
 };
 var $MacCASOutreach$graphicsvg$GraphicSVG$orange = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 245, 121, 0, 1);
-var $author$project$Main$rightFin = function (colour) {
+var $author$project$SELena$rightFin = function (colour) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
@@ -11950,7 +11950,7 @@ var $author$project$Main$rightFin = function (colour) {
 						])))
 			]));
 };
-var $author$project$Main$upperFin = function (colour) {
+var $author$project$SELena$upperFin = function (colour) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
@@ -12013,7 +12013,7 @@ var $author$project$Main$upperFin = function (colour) {
 						])))
 			]));
 };
-var $author$project$Main$cody = F2(
+var $author$project$SELena$cody = F2(
 	function (model, colour) {
 		return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 			_List_fromArray(
@@ -12021,25 +12021,25 @@ var $author$project$Main$cody = F2(
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(30, 40),
-					$author$project$Main$fish($MacCASOutreach$graphicsvg$GraphicSVG$yellow)),
+					$author$project$SELena$fish($MacCASOutreach$graphicsvg$GraphicSVG$yellow)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(30, 40),
-					$author$project$Main$upperFin($MacCASOutreach$graphicsvg$GraphicSVG$orange)),
+					$author$project$SELena$upperFin($MacCASOutreach$graphicsvg$GraphicSVG$orange)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$rotate,
 					$elm$core$Basics$degrees(1.3) * $elm$core$Basics$sin(model.time * 10),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(30, 40),
-						$author$project$Main$rightFin($MacCASOutreach$graphicsvg$GraphicSVG$orange))),
+						$author$project$SELena$rightFin($MacCASOutreach$graphicsvg$GraphicSVG$orange))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$rotate,
 					$elm$core$Basics$degrees(-1.3) * $elm$core$Basics$sin(model.time * 10),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(30, 40),
-						$author$project$Main$leftFin($MacCASOutreach$graphicsvg$GraphicSVG$orange))),
+						$author$project$SELena$leftFin($MacCASOutreach$graphicsvg$GraphicSVG$orange))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
@@ -12048,10 +12048,10 @@ var $author$project$Main$cody = F2(
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(30, 40),
-						$author$project$Main$fishTail($MacCASOutreach$graphicsvg$GraphicSVG$orange)))
+						$author$project$SELena$fishTail($MacCASOutreach$graphicsvg$GraphicSVG$orange)))
 				]));
 	});
-var $author$project$Main$eyeShellS = A2(
+var $author$project$SELena$eyeShellS = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 	0.3,
 	A3(
@@ -12147,7 +12147,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$outlined = F3(
 		}();
 		return A3($MacCASOutreach$graphicsvg$GraphicSVG$Secret$Inked, $elm$core$Maybe$Nothing, lineStyle, stencil);
 	});
-var $author$project$Main$mouthShellS = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$SELena$mouthShellS = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -12382,7 +12382,7 @@ var $author$project$Main$mouthShellS = $MacCASOutreach$graphicsvg$GraphicSVG$gro
 							_Utils_Tuple2(34.772, 4.6463))
 						]))))
 		]));
-var $author$project$Main$fishS = function (colour) {
+var $author$project$SELena$fishS = function (colour) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
@@ -12396,21 +12396,21 @@ var $author$project$Main$fishS = function (colour) {
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(-30, -23),
-				$author$project$Main$eyeShellS),
+				$author$project$SELena$eyeShellS),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(-41, -23),
-				$author$project$Main$eyeShellS),
+				$author$project$SELena$eyeShellS),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(-22, -40),
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scaleX,
 					-1,
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.15, $author$project$Main$mouthShellS)))
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.15, $author$project$SELena$mouthShellS)))
 			]));
 };
-var $author$project$Main$fishTailS = function (colour) {
+var $author$project$SELena$fishTailS = function (colour) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
@@ -12449,7 +12449,7 @@ var $author$project$Main$fishTailS = function (colour) {
 						])))
 			]));
 };
-var $author$project$Main$leftFinS = function (colour) {
+var $author$project$SELena$leftFinS = function (colour) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
@@ -12492,11 +12492,11 @@ var $author$project$Main$leftFinS = function (colour) {
 						])))
 			]));
 };
-var $author$project$Main$repeatDistance = F4(
+var $author$project$SELena$repeatDistance = F4(
 	function (speed, start, end, t) {
-		return start + A2($author$project$Main$fractionalModBy, end - start, speed * t);
+		return start + A2($author$project$SELena$fractionalModBy, end - start, speed * t);
 	});
-var $author$project$Main$rightFinS = function (colour) {
+var $author$project$SELena$rightFinS = function (colour) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
@@ -12539,7 +12539,7 @@ var $author$project$Main$rightFinS = function (colour) {
 						])))
 			]));
 };
-var $author$project$Main$sandGradient = F2(
+var $author$project$SELena$sandGradient = F2(
 	function (x0, x1) {
 		return A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$rotateGradient,
@@ -12565,7 +12565,7 @@ var $author$project$Main$sandGradient = F2(
 						x1)
 					])));
 	});
-var $author$project$Main$upperFinS = function (colour) {
+var $author$project$SELena$upperFinS = function (colour) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
@@ -12628,7 +12628,7 @@ var $author$project$Main$upperFinS = function (colour) {
 						])))
 			]));
 };
-var $author$project$Main$codyS = F2(
+var $author$project$SELena$codyS = F2(
 	function (model, colour) {
 		return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 			_List_fromArray(
@@ -12636,42 +12636,42 @@ var $author$project$Main$codyS = F2(
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
-						A4($author$project$Main$repeatDistance, 60, 500, 100, -model.time),
+						A4($author$project$SELena$repeatDistance, 60, 500, 100, -model.time),
 						0),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(-20, 50),
-						$author$project$Main$fishS(
+						$author$project$SELena$fishS(
 							A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$rotateGradient,
 								$elm$core$Basics$degrees(180),
-								A2($author$project$Main$sandGradient, 0, 40))))),
+								A2($author$project$SELena$sandGradient, 0, 40))))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$rotate,
 					$elm$core$Basics$degrees(1.3) * $elm$core$Basics$sin(model.time * 10),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(
-							A4($author$project$Main$repeatDistance, 60, 500, 100, -model.time),
+							A4($author$project$SELena$repeatDistance, 60, 500, 100, -model.time),
 							0),
 						A2(
 							$MacCASOutreach$graphicsvg$GraphicSVG$move,
 							_Utils_Tuple2(-20, 50),
-							$author$project$Main$rightFinS(
-								A2($author$project$Main$sandGradient, -10, 100))))),
+							$author$project$SELena$rightFinS(
+								A2($author$project$SELena$sandGradient, -10, 100))))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$rotate,
 					$elm$core$Basics$degrees(-1.3) * $elm$core$Basics$sin(model.time * 10),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(
-							A4($author$project$Main$repeatDistance, 60, 500, 100, -model.time),
+							A4($author$project$SELena$repeatDistance, 60, 500, 100, -model.time),
 							0),
 						A2(
 							$MacCASOutreach$graphicsvg$GraphicSVG$move,
 							_Utils_Tuple2(-20, 50),
-							$author$project$Main$leftFinS(
-								A2($author$project$Main$sandGradient, -10, 100))))),
+							$author$project$SELena$leftFinS(
+								A2($author$project$SELena$sandGradient, -10, 100))))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
@@ -12680,44 +12680,44 @@ var $author$project$Main$codyS = F2(
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(
-							A4($author$project$Main$repeatDistance, 60, 500, 100, -model.time),
+							A4($author$project$SELena$repeatDistance, 60, 500, 100, -model.time),
 							0),
 						A2(
 							$MacCASOutreach$graphicsvg$GraphicSVG$move,
 							_Utils_Tuple2(-20, 50),
-							$author$project$Main$fishTailS(
-								A2($author$project$Main$sandGradient, 10, 100))))),
+							$author$project$SELena$fishTailS(
+								A2($author$project$SELena$sandGradient, 10, 100))))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
-						A4($author$project$Main$repeatDistance, 60, 500, 100, -model.time),
+						A4($author$project$SELena$repeatDistance, 60, 500, 100, -model.time),
 						0),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(-20, 50),
-						$author$project$Main$upperFinS(
+						$author$project$SELena$upperFinS(
 							A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$rotateGradient,
 								$elm$core$Basics$degrees(180),
-								A2($author$project$Main$sandGradient, 30, 100)))))
+								A2($author$project$SELena$sandGradient, 30, 100)))))
 				]));
 	});
-var $author$project$Main$debugSpeedup = 1;
-var $author$project$Main$failedEndScript = _List_fromArray(
+var $author$project$SELena$debugSpeedup = 1;
+var $author$project$SELena$failedEndScript = _List_fromArray(
 	[
-		_Utils_Tuple2($author$project$Main$Mermaid, ' '),
-		_Utils_Tuple2($author$project$Main$Mermaid, ' '),
-		_Utils_Tuple2($author$project$Main$Mermaid, 'Aww... The three best friends'),
-		_Utils_Tuple2($author$project$Main$Mermaid, 'never spoke to each other ever'),
-		_Utils_Tuple2($author$project$Main$Mermaid, 'again... :('),
-		_Utils_Tuple2($author$project$Main$Mermaid, ' '),
-		_Utils_Tuple2($author$project$Main$Mermaid, 'Do you want to try again to'),
-		_Utils_Tuple2($author$project$Main$Mermaid, 'save the friendship?'),
-		_Utils_Tuple2($author$project$Main$Mermaid, ' ')
+		_Utils_Tuple2($author$project$SELena$Mermaid, ' '),
+		_Utils_Tuple2($author$project$SELena$Mermaid, ' '),
+		_Utils_Tuple2($author$project$SELena$Mermaid, 'Aww... The three best friends'),
+		_Utils_Tuple2($author$project$SELena$Mermaid, 'never spoke to each other ever'),
+		_Utils_Tuple2($author$project$SELena$Mermaid, 'again... :('),
+		_Utils_Tuple2($author$project$SELena$Mermaid, ' '),
+		_Utils_Tuple2($author$project$SELena$Mermaid, 'Do you want to try again to'),
+		_Utils_Tuple2($author$project$SELena$Mermaid, 'save the friendship?'),
+		_Utils_Tuple2($author$project$SELena$Mermaid, ' ')
 	]);
 var $MacCASOutreach$graphicsvg$GraphicSVG$pink = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 255, 105, 180, 1);
 var $MacCASOutreach$graphicsvg$GraphicSVG$red = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 204, 0, 0, 1);
-var $author$project$Main$mermaid = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$SELena$mermaid = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -13286,10 +13286,10 @@ var $author$project$Main$mermaid = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 					$MacCASOutreach$graphicsvg$GraphicSVG$black,
 					A2($MacCASOutreach$graphicsvg$GraphicSVG$oval, 2.4, 3.3))))
 		]));
-var $author$project$Main$flippers = _List_fromArray(
+var $author$project$SELena$flippers = _List_fromArray(
 	[
 		A2(
-		$author$project$Main$MyCurve,
+		$author$project$SELena$MyCurve,
 		_Utils_Tuple2(-9.442, 40.018),
 		_List_fromArray(
 			[
@@ -13323,7 +13323,7 @@ var $author$project$Main$flippers = _List_fromArray(
 				_Utils_Tuple2(-9.442, 40.018))
 			])),
 		A2(
-		$author$project$Main$MyCurve,
+		$author$project$SELena$MyCurve,
 		_Utils_Tuple2(-9.442, 40.018),
 		_List_fromArray(
 			[
@@ -13357,7 +13357,7 @@ var $author$project$Main$flippers = _List_fromArray(
 				_Utils_Tuple2(-9.442, 40.018))
 			])),
 		A2(
-		$author$project$Main$MyCurve,
+		$author$project$SELena$MyCurve,
 		_Utils_Tuple2(-9.742, 39.718),
 		_List_fromArray(
 			[
@@ -13391,7 +13391,7 @@ var $author$project$Main$flippers = _List_fromArray(
 				_Utils_Tuple2(-9.742, 39.718))
 			])),
 		A2(
-		$author$project$Main$MyCurve,
+		$author$project$SELena$MyCurve,
 		_Utils_Tuple2(-9.742, 39.419),
 		_List_fromArray(
 			[
@@ -13425,7 +13425,7 @@ var $author$project$Main$flippers = _List_fromArray(
 				_Utils_Tuple2(-9.742, 39.419))
 			])),
 		A2(
-		$author$project$Main$MyCurve,
+		$author$project$SELena$MyCurve,
 		_Utils_Tuple2(-12.44, 38.519),
 		_List_fromArray(
 			[
@@ -13459,7 +13459,7 @@ var $author$project$Main$flippers = _List_fromArray(
 				_Utils_Tuple2(-12.44, 38.519))
 			])),
 		A2(
-		$author$project$Main$MyCurve,
+		$author$project$SELena$MyCurve,
 		_Utils_Tuple2(-10.34, 39.119),
 		_List_fromArray(
 			[
@@ -13493,7 +13493,7 @@ var $author$project$Main$flippers = _List_fromArray(
 				_Utils_Tuple2(-10.34, 39.119))
 			])),
 		A2(
-		$author$project$Main$MyCurve,
+		$author$project$SELena$MyCurve,
 		_Utils_Tuple2(-11.84, 38.819),
 		_List_fromArray(
 			[
@@ -13527,7 +13527,7 @@ var $author$project$Main$flippers = _List_fromArray(
 				_Utils_Tuple2(-11.84, 38.819))
 			])),
 		A2(
-		$author$project$Main$MyCurve,
+		$author$project$SELena$MyCurve,
 		_Utils_Tuple2(10.941, 38.519),
 		_List_fromArray(
 			[
@@ -13561,7 +13561,7 @@ var $author$project$Main$flippers = _List_fromArray(
 				_Utils_Tuple2(10.941, 38.519))
 			])),
 		A2(
-		$author$project$Main$MyCurve,
+		$author$project$SELena$MyCurve,
 		_Utils_Tuple2(10.941, 38.819),
 		_List_fromArray(
 			[
@@ -13595,27 +13595,27 @@ var $author$project$Main$flippers = _List_fromArray(
 				_Utils_Tuple2(10.941, 38.819))
 			]))
 	]);
-var $author$project$Main$tail = function (model) {
+var $author$project$SELena$tail = function (model) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 				A3($MacCASOutreach$graphicsvg$GraphicSVG$rgb, 244, 96, 180),
-				$author$project$Main$drawCurve(
+				$author$project$SELena$drawCurve(
 					A3(
-						$author$project$Main$animationPieces,
-						A4($author$project$Main$mkAnimationPieceVS, $author$project$Main$addCurve, $author$project$Main$subCurve, $author$project$Main$scaleCurve, $author$project$Main$flippers),
+						$author$project$SELena$animationPieces,
+						A4($author$project$SELena$mkAnimationPieceVS, $author$project$SELena$addCurve, $author$project$SELena$subCurve, $author$project$SELena$scaleCurve, $author$project$SELena$flippers),
 						function (t) {
 							return A2(
-								$author$project$Main$MyCurve,
+								$author$project$SELena$MyCurve,
 								_Utils_Tuple2(0, 0),
 								_List_Nil);
 						},
 						3 + (3 * $elm$core$Basics$cos(model.time)))))
 			]));
 };
-var $author$project$Main$completeMermaid = function (model) {
+var $author$project$SELena$completeMermaid = function (model) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
@@ -13625,14 +13625,14 @@ var $author$project$Main$completeMermaid = function (model) {
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 					0.5,
-					$author$project$Main$tail(model))),
+					$author$project$SELena$tail(model))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(-50, 15),
-				A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.75, $author$project$Main$mermaid))
+				A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.75, $author$project$SELena$mermaid))
 			]));
 };
-var $author$project$Main$finalMermaid = function (model) {
+var $author$project$SELena$finalMermaid = function (model) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
@@ -13641,13 +13641,13 @@ var $author$project$Main$finalMermaid = function (model) {
 				_Utils_Tuple2(
 					0,
 					(10 * $elm$core$Basics$sin(model.time)) * 0.5),
-				$author$project$Main$completeMermaid(model))
+				$author$project$SELena$completeMermaid(model))
 			]));
 };
 var $MacCASOutreach$graphicsvg$GraphicSVG$mirrorY = function (shape) {
 	return A3($MacCASOutreach$graphicsvg$GraphicSVG$Secret$Scale, 1, -1, shape);
 };
-var $author$project$Main$sadMermaid = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$SELena$sadMermaid = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -14220,27 +14220,27 @@ var $author$project$Main$sadMermaid = $MacCASOutreach$graphicsvg$GraphicSVG$grou
 					$MacCASOutreach$graphicsvg$GraphicSVG$black,
 					A2($MacCASOutreach$graphicsvg$GraphicSVG$oval, 2.4, 3.3))))
 		]));
-var $author$project$Main$tailSad = function (model) {
+var $author$project$SELena$tailSad = function (model) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 				A3($MacCASOutreach$graphicsvg$GraphicSVG$rgb, 244, 96, 180),
-				$author$project$Main$drawCurve(
+				$author$project$SELena$drawCurve(
 					A3(
-						$author$project$Main$animationPieces,
-						A4($author$project$Main$mkAnimationPieceVS, $author$project$Main$addCurve, $author$project$Main$subCurve, $author$project$Main$scaleCurve, $author$project$Main$flippers),
+						$author$project$SELena$animationPieces,
+						A4($author$project$SELena$mkAnimationPieceVS, $author$project$SELena$addCurve, $author$project$SELena$subCurve, $author$project$SELena$scaleCurve, $author$project$SELena$flippers),
 						function (t) {
 							return A2(
-								$author$project$Main$MyCurve,
+								$author$project$SELena$MyCurve,
 								_Utils_Tuple2(0, 0),
 								_List_Nil);
 						},
 						3 + (3 * $elm$core$Basics$cos(model.time)))))
 			]));
 };
-var $author$project$Main$completeSadMermaid = function (model) {
+var $author$project$SELena$completeSadMermaid = function (model) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
@@ -14250,14 +14250,14 @@ var $author$project$Main$completeSadMermaid = function (model) {
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 					0.5,
-					$author$project$Main$tailSad(model))),
+					$author$project$SELena$tailSad(model))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(-50, 15),
-				A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.75, $author$project$Main$sadMermaid))
+				A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.75, $author$project$SELena$sadMermaid))
 			]));
 };
-var $author$project$Main$finalSadMermaid = function (model) {
+var $author$project$SELena$finalSadMermaid = function (model) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
@@ -14266,13 +14266,13 @@ var $author$project$Main$finalSadMermaid = function (model) {
 				_Utils_Tuple2(
 					0,
 					(10 * $elm$core$Basics$sin(model.time)) * 0.5),
-				$author$project$Main$completeSadMermaid(model))
+				$author$project$SELena$completeSadMermaid(model))
 			]));
 };
 var $MacCASOutreach$graphicsvg$GraphicSVG$triangle = function (r) {
 	return A2($MacCASOutreach$graphicsvg$GraphicSVG$ngon, 3, r);
 };
-var $author$project$Main$fishBackground = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$SELena$fishBackground = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -14298,43 +14298,43 @@ var $author$project$Main$fishBackground = $MacCASOutreach$graphicsvg$GraphicSVG$
 var $MacCASOutreach$graphicsvg$GraphicSVG$mirrorX = function (shape) {
 	return A3($MacCASOutreach$graphicsvg$GraphicSVG$Secret$Scale, -1, 1, shape);
 };
-var $author$project$Main$fishAni = function (model) {
+var $author$project$SELena$fishAni = function (model) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
-					A4($author$project$Main$repeatDuration, 9, 25, -105, model.time),
+					A4($author$project$SELena$repeatDuration, 9, 25, -105, model.time),
 					-10),
-				$author$project$Main$fishBackground),
+				$author$project$SELena$fishBackground),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
-					A4($author$project$Main$repeatDuration, -10, 23, 105, model.time),
+					A4($author$project$SELena$repeatDuration, -10, 23, 105, model.time),
 					0),
 				$MacCASOutreach$graphicsvg$GraphicSVG$mirrorX(
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.8, $author$project$Main$fishBackground))),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.8, $author$project$SELena$fishBackground))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
-					A4($author$project$Main$repeatDuration, 7, 35, -120, model.time),
+					A4($author$project$SELena$repeatDuration, 7, 35, -120, model.time),
 					10),
-				A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.6, $author$project$Main$fishBackground)),
+				A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.6, $author$project$SELena$fishBackground)),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
-					A4($author$project$Main$repeatDuration, -7, 35, 130, model.time),
+					A4($author$project$SELena$repeatDuration, -7, 35, 130, model.time),
 					25),
 				$MacCASOutreach$graphicsvg$GraphicSVG$mirrorX(
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.6, $author$project$Main$fishBackground))),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.6, $author$project$SELena$fishBackground))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
-					A4($author$project$Main$repeatDuration, -10, 25, -105, model.time),
+					A4($author$project$SELena$repeatDuration, -10, 25, -105, model.time),
 					40),
 				$MacCASOutreach$graphicsvg$GraphicSVG$mirrorX(
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.6, $author$project$Main$fishBackground)))
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.6, $author$project$SELena$fishBackground)))
 			]));
 };
 var $MacCASOutreach$graphicsvg$GraphicSVG$green = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 115, 210, 22, 1);
@@ -14420,7 +14420,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$text = function (str) {
 		A8($MacCASOutreach$graphicsvg$GraphicSVG$Secret$Face, 12, false, false, false, false, false, $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Serif, $MacCASOutreach$graphicsvg$GraphicSVG$Secret$AlignLeft),
 		str);
 };
-var $author$project$Main$headline = function (txt) {
+var $author$project$SELena$headline = function (txt) {
 	return A3(
 		$MacCASOutreach$graphicsvg$GraphicSVG$addOutline,
 		$MacCASOutreach$graphicsvg$GraphicSVG$solid(0.5),
@@ -14436,7 +14436,7 @@ var $author$project$Main$headline = function (txt) {
 						$MacCASOutreach$graphicsvg$GraphicSVG$text(txt))))));
 };
 var $MacCASOutreach$graphicsvg$GraphicSVG$darkRed = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 164, 0, 0, 1);
-var $author$project$Main$tentacles = function (color) {
+var $author$project$SELena$tentacles = function (color) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
@@ -14644,11 +14644,11 @@ var $author$project$Main$tentacles = function (color) {
 								])))))
 			]));
 };
-var $author$project$Main$jellyfish = function (color) {
+var $author$project$SELena$jellyfish = function (color) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
-				$author$project$Main$tentacles(color),
+				$author$project$SELena$tentacles(color),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$rotate,
 				$elm$core$Basics$degrees(90),
@@ -14698,7 +14698,7 @@ var $author$project$Main$jellyfish = function (color) {
 };
 var $MacCASOutreach$graphicsvg$GraphicSVG$lightBlue = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 114, 159, 207, 1);
 var $MacCASOutreach$graphicsvg$GraphicSVG$lightRed = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 239, 41, 41, 1);
-var $author$project$Main$pearls = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$SELena$pearls = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -14811,7 +14811,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$radialGradient = function (stops) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Gradient(
 		$MacCASOutreach$graphicsvg$GraphicSVG$Secret$RadialGradient(stops));
 };
-var $author$project$Main$stopsStarfish = function (t) {
+var $author$project$SELena$stopsStarfish = function (t) {
 	return A2(
 		$elm$core$List$map,
 		function (idx) {
@@ -14826,7 +14826,7 @@ var $author$project$Main$stopsStarfish = function (t) {
 		},
 		A2($elm$core$List$range, 0, 10));
 };
-var $author$project$Main$rainbow = function (model) {
+var $author$project$SELena$rainbow = function (model) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
@@ -14839,7 +14839,7 @@ var $author$project$Main$rainbow = function (model) {
 						$MacCASOutreach$graphicsvg$GraphicSVG$rotateGradient,
 						$elm$core$Basics$degrees(90),
 						$MacCASOutreach$graphicsvg$GraphicSVG$radialGradient(
-							$author$project$Main$stopsStarfish(model.time * 0.4))),
+							$author$project$SELena$stopsStarfish(model.time * 0.4))),
 					$MacCASOutreach$graphicsvg$GraphicSVG$circle(50)))
 			]));
 };
@@ -14851,7 +14851,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$hsla = F4(
 		var b = _v0.c;
 		return A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, r, g, b, a);
 	});
-var $author$project$Main$starfish = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$SELena$starfish = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A3(
@@ -15018,18 +15018,18 @@ var $author$project$Main$starfish = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 								_Utils_Tuple2(0, 19.757))
 							])))))
 		]));
-var $author$project$Main$movingStarfish = function (model) {
+var $author$project$SELena$movingStarfish = function (model) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
-				$author$project$Main$starfish,
+				$author$project$SELena$starfish,
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$clip,
-				$author$project$Main$pearls,
-				$author$project$Main$rainbow(model))
+				$author$project$SELena$pearls,
+				$author$project$SELena$rainbow(model))
 			]));
 };
-var $author$project$Main$bubbleClr = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 255, 255, 255, 0.85);
+var $author$project$SELena$bubbleClr = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 255, 255, 255, 0.85);
 var $MacCASOutreach$graphicsvg$GraphicSVG$ghost = function (stencil) {
 	return A3(
 		$MacCASOutreach$graphicsvg$GraphicSVG$Secret$Inked,
@@ -15059,14 +15059,14 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$fixedwidth = function (stencil) {
 		return a;
 	}
 };
-var $author$project$Main$textHeight = 4;
-var $author$project$Main$mkScriptFor = F4(
+var $author$project$SELena$textHeight = 4;
+var $author$project$SELena$mkScriptFor = F4(
 	function (textClr, actor, theScript, offset) {
 		var mkTxt = F2(
 			function (idx, txt) {
 				return A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
-					_Utils_Tuple2(offset, (-$author$project$Main$textHeight) * idx),
+					_Utils_Tuple2(offset, (-$author$project$SELena$textHeight) * idx),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 						textClr,
@@ -15133,9 +15133,9 @@ var $author$project$Main$mkScriptFor = F4(
 				A2($elm$core$List$map, $elm$core$Tuple$first, shapesAndVisibility)),
 			A2($elm$core$List$map, $elm$core$Tuple$second, shapesAndVisibility));
 	});
-var $author$project$Main$scriptSpeed = $author$project$Main$textHeight;
-var $author$project$Main$textSpeed = 1.85;
-var $author$project$Main$multiBubbleLeft = F5(
+var $author$project$SELena$scriptSpeed = $author$project$SELena$textHeight;
+var $author$project$SELena$textSpeed = 1.85;
+var $author$project$SELena$multiBubbleLeft = F5(
 	function (textClr, script, width, actor, t) {
 		var bubble = A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$curve,
@@ -15167,13 +15167,13 @@ var $author$project$Main$multiBubbleLeft = F5(
 					_Utils_Tuple2(((-width) * 0.5) + 5, -6),
 					_Utils_Tuple2(((-width) * 0.5) + 0, -8))
 				]));
-		var _v0 = A4($author$project$Main$mkScriptFor, textClr, actor, script, width / 15);
+		var _v0 = A4($author$project$SELena$mkScriptFor, textClr, actor, script, width / 15);
 		var contents = _v0.a;
 		var visibility = _v0.b;
 		var isVisible = A2(
 			$elm$core$List$any,
 			function (start) {
-				return (_Utils_cmp(($author$project$Main$textSpeed * 0.75) * t, (($author$project$Main$scriptSpeed * 0.75) * start) - 2) > 0) && (_Utils_cmp($author$project$Main$textSpeed * t, ($author$project$Main$scriptSpeed * start) + 4) < 0);
+				return (_Utils_cmp(($author$project$SELena$textSpeed * 0.75) * t, (($author$project$SELena$scriptSpeed * 0.75) * start) - 2) > 0) && (_Utils_cmp($author$project$SELena$textSpeed * t, ($author$project$SELena$scriptSpeed * start) + 4) < 0);
 			},
 			visibility);
 		return A2(
@@ -15182,13 +15182,13 @@ var $author$project$Main$multiBubbleLeft = F5(
 			$MacCASOutreach$graphicsvg$GraphicSVG$group(
 				isVisible ? _List_fromArray(
 					[
-						A2($MacCASOutreach$graphicsvg$GraphicSVG$filled, $author$project$Main$bubbleClr, bubble),
+						A2($MacCASOutreach$graphicsvg$GraphicSVG$filled, $author$project$SELena$bubbleClr, bubble),
 						A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$clip,
 						$MacCASOutreach$graphicsvg$GraphicSVG$ghost(bubble),
 						A2(
 							$MacCASOutreach$graphicsvg$GraphicSVG$move,
-							_Utils_Tuple2(1.5 - (0.5 * width), $author$project$Main$textSpeed * t),
+							_Utils_Tuple2(1.5 - (0.5 * width), $author$project$SELena$textSpeed * t),
 							contents)),
 						A3(
 						$MacCASOutreach$graphicsvg$GraphicSVG$outlined,
@@ -15197,7 +15197,7 @@ var $author$project$Main$multiBubbleLeft = F5(
 						bubble)
 					]) : _List_Nil));
 	});
-var $author$project$Main$multiBubbleRight = F5(
+var $author$project$SELena$multiBubbleRight = F5(
 	function (textClr, script, width, actor, t) {
 		var bubble = A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$curve,
@@ -15229,13 +15229,13 @@ var $author$project$Main$multiBubbleRight = F5(
 					_Utils_Tuple2(((-width) * 0.5) + 5, -6),
 					_Utils_Tuple2(((-width) * 0.5) + 0, -8))
 				]));
-		var _v0 = A4($author$project$Main$mkScriptFor, textClr, actor, script, width / 15);
+		var _v0 = A4($author$project$SELena$mkScriptFor, textClr, actor, script, width / 15);
 		var contents = _v0.a;
 		var visibility = _v0.b;
 		var isVisible = A2(
 			$elm$core$List$any,
 			function (start) {
-				return (_Utils_cmp(($author$project$Main$textSpeed * 0.75) * t, (($author$project$Main$scriptSpeed * 0.75) * start) - 2) > 0) && (_Utils_cmp($author$project$Main$textSpeed * t, ($author$project$Main$scriptSpeed * start) + 4) < 0);
+				return (_Utils_cmp(($author$project$SELena$textSpeed * 0.75) * t, (($author$project$SELena$scriptSpeed * 0.75) * start) - 2) > 0) && (_Utils_cmp($author$project$SELena$textSpeed * t, ($author$project$SELena$scriptSpeed * start) + 4) < 0);
 			},
 			visibility);
 		return A2(
@@ -15245,14 +15245,14 @@ var $author$project$Main$multiBubbleRight = F5(
 				isVisible ? _List_fromArray(
 					[
 						$MacCASOutreach$graphicsvg$GraphicSVG$mirrorX(
-						A2($MacCASOutreach$graphicsvg$GraphicSVG$filled, $author$project$Main$bubbleClr, bubble)),
+						A2($MacCASOutreach$graphicsvg$GraphicSVG$filled, $author$project$SELena$bubbleClr, bubble)),
 						A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$clip,
 						$MacCASOutreach$graphicsvg$GraphicSVG$mirrorX(
 							$MacCASOutreach$graphicsvg$GraphicSVG$ghost(bubble)),
 						A2(
 							$MacCASOutreach$graphicsvg$GraphicSVG$move,
-							_Utils_Tuple2(1 - (0.5 * width), $author$project$Main$textSpeed * t),
+							_Utils_Tuple2(1 - (0.5 * width), $author$project$SELena$textSpeed * t),
 							contents)),
 						$MacCASOutreach$graphicsvg$GraphicSVG$mirrorX(
 						A3(
@@ -15273,7 +15273,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$scaleY = F2(
 var $MacCASOutreach$graphicsvg$GraphicSVG$square = function (r) {
 	return A2($MacCASOutreach$graphicsvg$GraphicSVG$Secret$Rect, r, r);
 };
-var $author$project$Main$parrotFish = function (model) {
+var $author$project$SELena$parrotFish = function (model) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
@@ -15498,7 +15498,7 @@ var $author$project$Main$parrotFish = function (model) {
 					$MacCASOutreach$graphicsvg$GraphicSVG$circle(1)))
 			]));
 };
-var $author$project$Main$parrotFishS = function (model) {
+var $author$project$SELena$parrotFishS = function (model) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
@@ -15510,7 +15510,7 @@ var $author$project$Main$parrotFishS = function (model) {
 					$elm$core$Basics$degrees(-5),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$filled,
-						A2($author$project$Main$sandGradient, 10, 70),
+						A2($author$project$SELena$sandGradient, 10, 70),
 						A2($MacCASOutreach$graphicsvg$GraphicSVG$oval, 40, 17)))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
@@ -15520,7 +15520,7 @@ var $author$project$Main$parrotFishS = function (model) {
 					$elm$core$Basics$degrees(8),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$filled,
-						A2($author$project$Main$sandGradient, -15, 5),
+						A2($author$project$SELena$sandGradient, -15, 5),
 						A2($MacCASOutreach$graphicsvg$GraphicSVG$oval, 30, 12)))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$rotate,
@@ -15536,7 +15536,7 @@ var $author$project$Main$parrotFishS = function (model) {
 							A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$rotateGradient,
 								$elm$core$Basics$degrees(-30),
-								A2($author$project$Main$sandGradient, 0, 20)),
+								A2($author$project$SELena$sandGradient, 0, 20)),
 							A2($MacCASOutreach$graphicsvg$GraphicSVG$oval, 20, 12))))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$rotate,
@@ -15552,26 +15552,26 @@ var $author$project$Main$parrotFishS = function (model) {
 							A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$rotateGradient,
 								$elm$core$Basics$degrees(-90),
-								A2($author$project$Main$sandGradient, 0, 20)),
+								A2($author$project$SELena$sandGradient, 0, 20)),
 							A2($MacCASOutreach$graphicsvg$GraphicSVG$oval, 20, 12))))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$rotate,
 				$elm$core$Basics$degrees(-90),
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$filled,
-					A2($author$project$Main$sandGradient, 0, 45),
+					A2($author$project$SELena$sandGradient, 0, 45),
 					A2($MacCASOutreach$graphicsvg$GraphicSVG$oval, 34, 60))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(15, -2),
-				A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.4, $author$project$Main$mouthShellS)),
+				A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.4, $author$project$SELena$mouthShellS)),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(5, 17.5),
-				$author$project$Main$eyeShellS)
+				$author$project$SELena$eyeShellS)
 			]));
 };
-var $author$project$Main$partyHat = F6(
+var $author$project$SELena$partyHat = F6(
 	function (colour1, colour2, colour3, colour4, colour5, colour6) {
 		return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 			_List_fromArray(
@@ -16120,7 +16120,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$bold = function (stencil) {
 	}
 };
 var $MacCASOutreach$graphicsvg$GraphicSVG$lightOrange = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 252, 175, 62, 1);
-var $author$project$Main$spike = A2(
+var $author$project$SELena$spike = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$subtract,
 	A2(
 		$MacCASOutreach$graphicsvg$GraphicSVG$move,
@@ -16140,7 +16140,7 @@ var $author$project$Main$spike = A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 				$MacCASOutreach$graphicsvg$GraphicSVG$lightOrange,
 				$MacCASOutreach$graphicsvg$GraphicSVG$triangle(3)))));
-var $author$project$Main$tailPuffer = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$SELena$tailPuffer = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -16168,31 +16168,31 @@ var $author$project$Main$tailPuffer = $MacCASOutreach$graphicsvg$GraphicSVG$grou
 					$MacCASOutreach$graphicsvg$GraphicSVG$lightOrange,
 					$MacCASOutreach$graphicsvg$GraphicSVG$triangle(7))))
 		]));
-var $author$project$Main$pufferfish = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$SELena$pufferfish = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(0, 13),
-			$author$project$Main$spike),
+			$author$project$SELena$spike),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(-11, 9),
 			A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$rotate,
 				$elm$core$Basics$degrees(40),
-				$author$project$Main$spike)),
+				$author$project$SELena$spike)),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(11, 9),
 			A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$rotate,
 				$elm$core$Basics$degrees(-40),
-				$author$project$Main$spike)),
+				$author$project$SELena$spike)),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(0, -13),
-			A2($MacCASOutreach$graphicsvg$GraphicSVG$scaleY, -1, $author$project$Main$spike)),
+			A2($MacCASOutreach$graphicsvg$GraphicSVG$scaleY, -1, $author$project$SELena$spike)),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(-11, -9),
@@ -16202,7 +16202,7 @@ var $author$project$Main$pufferfish = $MacCASOutreach$graphicsvg$GraphicSVG$grou
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$rotate,
 					$elm$core$Basics$degrees(40),
-					$author$project$Main$spike))),
+					$author$project$SELena$spike))),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(11, -9),
@@ -16212,7 +16212,7 @@ var $author$project$Main$pufferfish = $MacCASOutreach$graphicsvg$GraphicSVG$grou
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$rotate,
 					$elm$core$Basics$degrees(-40),
-					$author$project$Main$spike))),
+					$author$project$SELena$spike))),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(-20, 0),
@@ -16223,7 +16223,7 @@ var $author$project$Main$pufferfish = $MacCASOutreach$graphicsvg$GraphicSVG$grou
 					$MacCASOutreach$graphicsvg$GraphicSVG$addOutline,
 					$MacCASOutreach$graphicsvg$GraphicSVG$solid(1),
 					$MacCASOutreach$graphicsvg$GraphicSVG$black,
-					$author$project$Main$tailPuffer))),
+					$author$project$SELena$tailPuffer))),
 			A3(
 			$MacCASOutreach$graphicsvg$GraphicSVG$addOutline,
 			$MacCASOutreach$graphicsvg$GraphicSVG$solid(0.5),
@@ -16238,14 +16238,14 @@ var $author$project$Main$pufferfish = $MacCASOutreach$graphicsvg$GraphicSVG$grou
 			A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$rotate,
 				$elm$core$Basics$degrees(20),
-				$author$project$Main$spike)),
+				$author$project$SELena$spike)),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(5, 7),
 			A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$rotate,
 				$elm$core$Basics$degrees(-20),
-				$author$project$Main$spike)),
+				$author$project$SELena$spike)),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(-5, -7),
@@ -16255,7 +16255,7 @@ var $author$project$Main$pufferfish = $MacCASOutreach$graphicsvg$GraphicSVG$grou
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$rotate,
 					$elm$core$Basics$degrees(20),
-					$author$project$Main$spike))),
+					$author$project$SELena$spike))),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(5, -7),
@@ -16265,7 +16265,7 @@ var $author$project$Main$pufferfish = $MacCASOutreach$graphicsvg$GraphicSVG$grou
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$rotate,
 					$elm$core$Basics$degrees(-20),
-					$author$project$Main$spike))),
+					$author$project$SELena$spike))),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(0, 2),
@@ -16369,7 +16369,7 @@ var $author$project$Main$pufferfish = $MacCASOutreach$graphicsvg$GraphicSVG$grou
 						$MacCASOutreach$graphicsvg$GraphicSVG$bold(
 							$MacCASOutreach$graphicsvg$GraphicSVG$text('YOU! (Cloonie)'))))))
 		]));
-var $author$project$Main$spikeS = A2(
+var $author$project$SELena$spikeS = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$subtract,
 	A2(
 		$MacCASOutreach$graphicsvg$GraphicSVG$move,
@@ -16383,9 +16383,9 @@ var $author$project$Main$spikeS = A2(
 		$elm$core$Basics$degrees(-30),
 		A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$filled,
-			A2($author$project$Main$sandGradient, 0, 10),
+			A2($author$project$SELena$sandGradient, 0, 10),
 			$MacCASOutreach$graphicsvg$GraphicSVG$triangle(5))));
-var $author$project$Main$tailS = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$SELena$tailS = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -16396,7 +16396,7 @@ var $author$project$Main$tailS = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 				$elm$core$Basics$degrees(30),
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$filled,
-					A2($author$project$Main$sandGradient, 0, 50),
+					A2($author$project$SELena$sandGradient, 0, 50),
 					$MacCASOutreach$graphicsvg$GraphicSVG$triangle(7)))),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
@@ -16406,7 +16406,7 @@ var $author$project$Main$tailS = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$rotateGradient,
 					$elm$core$Basics$degrees(180),
-					A2($author$project$Main$sandGradient, 0, 50)),
+					A2($author$project$SELena$sandGradient, 0, 50)),
 				$MacCASOutreach$graphicsvg$GraphicSVG$circle(3.5))),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
@@ -16416,34 +16416,34 @@ var $author$project$Main$tailS = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$rotateGradient,
 					$elm$core$Basics$degrees(180),
-					A2($author$project$Main$sandGradient, 0, 50)),
+					A2($author$project$SELena$sandGradient, 0, 50)),
 				$MacCASOutreach$graphicsvg$GraphicSVG$circle(3.5)))
 		]));
-var $author$project$Main$pufferfishS = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$SELena$pufferfishS = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(0, 13),
-			$author$project$Main$spikeS),
+			$author$project$SELena$spikeS),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(-11, 9),
 			A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$rotate,
 				$elm$core$Basics$degrees(40),
-				$author$project$Main$spikeS)),
+				$author$project$SELena$spikeS)),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(11, 9),
 			A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$rotate,
 				$elm$core$Basics$degrees(-40),
-				$author$project$Main$spikeS)),
+				$author$project$SELena$spikeS)),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(0, -13),
-			A2($MacCASOutreach$graphicsvg$GraphicSVG$scaleY, -1, $author$project$Main$spikeS)),
+			A2($MacCASOutreach$graphicsvg$GraphicSVG$scaleY, -1, $author$project$SELena$spikeS)),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(-11, -9),
@@ -16453,7 +16453,7 @@ var $author$project$Main$pufferfishS = $MacCASOutreach$graphicsvg$GraphicSVG$gro
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$rotate,
 					$elm$core$Basics$degrees(40),
-					$author$project$Main$spikeS))),
+					$author$project$SELena$spikeS))),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(11, -9),
@@ -16463,21 +16463,21 @@ var $author$project$Main$pufferfishS = $MacCASOutreach$graphicsvg$GraphicSVG$gro
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$rotate,
 					$elm$core$Basics$degrees(-40),
-					$author$project$Main$spikeS))),
+					$author$project$SELena$spikeS))),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(-20, 0),
 			A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$rotate,
 				$elm$core$Basics$degrees(90),
-				$author$project$Main$tailS)),
+				$author$project$SELena$tailS)),
 			A3(
 			$MacCASOutreach$graphicsvg$GraphicSVG$addOutline,
 			$MacCASOutreach$graphicsvg$GraphicSVG$solid(0.5),
 			$MacCASOutreach$graphicsvg$GraphicSVG$black,
 			A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$filled,
-				A2($author$project$Main$sandGradient, 0, 50),
+				A2($author$project$SELena$sandGradient, 0, 50),
 				A2($MacCASOutreach$graphicsvg$GraphicSVG$oval, 30, 25))),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
@@ -16485,14 +16485,14 @@ var $author$project$Main$pufferfishS = $MacCASOutreach$graphicsvg$GraphicSVG$gro
 			A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$rotate,
 				$elm$core$Basics$degrees(20),
-				$author$project$Main$spikeS)),
+				$author$project$SELena$spikeS)),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(5, 7),
 			A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$rotate,
 				$elm$core$Basics$degrees(-20),
-				$author$project$Main$spikeS)),
+				$author$project$SELena$spikeS)),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(-5, -7),
@@ -16502,7 +16502,7 @@ var $author$project$Main$pufferfishS = $MacCASOutreach$graphicsvg$GraphicSVG$gro
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$rotate,
 					$elm$core$Basics$degrees(20),
-					$author$project$Main$spikeS))),
+					$author$project$SELena$spikeS))),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(5, -7),
@@ -16512,22 +16512,22 @@ var $author$project$Main$pufferfishS = $MacCASOutreach$graphicsvg$GraphicSVG$gro
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$rotate,
 					$elm$core$Basics$degrees(-20),
-					$author$project$Main$spikeS))),
+					$author$project$SELena$spikeS))),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(-6, 12),
-			A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.8, $author$project$Main$eyeShellS)),
+			A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.8, $author$project$SELena$eyeShellS)),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(16, 12),
 			A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$scaleX,
 				-1,
-				A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.8, $author$project$Main$eyeShellS))),
+				A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.8, $author$project$SELena$eyeShellS))),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(0, -2.5),
-			A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.15, $author$project$Main$mouthShellS)),
+			A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.15, $author$project$SELena$mouthShellS)),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(-7, 0),
@@ -16548,7 +16548,7 @@ var $author$project$Main$pufferfishS = $MacCASOutreach$graphicsvg$GraphicSVG$gro
 						A2(
 							$MacCASOutreach$graphicsvg$GraphicSVG$rotateGradient,
 							$elm$core$Basics$degrees(120),
-							A2($author$project$Main$sandGradient, -5, 20)),
+							A2($author$project$SELena$sandGradient, -5, 20)),
 						A2($MacCASOutreach$graphicsvg$GraphicSVG$wedge, 7, 0.25))))),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
@@ -16561,12 +16561,12 @@ var $author$project$Main$pufferfishS = $MacCASOutreach$graphicsvg$GraphicSVG$gro
 					A2($MacCASOutreach$graphicsvg$GraphicSVG$rect, 4, 10)),
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$filled,
-					A2($author$project$Main$sandGradient, 0, 10),
+					A2($author$project$SELena$sandGradient, 0, 10),
 					A2($MacCASOutreach$graphicsvg$GraphicSVG$wedge, 7, 0.25))))
 		]));
 var $MacCASOutreach$graphicsvg$GraphicSVG$purple = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 117, 80, 123, 1);
-var $author$project$Main$buttonGreen = A3($MacCASOutreach$graphicsvg$GraphicSVG$rgb, 20, 180, 170);
-var $author$project$Main$buttonHighlight = function (t) {
+var $author$project$SELena$buttonGreen = A3($MacCASOutreach$graphicsvg$GraphicSVG$rgb, 20, 180, 170);
+var $author$project$SELena$buttonHighlight = function (t) {
 	return A4(
 		$MacCASOutreach$graphicsvg$GraphicSVG$rgba,
 		255,
@@ -16582,14 +16582,14 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$roundedRect = F3(
 	function (w, h, r) {
 		return A3($MacCASOutreach$graphicsvg$GraphicSVG$Secret$RoundRect, w, h, r);
 	});
-var $author$project$Main$restartButton = function (t) {
+var $author$project$SELena$restartButton = function (t) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
 				A3(
 				$MacCASOutreach$graphicsvg$GraphicSVG$outlined,
 				$MacCASOutreach$graphicsvg$GraphicSVG$solid(1.5),
-				$author$project$Main$buttonHighlight(t),
+				$author$project$SELena$buttonHighlight(t),
 				A3($MacCASOutreach$graphicsvg$GraphicSVG$roundedRect, 20, 7, 3)),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
@@ -16597,7 +16597,7 @@ var $author$project$Main$restartButton = function (t) {
 				A3(
 					$MacCASOutreach$graphicsvg$GraphicSVG$outlined,
 					$MacCASOutreach$graphicsvg$GraphicSVG$solid(1),
-					$author$project$Main$buttonHighlight(t),
+					$author$project$SELena$buttonHighlight(t),
 					$MacCASOutreach$graphicsvg$GraphicSVG$centered(
 						A2(
 							$MacCASOutreach$graphicsvg$GraphicSVG$size,
@@ -16606,7 +16606,7 @@ var $author$project$Main$restartButton = function (t) {
 				A3(
 				$MacCASOutreach$graphicsvg$GraphicSVG$addOutline,
 				$MacCASOutreach$graphicsvg$GraphicSVG$solid(0.5),
-				$author$project$Main$buttonGreen,
+				$author$project$SELena$buttonGreen,
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 					A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 255, 255, 255, 0.5),
@@ -16616,7 +16616,7 @@ var $author$project$Main$restartButton = function (t) {
 				_Utils_Tuple2(0, -1.5),
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$filled,
-					$author$project$Main$buttonGreen,
+					$author$project$SELena$buttonGreen,
 					$MacCASOutreach$graphicsvg$GraphicSVG$centered(
 						A2(
 							$MacCASOutreach$graphicsvg$GraphicSVG$size,
@@ -16624,8 +16624,8 @@ var $author$project$Main$restartButton = function (t) {
 							$MacCASOutreach$graphicsvg$GraphicSVG$text('Replay')))))
 			]));
 };
-var $author$project$Main$myBlack = A3($MacCASOutreach$graphicsvg$GraphicSVG$rgb, 39, 120, 230);
-var $author$project$Main$stops = function (t) {
+var $author$project$SELena$myBlack = A3($MacCASOutreach$graphicsvg$GraphicSVG$rgb, 39, 120, 230);
+var $author$project$SELena$stops = function (t) {
 	return A2(
 		$elm$core$List$map,
 		function (idx) {
@@ -16640,7 +16640,7 @@ var $author$project$Main$stops = function (t) {
 		},
 		A2($elm$core$List$range, 0, 10));
 };
-var $author$project$Main$shell = F2(
+var $author$project$SELena$shell = F2(
 	function (textLabel, notifyMsg) {
 		var shellStencil = A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$curve,
@@ -16721,7 +16721,7 @@ var $author$project$Main$shell = F2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$rotateGradient,
 						$elm$core$Basics$degrees(90),
 						$MacCASOutreach$graphicsvg$GraphicSVG$gradient(
-							$author$project$Main$stops(0.4))),
+							$author$project$SELena$stops(0.4))),
 					shellStencil),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$filled,
@@ -16729,7 +16729,7 @@ var $author$project$Main$shell = F2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$rotateGradient,
 						$elm$core$Basics$degrees(90),
 						$MacCASOutreach$graphicsvg$GraphicSVG$radialGradient(
-							$author$project$Main$stops(0.4))),
+							$author$project$SELena$stops(0.4))),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$curve,
 						_Utils_Tuple2(-24.43, -30.72),
@@ -16767,7 +16767,7 @@ var $author$project$Main$shell = F2(
 					A3(
 					$MacCASOutreach$graphicsvg$GraphicSVG$outlined,
 					$MacCASOutreach$graphicsvg$GraphicSVG$solid(1),
-					$author$project$Main$myBlack,
+					$author$project$SELena$myBlack,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$curve,
 						_Utils_Tuple2(-24.43, -29.52),
@@ -16801,7 +16801,7 @@ var $author$project$Main$shell = F2(
 					A3(
 					$MacCASOutreach$graphicsvg$GraphicSVG$outlined,
 					$MacCASOutreach$graphicsvg$GraphicSVG$solid(1),
-					$author$project$Main$myBlack,
+					$author$project$SELena$myBlack,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$curve,
 						_Utils_Tuple2(-1.648, -35.52),
@@ -16823,7 +16823,7 @@ var $author$project$Main$shell = F2(
 					A3(
 					$MacCASOutreach$graphicsvg$GraphicSVG$outlined,
 					$MacCASOutreach$graphicsvg$GraphicSVG$solid(1),
-					$author$project$Main$myBlack,
+					$author$project$SELena$myBlack,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$curve,
 						_Utils_Tuple2(-46.31, -5.845),
@@ -16853,7 +16853,7 @@ var $author$project$Main$shell = F2(
 					A3(
 					$MacCASOutreach$graphicsvg$GraphicSVG$outlined,
 					$MacCASOutreach$graphicsvg$GraphicSVG$solid(1),
-					$author$project$Main$myBlack,
+					$author$project$SELena$myBlack,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$curve,
 						_Utils_Tuple2(-34.62, 25.030),
@@ -16895,7 +16895,7 @@ var $author$project$Main$shell = F2(
 					A3(
 					$MacCASOutreach$graphicsvg$GraphicSVG$outlined,
 					$MacCASOutreach$graphicsvg$GraphicSVG$solid(1),
-					$author$project$Main$myBlack,
+					$author$project$SELena$myBlack,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$curve,
 						_Utils_Tuple2(7.0444, 34.922),
@@ -16965,7 +16965,7 @@ var $author$project$Main$shell = F2(
 					A3(
 					$MacCASOutreach$graphicsvg$GraphicSVG$outlined,
 					$MacCASOutreach$graphicsvg$GraphicSVG$solid(1),
-					$author$project$Main$myBlack,
+					$author$project$SELena$myBlack,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$curve,
 						_Utils_Tuple2(18.735, -14.83),
@@ -16983,7 +16983,7 @@ var $author$project$Main$shell = F2(
 					A3(
 					$MacCASOutreach$graphicsvg$GraphicSVG$outlined,
 					$MacCASOutreach$graphicsvg$GraphicSVG$solid(1),
-					$author$project$Main$myBlack,
+					$author$project$SELena$myBlack,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$curve,
 						_Utils_Tuple2(-18.73, 2.5480),
@@ -16997,7 +16997,7 @@ var $author$project$Main$shell = F2(
 					A3(
 					$MacCASOutreach$graphicsvg$GraphicSVG$outlined,
 					$MacCASOutreach$graphicsvg$GraphicSVG$solid(1),
-					$author$project$Main$myBlack,
+					$author$project$SELena$myBlack,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$curve,
 						_Utils_Tuple2(-18.73, -19.33),
@@ -17041,13 +17041,13 @@ var $author$project$Main$shell = F2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$ghost(shellStencil))
 				]));
 	});
-var $author$project$Main$textBlue = A3($MacCASOutreach$graphicsvg$GraphicSVG$rgb, 45, 8, 255);
-var $author$project$Main$welcomeScript = _List_fromArray(
+var $author$project$SELena$textBlue = A3($MacCASOutreach$graphicsvg$GraphicSVG$rgb, 45, 8, 255);
+var $author$project$SELena$welcomeScript = _List_fromArray(
 	[
-		_Utils_Tuple2($author$project$Main$Mermaid, 'Let\'s Practice Social-Emotional'),
-		_Utils_Tuple2($author$project$Main$Mermaid, 'Learning! Are You Ready?')
+		_Utils_Tuple2($author$project$SELena$Mermaid, 'Let\'s Practice Social-Emotional'),
+		_Utils_Tuple2($author$project$SELena$Mermaid, 'Learning! Are You Ready?')
 	]);
-var $author$project$Main$myShapes = function (model) {
+var $author$project$SELena$myShapes = function (model) {
 	var _v0 = model.state;
 	switch (_v0.$) {
 		case 'Welcome':
@@ -17056,7 +17056,7 @@ var $author$project$Main$myShapes = function (model) {
 				_List_fromArray(
 					[
 						A3(
-						$author$project$Main$backgroundElements,
+						$author$project$SELena$backgroundElements,
 						1,
 						function (input) {
 							return $MacCASOutreach$graphicsvg$GraphicSVG$group(_List_Nil);
@@ -17074,11 +17074,11 @@ var $author$project$Main$myShapes = function (model) {
 								A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 									0.25,
-									$author$project$Main$movingStarfish(model))))),
+									$author$project$SELena$movingStarfish(model))))),
 						A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(
-							A4($author$project$Main$repeatDistance, 5, -500, 100, -model.time),
+							A4($author$project$SELena$repeatDistance, 5, -500, 100, -model.time),
 							20),
 						A2(
 							$MacCASOutreach$graphicsvg$GraphicSVG$move,
@@ -17091,7 +17091,7 @@ var $author$project$Main$myShapes = function (model) {
 								A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 									0.5,
-									$author$project$Main$jellyfish(
+									$author$project$SELena$jellyfish(
 										A3(
 											$MacCASOutreach$graphicsvg$GraphicSVG$hsl,
 											$elm$core$Basics$degrees(30) * model.time,
@@ -17111,14 +17111,14 @@ var $author$project$Main$myShapes = function (model) {
 									A2(
 										$MacCASOutreach$graphicsvg$GraphicSVG$move,
 										_Utils_Tuple2(-10, 16),
-										A5($author$project$Main$multiBubbleRight, $MacCASOutreach$graphicsvg$GraphicSVG$black, $author$project$Main$welcomeScript, 42, $author$project$Main$Mermaid, 4.5))),
+										A5($author$project$SELena$multiBubbleRight, $MacCASOutreach$graphicsvg$GraphicSVG$black, $author$project$SELena$welcomeScript, 42, $author$project$SELena$Mermaid, 4.5))),
 									A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$move,
 									_Utils_Tuple2(120, -17),
 									A2(
 										$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 										0.8,
-										$author$project$Main$finalMermaid(model)))
+										$author$project$SELena$finalMermaid(model)))
 								]))),
 						A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
@@ -17126,13 +17126,13 @@ var $author$project$Main$myShapes = function (model) {
 						A2(
 							$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 							0.5,
-							A2($author$project$Main$shell, 'Let\'s Go!', $author$project$Main$WelcomeTo1)))
+							A2($author$project$SELena$shell, 'Let\'s Go!', $author$project$SELena$WelcomeTo1)))
 					]),
 				showInstructions ? _List_fromArray(
 					[
 						A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$notifyTap,
-						$author$project$Main$HideInstructions,
+						$author$project$SELena$HideInstructions,
 						$MacCASOutreach$graphicsvg$GraphicSVG$group(
 							_List_fromArray(
 								[
@@ -17143,89 +17143,89 @@ var $author$project$Main$myShapes = function (model) {
 									A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$move,
 									_Utils_Tuple2(0, 35),
-									$author$project$Main$headline('Help the mermaid')),
+									$author$project$SELena$headline('Help the mermaid')),
 									A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$move,
 									_Utils_Tuple2(0, 15),
-									$author$project$Main$headline('say the right thing')),
+									$author$project$SELena$headline('say the right thing')),
 									A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$move,
 									_Utils_Tuple2(0, -5),
-									$author$project$Main$headline('by clicking')),
+									$author$project$SELena$headline('by clicking')),
 									A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$move,
 									_Utils_Tuple2(-40, -30),
 									A2(
 										$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 										0.35,
-										A2($author$project$Main$shell, 'the', $author$project$Main$HideInstructions))),
+										A2($author$project$SELena$shell, 'the', $author$project$SELena$HideInstructions))),
 									A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$move,
 									_Utils_Tuple2(0, -30),
 									A2(
 										$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 										0.35,
-										A2($author$project$Main$shell, 'right', $author$project$Main$HideInstructions))),
+										A2($author$project$SELena$shell, 'right', $author$project$SELena$HideInstructions))),
 									A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$move,
 									_Utils_Tuple2(40, -30),
 									A2(
 										$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 										0.35,
-										A2($author$project$Main$shell, 'choice', $author$project$Main$HideInstructions)))
+										A2($author$project$SELena$shell, 'choice', $author$project$SELena$HideInstructions)))
 								])))
 					]) : _List_Nil);
 		case 'Scene1':
-			var scriptTime = $author$project$Main$debugSpeedup * (model.time - model.startTime);
+			var scriptTime = $author$project$SELena$debugSpeedup * (model.time - model.startTime);
 			var pixarScript = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Pixar, 'Hey guys! It\'s been 5 years'),
-					_Utils_Tuple2($author$project$Main$Pixar, 'since we met in Kindergarten!'),
-					_Utils_Tuple2($author$project$Main$Pixar, ' '),
-					_Utils_Tuple2($author$project$Main$Pixar, 'I think for today, we should'),
-					_Utils_Tuple2($author$project$Main$Pixar, 'do something special...')
+					_Utils_Tuple2($author$project$SELena$Pixar, 'Hey guys! It\'s been 5 years'),
+					_Utils_Tuple2($author$project$SELena$Pixar, 'since we met in Kindergarten!'),
+					_Utils_Tuple2($author$project$SELena$Pixar, ' '),
+					_Utils_Tuple2($author$project$SELena$Pixar, 'I think for today, we should'),
+					_Utils_Tuple2($author$project$SELena$Pixar, 'do something special...')
 				]);
 			var orScript = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Or, 'Oh my gosh,'),
-					_Utils_Tuple2($author$project$Main$Or, '5 YEARS?!'),
-					_Utils_Tuple2($author$project$Main$Or, 'Yay!'),
-					_Utils_Tuple2($author$project$Main$Or, 'That sounds'),
-					_Utils_Tuple2($author$project$Main$Or, 'so exciting!'),
-					_Utils_Tuple2($author$project$Main$Or, 'We\'re going to'),
-					_Utils_Tuple2($author$project$Main$Or, 'have the best '),
-					_Utils_Tuple2($author$project$Main$Or, 'time ever!!'),
-					_Utils_Tuple2($author$project$Main$Or, '')
+					_Utils_Tuple2($author$project$SELena$Or, 'Oh my gosh,'),
+					_Utils_Tuple2($author$project$SELena$Or, '5 YEARS?!'),
+					_Utils_Tuple2($author$project$SELena$Or, 'Yay!'),
+					_Utils_Tuple2($author$project$SELena$Or, 'That sounds'),
+					_Utils_Tuple2($author$project$SELena$Or, 'so exciting!'),
+					_Utils_Tuple2($author$project$SELena$Or, 'We\'re going to'),
+					_Utils_Tuple2($author$project$SELena$Or, 'have the best '),
+					_Utils_Tuple2($author$project$SELena$Or, 'time ever!!'),
+					_Utils_Tuple2($author$project$SELena$Or, '')
 				]);
 			var mermaidScript = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Mermaid, 'Hmm, what do you think, Cloonie?')
+					_Utils_Tuple2($author$project$SELena$Mermaid, 'Hmm, what do you think, Cloonie?')
 				]);
 			var eitherScript = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Either, 'Ummm...'),
-					_Utils_Tuple2($author$project$Main$Either, 'but how in the'),
-					_Utils_Tuple2($author$project$Main$Either, 'sea are we '),
-					_Utils_Tuple2($author$project$Main$Either, 'supposed to '),
-					_Utils_Tuple2($author$project$Main$Either, 'build something '),
-					_Utils_Tuple2($author$project$Main$Either, 'like that??? '),
-					_Utils_Tuple2($author$project$Main$Either, 'We\'re only '),
-					_Utils_Tuple2($author$project$Main$Either, 'in Grade 4, '),
-					_Utils_Tuple2($author$project$Main$Either, 'we can\'t really'),
-					_Utils_Tuple2($author$project$Main$Either, 'do anything. '),
-					_Utils_Tuple2($author$project$Main$Either, 'Let\'s just go '),
-					_Utils_Tuple2($author$project$Main$Either, 'eat seaweed, '),
-					_Utils_Tuple2($author$project$Main$Either, 'it\'s easier...'),
-					_Utils_Tuple2($author$project$Main$Either, ''),
-					_Utils_Tuple2($author$project$Main$Either, '')
+					_Utils_Tuple2($author$project$SELena$Either, 'Ummm...'),
+					_Utils_Tuple2($author$project$SELena$Either, 'but how in the'),
+					_Utils_Tuple2($author$project$SELena$Either, 'sea are we '),
+					_Utils_Tuple2($author$project$SELena$Either, 'supposed to '),
+					_Utils_Tuple2($author$project$SELena$Either, 'build something '),
+					_Utils_Tuple2($author$project$SELena$Either, 'like that??? '),
+					_Utils_Tuple2($author$project$SELena$Either, 'We\'re only '),
+					_Utils_Tuple2($author$project$SELena$Either, 'in Grade 4, '),
+					_Utils_Tuple2($author$project$SELena$Either, 'we can\'t really'),
+					_Utils_Tuple2($author$project$SELena$Either, 'do anything. '),
+					_Utils_Tuple2($author$project$SELena$Either, 'Let\'s just go '),
+					_Utils_Tuple2($author$project$SELena$Either, 'eat seaweed, '),
+					_Utils_Tuple2($author$project$SELena$Either, 'it\'s easier...'),
+					_Utils_Tuple2($author$project$SELena$Either, ''),
+					_Utils_Tuple2($author$project$SELena$Either, '')
 				]);
 			var codyScript = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Cody, 'OH! I know!'),
-					_Utils_Tuple2($author$project$Main$Cody, ' '),
-					_Utils_Tuple2($author$project$Main$Cody, 'Why don\'t we build'),
-					_Utils_Tuple2($author$project$Main$Cody, 'a statue out of pearls'),
-					_Utils_Tuple2($author$project$Main$Cody, 'to celebrate?')
+					_Utils_Tuple2($author$project$SELena$Cody, 'OH! I know!'),
+					_Utils_Tuple2($author$project$SELena$Cody, ' '),
+					_Utils_Tuple2($author$project$SELena$Cody, 'Why don\'t we build'),
+					_Utils_Tuple2($author$project$SELena$Cody, 'a statue out of pearls'),
+					_Utils_Tuple2($author$project$SELena$Cody, 'to celebrate?')
 				]);
 			var scene1Script = _Utils_ap(
 				pixarScript,
@@ -17236,26 +17236,26 @@ var $author$project$Main$myShapes = function (model) {
 						_Utils_ap(eitherScript, orScript))));
 			return _List_fromArray(
 				[
-					A3($author$project$Main$backgroundElements, 1, $author$project$Main$fishAni, model),
+					A3($author$project$SELena$backgroundElements, 1, $author$project$SELena$fishAni, model),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-68, -3),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.5,
-						$author$project$Main$parrotFish(model))),
+						$author$project$SELena$parrotFish(model))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-8, 25),
-					A5($author$project$Main$multiBubbleLeft, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene1Script, 46, $author$project$Main$Pixar, scriptTime)),
+					A5($author$project$SELena$multiBubbleLeft, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene1Script, 46, $author$project$SELena$Pixar, scriptTime)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-10, -8),
-					A2($author$project$Main$cody, model, $MacCASOutreach$graphicsvg$GraphicSVG$orange)),
+					A2($author$project$SELena$cody, model, $MacCASOutreach$graphicsvg$GraphicSVG$orange)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-50, 25),
-					A5($author$project$Main$multiBubbleRight, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene1Script, 42, $author$project$Main$Cody, scriptTime)),
+					A5($author$project$SELena$multiBubbleRight, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene1Script, 42, $author$project$SELena$Cody, scriptTime)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
@@ -17270,14 +17270,14 @@ var $author$project$Main$myShapes = function (model) {
 								A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$move,
 									_Utils_Tuple2(0, 35),
-									A5($author$project$Main$multiBubbleRight, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene1Script, 48, $author$project$Main$Mermaid, scriptTime))),
+									A5($author$project$SELena$multiBubbleRight, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene1Script, 48, $author$project$SELena$Mermaid, scriptTime))),
 								A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$move,
 								_Utils_Tuple2(120, -17),
 								A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 									0.8,
-									$author$project$Main$finalMermaid(model)))
+									$author$project$SELena$finalMermaid(model)))
 							]))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
@@ -17285,14 +17285,14 @@ var $author$project$Main$myShapes = function (model) {
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.75,
-						$MacCASOutreach$graphicsvg$GraphicSVG$mirrorX($author$project$Main$pufferfish))),
+						$MacCASOutreach$graphicsvg$GraphicSVG$mirrorX($author$project$SELena$pufferfish))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 					0.5,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(-130, -80),
-						A2($author$project$Main$shell, 'Either say:', $author$project$Main$T1to2))),
+						A2($author$project$SELena$shell, 'Either say:', $author$project$SELena$T1to2))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-68, -40),
@@ -17302,7 +17302,7 @@ var $author$project$Main$myShapes = function (model) {
 								A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$move,
 								_Utils_Tuple2(47, 0),
-								A5($author$project$Main$multiBubbleLeft, $author$project$Main$textBlue, scene1Script, 21, $author$project$Main$Either, scriptTime))
+								A5($author$project$SELena$multiBubbleLeft, $author$project$SELena$textBlue, scene1Script, 21, $author$project$SELena$Either, scriptTime))
 							]))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
@@ -17310,7 +17310,7 @@ var $author$project$Main$myShapes = function (model) {
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(60, -80),
-						A2($author$project$Main$shell, 'or say:', $author$project$Main$T1to3))),
+						A2($author$project$SELena$shell, 'or say:', $author$project$SELena$T1to3))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(30, -40),
@@ -17320,70 +17320,70 @@ var $author$project$Main$myShapes = function (model) {
 								A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$move,
 								_Utils_Tuple2(47, 0),
-								A5($author$project$Main$multiBubbleLeft, $author$project$Main$textBlue, scene1Script, 20, $author$project$Main$Or, scriptTime))
+								A5($author$project$SELena$multiBubbleLeft, $author$project$SELena$textBlue, scene1Script, 20, $author$project$SELena$Or, scriptTime))
 							]))),
 					(scriptTime > 85) ? A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$notifyTap,
-					$author$project$Main$Restart1,
+					$author$project$SELena$Restart1,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(80, 55),
-						$author$project$Main$restartButton(model.time))) : $MacCASOutreach$graphicsvg$GraphicSVG$group(_List_Nil)
+						$author$project$SELena$restartButton(model.time))) : $MacCASOutreach$graphicsvg$GraphicSVG$group(_List_Nil)
 				]);
 		case 'Scene2':
-			var scriptTime = $author$project$Main$debugSpeedup * (model.time - model.startTime);
+			var scriptTime = $author$project$SELena$debugSpeedup * (model.time - model.startTime);
 			var pixar2moreScript = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Pixar, 'Come on! It\'ll be something'),
-					_Utils_Tuple2($author$project$Main$Pixar, 'exciting for sure')
+					_Utils_Tuple2($author$project$SELena$Pixar, 'Come on! It\'ll be something'),
+					_Utils_Tuple2($author$project$SELena$Pixar, 'exciting for sure')
 				]);
 			var pixar2Script = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Pixar, 'Then why don\'t we go and'),
-					_Utils_Tuple2($author$project$Main$Pixar, 'collect the shells next to'),
-					_Utils_Tuple2($author$project$Main$Pixar, 'Seaweed Seashore and make'),
-					_Utils_Tuple2($author$project$Main$Pixar, 'a statute out of seashells instead?'),
-					_Utils_Tuple2($author$project$Main$Pixar, 'Then we can go and eat'),
-					_Utils_Tuple2($author$project$Main$Pixar, 'AND celebrate?')
+					_Utils_Tuple2($author$project$SELena$Pixar, 'Then why don\'t we go and'),
+					_Utils_Tuple2($author$project$SELena$Pixar, 'collect the shells next to'),
+					_Utils_Tuple2($author$project$SELena$Pixar, 'Seaweed Seashore and make'),
+					_Utils_Tuple2($author$project$SELena$Pixar, 'a statute out of seashells instead?'),
+					_Utils_Tuple2($author$project$SELena$Pixar, 'Then we can go and eat'),
+					_Utils_Tuple2($author$project$SELena$Pixar, 'AND celebrate?')
 				]);
 			var or2Script = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Or, 'Well...I guess.'),
-					_Utils_Tuple2($author$project$Main$Or, 'But I\'d'),
-					_Utils_Tuple2($author$project$Main$Or, 'definitely'),
-					_Utils_Tuple2($author$project$Main$Or, 'like to eat'),
-					_Utils_Tuple2($author$project$Main$Or, 'some'),
-					_Utils_Tuple2($author$project$Main$Or, 'seaweed before'),
-					_Utils_Tuple2($author$project$Main$Or, 'we start working.'),
-					_Utils_Tuple2($author$project$Main$Or, 'I really need'),
-					_Utils_Tuple2($author$project$Main$Or, 'some energy in'),
-					_Utils_Tuple2($author$project$Main$Or, 'my body.'),
-					_Utils_Tuple2($author$project$Main$Or, ''),
-					_Utils_Tuple2($author$project$Main$Or, '')
+					_Utils_Tuple2($author$project$SELena$Or, 'Well...I guess.'),
+					_Utils_Tuple2($author$project$SELena$Or, 'But I\'d'),
+					_Utils_Tuple2($author$project$SELena$Or, 'definitely'),
+					_Utils_Tuple2($author$project$SELena$Or, 'like to eat'),
+					_Utils_Tuple2($author$project$SELena$Or, 'some'),
+					_Utils_Tuple2($author$project$SELena$Or, 'seaweed before'),
+					_Utils_Tuple2($author$project$SELena$Or, 'we start working.'),
+					_Utils_Tuple2($author$project$SELena$Or, 'I really need'),
+					_Utils_Tuple2($author$project$SELena$Or, 'some energy in'),
+					_Utils_Tuple2($author$project$SELena$Or, 'my body.'),
+					_Utils_Tuple2($author$project$SELena$Or, ''),
+					_Utils_Tuple2($author$project$SELena$Or, '')
 				]);
 			var mermaid2Script = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Mermaid, ' Cloonie, what response'),
-					_Utils_Tuple2($author$project$Main$Mermaid, 'do you think will best'),
-					_Utils_Tuple2($author$project$Main$Mermaid, 'support Pixar and Cody?')
+					_Utils_Tuple2($author$project$SELena$Mermaid, ' Cloonie, what response'),
+					_Utils_Tuple2($author$project$SELena$Mermaid, 'do you think will best'),
+					_Utils_Tuple2($author$project$SELena$Mermaid, 'support Pixar and Cody?')
 				]);
 			var either2Script = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Either, 'Nah,'),
-					_Utils_Tuple2($author$project$Main$Either, 'that sounds'),
-					_Utils_Tuple2($author$project$Main$Either, 'too difficult,'),
-					_Utils_Tuple2($author$project$Main$Either, 'I think we'),
-					_Utils_Tuple2($author$project$Main$Either, 'should just'),
-					_Utils_Tuple2($author$project$Main$Either, 'give up on'),
-					_Utils_Tuple2($author$project$Main$Either, 'the statue'),
-					_Utils_Tuple2($author$project$Main$Either, 'idea.'),
-					_Utils_Tuple2($author$project$Main$Either, ''),
-					_Utils_Tuple2($author$project$Main$Either, '')
+					_Utils_Tuple2($author$project$SELena$Either, 'Nah,'),
+					_Utils_Tuple2($author$project$SELena$Either, 'that sounds'),
+					_Utils_Tuple2($author$project$SELena$Either, 'too difficult,'),
+					_Utils_Tuple2($author$project$SELena$Either, 'I think we'),
+					_Utils_Tuple2($author$project$SELena$Either, 'should just'),
+					_Utils_Tuple2($author$project$SELena$Either, 'give up on'),
+					_Utils_Tuple2($author$project$SELena$Either, 'the statue'),
+					_Utils_Tuple2($author$project$SELena$Either, 'idea.'),
+					_Utils_Tuple2($author$project$SELena$Either, ''),
+					_Utils_Tuple2($author$project$SELena$Either, '')
 				]);
 			var cody2Script = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Cody, 'Umm.... I\'m not sure...'),
-					_Utils_Tuple2($author$project$Main$Cody, 'Cloonie makes a good point...')
+					_Utils_Tuple2($author$project$SELena$Cody, 'Umm.... I\'m not sure...'),
+					_Utils_Tuple2($author$project$SELena$Cody, 'Cloonie makes a good point...')
 				]);
 			var scene2Script = _Utils_ap(
 				pixar2Script,
@@ -17396,33 +17396,33 @@ var $author$project$Main$myShapes = function (model) {
 							_Utils_ap(either2Script, or2Script)))));
 			return _List_fromArray(
 				[
-					A3($author$project$Main$backgroundElements, 1, $author$project$Main$fishAni, model),
+					A3($author$project$SELena$backgroundElements, 1, $author$project$SELena$fishAni, model),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(78, 48),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.75,
-						$MacCASOutreach$graphicsvg$GraphicSVG$mirrorX($author$project$Main$pufferfish))),
+						$MacCASOutreach$graphicsvg$GraphicSVG$mirrorX($author$project$SELena$pufferfish))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-68, -3),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.5,
-						$author$project$Main$parrotFish(model))),
+						$author$project$SELena$parrotFish(model))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-8, 25),
-					A5($author$project$Main$multiBubbleLeft, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene2Script, 46, $author$project$Main$Pixar, scriptTime)),
+					A5($author$project$SELena$multiBubbleLeft, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene2Script, 46, $author$project$SELena$Pixar, scriptTime)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-10, -8),
-					A2($author$project$Main$cody, model, $MacCASOutreach$graphicsvg$GraphicSVG$orange)),
+					A2($author$project$SELena$cody, model, $MacCASOutreach$graphicsvg$GraphicSVG$orange)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-50, 25),
-					A5($author$project$Main$multiBubbleRight, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene2Script, 42, $author$project$Main$Cody, scriptTime)),
+					A5($author$project$SELena$multiBubbleRight, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene2Script, 42, $author$project$SELena$Cody, scriptTime)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
@@ -17437,14 +17437,14 @@ var $author$project$Main$myShapes = function (model) {
 								A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$move,
 									_Utils_Tuple2(0, 35),
-									A5($author$project$Main$multiBubbleRight, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene2Script, 48, $author$project$Main$Mermaid, scriptTime))),
+									A5($author$project$SELena$multiBubbleRight, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene2Script, 48, $author$project$SELena$Mermaid, scriptTime))),
 								A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$move,
 								_Utils_Tuple2(120, -17),
 								A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 									0.8,
-									$author$project$Main$finalMermaid(model)))
+									$author$project$SELena$finalMermaid(model)))
 							]))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
@@ -17452,7 +17452,7 @@ var $author$project$Main$myShapes = function (model) {
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(-130, -80),
-						A2($author$project$Main$shell, 'Either say:', $author$project$Main$T2toend))),
+						A2($author$project$SELena$shell, 'Either say:', $author$project$SELena$T2toend))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-68, -40),
@@ -17462,7 +17462,7 @@ var $author$project$Main$myShapes = function (model) {
 								A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$move,
 								_Utils_Tuple2(47, 0),
-								A5($author$project$Main$multiBubbleLeft, $author$project$Main$textBlue, scene2Script, 21, $author$project$Main$Either, scriptTime))
+								A5($author$project$SELena$multiBubbleLeft, $author$project$SELena$textBlue, scene2Script, 21, $author$project$SELena$Either, scriptTime))
 							]))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
@@ -17470,7 +17470,7 @@ var $author$project$Main$myShapes = function (model) {
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(60, -80),
-						A2($author$project$Main$shell, 'or say:', $author$project$Main$T2to3))),
+						A2($author$project$SELena$shell, 'or say:', $author$project$SELena$T2to3))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(30, -40),
@@ -17480,93 +17480,93 @@ var $author$project$Main$myShapes = function (model) {
 								A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$move,
 								_Utils_Tuple2(47, 0),
-								A5($author$project$Main$multiBubbleLeft, $author$project$Main$textBlue, scene2Script, 20, $author$project$Main$Or, scriptTime))
+								A5($author$project$SELena$multiBubbleLeft, $author$project$SELena$textBlue, scene2Script, 20, $author$project$SELena$Or, scriptTime))
 							]))),
 					(scriptTime > 20) ? A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$notifyTap,
-					$author$project$Main$Restart2,
+					$author$project$SELena$Restart2,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(80, 55),
-						$author$project$Main$restartButton(model.time))) : $MacCASOutreach$graphicsvg$GraphicSVG$group(_List_Nil)
+						$author$project$SELena$restartButton(model.time))) : $MacCASOutreach$graphicsvg$GraphicSVG$group(_List_Nil)
 				]);
 		case 'Scene3':
-			var scriptTime = $author$project$Main$debugSpeedup * (model.time - model.startTime);
+			var scriptTime = $author$project$SELena$debugSpeedup * (model.time - model.startTime);
 			var pixar3twoScript = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Pixar, 'Yeah! Why don\'t we each make'),
-					_Utils_Tuple2($author$project$Main$Pixar, 'check in often and at the'),
-					_Utils_Tuple2($author$project$Main$Pixar, 'end, we should work together'),
-					_Utils_Tuple2($author$project$Main$Pixar, 'to combine the three of them.')
+					_Utils_Tuple2($author$project$SELena$Pixar, 'Yeah! Why don\'t we each make'),
+					_Utils_Tuple2($author$project$SELena$Pixar, 'check in often and at the'),
+					_Utils_Tuple2($author$project$SELena$Pixar, 'end, we should work together'),
+					_Utils_Tuple2($author$project$SELena$Pixar, 'to combine the three of them.')
 				]);
 			var pixar3Script = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Pixar, 'Let\'s split up and collect'),
-					_Utils_Tuple2($author$project$Main$Pixar, 'as many shells as we can!')
+					_Utils_Tuple2($author$project$SELena$Pixar, 'Let\'s split up and collect'),
+					_Utils_Tuple2($author$project$SELena$Pixar, 'as many shells as we can!')
 				]);
 			var or3Script = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Or, 'Mhm,'),
-					_Utils_Tuple2($author$project$Main$Or, 'that sounds'),
-					_Utils_Tuple2($author$project$Main$Or, 'great!'),
-					_Utils_Tuple2($author$project$Main$Or, 'Checking in'),
-					_Utils_Tuple2($author$project$Main$Or, 'with each'),
-					_Utils_Tuple2($author$project$Main$Or, 'other sounds'),
-					_Utils_Tuple2($author$project$Main$Or, 'like an'),
-					_Utils_Tuple2($author$project$Main$Or, 'excellent'),
-					_Utils_Tuple2($author$project$Main$Or, 'idea, Pixar!'),
-					_Utils_Tuple2($author$project$Main$Or, 'Or else,'),
-					_Utils_Tuple2($author$project$Main$Or, 'we\'ll end'),
-					_Utils_Tuple2($author$project$Main$Or, 'up making'),
-					_Utils_Tuple2($author$project$Main$Or, 'things that'),
-					_Utils_Tuple2($author$project$Main$Or, 'don\'t fit'),
-					_Utils_Tuple2($author$project$Main$Or, 'in with'),
-					_Utils_Tuple2($author$project$Main$Or, 'each other!'),
-					_Utils_Tuple2($author$project$Main$Or, '')
+					_Utils_Tuple2($author$project$SELena$Or, 'Mhm,'),
+					_Utils_Tuple2($author$project$SELena$Or, 'that sounds'),
+					_Utils_Tuple2($author$project$SELena$Or, 'great!'),
+					_Utils_Tuple2($author$project$SELena$Or, 'Checking in'),
+					_Utils_Tuple2($author$project$SELena$Or, 'with each'),
+					_Utils_Tuple2($author$project$SELena$Or, 'other sounds'),
+					_Utils_Tuple2($author$project$SELena$Or, 'like an'),
+					_Utils_Tuple2($author$project$SELena$Or, 'excellent'),
+					_Utils_Tuple2($author$project$SELena$Or, 'idea, Pixar!'),
+					_Utils_Tuple2($author$project$SELena$Or, 'Or else,'),
+					_Utils_Tuple2($author$project$SELena$Or, 'we\'ll end'),
+					_Utils_Tuple2($author$project$SELena$Or, 'up making'),
+					_Utils_Tuple2($author$project$SELena$Or, 'things that'),
+					_Utils_Tuple2($author$project$SELena$Or, 'don\'t fit'),
+					_Utils_Tuple2($author$project$SELena$Or, 'in with'),
+					_Utils_Tuple2($author$project$SELena$Or, 'each other!'),
+					_Utils_Tuple2($author$project$SELena$Or, '')
 				]);
 			var mermaid3twoScript = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Mermaid, '*1 Hour Later*')
+					_Utils_Tuple2($author$project$SELena$Mermaid, '*1 Hour Later*')
 				]);
 			var mermaid3threeScript = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Mermaid, 'What do you think'),
-					_Utils_Tuple2($author$project$Main$Mermaid, 'about that, Cloonie?')
+					_Utils_Tuple2($author$project$SELena$Mermaid, 'What do you think'),
+					_Utils_Tuple2($author$project$SELena$Mermaid, 'about that, Cloonie?')
 				]);
 			var mermaid3Script = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Mermaid, '*15 Minutes Later*')
+					_Utils_Tuple2($author$project$SELena$Mermaid, '*15 Minutes Later*')
 				]);
 			var either3Script = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Either, 'Ugh,'),
-					_Utils_Tuple2($author$project$Main$Either, 'you guys are'),
-					_Utils_Tuple2($author$project$Main$Either, 'so lame.'),
-					_Utils_Tuple2($author$project$Main$Either, 'Why do we'),
-					_Utils_Tuple2($author$project$Main$Either, 'even need'),
-					_Utils_Tuple2($author$project$Main$Either, 'to check in?'),
-					_Utils_Tuple2($author$project$Main$Either, 'We can just make'),
-					_Utils_Tuple2($author$project$Main$Either, 'each statue'),
-					_Utils_Tuple2($author$project$Main$Either, 'ourself'),
-					_Utils_Tuple2($author$project$Main$Either, 'and figure'),
-					_Utils_Tuple2($author$project$Main$Either, 'things out'),
-					_Utils_Tuple2($author$project$Main$Either, 'on our own.'),
-					_Utils_Tuple2($author$project$Main$Either, 'We\'ll combine'),
-					_Utils_Tuple2($author$project$Main$Either, 'them later.'),
-					_Utils_Tuple2($author$project$Main$Either, ''),
-					_Utils_Tuple2($author$project$Main$Either, '')
+					_Utils_Tuple2($author$project$SELena$Either, 'Ugh,'),
+					_Utils_Tuple2($author$project$SELena$Either, 'you guys are'),
+					_Utils_Tuple2($author$project$SELena$Either, 'so lame.'),
+					_Utils_Tuple2($author$project$SELena$Either, 'Why do we'),
+					_Utils_Tuple2($author$project$SELena$Either, 'even need'),
+					_Utils_Tuple2($author$project$SELena$Either, 'to check in?'),
+					_Utils_Tuple2($author$project$SELena$Either, 'We can just make'),
+					_Utils_Tuple2($author$project$SELena$Either, 'each statue'),
+					_Utils_Tuple2($author$project$SELena$Either, 'ourself'),
+					_Utils_Tuple2($author$project$SELena$Either, 'and figure'),
+					_Utils_Tuple2($author$project$SELena$Either, 'things out'),
+					_Utils_Tuple2($author$project$SELena$Either, 'on our own.'),
+					_Utils_Tuple2($author$project$SELena$Either, 'We\'ll combine'),
+					_Utils_Tuple2($author$project$SELena$Either, 'them later.'),
+					_Utils_Tuple2($author$project$SELena$Either, ''),
+					_Utils_Tuple2($author$project$SELena$Either, '')
 				]);
 			var cody3twoScript = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Cody, 'Alright, let\'s check in everyone!'),
-					_Utils_Tuple2($author$project$Main$Cody, 'these are all the seashells'),
-					_Utils_Tuple2($author$project$Main$Cody, 'that we got! Why don\'t'),
-					_Utils_Tuple2($author$project$Main$Cody, 'we try building three friends'),
-					_Utils_Tuple2($author$project$Main$Cody, 'hugging each other?')
+					_Utils_Tuple2($author$project$SELena$Cody, 'Alright, let\'s check in everyone!'),
+					_Utils_Tuple2($author$project$SELena$Cody, 'these are all the seashells'),
+					_Utils_Tuple2($author$project$SELena$Cody, 'that we got! Why don\'t'),
+					_Utils_Tuple2($author$project$SELena$Cody, 'we try building three friends'),
+					_Utils_Tuple2($author$project$SELena$Cody, 'hugging each other?')
 				]);
 			var cody3Script = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Cody, 'Yeah!')
+					_Utils_Tuple2($author$project$SELena$Cody, 'Yeah!')
 				]);
 			var scene3Script = _Utils_ap(
 				mermaid3Script,
@@ -17586,7 +17586,7 @@ var $author$project$Main$myShapes = function (model) {
 			return _List_fromArray(
 				[
 					A3(
-					$author$project$Main$backgroundElements,
+					$author$project$SELena$backgroundElements,
 					0.95,
 					function (input) {
 						return A2(
@@ -17601,26 +17601,26 @@ var $author$project$Main$myShapes = function (model) {
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.5,
-						$author$project$Main$parrotFish(model))),
+						$author$project$SELena$parrotFish(model))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(78, 48),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.75,
-						$MacCASOutreach$graphicsvg$GraphicSVG$mirrorX($author$project$Main$pufferfish))),
+						$MacCASOutreach$graphicsvg$GraphicSVG$mirrorX($author$project$SELena$pufferfish))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-8, 25),
-					A5($author$project$Main$multiBubbleLeft, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene3Script, 46, $author$project$Main$Pixar, scriptTime)),
+					A5($author$project$SELena$multiBubbleLeft, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene3Script, 46, $author$project$SELena$Pixar, scriptTime)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-10, -8),
-					A2($author$project$Main$cody, model, $MacCASOutreach$graphicsvg$GraphicSVG$orange)),
+					A2($author$project$SELena$cody, model, $MacCASOutreach$graphicsvg$GraphicSVG$orange)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-50, 25),
-					A5($author$project$Main$multiBubbleRight, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene3Script, 42, $author$project$Main$Cody, scriptTime)),
+					A5($author$project$SELena$multiBubbleRight, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene3Script, 42, $author$project$SELena$Cody, scriptTime)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
@@ -17635,14 +17635,14 @@ var $author$project$Main$myShapes = function (model) {
 								A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$move,
 									_Utils_Tuple2(0, 35),
-									A5($author$project$Main$multiBubbleRight, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene3Script, 48, $author$project$Main$Mermaid, scriptTime))),
+									A5($author$project$SELena$multiBubbleRight, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene3Script, 48, $author$project$SELena$Mermaid, scriptTime))),
 								A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$move,
 								_Utils_Tuple2(120, -17),
 								A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 									0.8,
-									$author$project$Main$finalMermaid(model)))
+									$author$project$SELena$finalMermaid(model)))
 							]))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
@@ -17650,7 +17650,7 @@ var $author$project$Main$myShapes = function (model) {
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(-130, -80),
-						A2($author$project$Main$shell, 'Either say:', $author$project$Main$T3to4))),
+						A2($author$project$SELena$shell, 'Either say:', $author$project$SELena$T3to4))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-68, -40),
@@ -17660,7 +17660,7 @@ var $author$project$Main$myShapes = function (model) {
 								A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$move,
 								_Utils_Tuple2(47, 0),
-								A5($author$project$Main$multiBubbleLeft, $author$project$Main$textBlue, scene3Script, 20, $author$project$Main$Either, scriptTime))
+								A5($author$project$SELena$multiBubbleLeft, $author$project$SELena$textBlue, scene3Script, 20, $author$project$SELena$Either, scriptTime))
 							]))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
@@ -17668,7 +17668,7 @@ var $author$project$Main$myShapes = function (model) {
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(60, -80),
-						A2($author$project$Main$shell, 'or say:', $author$project$Main$T3to5))),
+						A2($author$project$SELena$shell, 'or say:', $author$project$SELena$T3to5))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(30, -40),
@@ -17678,22 +17678,22 @@ var $author$project$Main$myShapes = function (model) {
 								A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$move,
 								_Utils_Tuple2(47, 0),
-								A5($author$project$Main$multiBubbleLeft, $author$project$Main$textBlue, scene3Script, 20, $author$project$Main$Or, scriptTime))
+								A5($author$project$SELena$multiBubbleLeft, $author$project$SELena$textBlue, scene3Script, 20, $author$project$SELena$Or, scriptTime))
 							]))),
 					(scriptTime > 85) ? A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$notifyTap,
-					$author$project$Main$Restart3,
+					$author$project$SELena$Restart3,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(80, 55),
-						$author$project$Main$restartButton(model.time))) : $MacCASOutreach$graphicsvg$GraphicSVG$group(_List_Nil)
+						$author$project$SELena$restartButton(model.time))) : $MacCASOutreach$graphicsvg$GraphicSVG$group(_List_Nil)
 				]);
 		case 'Scene2End':
-			var scriptTime = $author$project$Main$debugSpeedup * (model.time - model.startTime);
+			var scriptTime = $author$project$SELena$debugSpeedup * (model.time - model.startTime);
 			return _List_fromArray(
 				[
 					A3(
-					$author$project$Main$backgroundElements,
+					$author$project$SELena$backgroundElements,
 					0.9,
 					function (input) {
 						return $MacCASOutreach$graphicsvg$GraphicSVG$group(_List_Nil);
@@ -17705,7 +17705,7 @@ var $author$project$Main$myShapes = function (model) {
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.75,
-						$MacCASOutreach$graphicsvg$GraphicSVG$mirrorX($author$project$Main$pufferfish))),
+						$MacCASOutreach$graphicsvg$GraphicSVG$mirrorX($author$project$SELena$pufferfish))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-60, -50),
@@ -17718,7 +17718,7 @@ var $author$project$Main$myShapes = function (model) {
 							A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 								0.25,
-								$author$project$Main$movingStarfish(model))))),
+								$author$project$SELena$movingStarfish(model))))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
@@ -17734,19 +17734,19 @@ var $author$project$Main$myShapes = function (model) {
 									$MacCASOutreach$graphicsvg$GraphicSVG$move,
 									_Utils_Tuple2(-10, 16),
 									A5(
-										$author$project$Main$multiBubbleRight,
+										$author$project$SELena$multiBubbleRight,
 										$MacCASOutreach$graphicsvg$GraphicSVG$black,
-										$author$project$Main$failedEndScript,
+										$author$project$SELena$failedEndScript,
 										42,
-										$author$project$Main$Mermaid,
-										A4($author$project$Main$repeatDistance, 1, 20, 1, model.time)))),
+										$author$project$SELena$Mermaid,
+										A4($author$project$SELena$repeatDistance, 1, 20, 1, model.time)))),
 								A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$move,
 								_Utils_Tuple2(120, -17),
 								A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 									0.8,
-									$author$project$Main$finalSadMermaid(model)))
+									$author$project$SELena$finalSadMermaid(model)))
 							]))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
@@ -17754,89 +17754,89 @@ var $author$project$Main$myShapes = function (model) {
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.5,
-						A2($author$project$Main$shell, 'Yes Please!', $author$project$Main$End2ToWelcome))),
+						A2($author$project$SELena$shell, 'Yes Please!', $author$project$SELena$End2ToWelcome))),
 					(scriptTime > 85) ? A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$notifyTap,
-					$author$project$Main$Restart2end,
+					$author$project$SELena$Restart2end,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(80, 55),
-						$author$project$Main$restartButton(model.time))) : $MacCASOutreach$graphicsvg$GraphicSVG$group(_List_Nil)
+						$author$project$SELena$restartButton(model.time))) : $MacCASOutreach$graphicsvg$GraphicSVG$group(_List_Nil)
 				]);
 		case 'Scene4':
-			var scriptTime = $author$project$Main$debugSpeedup * (model.time - model.startTime);
+			var scriptTime = $author$project$SELena$debugSpeedup * (model.time - model.startTime);
 			var pixar4twoScript = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Pixar, 'Good job guys! I think we'),
-					_Utils_Tuple2($author$project$Main$Pixar, 'can put them together now.')
+					_Utils_Tuple2($author$project$SELena$Pixar, 'Good job guys! I think we'),
+					_Utils_Tuple2($author$project$SELena$Pixar, 'can put them together now.')
 				]);
 			var pixar4threeScript = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Pixar, 'Oh no! These figures'),
-					_Utils_Tuple2($author$project$Main$Pixar, 'are all different sizes and they'),
-					_Utils_Tuple2($author$project$Main$Pixar, 'don\'t look like they\'re hugging.')
+					_Utils_Tuple2($author$project$SELena$Pixar, 'Oh no! These figures'),
+					_Utils_Tuple2($author$project$SELena$Pixar, 'are all different sizes and they'),
+					_Utils_Tuple2($author$project$SELena$Pixar, 'don\'t look like they\'re hugging.')
 				]);
 			var pixar4fourScript = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Pixar, 'Yeah! Why don\'t we each make'),
-					_Utils_Tuple2($author$project$Main$Pixar, 'check in often and at the'),
-					_Utils_Tuple2($author$project$Main$Pixar, 'end, we should work together'),
-					_Utils_Tuple2($author$project$Main$Pixar, 'to combine the three of them.')
+					_Utils_Tuple2($author$project$SELena$Pixar, 'Yeah! Why don\'t we each make'),
+					_Utils_Tuple2($author$project$SELena$Pixar, 'check in often and at the'),
+					_Utils_Tuple2($author$project$SELena$Pixar, 'end, we should work together'),
+					_Utils_Tuple2($author$project$SELena$Pixar, 'to combine the three of them.')
 				]);
 			var pixar4Script = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Pixar, 'Hmm, I guess that works too.')
+					_Utils_Tuple2($author$project$SELena$Pixar, 'Hmm, I guess that works too.')
 				]);
 			var or4Script = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Or, 'Oh my gosh,'),
-					_Utils_Tuple2($author$project$Main$Or, '5 YEARS?!'),
-					_Utils_Tuple2($author$project$Main$Or, 'Yay!'),
-					_Utils_Tuple2($author$project$Main$Or, 'That sounds'),
-					_Utils_Tuple2($author$project$Main$Or, 'so exciting!'),
-					_Utils_Tuple2($author$project$Main$Or, 'We\'re going to'),
-					_Utils_Tuple2($author$project$Main$Or, 'have the best '),
-					_Utils_Tuple2($author$project$Main$Or, 'time ever!!'),
-					_Utils_Tuple2($author$project$Main$Or, '')
+					_Utils_Tuple2($author$project$SELena$Or, 'Oh my gosh,'),
+					_Utils_Tuple2($author$project$SELena$Or, '5 YEARS?!'),
+					_Utils_Tuple2($author$project$SELena$Or, 'Yay!'),
+					_Utils_Tuple2($author$project$SELena$Or, 'That sounds'),
+					_Utils_Tuple2($author$project$SELena$Or, 'so exciting!'),
+					_Utils_Tuple2($author$project$SELena$Or, 'We\'re going to'),
+					_Utils_Tuple2($author$project$SELena$Or, 'have the best '),
+					_Utils_Tuple2($author$project$SELena$Or, 'time ever!!'),
+					_Utils_Tuple2($author$project$SELena$Or, '')
 				]);
 			var mermaid4twoScript = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Nar, '*After they\'re put together*')
+					_Utils_Tuple2($author$project$SELena$Nar, '*After they\'re put together*')
 				]);
 			var mermaid4threeScript = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Mermaid, 'What do you think'),
-					_Utils_Tuple2($author$project$Main$Mermaid, 'about that, Cloonie?')
+					_Utils_Tuple2($author$project$SELena$Mermaid, 'What do you think'),
+					_Utils_Tuple2($author$project$SELena$Mermaid, 'about that, Cloonie?')
 				]);
 			var mermaid4Script = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Nar, '30 minutes later')
+					_Utils_Tuple2($author$project$SELena$Nar, '30 minutes later')
 				]);
 			var either4Script = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Either, 'Just put'),
-					_Utils_Tuple2($author$project$Main$Either, 'them besides'),
-					_Utils_Tuple2($author$project$Main$Either, 'each other.'),
-					_Utils_Tuple2($author$project$Main$Either, 'They don\'t'),
-					_Utils_Tuple2($author$project$Main$Either, 'need to be'),
-					_Utils_Tuple2($author$project$Main$Either, 'hugging each'),
-					_Utils_Tuple2($author$project$Main$Either, 'other, anyways.'),
-					_Utils_Tuple2($author$project$Main$Either, '*All three put'),
-					_Utils_Tuple2($author$project$Main$Either, 'the statues'),
-					_Utils_Tuple2($author$project$Main$Either, 'beside each'),
-					_Utils_Tuple2($author$project$Main$Either, 'other*'),
-					_Utils_Tuple2($author$project$Main$Either, 'Ugh,'),
-					_Utils_Tuple2($author$project$Main$Either, 'this was'),
-					_Utils_Tuple2($author$project$Main$Either, 'the most'),
-					_Utils_Tuple2($author$project$Main$Either, 'boring day'),
-					_Utils_Tuple2($author$project$Main$Either, 'of my life!'),
-					_Utils_Tuple2($author$project$Main$Either, ''),
-					_Utils_Tuple2($author$project$Main$Either, '')
+					_Utils_Tuple2($author$project$SELena$Either, 'Just put'),
+					_Utils_Tuple2($author$project$SELena$Either, 'them besides'),
+					_Utils_Tuple2($author$project$SELena$Either, 'each other.'),
+					_Utils_Tuple2($author$project$SELena$Either, 'They don\'t'),
+					_Utils_Tuple2($author$project$SELena$Either, 'need to be'),
+					_Utils_Tuple2($author$project$SELena$Either, 'hugging each'),
+					_Utils_Tuple2($author$project$SELena$Either, 'other, anyways.'),
+					_Utils_Tuple2($author$project$SELena$Either, '*All three put'),
+					_Utils_Tuple2($author$project$SELena$Either, 'the statues'),
+					_Utils_Tuple2($author$project$SELena$Either, 'beside each'),
+					_Utils_Tuple2($author$project$SELena$Either, 'other*'),
+					_Utils_Tuple2($author$project$SELena$Either, 'Ugh,'),
+					_Utils_Tuple2($author$project$SELena$Either, 'this was'),
+					_Utils_Tuple2($author$project$SELena$Either, 'the most'),
+					_Utils_Tuple2($author$project$SELena$Either, 'boring day'),
+					_Utils_Tuple2($author$project$SELena$Either, 'of my life!'),
+					_Utils_Tuple2($author$project$SELena$Either, ''),
+					_Utils_Tuple2($author$project$SELena$Either, '')
 				]);
 			var cody4Script = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Cody, 'we try building three friends'),
-					_Utils_Tuple2($author$project$Main$Cody, 'hugging each other?')
+					_Utils_Tuple2($author$project$SELena$Cody, 'we try building three friends'),
+					_Utils_Tuple2($author$project$SELena$Cody, 'hugging each other?')
 				]);
 			var scene4Script = _Utils_ap(
 				pixar4Script,
@@ -17858,7 +17858,7 @@ var $author$project$Main$myShapes = function (model) {
 			return _List_fromArray(
 				[
 					A3(
-					$author$project$Main$backgroundElements,
+					$author$project$SELena$backgroundElements,
 					0.8,
 					function (input) {
 						return A2(
@@ -17873,26 +17873,26 @@ var $author$project$Main$myShapes = function (model) {
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.75,
-						$MacCASOutreach$graphicsvg$GraphicSVG$mirrorX($author$project$Main$pufferfish))),
+						$MacCASOutreach$graphicsvg$GraphicSVG$mirrorX($author$project$SELena$pufferfish))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-68, -3),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.5,
-						$author$project$Main$parrotFish(model))),
+						$author$project$SELena$parrotFish(model))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-8, 25),
-					A5($author$project$Main$multiBubbleLeft, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene4Script, 46, $author$project$Main$Pixar, scriptTime)),
+					A5($author$project$SELena$multiBubbleLeft, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene4Script, 46, $author$project$SELena$Pixar, scriptTime)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-10, -8),
-					A2($author$project$Main$cody, model, $MacCASOutreach$graphicsvg$GraphicSVG$orange)),
+					A2($author$project$SELena$cody, model, $MacCASOutreach$graphicsvg$GraphicSVG$orange)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-50, 25),
-					A5($author$project$Main$multiBubbleRight, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene4Script, 42, $author$project$Main$Cody, scriptTime)),
+					A5($author$project$SELena$multiBubbleRight, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene4Script, 42, $author$project$SELena$Cody, scriptTime)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
@@ -17907,14 +17907,14 @@ var $author$project$Main$myShapes = function (model) {
 								A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$move,
 									_Utils_Tuple2(0, 35),
-									A5($author$project$Main$multiBubbleRight, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene4Script, 48, $author$project$Main$Mermaid, scriptTime))),
+									A5($author$project$SELena$multiBubbleRight, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene4Script, 48, $author$project$SELena$Mermaid, scriptTime))),
 								A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$move,
 								_Utils_Tuple2(120, -17),
 								A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 									0.8,
-									$author$project$Main$finalMermaid(model)))
+									$author$project$SELena$finalMermaid(model)))
 							]))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
@@ -17922,7 +17922,7 @@ var $author$project$Main$myShapes = function (model) {
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(-130, -80),
-						A2($author$project$Main$shell, 'Either say:', $author$project$Main$T4toend))),
+						A2($author$project$SELena$shell, 'Either say:', $author$project$SELena$T4toend))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-68, -40),
@@ -17932,7 +17932,7 @@ var $author$project$Main$myShapes = function (model) {
 								A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$move,
 								_Utils_Tuple2(47, 0),
-								A5($author$project$Main$multiBubbleLeft, $author$project$Main$textBlue, scene4Script, 20, $author$project$Main$Either, scriptTime))
+								A5($author$project$SELena$multiBubbleLeft, $author$project$SELena$textBlue, scene4Script, 20, $author$project$SELena$Either, scriptTime))
 							]))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
@@ -17940,7 +17940,7 @@ var $author$project$Main$myShapes = function (model) {
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(60, -80),
-						A2($author$project$Main$shell, 'or say:', $author$project$Main$T4to4half))),
+						A2($author$project$SELena$shell, 'or say:', $author$project$SELena$T4to4half))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(30, -40),
@@ -17950,67 +17950,67 @@ var $author$project$Main$myShapes = function (model) {
 								A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$move,
 								_Utils_Tuple2(47, 0),
-								A5($author$project$Main$multiBubbleLeft, $author$project$Main$textBlue, scene4Script, 20, $author$project$Main$Or, scriptTime))
+								A5($author$project$SELena$multiBubbleLeft, $author$project$SELena$textBlue, scene4Script, 20, $author$project$SELena$Or, scriptTime))
 							]))),
 					(scriptTime > 85) ? A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$notifyTap,
-					$author$project$Main$Restart4,
+					$author$project$SELena$Restart4,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(80, 55),
-						$author$project$Main$restartButton(model.time))) : $MacCASOutreach$graphicsvg$GraphicSVG$group(_List_Nil)
+						$author$project$SELena$restartButton(model.time))) : $MacCASOutreach$graphicsvg$GraphicSVG$group(_List_Nil)
 				]);
 		case 'Scene5':
-			var scriptTime = $author$project$Main$debugSpeedup * (model.time - model.startTime);
+			var scriptTime = $author$project$SELena$debugSpeedup * (model.time - model.startTime);
 			var pixar5twoScript = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Pixar, 'Whoaaaaa! Look!')
+					_Utils_Tuple2($author$project$SELena$Pixar, 'Whoaaaaa! Look!')
 				]);
 			var pixar5Script = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Pixar, 'Good job guys!'),
-					_Utils_Tuple2($author$project$Main$Pixar, 'I think we can put'),
-					_Utils_Tuple2($author$project$Main$Pixar, 'them together now!')
+					_Utils_Tuple2($author$project$SELena$Pixar, 'Good job guys!'),
+					_Utils_Tuple2($author$project$SELena$Pixar, 'I think we can put'),
+					_Utils_Tuple2($author$project$SELena$Pixar, 'them together now!')
 				]);
 			var mermaid5twoScript = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Mermaid, 'The three friends starts putting'),
-					_Utils_Tuple2($author$project$Main$Mermaid, 'them together')
+					_Utils_Tuple2($author$project$SELena$Mermaid, 'The three friends starts putting'),
+					_Utils_Tuple2($author$project$SELena$Mermaid, 'them together')
 				]);
 			var mermaid5Script = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Mermaid, 'And so, each of the three friends'),
-					_Utils_Tuple2($author$project$Main$Mermaid, 'starts building a statue of'),
-					_Utils_Tuple2($author$project$Main$Mermaid, 'themselves out of seashells,'),
-					_Utils_Tuple2($author$project$Main$Mermaid, 'making sure to check-in'),
-					_Utils_Tuple2($author$project$Main$Mermaid, 'with each other often.'),
-					_Utils_Tuple2($author$project$Main$Mermaid, '1 hour later...')
+					_Utils_Tuple2($author$project$SELena$Mermaid, 'And so, each of the three friends'),
+					_Utils_Tuple2($author$project$SELena$Mermaid, 'starts building a statue of'),
+					_Utils_Tuple2($author$project$SELena$Mermaid, 'themselves out of seashells,'),
+					_Utils_Tuple2($author$project$SELena$Mermaid, 'making sure to check-in'),
+					_Utils_Tuple2($author$project$SELena$Mermaid, 'with each other often.'),
+					_Utils_Tuple2($author$project$SELena$Mermaid, '1 hour later...')
 				]);
 			var either5Script = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Either, 'Woohoo!!'),
-					_Utils_Tuple2($author$project$Main$Either, 'This looks'),
-					_Utils_Tuple2($author$project$Main$Either, 'so good!'),
-					_Utils_Tuple2($author$project$Main$Either, 'I\'m so happy'),
-					_Utils_Tuple2($author$project$Main$Either, 'that we'),
-					_Utils_Tuple2($author$project$Main$Either, 'were able'),
-					_Utils_Tuple2($author$project$Main$Either, 'to work'),
-					_Utils_Tuple2($author$project$Main$Either, 'together,'),
-					_Utils_Tuple2($author$project$Main$Either, 'this was'),
-					_Utils_Tuple2($author$project$Main$Either, 'the best'),
-					_Utils_Tuple2($author$project$Main$Either, 'day of'),
-					_Utils_Tuple2($author$project$Main$Either, 'my life!'),
-					_Utils_Tuple2($author$project$Main$Either, ''),
-					_Utils_Tuple2($author$project$Main$Either, '')
+					_Utils_Tuple2($author$project$SELena$Either, 'Woohoo!!'),
+					_Utils_Tuple2($author$project$SELena$Either, 'This looks'),
+					_Utils_Tuple2($author$project$SELena$Either, 'so good!'),
+					_Utils_Tuple2($author$project$SELena$Either, 'I\'m so happy'),
+					_Utils_Tuple2($author$project$SELena$Either, 'that we'),
+					_Utils_Tuple2($author$project$SELena$Either, 'were able'),
+					_Utils_Tuple2($author$project$SELena$Either, 'to work'),
+					_Utils_Tuple2($author$project$SELena$Either, 'together,'),
+					_Utils_Tuple2($author$project$SELena$Either, 'this was'),
+					_Utils_Tuple2($author$project$SELena$Either, 'the best'),
+					_Utils_Tuple2($author$project$SELena$Either, 'day of'),
+					_Utils_Tuple2($author$project$SELena$Either, 'my life!'),
+					_Utils_Tuple2($author$project$SELena$Either, ''),
+					_Utils_Tuple2($author$project$SELena$Either, '')
 				]);
 			var cody5Script = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Cody, 'That looks amazing!'),
-					_Utils_Tuple2($author$project$Main$Cody, 'Let\'s place it at the'),
-					_Utils_Tuple2($author$project$Main$Cody, 'center of our three houses!'),
-					_Utils_Tuple2($author$project$Main$Cody, 'It was such a good idea'),
-					_Utils_Tuple2($author$project$Main$Cody, 'to make it out of sand instead'),
-					_Utils_Tuple2($author$project$Main$Cody, 'too!!!')
+					_Utils_Tuple2($author$project$SELena$Cody, 'That looks amazing!'),
+					_Utils_Tuple2($author$project$SELena$Cody, 'Let\'s place it at the'),
+					_Utils_Tuple2($author$project$SELena$Cody, 'center of our three houses!'),
+					_Utils_Tuple2($author$project$SELena$Cody, 'It was such a good idea'),
+					_Utils_Tuple2($author$project$SELena$Cody, 'to make it out of sand instead'),
+					_Utils_Tuple2($author$project$SELena$Cody, 'too!!!')
 				]);
 			var scene5Script = _Utils_ap(
 				mermaid5Script,
@@ -18024,7 +18024,7 @@ var $author$project$Main$myShapes = function (model) {
 			return _List_fromArray(
 				[
 					A3(
-					$author$project$Main$backgroundElements,
+					$author$project$SELena$backgroundElements,
 					1.05,
 					function (input) {
 						return A2(
@@ -18042,7 +18042,7 @@ var $author$project$Main$myShapes = function (model) {
 						A2(
 							$MacCASOutreach$graphicsvg$GraphicSVG$move,
 							_Utils_Tuple2(0, 10),
-							$author$project$Main$pufferfishS))),
+							$author$project$SELena$pufferfishS))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(30, -30),
@@ -18055,7 +18055,7 @@ var $author$project$Main$myShapes = function (model) {
 							A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 								0.6,
-								$author$project$Main$parrotFishS(
+								$author$project$SELena$parrotFishS(
 									{time: 0}))))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
@@ -18068,7 +18068,7 @@ var $author$project$Main$myShapes = function (model) {
 							_Utils_Tuple2(80, -35),
 							$MacCASOutreach$graphicsvg$GraphicSVG$mirrorX(
 								A2(
-									$author$project$Main$codyS,
+									$author$project$SELena$codyS,
 									{time: 0},
 									$MacCASOutreach$graphicsvg$GraphicSVG$purple))))),
 					A2(
@@ -18077,26 +18077,26 @@ var $author$project$Main$myShapes = function (model) {
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.75,
-						$MacCASOutreach$graphicsvg$GraphicSVG$mirrorX($author$project$Main$pufferfish))),
+						$MacCASOutreach$graphicsvg$GraphicSVG$mirrorX($author$project$SELena$pufferfish))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-68, -3),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.5,
-						$author$project$Main$parrotFish(model))),
+						$author$project$SELena$parrotFish(model))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-8, 25),
-					A5($author$project$Main$multiBubbleLeft, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene5Script, 46, $author$project$Main$Pixar, scriptTime)),
+					A5($author$project$SELena$multiBubbleLeft, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene5Script, 46, $author$project$SELena$Pixar, scriptTime)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-10, -8),
-					A2($author$project$Main$cody, model, $MacCASOutreach$graphicsvg$GraphicSVG$orange)),
+					A2($author$project$SELena$cody, model, $MacCASOutreach$graphicsvg$GraphicSVG$orange)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-50, 25),
-					A5($author$project$Main$multiBubbleRight, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene5Script, 42, $author$project$Main$Cody, scriptTime)),
+					A5($author$project$SELena$multiBubbleRight, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene5Script, 42, $author$project$SELena$Cody, scriptTime)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
@@ -18111,14 +18111,14 @@ var $author$project$Main$myShapes = function (model) {
 								A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$move,
 									_Utils_Tuple2(0, 35),
-									A5($author$project$Main$multiBubbleRight, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene5Script, 48, $author$project$Main$Mermaid, scriptTime))),
+									A5($author$project$SELena$multiBubbleRight, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene5Script, 48, $author$project$SELena$Mermaid, scriptTime))),
 								A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$move,
 								_Utils_Tuple2(120, -17),
 								A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 									0.8,
-									$author$project$Main$finalMermaid(model)))
+									$author$project$SELena$finalMermaid(model)))
 							]))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
@@ -18126,7 +18126,7 @@ var $author$project$Main$myShapes = function (model) {
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(-30, -80),
-						A2($author$project$Main$shell, 'Let\'s Party!', $author$project$Main$T5toFINALend))),
+						A2($author$project$SELena$shell, 'Let\'s Party!', $author$project$SELena$T5toFINALend))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-20, -40),
@@ -18136,24 +18136,24 @@ var $author$project$Main$myShapes = function (model) {
 								A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$move,
 								_Utils_Tuple2(47, 0),
-								A5($author$project$Main$multiBubbleLeft, $author$project$Main$textBlue, scene5Script, 20, $author$project$Main$Either, scriptTime))
+								A5($author$project$SELena$multiBubbleLeft, $author$project$SELena$textBlue, scene5Script, 20, $author$project$SELena$Either, scriptTime))
 							]))),
 					(scriptTime > 85) ? A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$notifyTap,
-					$author$project$Main$Restart5,
+					$author$project$SELena$Restart5,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(80, 55),
-						$author$project$Main$restartButton(model.time))) : $MacCASOutreach$graphicsvg$GraphicSVG$group(_List_Nil)
+						$author$project$SELena$restartButton(model.time))) : $MacCASOutreach$graphicsvg$GraphicSVG$group(_List_Nil)
 				]);
 		case 'Scene4End':
-			var scriptTime = $author$project$Main$debugSpeedup * (model.time - model.startTime);
+			var scriptTime = $author$project$SELena$debugSpeedup * (model.time - model.startTime);
 			var scene4EndScript = _List_fromArray(
-				[$author$project$Main$failedEndScript]);
+				[$author$project$SELena$failedEndScript]);
 			return _List_fromArray(
 				[
 					A3(
-					$author$project$Main$backgroundElements,
+					$author$project$SELena$backgroundElements,
 					1.05,
 					function (input) {
 						return A2(
@@ -18168,7 +18168,7 @@ var $author$project$Main$myShapes = function (model) {
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.75,
-						$MacCASOutreach$graphicsvg$GraphicSVG$mirrorX($author$project$Main$pufferfish))),
+						$MacCASOutreach$graphicsvg$GraphicSVG$mirrorX($author$project$SELena$pufferfish))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-60, -50),
@@ -18181,7 +18181,7 @@ var $author$project$Main$myShapes = function (model) {
 							A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 								0.25,
-								$author$project$Main$movingStarfish(model))))),
+								$author$project$SELena$movingStarfish(model))))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
@@ -18197,19 +18197,19 @@ var $author$project$Main$myShapes = function (model) {
 									$MacCASOutreach$graphicsvg$GraphicSVG$move,
 									_Utils_Tuple2(-10, 16),
 									A5(
-										$author$project$Main$multiBubbleRight,
+										$author$project$SELena$multiBubbleRight,
 										$MacCASOutreach$graphicsvg$GraphicSVG$black,
-										$author$project$Main$failedEndScript,
+										$author$project$SELena$failedEndScript,
 										42,
-										$author$project$Main$Mermaid,
-										A4($author$project$Main$repeatDistance, 1, 20, 1, model.time)))),
+										$author$project$SELena$Mermaid,
+										A4($author$project$SELena$repeatDistance, 1, 20, 1, model.time)))),
 								A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$move,
 								_Utils_Tuple2(120, -17),
 								A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 									0.8,
-									$author$project$Main$finalSadMermaid(
+									$author$project$SELena$finalSadMermaid(
 										{time: model.time * 0.25})))
 							]))),
 					A2(
@@ -18218,29 +18218,29 @@ var $author$project$Main$myShapes = function (model) {
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.5,
-						A2($author$project$Main$shell, 'Yes Please!', $author$project$Main$End4ToWelcome))),
+						A2($author$project$SELena$shell, 'Yes Please!', $author$project$SELena$End4ToWelcome))),
 					(scriptTime > 85) ? A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$notifyTap,
-					$author$project$Main$Restart4end,
+					$author$project$SELena$Restart4end,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(80, 55),
-						$author$project$Main$restartButton(model.time))) : $MacCASOutreach$graphicsvg$GraphicSVG$group(_List_Nil)
+						$author$project$SELena$restartButton(model.time))) : $MacCASOutreach$graphicsvg$GraphicSVG$group(_List_Nil)
 				]);
 		case 'Scene4half':
-			var scriptTime = $author$project$Main$debugSpeedup * (model.time - model.startTime);
+			var scriptTime = $author$project$SELena$debugSpeedup * (model.time - model.startTime);
 			var pixar4halfScript = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Pixar, 'That\'s fine, Cloonie.'),
-					_Utils_Tuple2($author$project$Main$Pixar, 'Thank you for your apology.'),
-					_Utils_Tuple2($author$project$Main$Pixar, 'Alright there\'s still time'),
-					_Utils_Tuple2($author$project$Main$Pixar, 'before night, let\'s do this!!')
+					_Utils_Tuple2($author$project$SELena$Pixar, 'That\'s fine, Cloonie.'),
+					_Utils_Tuple2($author$project$SELena$Pixar, 'Thank you for your apology.'),
+					_Utils_Tuple2($author$project$SELena$Pixar, 'Alright there\'s still time'),
+					_Utils_Tuple2($author$project$SELena$Pixar, 'before night, let\'s do this!!')
 				]);
 			var scene4halfScript = pixar4halfScript;
 			return _List_fromArray(
 				[
 					A3(
-					$author$project$Main$backgroundElements,
+					$author$project$SELena$backgroundElements,
 					1,
 					function (input) {
 						return A2(
@@ -18255,22 +18255,22 @@ var $author$project$Main$myShapes = function (model) {
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.75,
-						$MacCASOutreach$graphicsvg$GraphicSVG$mirrorX($author$project$Main$pufferfish))),
+						$MacCASOutreach$graphicsvg$GraphicSVG$mirrorX($author$project$SELena$pufferfish))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-68, -3),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.5,
-						$author$project$Main$parrotFish(model))),
+						$author$project$SELena$parrotFish(model))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-8, 25),
-					A5($author$project$Main$multiBubbleLeft, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene4halfScript, 46, $author$project$Main$Pixar, scriptTime)),
+					A5($author$project$SELena$multiBubbleLeft, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene4halfScript, 46, $author$project$SELena$Pixar, scriptTime)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-10, -8),
-					A2($author$project$Main$cody, model, $MacCASOutreach$graphicsvg$GraphicSVG$orange)),
+					A2($author$project$SELena$cody, model, $MacCASOutreach$graphicsvg$GraphicSVG$orange)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
@@ -18285,14 +18285,14 @@ var $author$project$Main$myShapes = function (model) {
 								A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$move,
 									_Utils_Tuple2(0, 35),
-									A5($author$project$Main$multiBubbleRight, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene4halfScript, 48, $author$project$Main$Mermaid, scriptTime))),
+									A5($author$project$SELena$multiBubbleRight, $MacCASOutreach$graphicsvg$GraphicSVG$black, scene4halfScript, 48, $author$project$SELena$Mermaid, scriptTime))),
 								A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$move,
 								_Utils_Tuple2(120, -17),
 								A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 									0.8,
-									$author$project$Main$finalMermaid(model)))
+									$author$project$SELena$finalMermaid(model)))
 							]))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
@@ -18300,29 +18300,29 @@ var $author$project$Main$myShapes = function (model) {
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.5,
-						A2($author$project$Main$shell, 'Let\'s Go!', $author$project$Main$T4halfto5))),
+						A2($author$project$SELena$shell, 'Let\'s Go!', $author$project$SELena$T4halfto5))),
 					(scriptTime > 85) ? A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$notifyTap,
-					$author$project$Main$Restart4half,
+					$author$project$SELena$Restart4half,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(80, 55),
-						$author$project$Main$restartButton(model.time))) : $MacCASOutreach$graphicsvg$GraphicSVG$group(_List_Nil)
+						$author$project$SELena$restartButton(model.time))) : $MacCASOutreach$graphicsvg$GraphicSVG$group(_List_Nil)
 				]);
 		default:
-			var scriptTime = $author$project$Main$debugSpeedup * (model.time - model.startTime);
+			var scriptTime = $author$project$SELena$debugSpeedup * (model.time - model.startTime);
 			var sceneEndScript = _List_fromArray(
 				[
-					_Utils_Tuple2($author$project$Main$Mermaid, 'Whew, thanks Cloonie!'),
-					_Utils_Tuple2($author$project$Main$Mermaid, 'You saved the friendship!'),
-					_Utils_Tuple2($author$project$Main$Mermaid, 'Congratulations! You won the game!'),
-					_Utils_Tuple2($author$project$Main$Mermaid, '...AND learned social-emotional learning?!?!'),
-					_Utils_Tuple2($author$project$Main$Mermaid, 'Wow... you\'re so impressive!!')
+					_Utils_Tuple2($author$project$SELena$Mermaid, 'Whew, thanks Cloonie!'),
+					_Utils_Tuple2($author$project$SELena$Mermaid, 'You saved the friendship!'),
+					_Utils_Tuple2($author$project$SELena$Mermaid, 'Congratulations! You won the game!'),
+					_Utils_Tuple2($author$project$SELena$Mermaid, '...AND learned social-emotional learning?!?!'),
+					_Utils_Tuple2($author$project$SELena$Mermaid, 'Wow... you\'re so impressive!!')
 				]);
 			return _List_fromArray(
 				[
 					A3(
-					$author$project$Main$backgroundElements,
+					$author$project$SELena$backgroundElements,
 					1,
 					function (input) {
 						return A2(
@@ -18337,7 +18337,7 @@ var $author$project$Main$myShapes = function (model) {
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.75,
-						$MacCASOutreach$graphicsvg$GraphicSVG$mirrorX($author$project$Main$pufferfish))),
+						$MacCASOutreach$graphicsvg$GraphicSVG$mirrorX($author$project$SELena$pufferfish))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(73, 58),
@@ -18347,14 +18347,14 @@ var $author$project$Main$myShapes = function (model) {
 						A2(
 							$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 							0.1,
-							A6($author$project$Main$partyHat, $MacCASOutreach$graphicsvg$GraphicSVG$pink, $MacCASOutreach$graphicsvg$GraphicSVG$lightRed, $MacCASOutreach$graphicsvg$GraphicSVG$yellow, $MacCASOutreach$graphicsvg$GraphicSVG$green, $MacCASOutreach$graphicsvg$GraphicSVG$lightBlue, $MacCASOutreach$graphicsvg$GraphicSVG$blue)))),
+							A6($author$project$SELena$partyHat, $MacCASOutreach$graphicsvg$GraphicSVG$pink, $MacCASOutreach$graphicsvg$GraphicSVG$lightRed, $MacCASOutreach$graphicsvg$GraphicSVG$yellow, $MacCASOutreach$graphicsvg$GraphicSVG$green, $MacCASOutreach$graphicsvg$GraphicSVG$lightBlue, $MacCASOutreach$graphicsvg$GraphicSVG$blue)))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-68, -3),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.5,
-						$author$project$Main$parrotFish(model))),
+						$author$project$SELena$parrotFish(model))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-50, 10),
@@ -18364,11 +18364,11 @@ var $author$project$Main$myShapes = function (model) {
 						A2(
 							$MacCASOutreach$graphicsvg$GraphicSVG$rotate,
 							$elm$core$Basics$degrees(-10),
-							A6($author$project$Main$partyHat, $MacCASOutreach$graphicsvg$GraphicSVG$pink, $MacCASOutreach$graphicsvg$GraphicSVG$lightRed, $MacCASOutreach$graphicsvg$GraphicSVG$yellow, $MacCASOutreach$graphicsvg$GraphicSVG$green, $MacCASOutreach$graphicsvg$GraphicSVG$lightBlue, $MacCASOutreach$graphicsvg$GraphicSVG$blue)))),
+							A6($author$project$SELena$partyHat, $MacCASOutreach$graphicsvg$GraphicSVG$pink, $MacCASOutreach$graphicsvg$GraphicSVG$lightRed, $MacCASOutreach$graphicsvg$GraphicSVG$yellow, $MacCASOutreach$graphicsvg$GraphicSVG$green, $MacCASOutreach$graphicsvg$GraphicSVG$lightBlue, $MacCASOutreach$graphicsvg$GraphicSVG$blue)))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-10, -8),
-					A2($author$project$Main$cody, model, $MacCASOutreach$graphicsvg$GraphicSVG$orange)),
+					A2($author$project$SELena$cody, model, $MacCASOutreach$graphicsvg$GraphicSVG$orange)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(0, 14),
@@ -18378,7 +18378,7 @@ var $author$project$Main$myShapes = function (model) {
 						A2(
 							$MacCASOutreach$graphicsvg$GraphicSVG$rotate,
 							$elm$core$Basics$degrees(10),
-							A6($author$project$Main$partyHat, $MacCASOutreach$graphicsvg$GraphicSVG$pink, $MacCASOutreach$graphicsvg$GraphicSVG$lightRed, $MacCASOutreach$graphicsvg$GraphicSVG$yellow, $MacCASOutreach$graphicsvg$GraphicSVG$green, $MacCASOutreach$graphicsvg$GraphicSVG$lightBlue, $MacCASOutreach$graphicsvg$GraphicSVG$blue)))),
+							A6($author$project$SELena$partyHat, $MacCASOutreach$graphicsvg$GraphicSVG$pink, $MacCASOutreach$graphicsvg$GraphicSVG$lightRed, $MacCASOutreach$graphicsvg$GraphicSVG$yellow, $MacCASOutreach$graphicsvg$GraphicSVG$green, $MacCASOutreach$graphicsvg$GraphicSVG$lightBlue, $MacCASOutreach$graphicsvg$GraphicSVG$blue)))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
@@ -18393,21 +18393,21 @@ var $author$project$Main$myShapes = function (model) {
 								A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$move,
 									_Utils_Tuple2(0, 35),
-									A5($author$project$Main$multiBubbleRight, $MacCASOutreach$graphicsvg$GraphicSVG$black, sceneEndScript, 48, $author$project$Main$Mermaid, scriptTime))),
+									A5($author$project$SELena$multiBubbleRight, $MacCASOutreach$graphicsvg$GraphicSVG$black, sceneEndScript, 48, $author$project$SELena$Mermaid, scriptTime))),
 								A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$move,
 								_Utils_Tuple2(120, -17),
 								A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 									0.8,
-									$author$project$Main$finalMermaid(model))),
+									$author$project$SELena$finalMermaid(model))),
 								A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$move,
 								_Utils_Tuple2(75, 25),
 								A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 									0.2,
-									A6($author$project$Main$partyHat, $MacCASOutreach$graphicsvg$GraphicSVG$pink, $MacCASOutreach$graphicsvg$GraphicSVG$lightRed, $MacCASOutreach$graphicsvg$GraphicSVG$yellow, $MacCASOutreach$graphicsvg$GraphicSVG$green, $MacCASOutreach$graphicsvg$GraphicSVG$lightBlue, $MacCASOutreach$graphicsvg$GraphicSVG$blue)))
+									A6($author$project$SELena$partyHat, $MacCASOutreach$graphicsvg$GraphicSVG$pink, $MacCASOutreach$graphicsvg$GraphicSVG$lightRed, $MacCASOutreach$graphicsvg$GraphicSVG$yellow, $MacCASOutreach$graphicsvg$GraphicSVG$green, $MacCASOutreach$graphicsvg$GraphicSVG$lightBlue, $MacCASOutreach$graphicsvg$GraphicSVG$blue)))
 							]))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
@@ -18421,11 +18421,11 @@ var $author$project$Main$myShapes = function (model) {
 							A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 								0.25,
-								$author$project$Main$movingStarfish(model))))),
+								$author$project$SELena$movingStarfish(model))))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
-						A4($author$project$Main$repeatDistance, 5, -500, 100, -model.time),
+						A4($author$project$SELena$repeatDistance, 5, -500, 100, -model.time),
 						20),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
@@ -18438,7 +18438,7 @@ var $author$project$Main$myShapes = function (model) {
 							A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 								0.5,
-								$author$project$Main$jellyfish(
+								$author$project$SELena$jellyfish(
 									A3(
 										$MacCASOutreach$graphicsvg$GraphicSVG$hsl,
 										$elm$core$Basics$degrees(30) * model.time,
@@ -18446,29 +18446,29 @@ var $author$project$Main$myShapes = function (model) {
 										0.5)))))),
 					(scriptTime > 85) ? A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$notifyTap,
-					$author$project$Main$Restartend,
+					$author$project$SELena$Restartend,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(80, 55),
-						$author$project$Main$restartButton(model.time))) : $MacCASOutreach$graphicsvg$GraphicSVG$group(_List_Nil)
+						$author$project$SELena$restartButton(model.time))) : $MacCASOutreach$graphicsvg$GraphicSVG$group(_List_Nil)
 				]);
 	}
 };
-var $author$project$Main$view = function (model) {
+var $author$project$SELena$view = function (model) {
 	return A3(
 		$MacCASOutreach$graphicsvg$GraphicSVG$collage,
 		192,
 		128,
-		$author$project$Main$myShapes(model));
+		$author$project$SELena$myShapes(model));
 };
-var $author$project$Main$main = A2(
+var $author$project$SELena$main = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$App$gameApp,
-	$author$project$Main$Tick,
-	{model: $author$project$Main$init, title: 'Game Slot', update: $author$project$Main$update, view: $author$project$Main$view});
-_Platform_export({'Main':{'init':$author$project$Main$main(
+	$author$project$SELena$Tick,
+	{model: $author$project$SELena$init, title: 'Game Slot', update: $author$project$SELena$update, view: $author$project$SELena$view});
+_Platform_export({'SELena':{'init':$author$project$SELena$main(
 	$elm$json$Json$Decode$succeed(_Utils_Tuple0))(0)}});}(this));
 
-  var app = Elm.Main.init({ node: document.getElementById("elm") });
+  var app = Elm.SELena.init({ node: document.getElementById("elm") });
 }
 catch (e)
 {

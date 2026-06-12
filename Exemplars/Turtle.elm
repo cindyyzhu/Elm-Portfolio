@@ -1,6 +1,6 @@
 -- Your shapes go here!
 -- Your shapes go here!
-module Main exposing (..)
+module Turtle exposing (..)
 
 import GraphicSVG exposing (..)
 import GraphicSVG.App exposing (..)

@@ -1,4 +1,4 @@
-module Main exposing (..)
+module CurveCreator exposing (..)
 
 import GraphicSVG.EllieApp exposing (..)
 import GraphicSVG exposing (..)

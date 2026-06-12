@@ -1,8 +1,8 @@
-module Main exposing (..)
+module SinCosTan exposing (..)
 
 import GraphicSVG exposing (..)
 import GraphicSVG.App exposing (..)
-import GraphicSVG.Secret exposing (..)
+import GraphicSVG.Secret as Secret
 
 -- Your shapes go here!
 myShapes model =

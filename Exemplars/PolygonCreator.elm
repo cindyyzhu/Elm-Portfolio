@@ -3,7 +3,7 @@
 -- step 2, make it into a polygon
 -- generate all combinations of (before,oneSelected,after) from a list
 
-module Main exposing (..)
+module PolygonCreator exposing (..)
 
 import GraphicSVG.App exposing (..)
 import GraphicSVG exposing (..)

@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Main</title>
+  <title>WhaleWiggle</title>
   <style>body { padding: 0; margin: 0; }</style>
 </head>
 
@@ -4430,7 +4430,7 @@ function _Time_getZoneName()
 		callback(_Scheduler_succeed(name));
 	});
 }
-var $author$project$Main$Tick = F2(
+var $author$project$WhaleWiggle$Tick = F2(
 	function (a, b) {
 		return {$: 'Tick', a: a, b: b};
 	});
@@ -9261,8 +9261,8 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$App$gameApp = F2(
 				}
 			});
 	});
-var $author$project$Main$init = {time: 0};
-var $author$project$Main$update = F2(
+var $author$project$WhaleWiggle$init = {time: 0};
+var $author$project$WhaleWiggle$update = F2(
 	function (msg, model) {
 		var t = msg.a;
 		return {time: t};
@@ -9670,7 +9670,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Unbroken = function (a) {
 var $MacCASOutreach$graphicsvg$GraphicSVG$solid = function (th) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Unbroken(th);
 };
-var $author$project$Main$wigglePt = F2(
+var $author$project$WhaleWiggle$wigglePt = F2(
 	function (t, _v0) {
 		var x = _v0.a;
 		var y = _v0.b;
@@ -9680,7 +9680,7 @@ var $author$project$Main$wigglePt = F2(
 			x,
 			y + ((1 * $elm$core$Basics$sin((((3 * $elm$core$Basics$pi) / 2) / 90) * x)) * $elm$core$Basics$sin(t)));
 	});
-var $author$project$Main$wiggle = F2(
+var $author$project$WhaleWiggle$wiggle = F2(
 	function (t, _v0) {
 		var _v1 = _v0.a;
 		var x = _v1.a;
@@ -9691,25 +9691,25 @@ var $author$project$Main$wiggle = F2(
 		return A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$Secret$Pull,
 			A2(
-				$author$project$Main$wigglePt,
+				$author$project$WhaleWiggle$wigglePt,
 				t,
 				_Utils_Tuple2(x, y)),
 			A2(
-				$author$project$Main$wigglePt,
+				$author$project$WhaleWiggle$wigglePt,
 				t,
 				_Utils_Tuple2(u, v)));
 	});
-var $author$project$Main$wiggleCurve = F3(
+var $author$project$WhaleWiggle$wiggleCurve = F3(
 	function (t, pos, pulls) {
 		return A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$curve,
-			A2($author$project$Main$wigglePt, t, pos),
+			A2($author$project$WhaleWiggle$wigglePt, t, pos),
 			A2(
 				$elm$core$List$map,
-				$author$project$Main$wiggle(t),
+				$author$project$WhaleWiggle$wiggle(t),
 				pulls));
 	});
-var $author$project$Main$myShapes = function (model) {
+var $author$project$WhaleWiggle$myShapes = function (model) {
 	return _List_fromArray(
 		[
 			A3(
@@ -9720,7 +9720,7 @@ var $author$project$Main$myShapes = function (model) {
 				$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 				A3($MacCASOutreach$graphicsvg$GraphicSVG$rgb, 155, 172, 184),
 				A3(
-					$author$project$Main$wiggleCurve,
+					$author$project$WhaleWiggle$wiggleCurve,
 					model.time,
 					_Utils_Tuple2(-92.77, 4.6463),
 					_List_fromArray(
@@ -9755,7 +9755,7 @@ var $author$project$Main$myShapes = function (model) {
 			$MacCASOutreach$graphicsvg$GraphicSVG$solid(1),
 			$MacCASOutreach$graphicsvg$GraphicSVG$black,
 			A3(
-				$author$project$Main$wiggleCurve,
+				$author$project$WhaleWiggle$wiggleCurve,
 				model.time,
 				_Utils_Tuple2(-87.98, 5.2459),
 				_List_fromArray(
@@ -9778,7 +9778,7 @@ var $author$project$Main$myShapes = function (model) {
 			$MacCASOutreach$graphicsvg$GraphicSVG$solid(1),
 			$MacCASOutreach$graphicsvg$GraphicSVG$black,
 			A3(
-				$author$project$Main$wiggleCurve,
+				$author$project$WhaleWiggle$wiggleCurve,
 				model.time,
 				_Utils_Tuple2(-81.68, 4.6463),
 				_List_fromArray(
@@ -9797,7 +9797,7 @@ var $author$project$Main$myShapes = function (model) {
 			$MacCASOutreach$graphicsvg$GraphicSVG$solid(1),
 			$MacCASOutreach$graphicsvg$GraphicSVG$black,
 			A3(
-				$author$project$Main$wiggleCurve,
+				$author$project$WhaleWiggle$wiggleCurve,
 				model.time,
 				_Utils_Tuple2(-76.59, 4.3466),
 				_List_fromArray(
@@ -9820,7 +9820,7 @@ var $author$project$Main$myShapes = function (model) {
 			$MacCASOutreach$graphicsvg$GraphicSVG$solid(1),
 			$MacCASOutreach$graphicsvg$GraphicSVG$black,
 			A3(
-				$author$project$Main$wiggleCurve,
+				$author$project$WhaleWiggle$wiggleCurve,
 				model.time,
 				_Utils_Tuple2(-69.09, 3.1475),
 				_List_fromArray(
@@ -9854,7 +9854,7 @@ var $author$project$Main$myShapes = function (model) {
 				$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 				A3($MacCASOutreach$graphicsvg$GraphicSVG$rgb, 104, 121, 140),
 				A3(
-					$author$project$Main$wiggleCurve,
+					$author$project$WhaleWiggle$wiggleCurve,
 					model.time,
 					_Utils_Tuple2(-92.77, 4.9461),
 					_List_fromArray(
@@ -10052,21 +10052,21 @@ var $author$project$Main$myShapes = function (model) {
 					])))
 		]);
 };
-var $author$project$Main$view = function (model) {
+var $author$project$WhaleWiggle$view = function (model) {
 	return A3(
 		$MacCASOutreach$graphicsvg$GraphicSVG$collage,
 		192,
 		128,
-		$author$project$Main$myShapes(model));
+		$author$project$WhaleWiggle$myShapes(model));
 };
-var $author$project$Main$main = A2(
+var $author$project$WhaleWiggle$main = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$App$gameApp,
-	$author$project$Main$Tick,
-	{model: $author$project$Main$init, title: 'Game Slot', update: $author$project$Main$update, view: $author$project$Main$view});
-_Platform_export({'Main':{'init':$author$project$Main$main(
+	$author$project$WhaleWiggle$Tick,
+	{model: $author$project$WhaleWiggle$init, title: 'Game Slot', update: $author$project$WhaleWiggle$update, view: $author$project$WhaleWiggle$view});
+_Platform_export({'WhaleWiggle':{'init':$author$project$WhaleWiggle$main(
 	$elm$json$Json$Decode$succeed(_Utils_Tuple0))(0)}});}(this));
 
-  var app = Elm.Main.init({ node: document.getElementById("elm") });
+  var app = Elm.WhaleWiggle.init({ node: document.getElementById("elm") });
 }
 catch (e)
 {

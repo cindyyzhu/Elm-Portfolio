@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Main</title>
+  <title>DiversityMatters</title>
   <style>body { padding: 0; margin: 0; }</style>
 </head>
 
@@ -4430,7 +4430,7 @@ function _Time_getZoneName()
 		callback(_Scheduler_succeed(name));
 	});
 }
-var $author$project$Main$Tick = F2(
+var $author$project$DiversityMatters$Tick = F2(
 	function (a, b) {
 		return {$: 'Tick', a: a, b: b};
 	});
@@ -9261,25 +9261,25 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$App$gameApp = F2(
 				}
 			});
 	});
-var $author$project$Main$init = {
+var $author$project$DiversityMatters$init = {
 	points: _List_fromArray(
 		[-50, -25, -5, 25, 50]),
 	time: 0
 };
-var $author$project$Main$height = function (x) {
+var $author$project$DiversityMatters$height = function (x) {
 	return 20 * ($elm$core$Basics$sin(0.2 * x) + (2 * $elm$core$Basics$cos(0.03 * x)));
 };
-var $author$project$Main$evolvePoint = function (oldX) {
-	var heightToRight = $author$project$Main$height(oldX + 0.01);
-	var currentHeight = $author$project$Main$height(oldX);
+var $author$project$DiversityMatters$evolvePoint = function (oldX) {
+	var heightToRight = $author$project$DiversityMatters$height(oldX + 0.01);
+	var currentHeight = $author$project$DiversityMatters$height(oldX);
 	var deltaHeight = heightToRight - currentHeight;
 	return oldX + deltaHeight;
 };
-var $author$project$Main$update = F2(
+var $author$project$DiversityMatters$update = F2(
 	function (msg, model) {
 		var t = msg.a;
 		return {
-			points: A2($elm$core$List$map, $author$project$Main$evolvePoint, model.points),
+			points: A2($elm$core$List$map, $author$project$DiversityMatters$evolvePoint, model.points),
 			time: t
 		};
 	});
@@ -9299,12 +9299,12 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$circle = function (r) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Circle(r);
 };
 var $MacCASOutreach$graphicsvg$GraphicSVG$red = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 204, 0, 0, 1);
-var $author$project$Main$drawPoint = function (x) {
+var $author$project$DiversityMatters$drawPoint = function (x) {
 	return A2(
 		$MacCASOutreach$graphicsvg$GraphicSVG$move,
 		_Utils_Tuple2(
 			x,
-			$author$project$Main$height(x)),
+			$author$project$DiversityMatters$height(x)),
 		A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 			$MacCASOutreach$graphicsvg$GraphicSVG$red,
@@ -9316,12 +9316,12 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Path = function (a) {
 var $MacCASOutreach$graphicsvg$GraphicSVG$openPolygon = function (ptList) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Path(ptList);
 };
-var $author$project$Main$outline = A2(
+var $author$project$DiversityMatters$outline = A2(
 	$elm$core$List$map,
 	function (idx) {
 		return _Utils_Tuple2(
 			idx,
-			$author$project$Main$height(idx));
+			$author$project$DiversityMatters$height(idx));
 	},
 	A2($elm$core$List$range, -100, 100));
 var $MacCASOutreach$graphicsvg$GraphicSVG$outlined = F3(
@@ -9346,15 +9346,15 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$rgb = F3(
 	function (r, g, b) {
 		return A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, r, g, b, 1);
 	});
-var $author$project$Main$snowHeight = function (x) {
+var $author$project$DiversityMatters$snowHeight = function (x) {
 	return 5 + (20 * ((0.1 * $elm$core$Basics$sin(x)) + (2 * $elm$core$Basics$cos(0.03 * x))));
 };
-var $author$project$Main$snowLine = A2(
+var $author$project$DiversityMatters$snowLine = A2(
 	$elm$core$List$map,
 	function (idx) {
 		return _Utils_Tuple2(
 			idx,
-			$author$project$Main$snowHeight(idx));
+			$author$project$DiversityMatters$snowHeight(idx));
 	},
 	A2($elm$core$List$range, -100, 100));
 var $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Unbroken = function (a) {
@@ -9363,7 +9363,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Unbroken = function (a) {
 var $MacCASOutreach$graphicsvg$GraphicSVG$solid = function (th) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Unbroken(th);
 };
-var $author$project$Main$myShapes = function (model) {
+var $author$project$DiversityMatters$myShapes = function (model) {
 	return _Utils_ap(
 		_List_fromArray(
 			[
@@ -9376,7 +9376,7 @@ var $author$project$Main$myShapes = function (model) {
 				$MacCASOutreach$graphicsvg$GraphicSVG$white,
 				$MacCASOutreach$graphicsvg$GraphicSVG$polygon(
 					_Utils_ap(
-						$author$project$Main$outline,
+						$author$project$DiversityMatters$outline,
 						_List_fromArray(
 							[
 								_Utils_Tuple2(96, -64),
@@ -9389,7 +9389,7 @@ var $author$project$Main$myShapes = function (model) {
 					$MacCASOutreach$graphicsvg$GraphicSVG$charcoal,
 					$MacCASOutreach$graphicsvg$GraphicSVG$polygon(
 						_Utils_ap(
-							$author$project$Main$snowLine,
+							$author$project$DiversityMatters$snowLine,
 							_List_fromArray(
 								[
 									_Utils_Tuple2(96, -64),
@@ -9400,7 +9400,7 @@ var $author$project$Main$myShapes = function (model) {
 					$MacCASOutreach$graphicsvg$GraphicSVG$charcoal,
 					$MacCASOutreach$graphicsvg$GraphicSVG$polygon(
 						_Utils_ap(
-							$author$project$Main$outline,
+							$author$project$DiversityMatters$outline,
 							_List_fromArray(
 								[
 									_Utils_Tuple2(96, -64),
@@ -9410,25 +9410,25 @@ var $author$project$Main$myShapes = function (model) {
 				$MacCASOutreach$graphicsvg$GraphicSVG$outlined,
 				$MacCASOutreach$graphicsvg$GraphicSVG$solid(0.5),
 				$MacCASOutreach$graphicsvg$GraphicSVG$black,
-				$MacCASOutreach$graphicsvg$GraphicSVG$openPolygon($author$project$Main$outline))
+				$MacCASOutreach$graphicsvg$GraphicSVG$openPolygon($author$project$DiversityMatters$outline))
 			]),
-		A2($elm$core$List$map, $author$project$Main$drawPoint, model.points));
+		A2($elm$core$List$map, $author$project$DiversityMatters$drawPoint, model.points));
 };
-var $author$project$Main$view = function (model) {
+var $author$project$DiversityMatters$view = function (model) {
 	return A3(
 		$MacCASOutreach$graphicsvg$GraphicSVG$collage,
 		192,
 		128,
-		$author$project$Main$myShapes(model));
+		$author$project$DiversityMatters$myShapes(model));
 };
-var $author$project$Main$main = A2(
+var $author$project$DiversityMatters$main = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$App$gameApp,
-	$author$project$Main$Tick,
-	{model: $author$project$Main$init, title: 'Game Slot', update: $author$project$Main$update, view: $author$project$Main$view});
-_Platform_export({'Main':{'init':$author$project$Main$main(
+	$author$project$DiversityMatters$Tick,
+	{model: $author$project$DiversityMatters$init, title: 'Game Slot', update: $author$project$DiversityMatters$update, view: $author$project$DiversityMatters$view});
+_Platform_export({'DiversityMatters':{'init':$author$project$DiversityMatters$main(
 	$elm$json$Json$Decode$succeed(_Utils_Tuple0))(0)}});}(this));
 
-  var app = Elm.Main.init({ node: document.getElementById("elm") });
+  var app = Elm.DiversityMatters.init({ node: document.getElementById("elm") });
 }
 catch (e)
 {

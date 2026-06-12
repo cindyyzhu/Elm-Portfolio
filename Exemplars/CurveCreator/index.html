@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Main</title>
+  <title>CurveCreator</title>
   <style>body { padding: 0; margin: 0; }</style>
 </head>
 
@@ -4547,7 +4547,7 @@ var $elm$core$Set$toList = function (_v0) {
 	return $elm$core$Dict$keys(dict);
 };
 var $elm$core$Basics$GT = {$: 'GT'};
-var $author$project$Main$Tick = F2(
+var $author$project$CurveCreator$Tick = F2(
 	function (a, b) {
 		return {$: 'Tick', a: a, b: b};
 	});
@@ -9282,12 +9282,12 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$EllieApp$ellieAppWithTick = F2(
 				}
 			});
 	});
-var $author$project$Main$MouseState = F2(
+var $author$project$CurveCreator$MouseState = F2(
 	function (pos, mouseDown) {
 		return {mouseDown: mouseDown, pos: pos};
 	});
-var $author$project$Main$MovingPoints = {$: 'MovingPoints'};
-var $author$project$Main$PullPointLineDisplayInfo = F2(
+var $author$project$CurveCreator$MovingPoints = {$: 'MovingPoints'};
+var $author$project$CurveCreator$PullPointLineDisplayInfo = F2(
 	function (drawEndPointLines, drawMidPointLines) {
 		return {drawEndPointLines: drawEndPointLines, drawMidPointLines: drawMidPointLines};
 	});
@@ -9365,98 +9365,98 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$hsl = F3(
 		var b = _v0.c;
 		return A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, r, g, b, 1);
 	});
-var $author$project$Main$graphColour = A3($MacCASOutreach$graphicsvg$GraphicSVG$hsl, 3.371, 1, 0.562);
-var $author$project$Main$blackWithWhite = {dottedLineColour: $author$project$Main$graphColour, endPointFill: $MacCASOutreach$graphicsvg$GraphicSVG$black, lineColour: $MacCASOutreach$graphicsvg$GraphicSVG$black, pullPointFill: $MacCASOutreach$graphicsvg$GraphicSVG$white, selectedOutline: $MacCASOutreach$graphicsvg$GraphicSVG$darkGreen, unselectedOutline: $MacCASOutreach$graphicsvg$GraphicSVG$black};
-var $author$project$Main$defaultKeyInfo = function (_v0) {
+var $author$project$CurveCreator$graphColour = A3($MacCASOutreach$graphicsvg$GraphicSVG$hsl, 3.371, 1, 0.562);
+var $author$project$CurveCreator$blackWithWhite = {dottedLineColour: $author$project$CurveCreator$graphColour, endPointFill: $MacCASOutreach$graphicsvg$GraphicSVG$black, lineColour: $MacCASOutreach$graphicsvg$GraphicSVG$black, pullPointFill: $MacCASOutreach$graphicsvg$GraphicSVG$white, selectedOutline: $MacCASOutreach$graphicsvg$GraphicSVG$darkGreen, unselectedOutline: $MacCASOutreach$graphicsvg$GraphicSVG$black};
+var $author$project$CurveCreator$defaultKeyInfo = function (_v0) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$EllieApp$Up;
 };
-var $author$project$Main$Waiting = {$: 'Waiting'};
-var $author$project$Main$imageScale = 0.18;
-var $author$project$Main$imgZoomSliderInit = {
+var $author$project$CurveCreator$Waiting = {$: 'Waiting'};
+var $author$project$CurveCreator$imageScale = 0.18;
+var $author$project$CurveCreator$imgZoomSliderInit = {
 	currentVal: A3(
 		$elm$core$Basics$clamp,
 		-5,
 		5,
-		A2($elm$core$Basics$logBase, 2, $author$project$Main$imageScale)),
+		A2($elm$core$Basics$logBase, 2, $author$project$CurveCreator$imageScale)),
 	max: 4,
 	min: -5,
-	state: $author$project$Main$Waiting,
+	state: $author$project$CurveCreator$Waiting,
 	width: 40
 };
-var $author$project$Main$scaleSliderInit = {currentVal: 0, max: 2, min: -3, state: $author$project$Main$Waiting, width: 40};
-var $author$project$Main$Disabled = function (a) {
+var $author$project$CurveCreator$scaleSliderInit = {currentVal: 0, max: 2, min: -3, state: $author$project$CurveCreator$Waiting, width: 40};
+var $author$project$CurveCreator$Disabled = function (a) {
 	return {$: 'Disabled', a: a};
 };
-var $author$project$Main$Enabled = F2(
+var $author$project$CurveCreator$Enabled = F2(
 	function (a, b) {
 		return {$: 'Enabled', a: a, b: b};
 	});
-var $author$project$Main$UserCurve = F3(
+var $author$project$CurveCreator$UserCurve = F3(
 	function (id, start, pulls) {
 		return {id: id, pulls: pulls, start: start};
 	});
-var $author$project$Main$startingCurve = A3(
-	$author$project$Main$UserCurve,
+var $author$project$CurveCreator$startingCurve = A3(
+	$author$project$CurveCreator$UserCurve,
 	1,
 	_Utils_Tuple2(0, 0),
 	_List_fromArray(
 		[
 			A2(
-			$author$project$Main$Enabled,
+			$author$project$CurveCreator$Enabled,
 			_Utils_Tuple2(20, 20),
 			_Utils_Tuple2(0, 40)),
-			$author$project$Main$Disabled(
+			$author$project$CurveCreator$Disabled(
 			_Utils_Tuple2(25, -25)),
 			A2(
-			$author$project$Main$Enabled,
+			$author$project$CurveCreator$Enabled,
 			_Utils_Tuple2(10, -10),
 			_Utils_Tuple2(-10, -35))
 		]));
-var $author$project$Main$imageHeight = 1000;
-var $author$project$Main$imagePos = _Utils_Tuple2(-600, 450);
-var $author$project$Main$imageURL = 'https://media.licdn.com/dms/image/D5622AQHLSFAN-mA33g/feedshare-shrink_1280/0/1709589940487?e=1714608000&v=beta&t=Ox32dJ3Yq5nSf5PCda-IdRhDH6rdIeFtt-TY7mZAhVk';
-var $author$project$Main$imageWidth = 1000;
-var $author$project$Main$tracingImage = {height: $author$project$Main$imageHeight, pos: $author$project$Main$imagePos, scale: $author$project$Main$imageScale, url: $author$project$Main$imageURL, width: $author$project$Main$imageWidth};
-var $author$project$Main$init = {
-	backgroundImage: $author$project$Main$tracingImage,
-	colours: $author$project$Main$blackWithWhite,
-	currentAction: $author$project$Main$MovingPoints,
-	imgZoomSlider: $author$project$Main$imgZoomSliderInit,
-	keyInfo: $author$project$Main$defaultKeyInfo,
+var $author$project$CurveCreator$imageHeight = 1000;
+var $author$project$CurveCreator$imagePos = _Utils_Tuple2(-600, 450);
+var $author$project$CurveCreator$imageURL = 'https://media.licdn.com/dms/image/D5622AQHLSFAN-mA33g/feedshare-shrink_1280/0/1709589940487?e=1714608000&v=beta&t=Ox32dJ3Yq5nSf5PCda-IdRhDH6rdIeFtt-TY7mZAhVk';
+var $author$project$CurveCreator$imageWidth = 1000;
+var $author$project$CurveCreator$tracingImage = {height: $author$project$CurveCreator$imageHeight, pos: $author$project$CurveCreator$imagePos, scale: $author$project$CurveCreator$imageScale, url: $author$project$CurveCreator$imageURL, width: $author$project$CurveCreator$imageWidth};
+var $author$project$CurveCreator$init = {
+	backgroundImage: $author$project$CurveCreator$tracingImage,
+	colours: $author$project$CurveCreator$blackWithWhite,
+	currentAction: $author$project$CurveCreator$MovingPoints,
+	imgZoomSlider: $author$project$CurveCreator$imgZoomSliderInit,
+	keyInfo: $author$project$CurveCreator$defaultKeyInfo,
 	lastCurveID: 1,
 	mouseState: A2(
-		$author$project$Main$MouseState,
+		$author$project$CurveCreator$MouseState,
 		_Utils_Tuple2(0, 0),
 		false),
 	prevModels: _List_Nil,
-	pullPointDisplaySettings: A2($author$project$Main$PullPointLineDisplayInfo, true, false),
-	scaleSlider: $author$project$Main$scaleSliderInit,
+	pullPointDisplaySettings: A2($author$project$CurveCreator$PullPointLineDisplayInfo, true, false),
+	scaleSlider: $author$project$CurveCreator$scaleSliderInit,
 	selectedCurve: $elm$core$Maybe$Nothing,
 	selectedPoints: _List_Nil,
 	time: 0,
 	trashStatus: false,
 	userCurves: _List_fromArray(
-		[$author$project$Main$startingCurve])
+		[$author$project$CurveCreator$startingCurve])
 };
 var $elm$core$Platform$Sub$none = $elm$core$Platform$Sub$batch(_List_Nil);
-var $author$project$Main$subscriptions = function (model) {
+var $author$project$CurveCreator$subscriptions = function (model) {
 	return $elm$core$Platform$Sub$none;
 };
 var $MacCASOutreach$graphicsvg$GraphicSVG$EllieApp$Backspace = {$: 'Backspace'};
 var $MacCASOutreach$graphicsvg$GraphicSVG$EllieApp$Ctrl = {$: 'Ctrl'};
-var $author$project$Main$DeleteSelected = {$: 'DeleteSelected'};
-var $author$project$Main$Dragging = {$: 'Dragging'};
-var $author$project$Main$Exporting = {$: 'Exporting'};
-var $author$project$Main$SelectAll = {$: 'SelectAll'};
-var $author$project$Main$SetAction = function (a) {
+var $author$project$CurveCreator$DeleteSelected = {$: 'DeleteSelected'};
+var $author$project$CurveCreator$Dragging = {$: 'Dragging'};
+var $author$project$CurveCreator$Exporting = {$: 'Exporting'};
+var $author$project$CurveCreator$SelectAll = {$: 'SelectAll'};
+var $author$project$CurveCreator$SetAction = function (a) {
 	return {$: 'SetAction', a: a};
 };
 var $MacCASOutreach$graphicsvg$GraphicSVG$EllieApp$Shift = {$: 'Shift'};
-var $author$project$Main$Undo = {$: 'Undo'};
-var $author$project$Main$EndPoint = function (a) {
+var $author$project$CurveCreator$Undo = {$: 'Undo'};
+var $author$project$CurveCreator$EndPoint = function (a) {
 	return {$: 'EndPoint', a: a};
 };
-var $author$project$Main$Start = {$: 'Start'};
+var $author$project$CurveCreator$Start = {$: 'Start'};
 var $elm$core$List$drop = F2(
 	function (n, list) {
 		drop:
@@ -9490,7 +9490,7 @@ var $elm$core$List$filter = F2(
 			list);
 	});
 var $elm$core$Basics$neq = _Utils_notEqual;
-var $author$project$Main$filterByUnselected = function (model) {
+var $author$project$CurveCreator$filterByUnselected = function (model) {
 	return A2(
 		$elm$core$List$filter,
 		function (curve) {
@@ -9500,7 +9500,7 @@ var $author$project$Main$filterByUnselected = function (model) {
 		},
 		model.userCurves);
 };
-var $author$project$Main$getEndPoint = function (userPull) {
+var $author$project$CurveCreator$getEndPoint = function (userPull) {
 	if (userPull.$ === 'Enabled') {
 		var endPoint = userPull.b;
 		return endPoint;
@@ -9509,7 +9509,7 @@ var $author$project$Main$getEndPoint = function (userPull) {
 		return endPoint;
 	}
 };
-var $author$project$Main$filterBySelected = function (model) {
+var $author$project$CurveCreator$filterBySelected = function (model) {
 	return A2(
 		$elm$core$List$filter,
 		function (curve) {
@@ -9519,9 +9519,9 @@ var $author$project$Main$filterBySelected = function (model) {
 		},
 		model.userCurves);
 };
-var $author$project$Main$getSelectedCurve = function (model) {
+var $author$project$CurveCreator$getSelectedCurve = function (model) {
 	return $elm$core$List$head(
-		$author$project$Main$filterBySelected(model));
+		$author$project$CurveCreator$filterBySelected(model));
 };
 var $elm$core$List$takeReverse = F3(
 	function (n, list, kept) {
@@ -9658,9 +9658,9 @@ var $elm$core$Maybe$withDefault = F2(
 			return _default;
 		}
 	});
-var $author$project$Main$addPoint = F3(
+var $author$project$CurveCreator$addPoint = F3(
 	function (addPointID, newPointPos, model) {
-		var _v0 = $author$project$Main$getSelectedCurve(model);
+		var _v0 = $author$project$CurveCreator$getSelectedCurve(model);
 		if (_v0.$ === 'Nothing') {
 			return model;
 		} else {
@@ -9672,18 +9672,18 @@ var $author$project$Main$addPoint = F3(
 						switch (addPointID.$) {
 							case 'BeforeStart':
 								return _List_fromArray(
-									[$author$project$Main$Start]);
+									[$author$project$CurveCreator$Start]);
 							case 'AfterEnd':
 								return _List_fromArray(
 									[
-										$author$project$Main$EndPoint(
+										$author$project$CurveCreator$EndPoint(
 										$elm$core$List$length(userCurve.pulls))
 									]);
 							default:
 								var num = addPointID.a;
 								return _List_fromArray(
 									[
-										$author$project$Main$EndPoint(num)
+										$author$project$CurveCreator$EndPoint(num)
 									]);
 						}
 					}(),
@@ -9697,7 +9697,7 @@ var $author$project$Main$addPoint = F3(
 										{
 											pulls: A2(
 												$elm$core$List$cons,
-												$author$project$Main$Disabled(userCurve.start),
+												$author$project$CurveCreator$Disabled(userCurve.start),
 												userCurve.pulls),
 											start: newPointPos
 										});
@@ -9709,7 +9709,7 @@ var $author$project$Main$addPoint = F3(
 												userCurve.pulls,
 												_List_fromArray(
 													[
-														$author$project$Main$Disabled(newPointPos)
+														$author$project$CurveCreator$Disabled(newPointPos)
 													]))
 										});
 								default:
@@ -9722,12 +9722,12 @@ var $author$project$Main$addPoint = F3(
 												_Utils_ap(
 													_List_fromArray(
 														[
-															$author$project$Main$Disabled(newPointPos),
-															$author$project$Main$Disabled(
-															$author$project$Main$getEndPoint(
+															$author$project$CurveCreator$Disabled(newPointPos),
+															$author$project$CurveCreator$Disabled(
+															$author$project$CurveCreator$getEndPoint(
 																A2(
 																	$elm$core$Maybe$withDefault,
-																	$author$project$Main$Disabled(
+																	$author$project$CurveCreator$Disabled(
 																		_Utils_Tuple2(0, 0)),
 																	$elm$core$List$head(
 																		A2($elm$core$List$drop, pullNum, userCurve.pulls)))))
@@ -9736,7 +9736,7 @@ var $author$project$Main$addPoint = F3(
 										});
 							}
 						}(),
-						$author$project$Main$filterByUnselected(model))
+						$author$project$CurveCreator$filterByUnselected(model))
 				});
 		}
 	});
@@ -9749,7 +9749,7 @@ var $elm$core$Maybe$andThen = F2(
 			return $elm$core$Maybe$Nothing;
 		}
 	});
-var $author$project$Main$deletePoint = F2(
+var $author$project$CurveCreator$deletePoint = F2(
 	function (point, userCurve) {
 		switch (point.$) {
 			case 'Start':
@@ -9762,7 +9762,7 @@ var $author$project$Main$deletePoint = F2(
 							userCurve,
 							{
 								pulls: tail,
-								start: $author$project$Main$getEndPoint(head)
+								start: $author$project$CurveCreator$getEndPoint(head)
 							}));
 				} else {
 					return $elm$core$Maybe$Nothing;
@@ -9784,8 +9784,8 @@ var $author$project$Main$deletePoint = F2(
 										var customPull = _v2.a;
 										return A2(
 											$elm$core$List$cons,
-											$author$project$Main$Disabled(
-												$author$project$Main$getEndPoint(customPull)),
+											$author$project$CurveCreator$Disabled(
+												$author$project$CurveCreator$getEndPoint(customPull)),
 											A2($elm$core$List$drop, index + 1, userCurve.pulls));
 									}
 								}())
@@ -9808,8 +9808,8 @@ var $author$project$Main$deletePoint = F2(
 										_Utils_ap(
 											_List_fromArray(
 												[
-													$author$project$Main$Disabled(
-													$author$project$Main$getEndPoint(customPull))
+													$author$project$CurveCreator$Disabled(
+													$author$project$CurveCreator$getEndPoint(customPull))
 												]),
 											A2($elm$core$List$drop, index + 2, userCurve.pulls)));
 								}
@@ -9817,7 +9817,7 @@ var $author$project$Main$deletePoint = F2(
 						}));
 		}
 	});
-var $author$project$Main$orderPoints = F2(
+var $author$project$CurveCreator$orderPoints = F2(
 	function (p1, p2) {
 		var _v0 = _Utils_Tuple2(p1, p2);
 		_v0$2:
@@ -9860,9 +9860,9 @@ var $author$project$Main$orderPoints = F2(
 		return $elm$core$Basics$LT;
 	});
 var $elm$core$List$sortWith = _List_sortWith;
-var $author$project$Main$deleteSelectedPoints = F3(
+var $author$project$CurveCreator$deleteSelectedPoints = F3(
 	function (pointsSorted, selectedPoints, userCurve) {
-		var sortedPoints = pointsSorted ? selectedPoints : A2($elm$core$List$sortWith, $author$project$Main$orderPoints, selectedPoints);
+		var sortedPoints = pointsSorted ? selectedPoints : A2($elm$core$List$sortWith, $author$project$CurveCreator$orderPoints, selectedPoints);
 		if (!sortedPoints.b) {
 			return $elm$core$Maybe$Just(userCurve);
 		} else {
@@ -9870,28 +9870,28 @@ var $author$project$Main$deleteSelectedPoints = F3(
 			var tail = sortedPoints.b;
 			return A2(
 				$elm$core$Maybe$andThen,
-				A2($author$project$Main$deleteSelectedPoints, true, tail),
-				A2($author$project$Main$deletePoint, point, userCurve));
+				A2($author$project$CurveCreator$deleteSelectedPoints, true, tail),
+				A2($author$project$CurveCreator$deletePoint, point, userCurve));
 		}
 	});
 var $elm$core$List$singleton = function (value) {
 	return _List_fromArray(
 		[value]);
 };
-var $author$project$Main$deleteSelected = function (model) {
-	var _v0 = $author$project$Main$getSelectedCurve(model);
+var $author$project$CurveCreator$deleteSelected = function (model) {
+	var _v0 = $author$project$CurveCreator$getSelectedCurve(model);
 	if (_v0.$ === 'Nothing') {
 		return model.userCurves;
 	} else {
 		var userCurve = _v0.a;
 		var _v1 = model.selectedPoints;
 		if (!_v1.b) {
-			return $author$project$Main$filterByUnselected(model);
+			return $author$project$CurveCreator$filterByUnselected(model);
 		} else {
 			var selectedPoints = _v1;
 			return _Utils_ap(
 				function () {
-					var _v2 = A3($author$project$Main$deleteSelectedPoints, false, model.selectedPoints, userCurve);
+					var _v2 = A3($author$project$CurveCreator$deleteSelectedPoints, false, model.selectedPoints, userCurve);
 					if (_v2.$ === 'Nothing') {
 						return _List_Nil;
 					} else {
@@ -9904,16 +9904,16 @@ var $author$project$Main$deleteSelected = function (model) {
 						}
 					}
 				}(),
-				$author$project$Main$filterByUnselected(model));
+				$author$project$CurveCreator$filterByUnselected(model));
 		}
 	}
 };
-var $author$project$Main$deselectSlider = function (slider) {
+var $author$project$CurveCreator$deselectSlider = function (slider) {
 	return _Utils_update(
 		slider,
-		{state: $author$project$Main$Waiting});
+		{state: $author$project$CurveCreator$Waiting});
 };
-var $author$project$Main$checkKey = F3(
+var $author$project$CurveCreator$checkKey = F3(
 	function (keyInfo, states, key) {
 		return !(!$elm$core$List$length(
 			A2(
@@ -9925,10 +9925,10 @@ var $author$project$Main$checkKey = F3(
 				},
 				states)));
 	});
-var $author$project$Main$keyPressed = F2(
+var $author$project$CurveCreator$keyPressed = F2(
 	function (keyInfo, key) {
 		return A3(
-			$author$project$Main$checkKey,
+			$author$project$CurveCreator$checkKey,
 			keyInfo,
 			_List_fromArray(
 				[$MacCASOutreach$graphicsvg$GraphicSVG$EllieApp$Down, $MacCASOutreach$graphicsvg$GraphicSVG$EllieApp$JustDown]),
@@ -9944,10 +9944,10 @@ var $elm$core$List$member = F2(
 			xs);
 	});
 var $elm$core$Basics$pow = _Basics_pow;
-var $author$project$Main$getScaleMultiplier = function (slider) {
+var $author$project$CurveCreator$getScaleMultiplier = function (slider) {
 	return A2($elm$core$Basics$pow, 2, slider.currentVal);
 };
-var $author$project$Main$addTuple = F2(
+var $author$project$CurveCreator$addTuple = F2(
 	function (_v0, _v1) {
 		var a1 = _v0.a;
 		var b1 = _v0.b;
@@ -9955,28 +9955,28 @@ var $author$project$Main$addTuple = F2(
 		var b2 = _v1.b;
 		return _Utils_Tuple2(a1 + a2, b1 + b2);
 	});
-var $author$project$Main$moveImage = F2(
+var $author$project$CurveCreator$moveImage = F2(
 	function (moveAmount, image) {
 		return _Utils_update(
 			image,
 			{
-				pos: A2($author$project$Main$addTuple, image.pos, moveAmount)
+				pos: A2($author$project$CurveCreator$addTuple, image.pos, moveAmount)
 			});
 	});
-var $author$project$Main$scalarMult = F2(
+var $author$project$CurveCreator$scalarMult = F2(
 	function (c, _v0) {
 		var a = _v0.a;
 		var b = _v0.b;
 		return _Utils_Tuple2(a * c, b * c);
 	});
-var $author$project$Main$scaleImage = F2(
+var $author$project$CurveCreator$scaleImage = F2(
 	function (newScale, image) {
 		return _Utils_update(
 			image,
 			{scale: newScale});
 	});
-var $author$project$Main$scaleSliderXPos = 73;
-var $author$project$Main$updateSliderVal = F3(
+var $author$project$CurveCreator$scaleSliderXPos = 73;
+var $author$project$CurveCreator$updateSliderVal = F3(
 	function (xOffset, mouseX, slider) {
 		return _Utils_update(
 			slider,
@@ -9985,10 +9985,10 @@ var $author$project$Main$updateSliderVal = F3(
 			});
 	});
 var $elm$core$List$map3 = _List_map3;
-var $author$project$Main$PullPoint = function (a) {
+var $author$project$CurveCreator$PullPoint = function (a) {
 	return {$: 'PullPoint', a: a};
 };
-var $author$project$Main$getMidpoint = F2(
+var $author$project$CurveCreator$getMidpoint = F2(
 	function (_v0, _v1) {
 		var x1 = _v0.a;
 		var y1 = _v0.b;
@@ -9996,15 +9996,15 @@ var $author$project$Main$getMidpoint = F2(
 		var y2 = _v1.b;
 		return _Utils_Tuple2((x1 + x2) / 2, (y1 + y2) / 2);
 	});
-var $author$project$Main$movePointIfSelected = F5(
+var $author$project$CurveCreator$movePointIfSelected = F5(
 	function (selectedPoints, positionChange, pullIndex, prevPoint, customPull) {
 		var pullSelected = A2(
 			$elm$core$List$member,
-			$author$project$Main$PullPoint(pullIndex),
+			$author$project$CurveCreator$PullPoint(pullIndex),
 			selectedPoints);
 		var endSelected = A2(
 			$elm$core$List$member,
-			$author$project$Main$EndPoint(pullIndex),
+			$author$project$CurveCreator$EndPoint(pullIndex),
 			selectedPoints);
 		var _v0 = _Utils_Tuple2(pullSelected, endSelected);
 		if (_v0.a) {
@@ -10013,34 +10013,34 @@ var $author$project$Main$movePointIfSelected = F5(
 					var midPoint = customPull.a;
 					var endPoint = customPull.b;
 					return A2(
-						$author$project$Main$Enabled,
-						A2($author$project$Main$addTuple, midPoint, positionChange),
-						A2($author$project$Main$addTuple, endPoint, positionChange));
+						$author$project$CurveCreator$Enabled,
+						A2($author$project$CurveCreator$addTuple, midPoint, positionChange),
+						A2($author$project$CurveCreator$addTuple, endPoint, positionChange));
 				} else {
 					var endPoint = customPull.a;
 					return A2(
-						$author$project$Main$Enabled,
+						$author$project$CurveCreator$Enabled,
 						A2(
-							$author$project$Main$addTuple,
-							A2($author$project$Main$getMidpoint, prevPoint, endPoint),
+							$author$project$CurveCreator$addTuple,
+							A2($author$project$CurveCreator$getMidpoint, prevPoint, endPoint),
 							positionChange),
-						A2($author$project$Main$addTuple, endPoint, positionChange));
+						A2($author$project$CurveCreator$addTuple, endPoint, positionChange));
 				}
 			} else {
 				if (customPull.$ === 'Enabled') {
 					var midPoint = customPull.a;
 					var endPoint = customPull.b;
 					return A2(
-						$author$project$Main$Enabled,
-						A2($author$project$Main$addTuple, midPoint, positionChange),
+						$author$project$CurveCreator$Enabled,
+						A2($author$project$CurveCreator$addTuple, midPoint, positionChange),
 						endPoint);
 				} else {
 					var endPoint = customPull.a;
 					return A2(
-						$author$project$Main$Enabled,
+						$author$project$CurveCreator$Enabled,
 						A2(
-							$author$project$Main$addTuple,
-							A2($author$project$Main$getMidpoint, prevPoint, endPoint),
+							$author$project$CurveCreator$addTuple,
+							A2($author$project$CurveCreator$getMidpoint, prevPoint, endPoint),
 							positionChange),
 						endPoint);
 				}
@@ -10051,25 +10051,25 @@ var $author$project$Main$movePointIfSelected = F5(
 					var midPoint = customPull.a;
 					var endPoint = customPull.b;
 					return A2(
-						$author$project$Main$Enabled,
+						$author$project$CurveCreator$Enabled,
 						midPoint,
-						A2($author$project$Main$addTuple, endPoint, positionChange));
+						A2($author$project$CurveCreator$addTuple, endPoint, positionChange));
 				} else {
 					var endPoint = customPull.a;
-					return $author$project$Main$Disabled(
-						A2($author$project$Main$addTuple, endPoint, positionChange));
+					return $author$project$CurveCreator$Disabled(
+						A2($author$project$CurveCreator$addTuple, endPoint, positionChange));
 				}
 			} else {
 				return customPull;
 			}
 		}
 	});
-var $author$project$Main$movePoints = F3(
+var $author$project$CurveCreator$movePoints = F3(
 	function (selectedPoints, positionChange, userCurve) {
 		var startPoints = A2(
 			$elm$core$List$cons,
 			userCurve.start,
-			A2($elm$core$List$map, $author$project$Main$getEndPoint, userCurve.pulls));
+			A2($elm$core$List$map, $author$project$CurveCreator$getEndPoint, userCurve.pulls));
 		var indices = A2(
 			$elm$core$List$range,
 			0,
@@ -10079,54 +10079,54 @@ var $author$project$Main$movePoints = F3(
 			{
 				pulls: A4(
 					$elm$core$List$map3,
-					A2($author$project$Main$movePointIfSelected, selectedPoints, positionChange),
+					A2($author$project$CurveCreator$movePointIfSelected, selectedPoints, positionChange),
 					indices,
 					startPoints,
 					userCurve.pulls),
-				start: A2($elm$core$List$member, $author$project$Main$Start, selectedPoints) ? A2($author$project$Main$addTuple, userCurve.start, positionChange) : userCurve.start
+				start: A2($elm$core$List$member, $author$project$CurveCreator$Start, selectedPoints) ? A2($author$project$CurveCreator$addTuple, userCurve.start, positionChange) : userCurve.start
 			});
 	});
-var $author$project$Main$updateUserCurves = F2(
+var $author$project$CurveCreator$updateUserCurves = F2(
 	function (model, moveAmount) {
 		return _Utils_ap(
-			$author$project$Main$filterByUnselected(model),
+			$author$project$CurveCreator$filterByUnselected(model),
 			A2(
 				$elm$core$List$map,
-				A2($author$project$Main$movePoints, model.selectedPoints, moveAmount),
-				$author$project$Main$filterBySelected(model)));
+				A2($author$project$CurveCreator$movePoints, model.selectedPoints, moveAmount),
+				$author$project$CurveCreator$filterBySelected(model)));
 	});
-var $author$project$Main$mouseMove = F3(
+var $author$project$CurveCreator$mouseMove = F3(
 	function (point, posChange, model) {
 		if (model.mouseState.mouseDown) {
 			var _v0 = model.currentAction;
 			switch (_v0.$) {
 				case 'MovingPoints':
-					return _Utils_eq(model.scaleSlider.state, $author$project$Main$Dragging) ? _Utils_update(
+					return _Utils_eq(model.scaleSlider.state, $author$project$CurveCreator$Dragging) ? _Utils_update(
 						model,
 						{
-							scaleSlider: A3($author$project$Main$updateSliderVal, $author$project$Main$scaleSliderXPos, point.a, model.scaleSlider)
+							scaleSlider: A3($author$project$CurveCreator$updateSliderVal, $author$project$CurveCreator$scaleSliderXPos, point.a, model.scaleSlider)
 						}) : _Utils_update(
 						model,
 						{
-							userCurves: A2($author$project$Main$updateUserCurves, model, posChange)
+							userCurves: A2($author$project$CurveCreator$updateUserCurves, model, posChange)
 						});
 				case 'EditingImage':
-					return _Utils_eq(model.imgZoomSlider.state, $author$project$Main$Dragging) ? _Utils_update(
+					return _Utils_eq(model.imgZoomSlider.state, $author$project$CurveCreator$Dragging) ? _Utils_update(
 						model,
 						{
 							backgroundImage: A2(
-								$author$project$Main$scaleImage,
-								$author$project$Main$getScaleMultiplier(model.imgZoomSlider),
+								$author$project$CurveCreator$scaleImage,
+								$author$project$CurveCreator$getScaleMultiplier(model.imgZoomSlider),
 								model.backgroundImage),
-							imgZoomSlider: A3($author$project$Main$updateSliderVal, $author$project$Main$scaleSliderXPos, point.a, model.imgZoomSlider)
+							imgZoomSlider: A3($author$project$CurveCreator$updateSliderVal, $author$project$CurveCreator$scaleSliderXPos, point.a, model.imgZoomSlider)
 						}) : _Utils_update(
 						model,
 						{
 							backgroundImage: A2(
-								$author$project$Main$moveImage,
+								$author$project$CurveCreator$moveImage,
 								A2(
-									$author$project$Main$scalarMult,
-									1 / $author$project$Main$getScaleMultiplier(model.imgZoomSlider),
+									$author$project$CurveCreator$scalarMult,
+									1 / $author$project$CurveCreator$getScaleMultiplier(model.imgZoomSlider),
 									posChange),
 								model.backgroundImage)
 						});
@@ -10137,7 +10137,7 @@ var $author$project$Main$mouseMove = F3(
 			return model;
 		}
 	});
-var $author$project$Main$positionDelta = F2(
+var $author$project$CurveCreator$positionDelta = F2(
 	function (_v0, _v1) {
 		var a = _v0.a;
 		var b = _v0.b;
@@ -10145,29 +10145,29 @@ var $author$project$Main$positionDelta = F2(
 		var d = _v1.b;
 		return _Utils_Tuple2(c - a, d - b);
 	});
-var $author$project$Main$maxUndoSteps = 100;
-var $author$project$Main$modelToPrevModel = function (model) {
+var $author$project$CurveCreator$maxUndoSteps = 100;
+var $author$project$CurveCreator$modelToPrevModel = function (model) {
 	return {backgroundImage: model.backgroundImage, colours: model.colours, currentAction: model.currentAction, imgZoomSlider: model.imgZoomSlider, lastCurveID: model.lastCurveID, pullPointDisplaySettings: model.pullPointDisplaySettings, scaleSlider: model.scaleSlider, selectedCurve: model.selectedCurve, selectedPoints: model.selectedPoints, trashStatus: model.trashStatus, userCurves: model.userCurves};
 };
-var $author$project$Main$saveModelIfNeeded = F2(
+var $author$project$CurveCreator$saveModelIfNeeded = F2(
 	function (oldModel, newModel) {
 		return _Utils_eq(
 			$elm$core$List$head(oldModel.prevModels),
 			$elm$core$Maybe$Just(
-				$author$project$Main$modelToPrevModel(oldModel))) ? newModel : _Utils_update(
+				$author$project$CurveCreator$modelToPrevModel(oldModel))) ? newModel : _Utils_update(
 			newModel,
 			{
 				prevModels: A2(
 					$elm$core$List$take,
-					$author$project$Main$maxUndoSteps,
+					$author$project$CurveCreator$maxUndoSteps,
 					A2(
 						$elm$core$List$cons,
-						$author$project$Main$modelToPrevModel(oldModel),
+						$author$project$CurveCreator$modelToPrevModel(oldModel),
 						oldModel.prevModels))
 			});
 	});
-var $author$project$Main$selectAllPoints = function (model) {
-	var _v0 = $author$project$Main$getSelectedCurve(model);
+var $author$project$CurveCreator$selectAllPoints = function (model) {
+	var _v0 = $author$project$CurveCreator$getSelectedCurve(model);
 	if (_v0.$ === 'Nothing') {
 		return model;
 	} else {
@@ -10179,34 +10179,34 @@ var $author$project$Main$selectAllPoints = function (model) {
 			{
 				selectedPoints: A2(
 					$elm$core$List$cons,
-					$author$project$Main$Start,
+					$author$project$CurveCreator$Start,
 					_Utils_ap(
 						A2(
 							$elm$core$List$map,
 							function (i) {
-								return $author$project$Main$PullPoint(i);
+								return $author$project$CurveCreator$PullPoint(i);
 							},
 							startList),
 						A2(
 							$elm$core$List$map,
 							function (i) {
-								return $author$project$Main$EndPoint(i);
+								return $author$project$CurveCreator$EndPoint(i);
 							},
 							startList)))
 			});
 	}
 };
-var $author$project$Main$toggleEndPointLines = function (info) {
+var $author$project$CurveCreator$toggleEndPointLines = function (info) {
 	return _Utils_update(
 		info,
 		{drawEndPointLines: !info.drawEndPointLines});
 };
-var $author$project$Main$toggleMidPointLines = function (info) {
+var $author$project$CurveCreator$toggleMidPointLines = function (info) {
 	return _Utils_update(
 		info,
 		{drawMidPointLines: !info.drawMidPointLines});
 };
-var $author$project$Main$prevModelToModel = F2(
+var $author$project$CurveCreator$prevModelToModel = F2(
 	function (prevModel, model) {
 		return {
 			backgroundImage: prevModel.backgroundImage,
@@ -10226,23 +10226,23 @@ var $author$project$Main$prevModelToModel = F2(
 			userCurves: prevModel.userCurves
 		};
 	});
-var $author$project$Main$undo = function (model) {
+var $author$project$CurveCreator$undo = function (model) {
 	var _v0 = model.prevModels;
 	if (!_v0.b) {
 		return model;
 	} else {
 		var prevModel = _v0.a;
 		var tail = _v0.b;
-		return A2($author$project$Main$prevModelToModel, prevModel, model);
+		return A2($author$project$CurveCreator$prevModelToModel, prevModel, model);
 	}
 };
-var $author$project$Main$updateMousePos = F2(
+var $author$project$CurveCreator$updateMousePos = F2(
 	function (state, point) {
 		return _Utils_update(
 			state,
 			{pos: point});
 	});
-var $author$project$Main$update = F2(
+var $author$project$CurveCreator$update = F2(
 	function (msg, model) {
 		update:
 		while (true) {
@@ -10257,7 +10257,7 @@ var $author$project$Main$update = F2(
 					if (_Utils_eq(
 						getKeyStates($MacCASOutreach$graphicsvg$GraphicSVG$EllieApp$Backspace),
 						$MacCASOutreach$graphicsvg$GraphicSVG$EllieApp$JustDown)) {
-						var $temp$msg = $author$project$Main$DeleteSelected,
+						var $temp$msg = $author$project$CurveCreator$DeleteSelected,
 							$temp$model = updatedModel;
 						msg = $temp$msg;
 						model = $temp$model;
@@ -10267,35 +10267,35 @@ var $author$project$Main$update = F2(
 							getKeyStates(
 								$MacCASOutreach$graphicsvg$GraphicSVG$EllieApp$Key('e')),
 							$MacCASOutreach$graphicsvg$GraphicSVG$EllieApp$JustDown)) {
-							if (_Utils_eq(model.currentAction, $author$project$Main$Exporting)) {
-								var $temp$msg = $author$project$Main$SetAction($author$project$Main$MovingPoints),
+							if (_Utils_eq(model.currentAction, $author$project$CurveCreator$Exporting)) {
+								var $temp$msg = $author$project$CurveCreator$SetAction($author$project$CurveCreator$MovingPoints),
 									$temp$model = updatedModel;
 								msg = $temp$msg;
 								model = $temp$model;
 								continue update;
 							} else {
-								var $temp$msg = $author$project$Main$SetAction($author$project$Main$Exporting),
+								var $temp$msg = $author$project$CurveCreator$SetAction($author$project$CurveCreator$Exporting),
 									$temp$model = updatedModel;
 								msg = $temp$msg;
 								model = $temp$model;
 								continue update;
 							}
 						} else {
-							if (A2($author$project$Main$keyPressed, getKeyStates, $MacCASOutreach$graphicsvg$GraphicSVG$EllieApp$Ctrl) && _Utils_eq(
+							if (A2($author$project$CurveCreator$keyPressed, getKeyStates, $MacCASOutreach$graphicsvg$GraphicSVG$EllieApp$Ctrl) && _Utils_eq(
 								getKeyStates(
 									$MacCASOutreach$graphicsvg$GraphicSVG$EllieApp$Key('a')),
 								$MacCASOutreach$graphicsvg$GraphicSVG$EllieApp$JustDown)) {
-								var $temp$msg = $author$project$Main$SelectAll,
+								var $temp$msg = $author$project$CurveCreator$SelectAll,
 									$temp$model = updatedModel;
 								msg = $temp$msg;
 								model = $temp$model;
 								continue update;
 							} else {
-								if (A2($author$project$Main$keyPressed, getKeyStates, $MacCASOutreach$graphicsvg$GraphicSVG$EllieApp$Ctrl) && _Utils_eq(
+								if (A2($author$project$CurveCreator$keyPressed, getKeyStates, $MacCASOutreach$graphicsvg$GraphicSVG$EllieApp$Ctrl) && _Utils_eq(
 									getKeyStates(
 										$MacCASOutreach$graphicsvg$GraphicSVG$EllieApp$Key('z')),
 									$MacCASOutreach$graphicsvg$GraphicSVG$EllieApp$JustDown)) {
-									var $temp$msg = $author$project$Main$Undo,
+									var $temp$msg = $author$project$CurveCreator$Undo,
 										$temp$model = updatedModel;
 									msg = $temp$msg;
 									model = $temp$model;
@@ -10309,13 +10309,13 @@ var $author$project$Main$update = F2(
 				case 'DeleteSelected':
 					return _Utils_Tuple2(
 						A2(
-							$author$project$Main$saveModelIfNeeded,
+							$author$project$CurveCreator$saveModelIfNeeded,
 							model,
 							_Utils_update(
 								model,
 								{
 									selectedPoints: _List_Nil,
-									userCurves: $author$project$Main$deleteSelected(model)
+									userCurves: $author$project$CurveCreator$deleteSelected(model)
 								})),
 						$elm$core$Platform$Cmd$none);
 				case 'UpdateMouseInfo':
@@ -10323,21 +10323,21 @@ var $author$project$Main$update = F2(
 					var point = msg.b;
 					return _Utils_Tuple2(
 						A2(
-							$author$project$Main$saveModelIfNeeded,
+							$author$project$CurveCreator$saveModelIfNeeded,
 							model,
 							_Utils_update(
 								model,
 								{
-									imgZoomSlider: pressed ? model.imgZoomSlider : $author$project$Main$deselectSlider(model.imgZoomSlider),
-									mouseState: A2($author$project$Main$MouseState, point, pressed),
-									scaleSlider: pressed ? model.scaleSlider : $author$project$Main$deselectSlider(model.scaleSlider)
+									imgZoomSlider: pressed ? model.imgZoomSlider : $author$project$CurveCreator$deselectSlider(model.imgZoomSlider),
+									mouseState: A2($author$project$CurveCreator$MouseState, point, pressed),
+									scaleSlider: pressed ? model.scaleSlider : $author$project$CurveCreator$deselectSlider(model.scaleSlider)
 								})),
 						$elm$core$Platform$Cmd$none);
 				case 'SelectCurve':
 					var id = msg.a;
 					return _Utils_Tuple2(
 						A2(
-							$author$project$Main$saveModelIfNeeded,
+							$author$project$CurveCreator$saveModelIfNeeded,
 							model,
 							_Utils_update(
 								model,
@@ -10350,12 +10350,12 @@ var $author$project$Main$update = F2(
 					var curvePoint = msg.a;
 					return _Utils_Tuple2(
 						A2(
-							$author$project$Main$saveModelIfNeeded,
+							$author$project$CurveCreator$saveModelIfNeeded,
 							model,
 							_Utils_update(
 								model,
 								{
-									selectedPoints: A2($author$project$Main$keyPressed, model.keyInfo, $MacCASOutreach$graphicsvg$GraphicSVG$EllieApp$Shift) ? (A2($elm$core$List$member, curvePoint, model.selectedPoints) ? model.selectedPoints : A2($elm$core$List$cons, curvePoint, model.selectedPoints)) : _List_fromArray(
+									selectedPoints: A2($author$project$CurveCreator$keyPressed, model.keyInfo, $MacCASOutreach$graphicsvg$GraphicSVG$EllieApp$Shift) ? (A2($elm$core$List$member, curvePoint, model.selectedPoints) ? model.selectedPoints : A2($elm$core$List$cons, curvePoint, model.selectedPoints)) : _List_fromArray(
 										[curvePoint])
 								})),
 						$elm$core$Platform$Cmd$none);
@@ -10389,45 +10389,45 @@ var $author$project$Main$update = F2(
 						$elm$core$Platform$Cmd$none);
 				case 'MouseMove':
 					var point = msg.a;
-					var posChange = A2($author$project$Main$positionDelta, model.mouseState.pos, point);
+					var posChange = A2($author$project$CurveCreator$positionDelta, model.mouseState.pos, point);
 					return _Utils_Tuple2(
 						A3(
-							$author$project$Main$mouseMove,
+							$author$project$CurveCreator$mouseMove,
 							point,
 							posChange,
 							_Utils_update(
 								model,
 								{
-									mouseState: A2($author$project$Main$updateMousePos, model.mouseState, point)
+									mouseState: A2($author$project$CurveCreator$updateMousePos, model.mouseState, point)
 								})),
 						$elm$core$Platform$Cmd$none);
 				case 'ToggleEndPointLines':
 					return _Utils_Tuple2(
 						A2(
-							$author$project$Main$saveModelIfNeeded,
+							$author$project$CurveCreator$saveModelIfNeeded,
 							model,
 							_Utils_update(
 								model,
 								{
-									pullPointDisplaySettings: $author$project$Main$toggleEndPointLines(model.pullPointDisplaySettings)
+									pullPointDisplaySettings: $author$project$CurveCreator$toggleEndPointLines(model.pullPointDisplaySettings)
 								})),
 						$elm$core$Platform$Cmd$none);
 				case 'ToggleMidPointLines':
 					return _Utils_Tuple2(
 						A2(
-							$author$project$Main$saveModelIfNeeded,
+							$author$project$CurveCreator$saveModelIfNeeded,
 							model,
 							_Utils_update(
 								model,
 								{
-									pullPointDisplaySettings: $author$project$Main$toggleMidPointLines(model.pullPointDisplaySettings)
+									pullPointDisplaySettings: $author$project$CurveCreator$toggleMidPointLines(model.pullPointDisplaySettings)
 								})),
 						$elm$core$Platform$Cmd$none);
 				case 'SetAction':
 					var action = msg.a;
 					return _Utils_Tuple2(
 						A2(
-							$author$project$Main$saveModelIfNeeded,
+							$author$project$CurveCreator$saveModelIfNeeded,
 							model,
 							_Utils_update(
 								model,
@@ -10438,15 +10438,15 @@ var $author$project$Main$update = F2(
 					var point = msg.b;
 					return _Utils_Tuple2(
 						A2(
-							$author$project$Main$saveModelIfNeeded,
+							$author$project$CurveCreator$saveModelIfNeeded,
 							model,
-							A3($author$project$Main$addPoint, addPointID, point, model)),
+							A3($author$project$CurveCreator$addPoint, addPointID, point, model)),
 						$elm$core$Platform$Cmd$none);
 				case 'ChangeColours':
 					var newColours = msg.a;
 					return _Utils_Tuple2(
 						A2(
-							$author$project$Main$saveModelIfNeeded,
+							$author$project$CurveCreator$saveModelIfNeeded,
 							model,
 							_Utils_update(
 								model,
@@ -10456,10 +10456,10 @@ var $author$project$Main$update = F2(
 					var oldSlider = model.scaleSlider;
 					var updatedSlider = _Utils_update(
 						oldSlider,
-						{state: $author$project$Main$Dragging});
+						{state: $author$project$CurveCreator$Dragging});
 					return _Utils_Tuple2(
 						A2(
-							$author$project$Main$saveModelIfNeeded,
+							$author$project$CurveCreator$saveModelIfNeeded,
 							model,
 							_Utils_update(
 								model,
@@ -10469,10 +10469,10 @@ var $author$project$Main$update = F2(
 					var oldSlider = model.imgZoomSlider;
 					var updatedSlider = _Utils_update(
 						oldSlider,
-						{state: $author$project$Main$Dragging});
+						{state: $author$project$CurveCreator$Dragging});
 					return _Utils_Tuple2(
 						A2(
-							$author$project$Main$saveModelIfNeeded,
+							$author$project$CurveCreator$saveModelIfNeeded,
 							model,
 							_Utils_update(
 								model,
@@ -10481,18 +10481,18 @@ var $author$project$Main$update = F2(
 				case 'SelectAll':
 					return _Utils_Tuple2(
 						A2(
-							$author$project$Main$saveModelIfNeeded,
+							$author$project$CurveCreator$saveModelIfNeeded,
 							model,
-							$author$project$Main$selectAllPoints(model)),
+							$author$project$CurveCreator$selectAllPoints(model)),
 						$elm$core$Platform$Cmd$none);
 				case 'AddNewCurve':
 					var newID = model.lastCurveID + 1;
 					var newCurve = _Utils_update(
-						$author$project$Main$startingCurve,
+						$author$project$CurveCreator$startingCurve,
 						{id: newID});
 					return _Utils_Tuple2(
 						A2(
-							$author$project$Main$saveModelIfNeeded,
+							$author$project$CurveCreator$saveModelIfNeeded,
 							model,
 							_Utils_update(
 								model,
@@ -10505,7 +10505,7 @@ var $author$project$Main$update = F2(
 						$elm$core$Platform$Cmd$none);
 				case 'Undo':
 					return _Utils_Tuple2(
-						$author$project$Main$undo(model),
+						$author$project$CurveCreator$undo(model),
 						$elm$core$Platform$Cmd$none);
 				case 'UpdateTrash':
 					var newStatus = msg.a;
@@ -10515,7 +10515,7 @@ var $author$project$Main$update = F2(
 							{trashStatus: newStatus}),
 						$elm$core$Platform$Cmd$none);
 				default:
-					var $temp$msg = $author$project$Main$DeleteSelected,
+					var $temp$msg = $author$project$CurveCreator$DeleteSelected,
 						$temp$model = model;
 					msg = $temp$msg;
 					model = $temp$model;
@@ -10527,10 +10527,10 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$collage = F3(
 	function (w, h, shapes) {
 		return A3($MacCASOutreach$graphicsvg$GraphicSVG$Collage, w, h, shapes);
 	});
-var $author$project$Main$EditingImage = {$: 'EditingImage'};
-var $author$project$Main$SelectImageSlider = {$: 'SelectImageSlider'};
-var $author$project$Main$SelectScaleSlider = {$: 'SelectScaleSlider'};
-var $author$project$Main$AddNewCurve = {$: 'AddNewCurve'};
+var $author$project$CurveCreator$EditingImage = {$: 'EditingImage'};
+var $author$project$CurveCreator$SelectImageSlider = {$: 'SelectImageSlider'};
+var $author$project$CurveCreator$SelectScaleSlider = {$: 'SelectScaleSlider'};
+var $author$project$CurveCreator$AddNewCurve = {$: 'AddNewCurve'};
 var $MacCASOutreach$graphicsvg$GraphicSVG$Secret$NoLine = {$: 'NoLine'};
 var $MacCASOutreach$graphicsvg$GraphicSVG$blank = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 0, 0, 0, 0);
 var $MacCASOutreach$graphicsvg$GraphicSVG$subtract = F2(
@@ -10939,7 +10939,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$sansserif = function (stencil) {
 		return a;
 	}
 };
-var $author$project$Main$serifFont = $MacCASOutreach$graphicsvg$GraphicSVG$sansserif;
+var $author$project$CurveCreator$serifFont = $MacCASOutreach$graphicsvg$GraphicSVG$sansserif;
 var $MacCASOutreach$graphicsvg$GraphicSVG$size = F2(
 	function (sze, stencil) {
 		if (stencil.$ === 'Text') {
@@ -10976,9 +10976,9 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$text = function (str) {
 		A8($MacCASOutreach$graphicsvg$GraphicSVG$Secret$Face, 12, false, false, false, false, false, $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Serif, $MacCASOutreach$graphicsvg$GraphicSVG$Secret$AlignLeft),
 		str);
 };
-var $author$project$Main$addCurveButton = A2(
+var $author$project$CurveCreator$addCurveButton = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseDown,
-	$author$project$Main$AddNewCurve,
+	$author$project$CurveCreator$AddNewCurve,
 	A2(
 		$MacCASOutreach$graphicsvg$GraphicSVG$move,
 		_Utils_Tuple2(80, 40),
@@ -10999,22 +10999,22 @@ var $author$project$Main$addCurveButton = A2(
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 						$MacCASOutreach$graphicsvg$GraphicSVG$black,
-						$author$project$Main$serifFont(
+						$author$project$CurveCreator$serifFont(
 							A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$size,
 								4.5,
 								$MacCASOutreach$graphicsvg$GraphicSVG$centered(
 									$MacCASOutreach$graphicsvg$GraphicSVG$text('Add Curve'))))))
 				]))));
-var $author$project$Main$All = {$: 'All'};
-var $author$project$Main$AllPoints = {$: 'AllPoints'};
-var $author$project$Main$Deselect = function (a) {
+var $author$project$CurveCreator$All = {$: 'All'};
+var $author$project$CurveCreator$AllPoints = {$: 'AllPoints'};
+var $author$project$CurveCreator$Deselect = function (a) {
 	return {$: 'Deselect', a: a};
 };
-var $author$project$Main$MouseMove = function (a) {
+var $author$project$CurveCreator$MouseMove = function (a) {
 	return {$: 'MouseMove', a: a};
 };
-var $author$project$Main$UpdateMouseInfo = F2(
+var $author$project$CurveCreator$UpdateMouseInfo = F2(
 	function (a, b) {
 		return {$: 'UpdateMouseInfo', a: a, b: b};
 	});
@@ -11030,31 +11030,31 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseUpAt = F2(
 	function (msg, shape) {
 		return A2($MacCASOutreach$graphicsvg$GraphicSVG$Secret$MouseUpAt, msg, shape);
 	});
-var $author$project$Main$background = function (model) {
+var $author$project$CurveCreator$background = function (model) {
 	return A2(
 		$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseUpAt,
-		$author$project$Main$UpdateMouseInfo(false),
+		$author$project$CurveCreator$UpdateMouseInfo(false),
 		A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseMoveAt,
-			$author$project$Main$MouseMove,
+			$author$project$CurveCreator$MouseMove,
 			A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseDownAt,
-				$author$project$Main$UpdateMouseInfo(true),
+				$author$project$CurveCreator$UpdateMouseInfo(true),
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseDown,
-					_Utils_eq(model.selectedPoints, _List_Nil) ? $author$project$Main$Deselect($author$project$Main$All) : $author$project$Main$Deselect($author$project$Main$AllPoints),
+					_Utils_eq(model.selectedPoints, _List_Nil) ? $author$project$CurveCreator$Deselect($author$project$CurveCreator$All) : $author$project$CurveCreator$Deselect($author$project$CurveCreator$AllPoints),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 						$MacCASOutreach$graphicsvg$GraphicSVG$blank,
 						A2($MacCASOutreach$graphicsvg$GraphicSVG$rect, 2000, 1000))))));
 };
-var $author$project$Main$AddPoint = F2(
+var $author$project$CurveCreator$AddPoint = F2(
 	function (a, b) {
 		return {$: 'AddPoint', a: a, b: b};
 	});
-var $author$project$Main$AfterEnd = {$: 'AfterEnd'};
-var $author$project$Main$BeforeStart = {$: 'BeforeStart'};
-var $author$project$Main$calculatePullPoint = F2(
+var $author$project$CurveCreator$AfterEnd = {$: 'AfterEnd'};
+var $author$project$CurveCreator$BeforeStart = {$: 'BeforeStart'};
+var $author$project$CurveCreator$calculatePullPoint = F2(
 	function (prevPoint, customPull) {
 		if (customPull.$ === 'Enabled') {
 			var pullPoint = customPull.a;
@@ -11062,7 +11062,7 @@ var $author$project$Main$calculatePullPoint = F2(
 			return pullPoint;
 		} else {
 			var endPoint = customPull.a;
-			return A2($author$project$Main$getMidpoint, prevPoint, endPoint);
+			return A2($author$project$CurveCreator$getMidpoint, prevPoint, endPoint);
 		}
 	});
 var $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Circle = function (a) {
@@ -11071,7 +11071,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Circle = function (a) {
 var $MacCASOutreach$graphicsvg$GraphicSVG$circle = function (r) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Circle(r);
 };
-var $author$project$Main$magnitude = function (_v0) {
+var $author$project$CurveCreator$magnitude = function (_v0) {
 	var x = _v0.a;
 	var y = _v0.b;
 	return A2(
@@ -11079,10 +11079,10 @@ var $author$project$Main$magnitude = function (_v0) {
 		A2($elm$core$Basics$pow, x, 2) + A2($elm$core$Basics$pow, y, 2),
 		0.5);
 };
-var $author$project$Main$normalize = function (_v0) {
+var $author$project$CurveCreator$normalize = function (_v0) {
 	var x = _v0.a;
 	var y = _v0.b;
-	var mag = $author$project$Main$magnitude(
+	var mag = $author$project$CurveCreator$magnitude(
 		_Utils_Tuple2(x, y));
 	return (!mag) ? _Utils_Tuple2(0, 0) : _Utils_Tuple2(x / mag, y / mag);
 };
@@ -11090,7 +11090,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$scale = F2(
 	function (s, shape) {
 		return A3($MacCASOutreach$graphicsvg$GraphicSVG$Secret$Scale, s, s, shape);
 	});
-var $author$project$Main$buildAddPointButtons = F2(
+var $author$project$CurveCreator$buildAddPointButtons = F2(
 	function (scaleAmount, userCurve) {
 		var secondToLastPull = $elm$core$List$head(
 			A2(
@@ -11102,43 +11102,43 @@ var $author$project$Main$buildAddPointButtons = F2(
 				return userCurve.start;
 			} else {
 				var customPull = secondToLastPull.a;
-				return $author$project$Main$getEndPoint(customPull);
+				return $author$project$CurveCreator$getEndPoint(customPull);
 			}
 		}();
 		var endPull = A2(
 			$elm$core$Maybe$withDefault,
-			$author$project$Main$Disabled(
+			$author$project$CurveCreator$Disabled(
 				_Utils_Tuple2(0, 0)),
 			$elm$core$List$head(
 				$elm$core$List$reverse(userCurve.pulls)));
 		var buttonDistance = 6 * scaleAmount;
 		var endButtonPos = A2(
-			$author$project$Main$addTuple,
-			$author$project$Main$getEndPoint(endPull),
+			$author$project$CurveCreator$addTuple,
+			$author$project$CurveCreator$getEndPoint(endPull),
 			A2(
-				$author$project$Main$scalarMult,
+				$author$project$CurveCreator$scalarMult,
 				buttonDistance * (-1),
-				$author$project$Main$normalize(
+				$author$project$CurveCreator$normalize(
 					A2(
-						$author$project$Main$positionDelta,
-						$author$project$Main$getEndPoint(endPull),
-						A2($author$project$Main$calculatePullPoint, secondToLastEndPoint, endPull)))));
+						$author$project$CurveCreator$positionDelta,
+						$author$project$CurveCreator$getEndPoint(endPull),
+						A2($author$project$CurveCreator$calculatePullPoint, secondToLastEndPoint, endPull)))));
 		var startButtonPos = A2(
-			$author$project$Main$addTuple,
+			$author$project$CurveCreator$addTuple,
 			userCurve.start,
 			A2(
-				$author$project$Main$scalarMult,
+				$author$project$CurveCreator$scalarMult,
 				buttonDistance * (-1),
-				$author$project$Main$normalize(
+				$author$project$CurveCreator$normalize(
 					A2(
-						$author$project$Main$positionDelta,
+						$author$project$CurveCreator$positionDelta,
 						userCurve.start,
 						A2(
-							$author$project$Main$calculatePullPoint,
+							$author$project$CurveCreator$calculatePullPoint,
 							userCurve.start,
 							A2(
 								$elm$core$Maybe$withDefault,
-								$author$project$Main$Disabled(
+								$author$project$CurveCreator$Disabled(
 									_Utils_Tuple2(0, 0)),
 								$elm$core$List$head(userCurve.pulls)))))));
 		var button = A2(
@@ -11171,29 +11171,29 @@ var $author$project$Main$buildAddPointButtons = F2(
 			[
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseUpAt,
-				$author$project$Main$UpdateMouseInfo(false),
+				$author$project$CurveCreator$UpdateMouseInfo(false),
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseMoveAt,
-					$author$project$Main$MouseMove,
+					$author$project$CurveCreator$MouseMove,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseDownAt,
-						$author$project$Main$UpdateMouseInfo(true),
+						$author$project$CurveCreator$UpdateMouseInfo(true),
 						A2(
 							$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseDown,
-							A2($author$project$Main$AddPoint, $author$project$Main$BeforeStart, startButtonPos),
+							A2($author$project$CurveCreator$AddPoint, $author$project$CurveCreator$BeforeStart, startButtonPos),
 							A2($MacCASOutreach$graphicsvg$GraphicSVG$move, startButtonPos, button))))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseUpAt,
-				$author$project$Main$UpdateMouseInfo(false),
+				$author$project$CurveCreator$UpdateMouseInfo(false),
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseMoveAt,
-					$author$project$Main$MouseMove,
+					$author$project$CurveCreator$MouseMove,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseDownAt,
-						$author$project$Main$UpdateMouseInfo(true),
+						$author$project$CurveCreator$UpdateMouseInfo(true),
 						A2(
 							$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseDown,
-							A2($author$project$Main$AddPoint, $author$project$Main$AfterEnd, endButtonPos),
+							A2($author$project$CurveCreator$AddPoint, $author$project$CurveCreator$AfterEnd, endButtonPos),
 							A2($MacCASOutreach$graphicsvg$GraphicSVG$move, endButtonPos, button)))))
 			]);
 	});
@@ -11201,7 +11201,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Pull = F2(
 	function (a, b) {
 		return {$: 'Pull', a: a, b: b};
 	});
-var $author$project$Main$rot = F2(
+var $author$project$CurveCreator$rot = F2(
 	function (angle, _v0) {
 		var x = _v0.a;
 		var y = _v0.b;
@@ -11209,17 +11209,17 @@ var $author$project$Main$rot = F2(
 			($elm$core$Basics$cos(angle) * x) - ($elm$core$Basics$sin(angle) * y),
 			($elm$core$Basics$sin(angle) * x) + ($elm$core$Basics$cos(angle) * y));
 	});
-var $author$project$Main$averageDir = F2(
+var $author$project$CurveCreator$averageDir = F2(
 	function (vect1, vect2) {
-		var sum = A2($author$project$Main$addTuple, vect1, vect2);
-		return ($author$project$Main$magnitude(sum) <= 0.000001) ? $author$project$Main$normalize(
+		var sum = A2($author$project$CurveCreator$addTuple, vect1, vect2);
+		return ($author$project$CurveCreator$magnitude(sum) <= 0.000001) ? $author$project$CurveCreator$normalize(
 			A2(
-				$author$project$Main$rot,
+				$author$project$CurveCreator$rot,
 				$elm$core$Basics$degrees(90),
-				vect1)) : $author$project$Main$normalize(sum);
+				vect1)) : $author$project$CurveCreator$normalize(sum);
 	});
 var $elm$core$Basics$acos = _Basics_acos;
-var $author$project$Main$dotProduct = F2(
+var $author$project$CurveCreator$dotProduct = F2(
 	function (_v0, _v1) {
 		var a1 = _v0.a;
 		var a2 = _v0.b;
@@ -11227,16 +11227,16 @@ var $author$project$Main$dotProduct = F2(
 		var b2 = _v1.b;
 		return (a1 * b1) + (a2 * b2);
 	});
-var $author$project$Main$angleBetweenVectors = F2(
+var $author$project$CurveCreator$angleBetweenVectors = F2(
 	function (vect1, vect2) {
 		return $elm$core$Basics$acos(
-			A2($author$project$Main$dotProduct, vect1, vect2) / ($author$project$Main$magnitude(vect2) * $author$project$Main$magnitude(vect1)));
+			A2($author$project$CurveCreator$dotProduct, vect1, vect2) / ($author$project$CurveCreator$magnitude(vect2) * $author$project$CurveCreator$magnitude(vect1)));
 	});
-var $author$project$Main$calculateAngle = F3(
+var $author$project$CurveCreator$calculateAngle = F3(
 	function (pull1, end, pull2) {
-		var vect2 = A2($author$project$Main$positionDelta, end, pull2);
-		var vect1 = A2($author$project$Main$positionDelta, end, pull1);
-		return A2($author$project$Main$angleBetweenVectors, vect1, vect2);
+		var vect2 = A2($author$project$CurveCreator$positionDelta, end, pull2);
+		var vect1 = A2($author$project$CurveCreator$positionDelta, end, pull1);
+		return A2($author$project$CurveCreator$angleBetweenVectors, vect1, vect2);
 	});
 var $MacCASOutreach$graphicsvg$GraphicSVG$Secret$BezierPath = F2(
 	function (a, b) {
@@ -11281,23 +11281,23 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$outlined = F3(
 		}();
 		return A3($MacCASOutreach$graphicsvg$GraphicSVG$Secret$Inked, $elm$core$Maybe$Nothing, lineStyle, stencil);
 	});
-var $author$project$Main$displayAngle = F4(
+var $author$project$CurveCreator$displayAngle = F4(
 	function (scaleAmount, pull1, end, pull2) {
-		var vect2 = $author$project$Main$normalize(
-			A2($author$project$Main$positionDelta, end, pull2));
-		var vect1 = $author$project$Main$normalize(
-			A2($author$project$Main$positionDelta, end, pull1));
-		var offsetDir = A2($author$project$Main$averageDir, vect1, vect2);
+		var vect2 = $author$project$CurveCreator$normalize(
+			A2($author$project$CurveCreator$positionDelta, end, pull2));
+		var vect1 = $author$project$CurveCreator$normalize(
+			A2($author$project$CurveCreator$positionDelta, end, pull1));
+		var offsetDir = A2($author$project$CurveCreator$averageDir, vect1, vect2);
 		var textOffset = A2(
-			$author$project$Main$getMidpoint,
-			A2($author$project$Main$scalarMult, 1.6, offsetDir),
-			A2($author$project$Main$getMidpoint, vect1, vect2));
+			$author$project$CurveCreator$getMidpoint,
+			A2($author$project$CurveCreator$scalarMult, 1.6, offsetDir),
+			A2($author$project$CurveCreator$getMidpoint, vect1, vect2));
 		var angleTxt = function (str) {
 			return str + '°';
 		}(
 			$elm$core$String$fromInt(
 				$elm$core$Basics$round(
-					(180 / $elm$core$Basics$pi) * A3($author$project$Main$calculateAngle, pull1, end, pull2))));
+					(180 / $elm$core$Basics$pi) * A3($author$project$CurveCreator$calculateAngle, pull1, end, pull2))));
 		return A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			end,
@@ -11325,7 +11325,7 @@ var $author$project$Main$displayAngle = F4(
 										[
 											A2(
 											$MacCASOutreach$graphicsvg$GraphicSVG$Secret$Pull,
-											A2($author$project$Main$scalarMult, 1.6, offsetDir),
+											A2($author$project$CurveCreator$scalarMult, 1.6, offsetDir),
 											vect2)
 										])))),
 							A2(
@@ -11344,7 +11344,7 @@ var $author$project$Main$displayAngle = F4(
 											$MacCASOutreach$graphicsvg$GraphicSVG$text(angleTxt))))))
 						]))));
 	});
-var $author$project$Main$buildAngleShapes = F3(
+var $author$project$CurveCreator$buildAngleShapes = F3(
 	function (model, index, curvePoints) {
 		buildAngleShapes:
 		while (true) {
@@ -11360,24 +11360,24 @@ var $author$project$Main$buildAngleShapes = F3(
 				var tail = _v2.b;
 				if (A2(
 					$elm$core$List$member,
-					$author$project$Main$PullPoint(index),
+					$author$project$CurveCreator$PullPoint(index),
 					selected) || (A2(
 					$elm$core$List$member,
-					$author$project$Main$PullPoint(index + 1),
+					$author$project$CurveCreator$PullPoint(index + 1),
 					selected) || A2(
 					$elm$core$List$member,
-					$author$project$Main$EndPoint(index),
+					$author$project$CurveCreator$EndPoint(index),
 					selected))) {
 					return A2(
 						$elm$core$List$cons,
 						A4(
-							$author$project$Main$displayAngle,
-							$author$project$Main$getScaleMultiplier(model.scaleSlider),
+							$author$project$CurveCreator$displayAngle,
+							$author$project$CurveCreator$getScaleMultiplier(model.scaleSlider),
 							pull1,
 							end1,
 							pull2),
 						A3(
-							$author$project$Main$buildAngleShapes,
+							$author$project$CurveCreator$buildAngleShapes,
 							model,
 							index + 1,
 							A2(
@@ -11401,16 +11401,16 @@ var $author$project$Main$buildAngleShapes = F3(
 			}
 		}
 	});
-var $author$project$Main$InsertAtPull = function (a) {
+var $author$project$CurveCreator$InsertAtPull = function (a) {
 	return {$: 'InsertAtPull', a: a};
 };
-var $author$project$Main$buildPullAddPointButtons = F4(
+var $author$project$CurveCreator$buildPullAddPointButtons = F4(
 	function (model, index, endPoints, pullPoints) {
 		buildPullAddPointButtons:
 		while (true) {
 			var pullSelected = A2(
 				$elm$core$List$member,
-				$author$project$Main$PullPoint(index),
+				$author$project$CurveCreator$PullPoint(index),
 				model.selectedPoints);
 			var _v0 = _Utils_Tuple2(endPoints, pullPoints);
 			if ((_v0.a.b && _v0.a.b.b) && _v0.b.b) {
@@ -11424,20 +11424,20 @@ var $author$project$Main$buildPullAddPointButtons = F4(
 				var pullTail = _v3.b;
 				if (A2(
 					$elm$core$List$member,
-					$author$project$Main$PullPoint(index),
+					$author$project$CurveCreator$PullPoint(index),
 					model.selectedPoints)) {
-					var vect2 = A2($author$project$Main$positionDelta, end2, pull);
-					var vect1 = A2($author$project$Main$positionDelta, end1, pull);
-					var scaleMult = $author$project$Main$getScaleMultiplier(model.scaleSlider);
-					var moveDir = A2($author$project$Main$averageDir, vect1, vect2);
-					var moveAmount = A2($author$project$Main$scalarMult, 6 * scaleMult, moveDir);
+					var vect2 = A2($author$project$CurveCreator$positionDelta, end2, pull);
+					var vect1 = A2($author$project$CurveCreator$positionDelta, end1, pull);
+					var scaleMult = $author$project$CurveCreator$getScaleMultiplier(model.scaleSlider);
+					var moveDir = A2($author$project$CurveCreator$averageDir, vect1, vect2);
+					var moveAmount = A2($author$project$CurveCreator$scalarMult, 6 * scaleMult, moveDir);
 					return A2(
 						$elm$core$List$cons,
 						A2(
 							$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseDown,
 							A2(
-								$author$project$Main$AddPoint,
-								$author$project$Main$InsertAtPull(index),
+								$author$project$CurveCreator$AddPoint,
+								$author$project$CurveCreator$InsertAtPull(index),
 								pull),
 							A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$move,
@@ -11475,7 +11475,7 @@ var $author$project$Main$buildPullAddPointButtons = F4(
 																	$MacCASOutreach$graphicsvg$GraphicSVG$text('+')))))
 													]))))))),
 						A4(
-							$author$project$Main$buildPullAddPointButtons,
+							$author$project$CurveCreator$buildPullAddPointButtons,
 							model,
 							index + 1,
 							A2($elm$core$List$cons, end2, endTail),
@@ -11510,7 +11510,7 @@ var $elm$core$Maybe$map = F2(
 			return $elm$core$Maybe$Nothing;
 		}
 	});
-var $author$project$Main$getIndex = F2(
+var $author$project$CurveCreator$getIndex = F2(
 	function (_char, string) {
 		var _v0 = $elm$core$String$uncons(string);
 		if (_v0.$ === 'Just') {
@@ -11520,7 +11520,7 @@ var $author$project$Main$getIndex = F2(
 			return _Utils_eq(head, _char) ? $elm$core$Maybe$Just(0) : A2(
 				$elm$core$Maybe$map,
 				$elm$core$Basics$add(1),
-				A2($author$project$Main$getIndex, _char, tail));
+				A2($author$project$CurveCreator$getIndex, _char, tail));
 		} else {
 			return $elm$core$Maybe$Nothing;
 		}
@@ -11539,12 +11539,12 @@ var $elm$core$String$repeat = F2(
 	function (n, chunk) {
 		return A3($elm$core$String$repeatHelp, n, chunk, '');
 	});
-var $author$project$Main$floatToStringFixedDecimal = F2(
+var $author$project$CurveCreator$floatToStringFixedDecimal = F2(
 	function (digits, _float) {
 		var rawStr = $elm$core$String$fromFloat(_float);
 		var length = $elm$core$String$length(rawStr);
 		var decimalPos = A2(
-			$author$project$Main$getIndex,
+			$author$project$CurveCreator$getIndex,
 			_Utils_chr('.'),
 			rawStr);
 		if (decimalPos.$ === 'Just') {
@@ -11580,15 +11580,15 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$longdash = function (th) {
 			]),
 		th);
 };
-var $author$project$Main$screenHeight = 128;
-var $author$project$Main$screenWidth = 192;
-var $author$project$Main$drawPositionInfo = F3(
+var $author$project$CurveCreator$screenHeight = 128;
+var $author$project$CurveCreator$screenWidth = 192;
+var $author$project$CurveCreator$drawPositionInfo = F3(
 	function (colours, scale, _v0) {
 		var x = _v0.a;
 		var y = _v0.b;
-		var yStr = A2($author$project$Main$floatToStringFixedDecimal, 1, y);
+		var yStr = A2($author$project$CurveCreator$floatToStringFixedDecimal, 1, y);
 		var yMargin = 6;
-		var xStr = A2($author$project$Main$floatToStringFixedDecimal, 1, x);
+		var xStr = A2($author$project$CurveCreator$floatToStringFixedDecimal, 1, x);
 		var xMargin = 13;
 		var textYOffset = 5;
 		var textXOffset = 7;
@@ -11601,7 +11601,7 @@ var $author$project$Main$drawPositionInfo = F3(
 					colours.dottedLineColour,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$line,
-						_Utils_Tuple2(((-$author$project$Main$screenWidth) / 2) + xMargin, y),
+						_Utils_Tuple2(((-$author$project$CurveCreator$screenWidth) / 2) + xMargin, y),
 						_Utils_Tuple2(x, y))),
 					A3(
 					$MacCASOutreach$graphicsvg$GraphicSVG$outlined,
@@ -11609,11 +11609,11 @@ var $author$project$Main$drawPositionInfo = F3(
 					colours.dottedLineColour,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$line,
-						_Utils_Tuple2(x, ($author$project$Main$screenHeight / 2) - yMargin),
+						_Utils_Tuple2(x, ($author$project$CurveCreator$screenHeight / 2) - yMargin),
 						_Utils_Tuple2(x, y))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
-					_Utils_Tuple2(x, ($author$project$Main$screenHeight / 2) - textYOffset),
+					_Utils_Tuple2(x, ($author$project$CurveCreator$screenHeight / 2) - textYOffset),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 						colours.unselectedOutline,
@@ -11627,7 +11627,7 @@ var $author$project$Main$drawPositionInfo = F3(
 					_Utils_Tuple2(0, -2),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
-						_Utils_Tuple2(((-$author$project$Main$screenWidth) / 2) + textXOffset, y),
+						_Utils_Tuple2(((-$author$project$CurveCreator$screenWidth) / 2) + textXOffset, y),
 						A2(
 							$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 							colours.unselectedOutline,
@@ -11638,36 +11638,36 @@ var $author$project$Main$drawPositionInfo = F3(
 									$MacCASOutreach$graphicsvg$GraphicSVG$text(yStr))))))
 				]));
 	});
-var $author$project$Main$getEndPoints = function (userCurve) {
-	return A2($elm$core$List$map, $author$project$Main$getEndPoint, userCurve.pulls);
+var $author$project$CurveCreator$getEndPoints = function (userCurve) {
+	return A2($elm$core$List$map, $author$project$CurveCreator$getEndPoint, userCurve.pulls);
 };
-var $author$project$Main$getPullPoints = function (userCurve) {
+var $author$project$CurveCreator$getPullPoints = function (userCurve) {
 	var startPoints = A2(
 		$elm$core$List$cons,
 		userCurve.start,
-		A2($elm$core$List$map, $author$project$Main$getEndPoint, userCurve.pulls));
-	return A3($elm$core$List$map2, $author$project$Main$calculatePullPoint, startPoints, userCurve.pulls);
+		A2($elm$core$List$map, $author$project$CurveCreator$getEndPoint, userCurve.pulls));
+	return A3($elm$core$List$map2, $author$project$CurveCreator$calculatePullPoint, startPoints, userCurve.pulls);
 };
 var $elm$core$Tuple$pair = F2(
 	function (a, b) {
 		return _Utils_Tuple2(a, b);
 	});
-var $author$project$Main$tryBuildPositionInfo = F3(
+var $author$project$CurveCreator$tryBuildPositionInfo = F3(
 	function (model, index, _v0) {
 		var pull = _v0.a;
 		var end = _v0.b;
 		var pullSelected = A2(
 			$elm$core$List$member,
-			$author$project$Main$PullPoint(index),
+			$author$project$CurveCreator$PullPoint(index),
 			model.selectedPoints);
 		var endSelected = A2(
 			$elm$core$List$member,
-			$author$project$Main$EndPoint(index),
+			$author$project$CurveCreator$EndPoint(index),
 			model.selectedPoints);
 		var drawFunc = A2(
-			$author$project$Main$drawPositionInfo,
+			$author$project$CurveCreator$drawPositionInfo,
 			model.colours,
-			$author$project$Main$getScaleMultiplier(model.scaleSlider));
+			$author$project$CurveCreator$getScaleMultiplier(model.scaleSlider));
 		return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 			_List_fromArray(
 				[
@@ -11675,49 +11675,49 @@ var $author$project$Main$tryBuildPositionInfo = F3(
 					endSelected ? drawFunc(end) : $MacCASOutreach$graphicsvg$GraphicSVG$group(_List_Nil)
 				]));
 	});
-var $author$project$Main$buildExtraInfoShapes = F2(
+var $author$project$CurveCreator$buildExtraInfoShapes = F2(
 	function (model, userCurve) {
-		var pullPoints = $author$project$Main$getPullPoints(userCurve);
+		var pullPoints = $author$project$CurveCreator$getPullPoints(userCurve);
 		var endPoints = A2(
 			$elm$core$List$cons,
 			userCurve.start,
-			$author$project$Main$getEndPoints(userCurve));
+			$author$project$CurveCreator$getEndPoints(userCurve));
 		var curvePoints = A3(
 			$elm$core$List$map2,
 			$elm$core$Tuple$pair,
-			$author$project$Main$getPullPoints(userCurve),
-			$author$project$Main$getEndPoints(userCurve));
+			$author$project$CurveCreator$getPullPoints(userCurve),
+			$author$project$CurveCreator$getEndPoints(userCurve));
 		return A2(
 			$elm$core$List$map,
 			$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseUpAt(
-				$author$project$Main$UpdateMouseInfo(false)),
+				$author$project$CurveCreator$UpdateMouseInfo(false)),
 			A2(
 				$elm$core$List$map,
 				$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseDownAt(
-					$author$project$Main$UpdateMouseInfo(true)),
+					$author$project$CurveCreator$UpdateMouseInfo(true)),
 				A2(
 					$elm$core$List$map,
-					$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseMoveAt($author$project$Main$MouseMove),
+					$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseMoveAt($author$project$CurveCreator$MouseMove),
 					A2(
 						$elm$core$List$cons,
-						A2($elm$core$List$member, $author$project$Main$Start, model.selectedPoints) ? A3(
-							$author$project$Main$drawPositionInfo,
+						A2($elm$core$List$member, $author$project$CurveCreator$Start, model.selectedPoints) ? A3(
+							$author$project$CurveCreator$drawPositionInfo,
 							model.colours,
-							$author$project$Main$getScaleMultiplier(model.scaleSlider),
+							$author$project$CurveCreator$getScaleMultiplier(model.scaleSlider),
 							userCurve.start) : $MacCASOutreach$graphicsvg$GraphicSVG$group(_List_Nil),
 						_Utils_ap(
 							A2(
 								$elm$core$List$indexedMap,
-								$author$project$Main$tryBuildPositionInfo(model),
+								$author$project$CurveCreator$tryBuildPositionInfo(model),
 								curvePoints),
 							_Utils_ap(
-								A3($author$project$Main$buildAngleShapes, model, 0, curvePoints),
-								A4($author$project$Main$buildPullAddPointButtons, model, 0, endPoints, pullPoints)))))));
+								A3($author$project$CurveCreator$buildAngleShapes, model, 0, curvePoints),
+								A4($author$project$CurveCreator$buildPullAddPointButtons, model, 0, endPoints, pullPoints)))))));
 	});
-var $author$project$Main$SelectPoint = function (a) {
+var $author$project$CurveCreator$SelectPoint = function (a) {
 	return {$: 'SelectPoint', a: a};
 };
-var $author$project$Main$buildHelperPoint = F4(
+var $author$project$CurveCreator$buildHelperPoint = F4(
 	function (scaleMult, model, point, curvePoint) {
 		var selected = A2($elm$core$List$member, curvePoint, model.selectedPoints);
 		var outlineCol = selected ? model.colours.selectedOutline : model.colours.unselectedOutline;
@@ -11730,19 +11730,19 @@ var $author$project$Main$buildHelperPoint = F4(
 		}();
 		return A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseUpAt,
-			$author$project$Main$UpdateMouseInfo(false),
+			$author$project$CurveCreator$UpdateMouseInfo(false),
 			A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseMoveAt,
-				$author$project$Main$MouseMove,
+				$author$project$CurveCreator$MouseMove,
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseDown,
-					$author$project$Main$SelectPoint(curvePoint),
+					$author$project$CurveCreator$SelectPoint(curvePoint),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseDownAt,
-						$author$project$Main$UpdateMouseInfo(true),
+						$author$project$CurveCreator$UpdateMouseInfo(true),
 						A2(
 							$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseDown,
-							$author$project$Main$SelectPoint(curvePoint),
+							$author$project$CurveCreator$SelectPoint(curvePoint),
 							A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$move,
 								point,
@@ -11767,16 +11767,16 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$dashed = function (th) {
 			]),
 		th);
 };
-var $author$project$Main$buildPullPointLines = F6(
+var $author$project$CurveCreator$buildPullPointLines = F6(
 	function (scaleMult, colours, displayInfo, leftEnd, pullPoint, rightEnd) {
 		var style = $MacCASOutreach$graphicsvg$GraphicSVG$dashed(0.4 * scaleMult);
 		var colour = colours.dottedLineColour;
 		return A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseUpAt,
-			$author$project$Main$UpdateMouseInfo(false),
+			$author$project$CurveCreator$UpdateMouseInfo(false),
 			A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseDownAt,
-				$author$project$Main$UpdateMouseInfo(true),
+				$author$project$CurveCreator$UpdateMouseInfo(true),
 				$MacCASOutreach$graphicsvg$GraphicSVG$group(
 					_Utils_ap(
 						displayInfo.drawMidPointLines ? $elm$core$List$singleton(
@@ -11788,9 +11788,9 @@ var $author$project$Main$buildPullPointLines = F6(
 									$MacCASOutreach$graphicsvg$GraphicSVG$line,
 									pullPoint,
 									A2(
-										$author$project$Main$getMidpoint,
+										$author$project$CurveCreator$getMidpoint,
 										pullPoint,
-										A2($author$project$Main$getMidpoint, leftEnd, rightEnd))))) : _List_Nil,
+										A2($author$project$CurveCreator$getMidpoint, leftEnd, rightEnd))))) : _List_Nil,
 						displayInfo.drawEndPointLines ? _List_fromArray(
 							[
 								A3(
@@ -11805,52 +11805,52 @@ var $author$project$Main$buildPullPointLines = F6(
 								A2($MacCASOutreach$graphicsvg$GraphicSVG$line, rightEnd, pullPoint))
 							]) : _List_Nil))));
 	});
-var $author$project$Main$buildHelperPoints = F2(
+var $author$project$CurveCreator$buildHelperPoints = F2(
 	function (model, userCurve) {
-		var scaleMultiplier = $author$project$Main$getScaleMultiplier(model.scaleSlider);
-		var pullPoints = $author$project$Main$getPullPoints(userCurve);
+		var scaleMultiplier = $author$project$CurveCreator$getScaleMultiplier(model.scaleSlider);
+		var pullPoints = $author$project$CurveCreator$getPullPoints(userCurve);
 		var lastIndex = $elm$core$List$length(userCurve.pulls) - 1;
 		var pullPointIds = A2(
 			$elm$core$List$map,
 			function (i) {
-				return $author$project$Main$PullPoint(i);
+				return $author$project$CurveCreator$PullPoint(i);
 			},
 			A2($elm$core$List$range, 0, lastIndex));
-		var fixedPoints = $author$project$Main$getEndPoints(userCurve);
+		var fixedPoints = $author$project$CurveCreator$getEndPoints(userCurve);
 		var fixedPointIds = A2(
 			$elm$core$List$map,
 			function (i) {
-				return $author$project$Main$EndPoint(i);
+				return $author$project$CurveCreator$EndPoint(i);
 			},
 			A2($elm$core$List$range, 0, lastIndex));
 		return _Utils_ap(
 			A4(
 				$elm$core$List$map3,
-				A3($author$project$Main$buildPullPointLines, scaleMultiplier, model.colours, model.pullPointDisplaySettings),
+				A3($author$project$CurveCreator$buildPullPointLines, scaleMultiplier, model.colours, model.pullPointDisplaySettings),
 				A2($elm$core$List$cons, userCurve.start, fixedPoints),
 				pullPoints,
 				fixedPoints),
 			_Utils_ap(
 				_List_fromArray(
 					[
-						A4($author$project$Main$buildHelperPoint, scaleMultiplier, model, userCurve.start, $author$project$Main$Start)
+						A4($author$project$CurveCreator$buildHelperPoint, scaleMultiplier, model, userCurve.start, $author$project$CurveCreator$Start)
 					]),
 				_Utils_ap(
 					A3(
 						$elm$core$List$map2,
-						A2($author$project$Main$buildHelperPoint, scaleMultiplier, model),
+						A2($author$project$CurveCreator$buildHelperPoint, scaleMultiplier, model),
 						pullPoints,
 						pullPointIds),
 					A3(
 						$elm$core$List$map2,
-						A2($author$project$Main$buildHelperPoint, scaleMultiplier, model),
+						A2($author$project$CurveCreator$buildHelperPoint, scaleMultiplier, model),
 						fixedPoints,
 						fixedPointIds))));
 	});
-var $author$project$Main$ChangeColours = function (a) {
+var $author$project$CurveCreator$ChangeColours = function (a) {
 	return {$: 'ChangeColours', a: a};
 };
-var $author$project$Main$drawColourSchemePreview = F3(
+var $author$project$CurveCreator$drawColourSchemePreview = F3(
 	function (selected, lineInfo, colours) {
 		var start = _Utils_Tuple2(-10, -10);
 		var scaleSize = 1 / 3;
@@ -11885,7 +11885,7 @@ var $author$project$Main$drawColourSchemePreview = F3(
 									]))),
 						A2(
 							$elm$core$List$cons,
-							A6($author$project$Main$buildPullPointLines, 1, colours, lineInfo, start, pull1, end1),
+							A6($author$project$CurveCreator$buildPullPointLines, 1, colours, lineInfo, start, pull1, end1),
 							_List_fromArray(
 								[
 									A2(
@@ -11923,39 +11923,39 @@ var $author$project$Main$drawColourSchemePreview = F3(
 											$MacCASOutreach$graphicsvg$GraphicSVG$circle(3))))
 								]))))));
 	});
-var $author$project$Main$changeColourButton = F2(
+var $author$project$CurveCreator$changeColourButton = F2(
 	function (model, colours) {
 		var selected = _Utils_eq(model.colours, colours);
 		return A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseDown,
-			$author$project$Main$ChangeColours(colours),
+			$author$project$CurveCreator$ChangeColours(colours),
 			A3(
-				$author$project$Main$drawColourSchemePreview,
+				$author$project$CurveCreator$drawColourSchemePreview,
 				selected,
-				A2($author$project$Main$PullPointLineDisplayInfo, true, true),
+				A2($author$project$CurveCreator$PullPointLineDisplayInfo, true, true),
 				colours));
 	});
 var $MacCASOutreach$graphicsvg$GraphicSVG$lightGreen = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 138, 226, 52, 1);
-var $author$project$Main$whiteWithBlack = {dottedLineColour: $author$project$Main$graphColour, endPointFill: $MacCASOutreach$graphicsvg$GraphicSVG$white, lineColour: $MacCASOutreach$graphicsvg$GraphicSVG$white, pullPointFill: $MacCASOutreach$graphicsvg$GraphicSVG$black, selectedOutline: $MacCASOutreach$graphicsvg$GraphicSVG$lightGreen, unselectedOutline: $MacCASOutreach$graphicsvg$GraphicSVG$white};
+var $author$project$CurveCreator$whiteWithBlack = {dottedLineColour: $author$project$CurveCreator$graphColour, endPointFill: $MacCASOutreach$graphicsvg$GraphicSVG$white, lineColour: $MacCASOutreach$graphicsvg$GraphicSVG$white, pullPointFill: $MacCASOutreach$graphicsvg$GraphicSVG$black, selectedOutline: $MacCASOutreach$graphicsvg$GraphicSVG$lightGreen, unselectedOutline: $MacCASOutreach$graphicsvg$GraphicSVG$white};
 var $MacCASOutreach$graphicsvg$GraphicSVG$green = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 115, 210, 22, 1);
 var $MacCASOutreach$graphicsvg$GraphicSVG$red = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 204, 0, 0, 1);
 var $MacCASOutreach$graphicsvg$GraphicSVG$yellow = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 237, 212, 0, 1);
-var $author$project$Main$yellowWithRed = {dottedLineColour: $author$project$Main$graphColour, endPointFill: $MacCASOutreach$graphicsvg$GraphicSVG$yellow, lineColour: $MacCASOutreach$graphicsvg$GraphicSVG$yellow, pullPointFill: $MacCASOutreach$graphicsvg$GraphicSVG$green, selectedOutline: $MacCASOutreach$graphicsvg$GraphicSVG$red, unselectedOutline: $MacCASOutreach$graphicsvg$GraphicSVG$yellow};
-var $author$project$Main$changeColourButtons = function (model) {
+var $author$project$CurveCreator$yellowWithRed = {dottedLineColour: $author$project$CurveCreator$graphColour, endPointFill: $MacCASOutreach$graphicsvg$GraphicSVG$yellow, lineColour: $MacCASOutreach$graphicsvg$GraphicSVG$yellow, pullPointFill: $MacCASOutreach$graphicsvg$GraphicSVG$green, selectedOutline: $MacCASOutreach$graphicsvg$GraphicSVG$red, unselectedOutline: $MacCASOutreach$graphicsvg$GraphicSVG$yellow};
+var $author$project$CurveCreator$changeColourButtons = function (model) {
 	return _List_fromArray(
 		[
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(58, 25),
-			A2($author$project$Main$changeColourButton, model, $author$project$Main$blackWithWhite)),
+			A2($author$project$CurveCreator$changeColourButton, model, $author$project$CurveCreator$blackWithWhite)),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(73, 25),
-			A2($author$project$Main$changeColourButton, model, $author$project$Main$whiteWithBlack)),
+			A2($author$project$CurveCreator$changeColourButton, model, $author$project$CurveCreator$whiteWithBlack)),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(88, 25),
-			A2($author$project$Main$changeColourButton, model, $author$project$Main$yellowWithRed))
+			A2($author$project$CurveCreator$changeColourButton, model, $author$project$CurveCreator$yellowWithRed))
 		]);
 };
 var $MacCASOutreach$graphicsvg$GraphicSVG$Secret$FixedWidth = {$: 'FixedWidth'};
@@ -11980,15 +11980,15 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$fixedwidth = function (stencil) {
 		return a;
 	}
 };
-var $author$project$Main$codeFont = $MacCASOutreach$graphicsvg$GraphicSVG$fixedwidth;
-var $author$project$Main$getTabs = function (num) {
+var $author$project$CurveCreator$codeFont = $MacCASOutreach$graphicsvg$GraphicSVG$fixedwidth;
+var $author$project$CurveCreator$getTabs = function (num) {
 	return A2($elm$core$String$repeat, num, '  ');
 };
-var $author$project$Main$addOutlineToCodeString = F2(
+var $author$project$CurveCreator$addOutlineToCodeString = F2(
 	function (tabs, str) {
-		return str + ('\n' + ($author$project$Main$getTabs(tabs) + '|> outlined (solid 2) black'));
+		return str + ('\n' + ($author$project$CurveCreator$getTabs(tabs) + '|> outlined (solid 2) black'));
 	});
-var $author$project$Main$pullToCodeString = F2(
+var $author$project$CurveCreator$pullToCodeString = F2(
 	function (_v0, _v1) {
 		var pullX = _v0.a;
 		var pullY = _v0.b;
@@ -12001,32 +12001,32 @@ var $author$project$Main$pullToCodeString = F2(
 			_List_fromArray(
 				[
 					'Pull (',
-					A2($author$project$Main$floatToStringFixedDecimal, 1, pullX),
+					A2($author$project$CurveCreator$floatToStringFixedDecimal, 1, pullX),
 					', ',
-					A2($author$project$Main$floatToStringFixedDecimal, 1, pullY),
+					A2($author$project$CurveCreator$floatToStringFixedDecimal, 1, pullY),
 					') ',
 					'(',
-					A2($author$project$Main$floatToStringFixedDecimal, 1, endX),
+					A2($author$project$CurveCreator$floatToStringFixedDecimal, 1, endX),
 					', ',
-					A2($author$project$Main$floatToStringFixedDecimal, 1, endY),
+					A2($author$project$CurveCreator$floatToStringFixedDecimal, 1, endY),
 					')'
 				]));
 	});
-var $author$project$Main$curveToCodeString = F2(
+var $author$project$CurveCreator$curveToCodeString = F2(
 	function (tabs, curve) {
-		var pullPoints = $author$project$Main$getPullPoints(curve);
-		var endPoints = $author$project$Main$getEndPoints(curve);
+		var pullPoints = $author$project$CurveCreator$getPullPoints(curve);
+		var endPoints = $author$project$CurveCreator$getEndPoints(curve);
 		return A3(
 			$elm$core$List$foldr,
 			$elm$core$Basics$append,
 			'',
 			_List_fromArray(
 				[
-					$author$project$Main$getTabs(tabs),
+					$author$project$CurveCreator$getTabs(tabs),
 					'curve (',
-					A2($author$project$Main$floatToStringFixedDecimal, 1, curve.start.a),
+					A2($author$project$CurveCreator$floatToStringFixedDecimal, 1, curve.start.a),
 					', ',
-					A2($author$project$Main$floatToStringFixedDecimal, 1, curve.start.b),
+					A2($author$project$CurveCreator$floatToStringFixedDecimal, 1, curve.start.b),
 					') ['
 				])) + (A3(
 			$elm$core$List$foldr,
@@ -12035,7 +12035,7 @@ var $author$project$Main$curveToCodeString = F2(
 			A2(
 				$elm$core$List$intersperse,
 				', ',
-				A3($elm$core$List$map2, $author$project$Main$pullToCodeString, pullPoints, endPoints))) + ']');
+				A3($elm$core$List$map2, $author$project$CurveCreator$pullToCodeString, pullPoints, endPoints))) + ']');
 	});
 var $MacCASOutreach$graphicsvg$GraphicSVG$selectable = function (stencil) {
 	if (stencil.$ === 'Text') {
@@ -12058,7 +12058,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$selectable = function (stencil) {
 		return a;
 	}
 };
-var $author$project$Main$stringToTextShapes = function (string) {
+var $author$project$CurveCreator$stringToTextShapes = function (string) {
 	return A2(
 		$elm$core$List$indexedMap,
 		F2(
@@ -12079,7 +12079,7 @@ var $author$project$Main$stringToTextShapes = function (string) {
 					$MacCASOutreach$graphicsvg$GraphicSVG$size(4),
 					A2(
 						$elm$core$List$map,
-						$author$project$Main$codeFont,
+						$author$project$CurveCreator$codeFont,
 						A2(
 							$elm$core$List$map,
 							function (str) {
@@ -12087,20 +12087,20 @@ var $author$project$Main$stringToTextShapes = function (string) {
 							},
 							A2($elm$core$String$split, '\n', string)))))));
 };
-var $author$project$Main$convertCurvesToCode = function (userCurves) {
+var $author$project$CurveCreator$convertCurvesToCode = function (userCurves) {
 	if (!userCurves.b) {
 		return _List_Nil;
 	} else {
 		if (!userCurves.b.b) {
 			var curve = userCurves.a;
-			return $author$project$Main$stringToTextShapes(
+			return $author$project$CurveCreator$stringToTextShapes(
 				A2(
-					$author$project$Main$addOutlineToCodeString,
+					$author$project$CurveCreator$addOutlineToCodeString,
 					2,
-					A2($author$project$Main$curveToCodeString, 1, curve)));
+					A2($author$project$CurveCreator$curveToCodeString, 1, curve)));
 		} else {
 			var curves = userCurves;
-			return $author$project$Main$stringToTextShapes(
+			return $author$project$CurveCreator$stringToTextShapes(
 				'group\n  [\n' + (A3(
 					$elm$core$List$foldr,
 					$elm$core$Basics$append,
@@ -12110,10 +12110,10 @@ var $author$project$Main$convertCurvesToCode = function (userCurves) {
 						'\n    ,\n',
 						A2(
 							$elm$core$List$map,
-							$author$project$Main$addOutlineToCodeString(3),
+							$author$project$CurveCreator$addOutlineToCodeString(3),
 							A2(
 								$elm$core$List$map,
-								$author$project$Main$curveToCodeString(2),
+								$author$project$CurveCreator$curveToCodeString(2),
 								curves)))) + '\n  ]'));
 		}
 	}
@@ -12137,7 +12137,7 @@ var $elm$html$Html$Attributes$src = function (url) {
 		'src',
 		_VirtualDom_noJavaScriptOrHtmlUri(url));
 };
-var $author$project$Main$drawImage = function (image) {
+var $author$project$CurveCreator$drawImage = function (image) {
 	return A2(
 		$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 		image.scale,
@@ -12158,21 +12158,21 @@ var $author$project$Main$drawImage = function (image) {
 };
 var $MacCASOutreach$graphicsvg$GraphicSVG$darkBlue = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 32, 74, 135, 1);
 var $MacCASOutreach$graphicsvg$GraphicSVG$lightBlue = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 114, 159, 207, 1);
-var $author$project$Main$drawSlider = F2(
+var $author$project$CurveCreator$drawSlider = F2(
 	function (xOffset, slider) {
 		var ballPos = ((-slider.width) / 2) + (slider.width * ((1 / (slider.max - slider.min)) * ((-slider.min) + slider.currentVal)));
 		return A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseUpAt,
-			$author$project$Main$UpdateMouseInfo(false),
+			$author$project$CurveCreator$UpdateMouseInfo(false),
 			A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseDownAt,
-				$author$project$Main$UpdateMouseInfo(true),
+				$author$project$CurveCreator$UpdateMouseInfo(true),
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseMoveAt,
-					$author$project$Main$MouseMove,
+					$author$project$CurveCreator$MouseMove,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseDown,
-						$author$project$Main$Deselect($author$project$Main$AllPoints),
+						$author$project$CurveCreator$Deselect($author$project$CurveCreator$AllPoints),
 						A2(
 							$MacCASOutreach$graphicsvg$GraphicSVG$move,
 							_Utils_Tuple2(xOffset, 0),
@@ -12192,15 +12192,15 @@ var $author$project$Main$drawSlider = F2(
 											$MacCASOutreach$graphicsvg$GraphicSVG$circle(4)))
 									])))))));
 	});
-var $author$project$Main$editImageButton = function (model) {
-	var txt = _Utils_eq(model.currentAction, $author$project$Main$EditingImage) ? 'Stop Editing' : 'Edit Image';
-	return (_Utils_eq(model.currentAction, $author$project$Main$EditingImage) ? $MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseDown(
-		$author$project$Main$SetAction($author$project$Main$MovingPoints)) : A2(
+var $author$project$CurveCreator$editImageButton = function (model) {
+	var txt = _Utils_eq(model.currentAction, $author$project$CurveCreator$EditingImage) ? 'Stop Editing' : 'Edit Image';
+	return (_Utils_eq(model.currentAction, $author$project$CurveCreator$EditingImage) ? $MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseDown(
+		$author$project$CurveCreator$SetAction($author$project$CurveCreator$MovingPoints)) : A2(
 		$elm$core$Basics$composeR,
 		$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseDown(
-			$author$project$Main$SetAction($author$project$Main$EditingImage)),
+			$author$project$CurveCreator$SetAction($author$project$CurveCreator$EditingImage)),
 		$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseDown(
-			$author$project$Main$Deselect($author$project$Main$All))))(
+			$author$project$CurveCreator$Deselect($author$project$CurveCreator$All))))(
 		A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(80, -3),
@@ -12221,7 +12221,7 @@ var $author$project$Main$editImageButton = function (model) {
 						A2(
 							$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 							$MacCASOutreach$graphicsvg$GraphicSVG$black,
-							$author$project$Main$serifFont(
+							$author$project$CurveCreator$serifFont(
 								A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$size,
 									4.5,
@@ -12260,7 +12260,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$ngon = F2(
 var $MacCASOutreach$graphicsvg$GraphicSVG$triangle = function (r) {
 	return A2($MacCASOutreach$graphicsvg$GraphicSVG$ngon, 3, r);
 };
-var $author$project$Main$getCodeButton = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$CurveCreator$getCodeButton = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -12655,8 +12655,8 @@ var $elm$core$Basics$min = F2(
 	function (x, y) {
 		return (_Utils_cmp(x, y) < 0) ? x : y;
 	});
-var $author$project$Main$TrashItems = {$: 'TrashItems'};
-var $author$project$Main$UpdateTrash = function (a) {
+var $author$project$CurveCreator$TrashItems = {$: 'TrashItems'};
+var $author$project$CurveCreator$UpdateTrash = function (a) {
 	return {$: 'UpdateTrash', a: a};
 };
 var $MacCASOutreach$graphicsvg$GraphicSVG$mirrorX = function (shape) {
@@ -12677,20 +12677,20 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseUp = F2(
 var $MacCASOutreach$graphicsvg$GraphicSVG$polygon = function (ptList) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Polygon(ptList);
 };
-var $author$project$Main$trashCan = function (open) {
+var $author$project$CurveCreator$trashCan = function (open) {
 	var clr = open ? $MacCASOutreach$graphicsvg$GraphicSVG$red : $MacCASOutreach$graphicsvg$GraphicSVG$grey;
 	return A2(
 		$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseUp,
-		$author$project$Main$TrashItems,
+		$author$project$CurveCreator$TrashItems,
 		A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseMoveAt,
-			$author$project$Main$MouseMove,
+			$author$project$CurveCreator$MouseMove,
 			A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$notifyLeave,
-				$author$project$Main$UpdateTrash(false),
+				$author$project$CurveCreator$UpdateTrash(false),
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$notifyEnter,
-					$author$project$Main$UpdateTrash(true),
+					$author$project$CurveCreator$UpdateTrash(true),
 					$MacCASOutreach$graphicsvg$GraphicSVG$group(
 						_List_fromArray(
 							[
@@ -12830,7 +12830,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$rgb = F3(
 	function (r, g, b) {
 		return A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, r, g, b, 1);
 	});
-var $author$project$Main$undoButton = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$CurveCreator$undoButton = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -12887,40 +12887,40 @@ var $author$project$Main$undoButton = $MacCASOutreach$graphicsvg$GraphicSVG$grou
 							$MacCASOutreach$graphicsvg$GraphicSVG$triangle(2))))
 				]))
 		]));
-var $author$project$Main$SelectCurve = function (a) {
+var $author$project$CurveCreator$SelectCurve = function (a) {
 	return {$: 'SelectCurve', a: a};
 };
-var $author$project$Main$calculatePull = F2(
+var $author$project$CurveCreator$calculatePull = F2(
 	function (prevPoint, customPull) {
 		return A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$Secret$Pull,
-			A2($author$project$Main$calculatePullPoint, prevPoint, customPull),
-			$author$project$Main$getEndPoint(customPull));
+			A2($author$project$CurveCreator$calculatePullPoint, prevPoint, customPull),
+			$author$project$CurveCreator$getEndPoint(customPull));
 	});
-var $author$project$Main$calculatePulls = function (userCurve) {
+var $author$project$CurveCreator$calculatePulls = function (userCurve) {
 	var startPoints = A2(
 		$elm$core$List$cons,
 		userCurve.start,
-		A2($elm$core$List$map, $author$project$Main$getEndPoint, userCurve.pulls));
-	return A3($elm$core$List$map2, $author$project$Main$calculatePull, startPoints, userCurve.pulls);
+		A2($elm$core$List$map, $author$project$CurveCreator$getEndPoint, userCurve.pulls));
+	return A3($elm$core$List$map2, $author$project$CurveCreator$calculatePull, startPoints, userCurve.pulls);
 };
-var $author$project$Main$userCurveToShape = F2(
+var $author$project$CurveCreator$userCurveToShape = F2(
 	function (model, userCurve) {
-		var thicknessScale = $author$project$Main$getScaleMultiplier(model.scaleSlider);
+		var thicknessScale = $author$project$CurveCreator$getScaleMultiplier(model.scaleSlider);
 		var selected = _Utils_eq(
 			model.selectedCurve,
 			$elm$core$Maybe$Just(userCurve.id));
 		return A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseUpAt,
-			$author$project$Main$UpdateMouseInfo(false),
+			$author$project$CurveCreator$UpdateMouseInfo(false),
 			A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseMoveAt,
-				$author$project$Main$MouseMove,
+				$author$project$CurveCreator$MouseMove,
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseDownAt,
-					$author$project$Main$UpdateMouseInfo(true),
+					$author$project$CurveCreator$UpdateMouseInfo(true),
 					(selected ? $elm$core$Basics$identity : $MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseDown(
-						$author$project$Main$SelectCurve(userCurve.id)))(
+						$author$project$CurveCreator$SelectCurve(userCurve.id)))(
 						A3(
 							$MacCASOutreach$graphicsvg$GraphicSVG$outlined,
 							$MacCASOutreach$graphicsvg$GraphicSVG$solid(2 * thicknessScale),
@@ -12928,117 +12928,117 @@ var $author$project$Main$userCurveToShape = F2(
 							A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$curve,
 								userCurve.start,
-								$author$project$Main$calculatePulls(userCurve)))))));
+								$author$project$CurveCreator$calculatePulls(userCurve)))))));
 	});
-var $author$project$Main$myShapes = function (model) {
+var $author$project$CurveCreator$myShapes = function (model) {
 	return A2(
 		$elm$core$List$cons,
-		(!_Utils_eq(model.currentAction, $author$project$Main$Exporting)) ? $author$project$Main$drawImage(model.backgroundImage) : $MacCASOutreach$graphicsvg$GraphicSVG$group(_List_Nil),
+		(!_Utils_eq(model.currentAction, $author$project$CurveCreator$Exporting)) ? $author$project$CurveCreator$drawImage(model.backgroundImage) : $MacCASOutreach$graphicsvg$GraphicSVG$group(_List_Nil),
 		A2(
 			$elm$core$List$cons,
-			$author$project$Main$background(model),
+			$author$project$CurveCreator$background(model),
 			A2(
 				$elm$core$List$cons,
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
-					_Utils_Tuple2(((-$author$project$Main$screenWidth) / 2) + 5, ($author$project$Main$screenHeight / 2) - 5),
+					_Utils_Tuple2(((-$author$project$CurveCreator$screenWidth) / 2) + 5, ($author$project$CurveCreator$screenHeight / 2) - 5),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.8,
 						A2(
 							$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseDown,
-							_Utils_eq(model.currentAction, $author$project$Main$Exporting) ? $author$project$Main$SetAction($author$project$Main$MovingPoints) : $author$project$Main$SetAction($author$project$Main$Exporting),
-							$author$project$Main$getCodeButton))),
+							_Utils_eq(model.currentAction, $author$project$CurveCreator$Exporting) ? $author$project$CurveCreator$SetAction($author$project$CurveCreator$MovingPoints) : $author$project$CurveCreator$SetAction($author$project$CurveCreator$Exporting),
+							$author$project$CurveCreator$getCodeButton))),
 				A2(
 					$elm$core$List$cons,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseDown,
-						$author$project$Main$Undo,
+						$author$project$CurveCreator$Undo,
 						A2(
 							$MacCASOutreach$graphicsvg$GraphicSVG$move,
-							_Utils_Tuple2(((-$author$project$Main$screenWidth) / 2) + 15, ($author$project$Main$screenHeight / 2) - 5),
-							$author$project$Main$undoButton)),
-					_Utils_eq(model.currentAction, $author$project$Main$Exporting) ? $elm$core$List$singleton(
+							_Utils_Tuple2(((-$author$project$CurveCreator$screenWidth) / 2) + 15, ($author$project$CurveCreator$screenHeight / 2) - 5),
+							$author$project$CurveCreator$undoButton)),
+					_Utils_eq(model.currentAction, $author$project$CurveCreator$Exporting) ? $elm$core$List$singleton(
 						A2(
 							$MacCASOutreach$graphicsvg$GraphicSVG$move,
 							_Utils_Tuple2(-90, 50),
 							$MacCASOutreach$graphicsvg$GraphicSVG$group(
-								$author$project$Main$convertCurvesToCode(model.userCurves)))) : (_Utils_eq(model.currentAction, $author$project$Main$EditingImage) ? _Utils_ap(
+								$author$project$CurveCreator$convertCurvesToCode(model.userCurves)))) : (_Utils_eq(model.currentAction, $author$project$CurveCreator$EditingImage) ? _Utils_ap(
 						A2(
 							$elm$core$List$map,
 							$MacCASOutreach$graphicsvg$GraphicSVG$makeTransparent(0.5),
 							A2(
 								$elm$core$List$map,
-								$author$project$Main$userCurveToShape(model),
+								$author$project$CurveCreator$userCurveToShape(model),
 								model.userCurves)),
 						_Utils_ap(
 							_List_fromArray(
 								[
-									$author$project$Main$editImageButton(model)
+									$author$project$CurveCreator$editImageButton(model)
 								]),
 							_List_fromArray(
 								[
 									A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseDown,
-									$author$project$Main$SelectImageSlider,
+									$author$project$CurveCreator$SelectImageSlider,
 									A2(
 										$MacCASOutreach$graphicsvg$GraphicSVG$move,
 										_Utils_Tuple2(0, -17),
-										A2($author$project$Main$drawSlider, $author$project$Main$scaleSliderXPos, model.imgZoomSlider)))
+										A2($author$project$CurveCreator$drawSlider, $author$project$CurveCreator$scaleSliderXPos, model.imgZoomSlider)))
 								]))) : _Utils_ap(
 						A2(
 							$elm$core$List$map,
-							$author$project$Main$userCurveToShape(model),
+							$author$project$CurveCreator$userCurveToShape(model),
 							model.userCurves),
 						_Utils_ap(
 							function () {
-								var _v0 = $author$project$Main$getSelectedCurve(model);
+								var _v0 = $author$project$CurveCreator$getSelectedCurve(model);
 								if (_v0.$ === 'Nothing') {
 									return _List_Nil;
 								} else {
 									var userCurve = _v0.a;
 									return _Utils_ap(
-										A2($author$project$Main$buildExtraInfoShapes, model, userCurve),
-										A2($author$project$Main$buildHelperPoints, model, userCurve));
+										A2($author$project$CurveCreator$buildExtraInfoShapes, model, userCurve),
+										A2($author$project$CurveCreator$buildHelperPoints, model, userCurve));
 								}
 							}(),
 							_Utils_ap(
 								function () {
-									var _v1 = $author$project$Main$getSelectedCurve(model);
+									var _v1 = $author$project$CurveCreator$getSelectedCurve(model);
 									if (_v1.$ === 'Nothing') {
 										return _List_Nil;
 									} else {
 										var userCurve = _v1.a;
 										return A2(
-											$author$project$Main$buildAddPointButtons,
-											$author$project$Main$getScaleMultiplier(model.scaleSlider),
+											$author$project$CurveCreator$buildAddPointButtons,
+											$author$project$CurveCreator$getScaleMultiplier(model.scaleSlider),
 											userCurve);
 									}
 								}(),
 								_Utils_ap(
 									_List_fromArray(
 										[
-											$author$project$Main$editImageButton(model)
+											$author$project$CurveCreator$editImageButton(model)
 										]),
 									_Utils_ap(
 										_List_fromArray(
-											[$author$project$Main$addCurveButton]),
+											[$author$project$CurveCreator$addCurveButton]),
 										_Utils_ap(
-											$author$project$Main$changeColourButtons(model),
+											$author$project$CurveCreator$changeColourButtons(model),
 											_Utils_ap(
 												_List_fromArray(
 													[
 														A2(
 														$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseDown,
-														$author$project$Main$SelectScaleSlider,
+														$author$project$CurveCreator$SelectScaleSlider,
 														A2(
 															$MacCASOutreach$graphicsvg$GraphicSVG$move,
 															_Utils_Tuple2(0, 10),
-															A2($author$project$Main$drawSlider, $author$project$Main$scaleSliderXPos, model.scaleSlider)))
+															A2($author$project$CurveCreator$drawSlider, $author$project$CurveCreator$scaleSliderXPos, model.scaleSlider)))
 													]),
 												_Utils_ap(
 													function () {
-														var _v2 = $author$project$Main$getSelectedCurve(model);
+														var _v2 = $author$project$CurveCreator$getSelectedCurve(model);
 														if (_v2.$ === 'Nothing') {
 															return _List_Nil;
 														} else {
@@ -13056,9 +13056,9 @@ var $author$project$Main$myShapes = function (model) {
 																				$elm$core$Basics$min,
 																				7.5 / $elm$core$List$length(curve.pulls),
 																				3),
-																			$author$project$Main$codeFont(
+																			$author$project$CurveCreator$codeFont(
 																				$MacCASOutreach$graphicsvg$GraphicSVG$text(
-																					A2($author$project$Main$curveToCodeString, 0, curve)))))));
+																					A2($author$project$CurveCreator$curveToCodeString, 0, curve)))))));
 														}
 													}(),
 													_List_fromArray(
@@ -13066,34 +13066,34 @@ var $author$project$Main$myShapes = function (model) {
 															A2(
 															$MacCASOutreach$graphicsvg$GraphicSVG$move,
 															_Utils_Tuple2(82, -38),
-															$author$project$Main$trashCan(model.trashStatus))
+															$author$project$CurveCreator$trashCan(model.trashStatus))
 														]))))))))))))));
 };
-var $author$project$Main$view = function (model) {
+var $author$project$CurveCreator$view = function (model) {
 	return {
 		body: A3(
 			$MacCASOutreach$graphicsvg$GraphicSVG$collage,
-			$author$project$Main$screenWidth,
-			$author$project$Main$screenHeight,
-			$author$project$Main$myShapes(model)),
+			$author$project$CurveCreator$screenWidth,
+			$author$project$CurveCreator$screenHeight,
+			$author$project$CurveCreator$myShapes(model)),
 		title: 'My App Title'
 	};
 };
-var $author$project$Main$main = A2(
+var $author$project$CurveCreator$main = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$EllieApp$ellieAppWithTick,
-	$author$project$Main$Tick,
+	$author$project$CurveCreator$Tick,
 	{
 		init: function (flags) {
-			return _Utils_Tuple2($author$project$Main$init, $elm$core$Platform$Cmd$none);
+			return _Utils_Tuple2($author$project$CurveCreator$init, $elm$core$Platform$Cmd$none);
 		},
-		subscriptions: $author$project$Main$subscriptions,
-		update: $author$project$Main$update,
-		view: $author$project$Main$view
+		subscriptions: $author$project$CurveCreator$subscriptions,
+		update: $author$project$CurveCreator$update,
+		view: $author$project$CurveCreator$view
 	});
-_Platform_export({'Main':{'init':$author$project$Main$main(
+_Platform_export({'CurveCreator':{'init':$author$project$CurveCreator$main(
 	$elm$json$Json$Decode$succeed(_Utils_Tuple0))(0)}});}(this));
 
-  var app = Elm.Main.init({ node: document.getElementById("elm") });
+  var app = Elm.CurveCreator.init({ node: document.getElementById("elm") });
 }
 catch (e)
 {

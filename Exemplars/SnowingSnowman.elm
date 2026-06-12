@@ -1,4 +1,4 @@
-module Main exposing (..)
+module SnowingSnowman exposing (..)
 
 import GraphicSVG exposing (..)
 import GraphicSVG.App exposing (..)

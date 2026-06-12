@@ -1,4 +1,4 @@
-module Main exposing (..)
+module WordByHues exposing (..)
 
 import GraphicSVG exposing (..)
 import GraphicSVG.App exposing (..)
@@ -7,7 +7,6 @@ import GraphicSVG.Secret exposing (..)
 import Array
 import Debug
 
-import Color
 
 type alias Color = GraphicSVG.Color
 type alias Shape msg = GraphicSVG.Shape msg

@@ -1,4 +1,4 @@
-module Main exposing (..)
+module WhaleWiggle exposing (..)
 
 import GraphicSVG exposing (..)
 import GraphicSVG.App exposing (..)

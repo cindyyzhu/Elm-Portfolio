@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Main</title>
+  <title>UnderwaterGame</title>
   <style>body { padding: 0; margin: 0; }</style>
 </head>
 
@@ -4430,7 +4430,7 @@ function _Time_getZoneName()
 		callback(_Scheduler_succeed(name));
 	});
 }
-var $author$project$Main$Tick = F2(
+var $author$project$UnderwaterGame$Tick = F2(
 	function (a, b) {
 		return {$: 'Tick', a: a, b: b};
 	});
@@ -9261,27 +9261,27 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$App$gameApp = F2(
 				}
 			});
 	});
-var $author$project$Main$Welcome = {$: 'Welcome'};
-var $author$project$Main$init = {state: $author$project$Main$Welcome, time: 0};
-var $author$project$Main$CharactersPage = {$: 'CharactersPage'};
-var $author$project$Main$Fail = {$: 'Fail'};
-var $author$project$Main$GamesList = {$: 'GamesList'};
-var $author$project$Main$GamesListTask1 = {$: 'GamesListTask1'};
-var $author$project$Main$GamesListTask2 = {$: 'GamesListTask2'};
-var $author$project$Main$GamesListTask3 = {$: 'GamesListTask3'};
-var $author$project$Main$HollowCave = {$: 'HollowCave'};
-var $author$project$Main$Instructions = {$: 'Instructions'};
-var $author$project$Main$StoryEnd = {$: 'StoryEnd'};
-var $author$project$Main$Storyline1 = {$: 'Storyline1'};
-var $author$project$Main$Storyline2 = {$: 'Storyline2'};
-var $author$project$Main$Storyline3 = {$: 'Storyline3'};
-var $author$project$Main$Success1 = {$: 'Success1'};
-var $author$project$Main$Success2 = {$: 'Success2'};
-var $author$project$Main$Success3 = {$: 'Success3'};
-var $author$project$Main$Task1 = {$: 'Task1'};
-var $author$project$Main$Task2 = {$: 'Task2'};
-var $author$project$Main$Task3 = {$: 'Task3'};
-var $author$project$Main$update = F2(
+var $author$project$UnderwaterGame$Welcome = {$: 'Welcome'};
+var $author$project$UnderwaterGame$init = {state: $author$project$UnderwaterGame$Welcome, time: 0};
+var $author$project$UnderwaterGame$CharactersPage = {$: 'CharactersPage'};
+var $author$project$UnderwaterGame$Fail = {$: 'Fail'};
+var $author$project$UnderwaterGame$GamesList = {$: 'GamesList'};
+var $author$project$UnderwaterGame$GamesListTask1 = {$: 'GamesListTask1'};
+var $author$project$UnderwaterGame$GamesListTask2 = {$: 'GamesListTask2'};
+var $author$project$UnderwaterGame$GamesListTask3 = {$: 'GamesListTask3'};
+var $author$project$UnderwaterGame$HollowCave = {$: 'HollowCave'};
+var $author$project$UnderwaterGame$Instructions = {$: 'Instructions'};
+var $author$project$UnderwaterGame$StoryEnd = {$: 'StoryEnd'};
+var $author$project$UnderwaterGame$Storyline1 = {$: 'Storyline1'};
+var $author$project$UnderwaterGame$Storyline2 = {$: 'Storyline2'};
+var $author$project$UnderwaterGame$Storyline3 = {$: 'Storyline3'};
+var $author$project$UnderwaterGame$Success1 = {$: 'Success1'};
+var $author$project$UnderwaterGame$Success2 = {$: 'Success2'};
+var $author$project$UnderwaterGame$Success3 = {$: 'Success3'};
+var $author$project$UnderwaterGame$Task1 = {$: 'Task1'};
+var $author$project$UnderwaterGame$Task2 = {$: 'Task2'};
+var $author$project$UnderwaterGame$Task3 = {$: 'Task3'};
+var $author$project$UnderwaterGame$update = F2(
 	function (msg, model) {
 		switch (msg.$) {
 			case 'Tick':
@@ -9294,7 +9294,7 @@ var $author$project$Main$update = F2(
 				if (_v1.$ === 'Welcome') {
 					return _Utils_update(
 						model,
-						{state: $author$project$Main$CharactersPage});
+						{state: $author$project$UnderwaterGame$CharactersPage});
 				} else {
 					var otherwise = _v1;
 					return model;
@@ -9304,7 +9304,7 @@ var $author$project$Main$update = F2(
 				if (_v2.$ === 'CharactersPage') {
 					return _Utils_update(
 						model,
-						{state: $author$project$Main$Storyline1});
+						{state: $author$project$UnderwaterGame$Storyline1});
 				} else {
 					var otherwise = _v2;
 					return model;
@@ -9314,7 +9314,7 @@ var $author$project$Main$update = F2(
 				if (_v3.$ === 'Storyline1') {
 					return _Utils_update(
 						model,
-						{state: $author$project$Main$Storyline2});
+						{state: $author$project$UnderwaterGame$Storyline2});
 				} else {
 					var otherwise = _v3;
 					return model;
@@ -9324,7 +9324,7 @@ var $author$project$Main$update = F2(
 				if (_v4.$ === 'Storyline2') {
 					return _Utils_update(
 						model,
-						{state: $author$project$Main$Storyline3});
+						{state: $author$project$UnderwaterGame$Storyline3});
 				} else {
 					var otherwise = _v4;
 					return model;
@@ -9334,7 +9334,7 @@ var $author$project$Main$update = F2(
 				if (_v5.$ === 'Storyline3') {
 					return _Utils_update(
 						model,
-						{state: $author$project$Main$HollowCave});
+						{state: $author$project$UnderwaterGame$HollowCave});
 				} else {
 					var otherwise = _v5;
 					return model;
@@ -9344,7 +9344,7 @@ var $author$project$Main$update = F2(
 				if (_v6.$ === 'HollowCave') {
 					return _Utils_update(
 						model,
-						{state: $author$project$Main$Instructions});
+						{state: $author$project$UnderwaterGame$Instructions});
 				} else {
 					var otherwise = _v6;
 					return model;
@@ -9354,7 +9354,7 @@ var $author$project$Main$update = F2(
 				if (_v7.$ === 'Instructions') {
 					return _Utils_update(
 						model,
-						{state: $author$project$Main$GamesList});
+						{state: $author$project$UnderwaterGame$GamesList});
 				} else {
 					var otherwise = _v7;
 					return model;
@@ -9364,7 +9364,7 @@ var $author$project$Main$update = F2(
 				if (_v8.$ === 'GamesList') {
 					return _Utils_update(
 						model,
-						{state: $author$project$Main$Task1});
+						{state: $author$project$UnderwaterGame$Task1});
 				} else {
 					var otherwise = _v8;
 					return model;
@@ -9374,7 +9374,7 @@ var $author$project$Main$update = F2(
 				if (_v9.$ === 'Task1') {
 					return _Utils_update(
 						model,
-						{state: $author$project$Main$Success1});
+						{state: $author$project$UnderwaterGame$Success1});
 				} else {
 					var otherwise = _v9;
 					return model;
@@ -9384,7 +9384,7 @@ var $author$project$Main$update = F2(
 				if (_v10.$ === 'Task1') {
 					return _Utils_update(
 						model,
-						{state: $author$project$Main$Fail});
+						{state: $author$project$UnderwaterGame$Fail});
 				} else {
 					var otherwise = _v10;
 					return model;
@@ -9394,7 +9394,7 @@ var $author$project$Main$update = F2(
 				if (_v11.$ === 'Success1') {
 					return _Utils_update(
 						model,
-						{state: $author$project$Main$GamesListTask1});
+						{state: $author$project$UnderwaterGame$GamesListTask1});
 				} else {
 					var otherwise = _v11;
 					return model;
@@ -9404,7 +9404,7 @@ var $author$project$Main$update = F2(
 				if (_v12.$ === 'Success2') {
 					return _Utils_update(
 						model,
-						{state: $author$project$Main$GamesListTask2});
+						{state: $author$project$UnderwaterGame$GamesListTask2});
 				} else {
 					var otherwise = _v12;
 					return model;
@@ -9414,7 +9414,7 @@ var $author$project$Main$update = F2(
 				if (_v13.$ === 'GamesListTask1') {
 					return _Utils_update(
 						model,
-						{state: $author$project$Main$Task2});
+						{state: $author$project$UnderwaterGame$Task2});
 				} else {
 					var otherwise = _v13;
 					return model;
@@ -9424,7 +9424,7 @@ var $author$project$Main$update = F2(
 				if (_v14.$ === 'Task2') {
 					return _Utils_update(
 						model,
-						{state: $author$project$Main$Success2});
+						{state: $author$project$UnderwaterGame$Success2});
 				} else {
 					var otherwise = _v14;
 					return model;
@@ -9434,7 +9434,7 @@ var $author$project$Main$update = F2(
 				if (_v15.$ === 'Fail') {
 					return _Utils_update(
 						model,
-						{state: $author$project$Main$GamesList});
+						{state: $author$project$UnderwaterGame$GamesList});
 				} else {
 					var otherwise = _v15;
 					return model;
@@ -9444,7 +9444,7 @@ var $author$project$Main$update = F2(
 				if (_v16.$ === 'Task2') {
 					return _Utils_update(
 						model,
-						{state: $author$project$Main$Fail});
+						{state: $author$project$UnderwaterGame$Fail});
 				} else {
 					var otherwise = _v16;
 					return model;
@@ -9454,7 +9454,7 @@ var $author$project$Main$update = F2(
 				if (_v17.$ === 'Task2') {
 					return _Utils_update(
 						model,
-						{state: $author$project$Main$Fail});
+						{state: $author$project$UnderwaterGame$Fail});
 				} else {
 					var otherwise = _v17;
 					return model;
@@ -9464,7 +9464,7 @@ var $author$project$Main$update = F2(
 				if (_v18.$ === 'GamesListTask2') {
 					return _Utils_update(
 						model,
-						{state: $author$project$Main$Task3});
+						{state: $author$project$UnderwaterGame$Task3});
 				} else {
 					var otherwise = _v18;
 					return model;
@@ -9474,7 +9474,7 @@ var $author$project$Main$update = F2(
 				if (_v19.$ === 'Task3') {
 					return _Utils_update(
 						model,
-						{state: $author$project$Main$Success3});
+						{state: $author$project$UnderwaterGame$Success3});
 				} else {
 					var otherwise = _v19;
 					return model;
@@ -9484,7 +9484,7 @@ var $author$project$Main$update = F2(
 				if (_v20.$ === 'Task3') {
 					return _Utils_update(
 						model,
-						{state: $author$project$Main$Fail});
+						{state: $author$project$UnderwaterGame$Fail});
 				} else {
 					var otherwise = _v20;
 					return model;
@@ -9494,7 +9494,7 @@ var $author$project$Main$update = F2(
 				if (_v21.$ === 'Success3') {
 					return _Utils_update(
 						model,
-						{state: $author$project$Main$GamesListTask3});
+						{state: $author$project$UnderwaterGame$GamesListTask3});
 				} else {
 					var otherwise = _v21;
 					return model;
@@ -9504,7 +9504,7 @@ var $author$project$Main$update = F2(
 				if (_v22.$ === 'GamesListTask3') {
 					return _Utils_update(
 						model,
-						{state: $author$project$Main$StoryEnd});
+						{state: $author$project$UnderwaterGame$StoryEnd});
 				} else {
 					var otherwise = _v22;
 					return model;
@@ -9514,7 +9514,7 @@ var $author$project$Main$update = F2(
 				if (_v23.$ === 'StoryEnd') {
 					return _Utils_update(
 						model,
-						{state: $author$project$Main$Welcome});
+						{state: $author$project$UnderwaterGame$Welcome});
 				} else {
 					var otherwise = _v23;
 					return model;
@@ -9525,29 +9525,29 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$collage = F3(
 	function (w, h, shapes) {
 		return A3($MacCASOutreach$graphicsvg$GraphicSVG$Collage, w, h, shapes);
 	});
-var $author$project$Main$Backgroundtask1 = {$: 'Backgroundtask1'};
-var $author$project$Main$Enter = {$: 'Enter'};
-var $author$project$Main$GotoTask1 = {$: 'GotoTask1'};
-var $author$project$Main$Gotoruler = {$: 'Gotoruler'};
-var $author$project$Main$Gototask2 = {$: 'Gototask2'};
-var $author$project$Main$Gototask3 = {$: 'Gototask3'};
-var $author$project$Main$Next1 = {$: 'Next1'};
-var $author$project$Main$Next2 = {$: 'Next2'};
-var $author$project$Main$Next3 = {$: 'Next3'};
-var $author$project$Main$Next5 = {$: 'Next5'};
-var $author$project$Main$Play = {$: 'Play'};
-var $author$project$Main$Restart = {$: 'Restart'};
-var $author$project$Main$Returntasks = {$: 'Returntasks'};
-var $author$project$Main$Returntasks1 = {$: 'Returntasks1'};
-var $author$project$Main$Returntasks2 = {$: 'Returntasks2'};
-var $author$project$Main$Returntasks3 = {$: 'Returntasks3'};
-var $author$project$Main$Righttask2 = {$: 'Righttask2'};
-var $author$project$Main$Righttask3 = {$: 'Righttask3'};
-var $author$project$Main$Seashell = {$: 'Seashell'};
-var $author$project$Main$Storytime = {$: 'Storytime'};
-var $author$project$Main$Wrong1 = {$: 'Wrong1'};
-var $author$project$Main$Wrong2 = {$: 'Wrong2'};
-var $author$project$Main$Wrong3 = {$: 'Wrong3'};
+var $author$project$UnderwaterGame$Backgroundtask1 = {$: 'Backgroundtask1'};
+var $author$project$UnderwaterGame$Enter = {$: 'Enter'};
+var $author$project$UnderwaterGame$GotoTask1 = {$: 'GotoTask1'};
+var $author$project$UnderwaterGame$Gotoruler = {$: 'Gotoruler'};
+var $author$project$UnderwaterGame$Gototask2 = {$: 'Gototask2'};
+var $author$project$UnderwaterGame$Gototask3 = {$: 'Gototask3'};
+var $author$project$UnderwaterGame$Next1 = {$: 'Next1'};
+var $author$project$UnderwaterGame$Next2 = {$: 'Next2'};
+var $author$project$UnderwaterGame$Next3 = {$: 'Next3'};
+var $author$project$UnderwaterGame$Next5 = {$: 'Next5'};
+var $author$project$UnderwaterGame$Play = {$: 'Play'};
+var $author$project$UnderwaterGame$Restart = {$: 'Restart'};
+var $author$project$UnderwaterGame$Returntasks = {$: 'Returntasks'};
+var $author$project$UnderwaterGame$Returntasks1 = {$: 'Returntasks1'};
+var $author$project$UnderwaterGame$Returntasks2 = {$: 'Returntasks2'};
+var $author$project$UnderwaterGame$Returntasks3 = {$: 'Returntasks3'};
+var $author$project$UnderwaterGame$Righttask2 = {$: 'Righttask2'};
+var $author$project$UnderwaterGame$Righttask3 = {$: 'Righttask3'};
+var $author$project$UnderwaterGame$Seashell = {$: 'Seashell'};
+var $author$project$UnderwaterGame$Storytime = {$: 'Storytime'};
+var $author$project$UnderwaterGame$Wrong1 = {$: 'Wrong1'};
+var $author$project$UnderwaterGame$Wrong2 = {$: 'Wrong2'};
+var $author$project$UnderwaterGame$Wrong3 = {$: 'Wrong3'};
 var $MacCASOutreach$graphicsvg$GraphicSVG$lightBrown = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 233, 185, 110, 1);
 var $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Oval = F2(
 	function (a, b) {
@@ -9561,7 +9561,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$rgb = F3(
 	function (r, g, b) {
 		return A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, r, g, b, 1);
 	});
-var $author$project$Main$background = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$background = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -10074,7 +10074,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$ngon = F2(
 var $MacCASOutreach$graphicsvg$GraphicSVG$triangle = function (r) {
 	return A2($MacCASOutreach$graphicsvg$GraphicSVG$ngon, 3, r);
 };
-var $author$project$Main$fish = F2(
+var $author$project$UnderwaterGame$fish = F2(
 	function (color, color2) {
 		return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 			_List_fromArray(
@@ -10595,15 +10595,15 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$makeTransparent = F2(
 		var c = shape.c;
 		return A3($MacCASOutreach$graphicsvg$GraphicSVG$Secret$Inked, a, b, c);
 	});
-var $author$project$Main$fractionalModBy = F2(
+var $author$project$UnderwaterGame$fractionalModBy = F2(
 	function (m, x) {
 		return x - (m * $elm$core$Basics$floor(x / m));
 	});
-var $author$project$Main$repeatDistance = F4(
+var $author$project$UnderwaterGame$repeatDistance = F4(
 	function (speed, start, end, t) {
-		return start + A2($author$project$Main$fractionalModBy, end - start, speed * t);
+		return start + A2($author$project$UnderwaterGame$fractionalModBy, end - start, speed * t);
 	});
-var $author$project$Main$fishes1 = function (model) {
+var $author$project$UnderwaterGame$fishes1 = function (model) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
@@ -10613,147 +10613,147 @@ var $author$project$Main$fishes1 = function (model) {
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
-						A4($author$project$Main$repeatDistance, 20, 240, -120, model.time),
+						A4($author$project$UnderwaterGame$repeatDistance, 20, 240, -120, model.time),
 						0),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.1,
-						A2($author$project$Main$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$black)))),
+						A2($author$project$UnderwaterGame$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$black)))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$makeTransparent,
 				0.75,
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
-						A4($author$project$Main$repeatDistance, 40, 260, -120, model.time),
+						A4($author$project$UnderwaterGame$repeatDistance, 40, 260, -120, model.time),
 						20),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.1,
-						A2($author$project$Main$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$black)))),
+						A2($author$project$UnderwaterGame$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$black)))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$makeTransparent,
 				0.75,
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
-						A4($author$project$Main$repeatDistance, 10, 280, -120, model.time),
+						A4($author$project$UnderwaterGame$repeatDistance, 10, 280, -120, model.time),
 						30),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.1,
-						A2($author$project$Main$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$black)))),
+						A2($author$project$UnderwaterGame$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$black)))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$makeTransparent,
 				0.75,
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
-						A4($author$project$Main$repeatDistance, 30, 240, -120, model.time),
+						A4($author$project$UnderwaterGame$repeatDistance, 30, 240, -120, model.time),
 						-30),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.1,
-						A2($author$project$Main$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$darkCharcoal)))),
+						A2($author$project$UnderwaterGame$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$darkCharcoal)))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$makeTransparent,
 				0.75,
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
-						A4($author$project$Main$repeatDistance, 50, 280, -120, model.time),
+						A4($author$project$UnderwaterGame$repeatDistance, 50, 280, -120, model.time),
 						-20),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.1,
-						A2($author$project$Main$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$lightCharcoal)))),
+						A2($author$project$UnderwaterGame$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$lightCharcoal)))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$makeTransparent,
 				0.75,
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
-						A4($author$project$Main$repeatDistance, 20, 240, -120, model.time),
+						A4($author$project$UnderwaterGame$repeatDistance, 20, 240, -120, model.time),
 						50),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.1,
-						A2($author$project$Main$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$lightCharcoal)))),
+						A2($author$project$UnderwaterGame$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$lightCharcoal)))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$makeTransparent,
 				0.75,
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
-						A4($author$project$Main$repeatDistance, 5, 300, -120, model.time),
+						A4($author$project$UnderwaterGame$repeatDistance, 5, 300, -120, model.time),
 						40),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.1,
-						A2($author$project$Main$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$black)))),
+						A2($author$project$UnderwaterGame$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$black)))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$makeTransparent,
 				0.75,
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
-						A4($author$project$Main$repeatDistance, 15, 260, -120, model.time),
+						A4($author$project$UnderwaterGame$repeatDistance, 15, 260, -120, model.time),
 						20),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.1,
-						A2($author$project$Main$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$black)))),
+						A2($author$project$UnderwaterGame$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$black)))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$makeTransparent,
 				0.75,
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
-						A4($author$project$Main$repeatDistance, 35, 280, -120, model.time),
+						A4($author$project$UnderwaterGame$repeatDistance, 35, 280, -120, model.time),
 						30),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.1,
-						A2($author$project$Main$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$black)))),
+						A2($author$project$UnderwaterGame$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$black)))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$makeTransparent,
 				0.75,
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
-						A4($author$project$Main$repeatDistance, 45, 280, -120, model.time),
+						A4($author$project$UnderwaterGame$repeatDistance, 45, 280, -120, model.time),
 						-30),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.1,
-						A2($author$project$Main$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$darkCharcoal)))),
+						A2($author$project$UnderwaterGame$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$darkCharcoal)))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$makeTransparent,
 				0.75,
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
-						A4($author$project$Main$repeatDistance, 10, 300, -120, model.time),
+						A4($author$project$UnderwaterGame$repeatDistance, 10, 300, -120, model.time),
 						-20),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.1,
-						A2($author$project$Main$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$lightCharcoal)))),
+						A2($author$project$UnderwaterGame$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$lightCharcoal)))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$makeTransparent,
 				0.75,
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
-						A4($author$project$Main$repeatDistance, 20, 240, -120, model.time),
+						A4($author$project$UnderwaterGame$repeatDistance, 20, 240, -120, model.time),
 						-25),
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.1,
-						A2($author$project$Main$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$lightCharcoal))))
+						A2($author$project$UnderwaterGame$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$lightCharcoal))))
 			]));
 };
-var $author$project$Main$background1 = function (model) {
+var $author$project$UnderwaterGame$background1 = function (model) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
@@ -10768,7 +10768,7 @@ var $author$project$Main$background1 = function (model) {
 					$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 					$MacCASOutreach$graphicsvg$GraphicSVG$darkBrown,
 					A2($MacCASOutreach$graphicsvg$GraphicSVG$rect, 200, 20))),
-				$author$project$Main$fishes1(model)
+				$author$project$UnderwaterGame$fishes1(model)
 			]));
 };
 var $elm$json$Json$Encode$string = _Json_wrap;
@@ -10803,7 +10803,7 @@ var $elm$html$Html$Attributes$width = function (n) {
 		'width',
 		$elm$core$String$fromInt(n));
 };
-var $author$project$Main$background2 = A2(
+var $author$project$UnderwaterGame$background2 = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$move,
 	_Utils_Tuple2(-95, 60),
 	A3(
@@ -10820,7 +10820,7 @@ var $author$project$Main$background2 = A2(
 					$elm$html$Html$Attributes$src('https://adventuretourcenter.com/wp-content/uploads/2018/08/Cenote2OjosATCScubaDiving.jpg')
 				]),
 			_List_Nil)));
-var $author$project$Main$backgroundtask1 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$backgroundtask1 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -10844,7 +10844,7 @@ var $author$project$Main$backgroundtask1 = $MacCASOutreach$graphicsvg$GraphicSVG
 							]),
 						_List_Nil))))
 		]));
-var $author$project$Main$backgroundtask2 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$backgroundtask2 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -10868,7 +10868,7 @@ var $author$project$Main$backgroundtask2 = $MacCASOutreach$graphicsvg$GraphicSVG
 							]),
 						_List_Nil))))
 		]));
-var $author$project$Main$backgroundtask3 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$backgroundtask3 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -10921,7 +10921,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$bold = function (stencil) {
 		return a;
 	}
 };
-var $author$project$Main$bubbles = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$bubbles = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -11137,7 +11137,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$text = function (str) {
 		A8($MacCASOutreach$graphicsvg$GraphicSVG$Secret$Face, 12, false, false, false, false, false, $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Serif, $MacCASOutreach$graphicsvg$GraphicSVG$Secret$AlignLeft),
 		str);
 };
-var $author$project$Main$enterbutton = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$enterbutton = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -11158,7 +11158,7 @@ var $author$project$Main$enterbutton = $MacCASOutreach$graphicsvg$GraphicSVG$gro
 							$MacCASOutreach$graphicsvg$GraphicSVG$text('ENTER'))))))
 		]));
 var $MacCASOutreach$graphicsvg$GraphicSVG$red = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 204, 0, 0, 1);
-var $author$project$Main$failmsg = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$failmsg = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -11193,184 +11193,184 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$lightGreen = A4($MacCASOutreach$graphi
 var $MacCASOutreach$graphicsvg$GraphicSVG$lightPurple = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 173, 127, 168, 1);
 var $MacCASOutreach$graphicsvg$GraphicSVG$lightYellow = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 255, 233, 79, 1);
 var $MacCASOutreach$graphicsvg$GraphicSVG$pink = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 255, 105, 180, 1);
-var $author$project$Main$fishes = function (model) {
+var $author$project$UnderwaterGame$fishes = function (model) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
-					A4($author$project$Main$repeatDistance, 20, 240, -120, model.time),
+					A4($author$project$UnderwaterGame$repeatDistance, 20, 240, -120, model.time),
 					0),
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 					0.3,
 					A2(
-						$author$project$Main$fish,
+						$author$project$UnderwaterGame$fish,
 						A3($MacCASOutreach$graphicsvg$GraphicSVG$rgb, 230, 125, 50),
 						$MacCASOutreach$graphicsvg$GraphicSVG$darkOrange))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
-					A4($author$project$Main$repeatDistance, 40, 260, -120, model.time),
+					A4($author$project$UnderwaterGame$repeatDistance, 40, 260, -120, model.time),
 					20),
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 					0.3,
-					A2($author$project$Main$fish, $MacCASOutreach$graphicsvg$GraphicSVG$lightBlue, $MacCASOutreach$graphicsvg$GraphicSVG$darkBlue))),
+					A2($author$project$UnderwaterGame$fish, $MacCASOutreach$graphicsvg$GraphicSVG$lightBlue, $MacCASOutreach$graphicsvg$GraphicSVG$darkBlue))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
-					A4($author$project$Main$repeatDistance, 10, 280, -120, model.time),
+					A4($author$project$UnderwaterGame$repeatDistance, 10, 280, -120, model.time),
 					30),
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 					0.3,
-					A2($author$project$Main$fish, $MacCASOutreach$graphicsvg$GraphicSVG$lightPurple, $MacCASOutreach$graphicsvg$GraphicSVG$darkPurple))),
+					A2($author$project$UnderwaterGame$fish, $MacCASOutreach$graphicsvg$GraphicSVG$lightPurple, $MacCASOutreach$graphicsvg$GraphicSVG$darkPurple))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
-					A4($author$project$Main$repeatDistance, 30, 240, -120, model.time),
+					A4($author$project$UnderwaterGame$repeatDistance, 30, 240, -120, model.time),
 					-30),
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 					0.3,
-					A2($author$project$Main$fish, $MacCASOutreach$graphicsvg$GraphicSVG$lightGreen, $MacCASOutreach$graphicsvg$GraphicSVG$darkGreen))),
+					A2($author$project$UnderwaterGame$fish, $MacCASOutreach$graphicsvg$GraphicSVG$lightGreen, $MacCASOutreach$graphicsvg$GraphicSVG$darkGreen))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
-					A4($author$project$Main$repeatDistance, 50, 280, -120, model.time),
+					A4($author$project$UnderwaterGame$repeatDistance, 50, 280, -120, model.time),
 					-20),
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 					0.3,
-					A2($author$project$Main$fish, $MacCASOutreach$graphicsvg$GraphicSVG$pink, $MacCASOutreach$graphicsvg$GraphicSVG$hotPink))),
+					A2($author$project$UnderwaterGame$fish, $MacCASOutreach$graphicsvg$GraphicSVG$pink, $MacCASOutreach$graphicsvg$GraphicSVG$hotPink))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
-					A4($author$project$Main$repeatDistance, 20, 240, -120, model.time),
+					A4($author$project$UnderwaterGame$repeatDistance, 20, 240, -120, model.time),
 					50),
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 					0.3,
-					A2($author$project$Main$fish, $MacCASOutreach$graphicsvg$GraphicSVG$lightYellow, $MacCASOutreach$graphicsvg$GraphicSVG$darkYellow)))
+					A2($author$project$UnderwaterGame$fish, $MacCASOutreach$graphicsvg$GraphicSVG$lightYellow, $MacCASOutreach$graphicsvg$GraphicSVG$darkYellow)))
 			]));
 };
-var $author$project$Main$fishes2 = function (model) {
+var $author$project$UnderwaterGame$fishes2 = function (model) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
-					A4($author$project$Main$repeatDistance, 30, 240, -120, model.time),
+					A4($author$project$UnderwaterGame$repeatDistance, 30, 240, -120, model.time),
 					0),
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 					0.1,
-					A2($author$project$Main$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$black))),
+					A2($author$project$UnderwaterGame$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$black))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
-					A4($author$project$Main$repeatDistance, 20, 260, -120, model.time),
+					A4($author$project$UnderwaterGame$repeatDistance, 20, 260, -120, model.time),
 					20),
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 					0.1,
-					A2($author$project$Main$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$black))),
+					A2($author$project$UnderwaterGame$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$black))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
-					A4($author$project$Main$repeatDistance, 60, 280, -120, model.time),
+					A4($author$project$UnderwaterGame$repeatDistance, 60, 280, -120, model.time),
 					30),
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 					0.1,
-					A2($author$project$Main$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$black))),
+					A2($author$project$UnderwaterGame$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$black))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
-					A4($author$project$Main$repeatDistance, 50, 240, -120, model.time),
+					A4($author$project$UnderwaterGame$repeatDistance, 50, 240, -120, model.time),
 					-30),
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 					0.1,
-					A2($author$project$Main$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$darkCharcoal))),
+					A2($author$project$UnderwaterGame$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$darkCharcoal))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
-					A4($author$project$Main$repeatDistance, 15, 280, -120, model.time),
+					A4($author$project$UnderwaterGame$repeatDistance, 15, 280, -120, model.time),
 					-20),
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 					0.1,
-					A2($author$project$Main$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$lightCharcoal))),
+					A2($author$project$UnderwaterGame$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$lightCharcoal))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
-					A4($author$project$Main$repeatDistance, 7, 240, -120, model.time),
+					A4($author$project$UnderwaterGame$repeatDistance, 7, 240, -120, model.time),
 					50),
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 					0.1,
-					A2($author$project$Main$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$lightCharcoal))),
+					A2($author$project$UnderwaterGame$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$lightCharcoal))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
-					A4($author$project$Main$repeatDistance, 4, 300, -120, model.time),
+					A4($author$project$UnderwaterGame$repeatDistance, 4, 300, -120, model.time),
 					40),
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 					0.1,
-					A2($author$project$Main$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$black))),
+					A2($author$project$UnderwaterGame$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$black))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
-					A4($author$project$Main$repeatDistance, 10, 260, -120, model.time),
+					A4($author$project$UnderwaterGame$repeatDistance, 10, 260, -120, model.time),
 					20),
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 					0.1,
-					A2($author$project$Main$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$black))),
+					A2($author$project$UnderwaterGame$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$black))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
-					A4($author$project$Main$repeatDistance, 25, 280, -120, model.time),
+					A4($author$project$UnderwaterGame$repeatDistance, 25, 280, -120, model.time),
 					30),
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 					0.1,
-					A2($author$project$Main$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$black))),
+					A2($author$project$UnderwaterGame$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$black))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
-					A4($author$project$Main$repeatDistance, 30, 280, -120, model.time),
+					A4($author$project$UnderwaterGame$repeatDistance, 30, 280, -120, model.time),
 					-30),
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 					0.1,
-					A2($author$project$Main$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$darkCharcoal))),
+					A2($author$project$UnderwaterGame$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$darkCharcoal))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
-					A4($author$project$Main$repeatDistance, 45, 300, -120, model.time),
+					A4($author$project$UnderwaterGame$repeatDistance, 45, 300, -120, model.time),
 					-20),
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 					0.1,
-					A2($author$project$Main$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$lightCharcoal))),
+					A2($author$project$UnderwaterGame$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$lightCharcoal))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
-					A4($author$project$Main$repeatDistance, 9, 240, -120, model.time),
+					A4($author$project$UnderwaterGame$repeatDistance, 9, 240, -120, model.time),
 					-25),
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 					0.1,
-					A2($author$project$Main$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$lightCharcoal)))
+					A2($author$project$UnderwaterGame$fish, $MacCASOutreach$graphicsvg$GraphicSVG$black, $MacCASOutreach$graphicsvg$GraphicSVG$lightCharcoal)))
 			]));
 };
-var $author$project$Main$gameresetButton = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$gameresetButton = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -11394,7 +11394,7 @@ var $author$project$Main$gameresetButton = $MacCASOutreach$graphicsvg$GraphicSVG
 							$MacCASOutreach$graphicsvg$GraphicSVG$text('Restart'))))))
 		]));
 var $MacCASOutreach$graphicsvg$GraphicSVG$green = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 115, 210, 22, 1);
-var $author$project$Main$gem1 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$gem1 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -11430,7 +11430,7 @@ var $author$project$Main$gem1 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 							5,
 							$MacCASOutreach$graphicsvg$GraphicSVG$text('x1 gem obtained!'))))))
 		]));
-var $author$project$Main$gem2 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$gem2 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -11466,7 +11466,7 @@ var $author$project$Main$gem2 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 							5,
 							$MacCASOutreach$graphicsvg$GraphicSVG$text('x1 gem obtained!'))))))
 		]));
-var $author$project$Main$gem3 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$gem3 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -11502,7 +11502,7 @@ var $author$project$Main$gem3 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 							5,
 							$MacCASOutreach$graphicsvg$GraphicSVG$text('x1 gem obtained!'))))))
 		]));
-var $author$project$Main$gototask1button = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$gototask1button = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -11522,7 +11522,7 @@ var $author$project$Main$gototask1button = $MacCASOutreach$graphicsvg$GraphicSVG
 							6,
 							$MacCASOutreach$graphicsvg$GraphicSVG$text('Go to Task 1'))))))
 		]));
-var $author$project$Main$gototask2button = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$gototask2button = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -11542,7 +11542,7 @@ var $author$project$Main$gototask2button = $MacCASOutreach$graphicsvg$GraphicSVG
 							6,
 							$MacCASOutreach$graphicsvg$GraphicSVG$text('Go to Task 2'))))))
 		]));
-var $author$project$Main$gototask3button = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$gototask3button = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -11562,7 +11562,7 @@ var $author$project$Main$gototask3button = $MacCASOutreach$graphicsvg$GraphicSVG
 							6,
 							$MacCASOutreach$graphicsvg$GraphicSVG$text('Go to Task 3'))))))
 		]));
-var $author$project$Main$dolphin = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$dolphin = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -11583,32 +11583,32 @@ var $author$project$Main$dolphin = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 						]),
 					_List_Nil)))
 		]));
-var $author$project$Main$groupDolphins = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$groupDolphins = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
-			$author$project$Main$dolphin,
+			$author$project$UnderwaterGame$dolphin,
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(0, -40),
-			$author$project$Main$dolphin),
+			$author$project$UnderwaterGame$dolphin),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(60, -50),
-			A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.5, $author$project$Main$dolphin)),
+			A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.5, $author$project$UnderwaterGame$dolphin)),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(-60, -50),
-			A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.8, $author$project$Main$dolphin)),
+			A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.8, $author$project$UnderwaterGame$dolphin)),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(-60, -30),
-			A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.4, $author$project$Main$dolphin)),
+			A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.4, $author$project$UnderwaterGame$dolphin)),
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(70, -20),
-			A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.3, $author$project$Main$dolphin))
+			A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.3, $author$project$UnderwaterGame$dolphin))
 		]));
-var $author$project$Main$hollowintro = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$hollowintro = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -11654,7 +11654,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$underline = function (stencil) {
 		return a;
 	}
 };
-var $author$project$Main$instructions = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$instructions = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -11701,7 +11701,7 @@ var $author$project$Main$instructions = $MacCASOutreach$graphicsvg$GraphicSVG$gr
 						8,
 						$MacCASOutreach$graphicsvg$GraphicSVG$text('have to redo all the tasks/games')))))
 		]));
-var $author$project$Main$intro = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$intro = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -11741,7 +11741,7 @@ var $author$project$Main$intro = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 var $MacCASOutreach$graphicsvg$GraphicSVG$square = function (r) {
 	return A2($MacCASOutreach$graphicsvg$GraphicSVG$Secret$Rect, r, r);
 };
-var $author$project$Main$listofgames = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$listofgames = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -11817,7 +11817,7 @@ var $author$project$Main$listofgames = $MacCASOutreach$graphicsvg$GraphicSVG$gro
 							8,
 							$MacCASOutreach$graphicsvg$GraphicSVG$text('Riddle me this'))))))
 		]));
-var $author$project$Main$listofgames1 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$listofgames1 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -11893,7 +11893,7 @@ var $author$project$Main$listofgames1 = $MacCASOutreach$graphicsvg$GraphicSVG$gr
 							8,
 							$MacCASOutreach$graphicsvg$GraphicSVG$text('Riddle me this'))))))
 		]));
-var $author$project$Main$listofgames2 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$listofgames2 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -11969,7 +11969,7 @@ var $author$project$Main$listofgames2 = $MacCASOutreach$graphicsvg$GraphicSVG$gr
 							8,
 							$MacCASOutreach$graphicsvg$GraphicSVG$text('Riddle me this'))))))
 		]));
-var $author$project$Main$listofgames3 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$listofgames3 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -12045,7 +12045,7 @@ var $author$project$Main$listofgames3 = $MacCASOutreach$graphicsvg$GraphicSVG$gr
 							8,
 							$MacCASOutreach$graphicsvg$GraphicSVG$text('Riddle me this'))))))
 		]));
-var $author$project$Main$mermaid = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$mermaid = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -12069,7 +12069,7 @@ var $author$project$Main$mermaid = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 							]),
 						_List_Nil))))
 		]));
-var $author$project$Main$next1button = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$next1button = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -12092,7 +12092,7 @@ var $author$project$Main$next1button = $MacCASOutreach$graphicsvg$GraphicSVG$gro
 							6,
 							$MacCASOutreach$graphicsvg$GraphicSVG$text('Next'))))))
 		]));
-var $author$project$Main$next2button = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$next2button = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -12115,7 +12115,7 @@ var $author$project$Main$next2button = $MacCASOutreach$graphicsvg$GraphicSVG$gro
 							6,
 							$MacCASOutreach$graphicsvg$GraphicSVG$text('Next'))))))
 		]));
-var $author$project$Main$next3button = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$next3button = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -12138,7 +12138,7 @@ var $author$project$Main$next3button = $MacCASOutreach$graphicsvg$GraphicSVG$gro
 							6,
 							$MacCASOutreach$graphicsvg$GraphicSVG$text('Next'))))))
 		]));
-var $author$project$Main$next4button = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$next4button = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -12162,7 +12162,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$notifyTap = F2(
 	function (msg, shape) {
 		return A2($MacCASOutreach$graphicsvg$GraphicSVG$Secret$Tap, msg, shape);
 	});
-var $author$project$Main$playbutton = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$playbutton = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -12182,7 +12182,7 @@ var $author$project$Main$playbutton = $MacCASOutreach$graphicsvg$GraphicSVG$grou
 							6,
 							$MacCASOutreach$graphicsvg$GraphicSVG$text('PLAY'))))))
 		]));
-var $author$project$Main$returntasks1button = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$returntasks1button = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -12202,7 +12202,7 @@ var $author$project$Main$returntasks1button = $MacCASOutreach$graphicsvg$Graphic
 							6,
 							$MacCASOutreach$graphicsvg$GraphicSVG$text('Return to Tasks'))))))
 		]));
-var $author$project$Main$returntasks2button = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$returntasks2button = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -12222,7 +12222,7 @@ var $author$project$Main$returntasks2button = $MacCASOutreach$graphicsvg$Graphic
 							6,
 							$MacCASOutreach$graphicsvg$GraphicSVG$text('Return to Tasks'))))))
 		]));
-var $author$project$Main$returntasks3button = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$returntasks3button = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -12242,7 +12242,7 @@ var $author$project$Main$returntasks3button = $MacCASOutreach$graphicsvg$Graphic
 							6,
 							$MacCASOutreach$graphicsvg$GraphicSVG$text('Return to Tasks'))))))
 		]));
-var $author$project$Main$returntasksbutton = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$returntasksbutton = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -12262,7 +12262,7 @@ var $author$project$Main$returntasksbutton = $MacCASOutreach$graphicsvg$GraphicS
 							6,
 							$MacCASOutreach$graphicsvg$GraphicSVG$text('Return to Tasks'))))))
 		]));
-var $author$project$Main$rightbutton = A2(
+var $author$project$UnderwaterGame$rightbutton = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$move,
 	_Utils_Tuple2(0, 30),
 	$MacCASOutreach$graphicsvg$GraphicSVG$group(
@@ -12285,7 +12285,7 @@ var $author$project$Main$rightbutton = A2(
 								8,
 								$MacCASOutreach$graphicsvg$GraphicSVG$text('6'))))))
 			])));
-var $author$project$Main$rightbuttontask3 = A2(
+var $author$project$UnderwaterGame$rightbuttontask3 = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$move,
 	_Utils_Tuple2(-40, -20),
 	$MacCASOutreach$graphicsvg$GraphicSVG$group(
@@ -12308,7 +12308,7 @@ var $author$project$Main$rightbuttontask3 = A2(
 								6,
 								$MacCASOutreach$graphicsvg$GraphicSVG$text('Nothing, they just waved!'))))))
 			])));
-var $author$project$Main$ruler = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$ruler = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -12366,7 +12366,7 @@ var $author$project$Main$ruler = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 						6,
 						$MacCASOutreach$graphicsvg$GraphicSVG$text('Relation: Your Best Friend')))))
 		]));
-var $author$project$Main$ruler1 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$ruler1 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -12390,7 +12390,7 @@ var $author$project$Main$ruler1 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 							]),
 						_List_Nil))))
 		]));
-var $author$project$Main$rulerbutton = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$rulerbutton = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -12410,7 +12410,7 @@ var $author$project$Main$rulerbutton = $MacCASOutreach$graphicsvg$GraphicSVG$gro
 							6,
 							$MacCASOutreach$graphicsvg$GraphicSVG$text('Go to the ruler'))))))
 		]));
-var $author$project$Main$sand = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$sand = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -12484,7 +12484,7 @@ var $author$project$Main$sand = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 				$MacCASOutreach$graphicsvg$GraphicSVG$darkBrown,
 				A2($MacCASOutreach$graphicsvg$GraphicSVG$oval, 50, 30)))
 		]));
-var $author$project$Main$scubadiver = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$scubadiver = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -12641,11 +12641,11 @@ var $author$project$Main$scubadiver = $MacCASOutreach$graphicsvg$GraphicSVG$grou
 						$MacCASOutreach$graphicsvg$GraphicSVG$darkGreen,
 						A3($MacCASOutreach$graphicsvg$GraphicSVG$roundedRect, 15, 7, 2)))))
 		]));
-var $author$project$Main$scuba = A2(
+var $author$project$UnderwaterGame$scuba = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$move,
 	_Utils_Tuple2(100, 0),
-	$author$project$Main$scubadiver);
-var $author$project$Main$seashellbutton = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+	$author$project$UnderwaterGame$scubadiver);
+var $author$project$UnderwaterGame$seashellbutton = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -12672,7 +12672,7 @@ var $author$project$Main$seashellbutton = $MacCASOutreach$graphicsvg$GraphicSVG$
 var $MacCASOutreach$graphicsvg$GraphicSVG$polygon = function (ptList) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Polygon(ptList);
 };
-var $author$project$Main$seaweed = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$seaweed = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -12686,7 +12686,7 @@ var $author$project$Main$seaweed = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 						_Utils_Tuple2(6, 10)
 					])))
 		]));
-var $author$project$Main$seaweeds1 = function (model) {
+var $author$project$UnderwaterGame$seaweeds1 = function (model) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
@@ -12698,7 +12698,7 @@ var $author$project$Main$seaweeds1 = function (model) {
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-90, -30),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.5, $author$project$Main$seaweed))),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.5, $author$project$UnderwaterGame$seaweed))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
@@ -12707,7 +12707,7 @@ var $author$project$Main$seaweeds1 = function (model) {
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-50, -40),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.25, $author$project$Main$seaweed))),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.25, $author$project$UnderwaterGame$seaweed))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
@@ -12716,7 +12716,7 @@ var $author$project$Main$seaweeds1 = function (model) {
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-30, -30),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.5, $author$project$Main$seaweed))),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.5, $author$project$UnderwaterGame$seaweed))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
@@ -12725,7 +12725,7 @@ var $author$project$Main$seaweeds1 = function (model) {
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(10, -40),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.25, $author$project$Main$seaweed))),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.25, $author$project$UnderwaterGame$seaweed))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
@@ -12734,7 +12734,7 @@ var $author$project$Main$seaweeds1 = function (model) {
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(30, -30),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.5, $author$project$Main$seaweed))),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.5, $author$project$UnderwaterGame$seaweed))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
@@ -12743,7 +12743,7 @@ var $author$project$Main$seaweeds1 = function (model) {
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(70, -40),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.25, $author$project$Main$seaweed))),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.25, $author$project$UnderwaterGame$seaweed))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
@@ -12752,10 +12752,10 @@ var $author$project$Main$seaweeds1 = function (model) {
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(90, -30),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.5, $author$project$Main$seaweed)))
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.5, $author$project$UnderwaterGame$seaweed)))
 			]));
 };
-var $author$project$Main$seaweeds2 = function (model) {
+var $author$project$UnderwaterGame$seaweeds2 = function (model) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
@@ -12767,7 +12767,7 @@ var $author$project$Main$seaweeds2 = function (model) {
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-90, -30),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.5, $author$project$Main$seaweed))),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.5, $author$project$UnderwaterGame$seaweed))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
@@ -12776,7 +12776,7 @@ var $author$project$Main$seaweeds2 = function (model) {
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-50, -40),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.25, $author$project$Main$seaweed))),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.25, $author$project$UnderwaterGame$seaweed))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
@@ -12785,7 +12785,7 @@ var $author$project$Main$seaweeds2 = function (model) {
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-30, -30),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.5, $author$project$Main$seaweed))),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.5, $author$project$UnderwaterGame$seaweed))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
@@ -12794,7 +12794,7 @@ var $author$project$Main$seaweeds2 = function (model) {
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(10, -40),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.25, $author$project$Main$seaweed))),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.25, $author$project$UnderwaterGame$seaweed))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
@@ -12803,7 +12803,7 @@ var $author$project$Main$seaweeds2 = function (model) {
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(30, -30),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.5, $author$project$Main$seaweed))),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.5, $author$project$UnderwaterGame$seaweed))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
@@ -12812,7 +12812,7 @@ var $author$project$Main$seaweeds2 = function (model) {
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(70, -40),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.25, $author$project$Main$seaweed))),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.25, $author$project$UnderwaterGame$seaweed))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
@@ -12821,7 +12821,7 @@ var $author$project$Main$seaweeds2 = function (model) {
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(90, -30),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.5, $author$project$Main$seaweed))),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.5, $author$project$UnderwaterGame$seaweed))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
@@ -12830,7 +12830,7 @@ var $author$project$Main$seaweeds2 = function (model) {
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(50, -30),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.75, $author$project$Main$seaweed))),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.75, $author$project$UnderwaterGame$seaweed))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
@@ -12839,7 +12839,7 @@ var $author$project$Main$seaweeds2 = function (model) {
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-70, -30),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.75, $author$project$Main$seaweed))),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.75, $author$project$UnderwaterGame$seaweed))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
@@ -12848,10 +12848,10 @@ var $author$project$Main$seaweeds2 = function (model) {
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-10, -30),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.75, $author$project$Main$seaweed)))
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.75, $author$project$UnderwaterGame$seaweed)))
 			]));
 };
-var $author$project$Main$shark = A2(
+var $author$project$UnderwaterGame$shark = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$makeTransparent,
 	0.3,
 	A2(
@@ -13187,67 +13187,67 @@ var $author$project$Main$shark = A2(
 					_Utils_Tuple2(-79.71, -4.419),
 					_Utils_Tuple2(-79.71, -2.127))
 				]))));
-var $author$project$Main$sharks = function (model) {
+var $author$project$UnderwaterGame$sharks = function (model) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
-					A4($author$project$Main$repeatDistance, 10, 280, 120, -model.time),
+					A4($author$project$UnderwaterGame$repeatDistance, 10, 280, 120, -model.time),
 					-10),
-				A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.4, $author$project$Main$shark)),
+				A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.4, $author$project$UnderwaterGame$shark)),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
-					A4($author$project$Main$repeatDistance, 20, 300, 150, -model.time),
+					A4($author$project$UnderwaterGame$repeatDistance, 20, 300, 150, -model.time),
 					30),
-				A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.4, $author$project$Main$shark)),
+				A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.4, $author$project$UnderwaterGame$shark)),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
-					A4($author$project$Main$repeatDistance, 40, 260, 100, -model.time),
+					A4($author$project$UnderwaterGame$repeatDistance, 40, 260, 100, -model.time),
 					10),
-				A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.1, $author$project$Main$shark))
+				A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.1, $author$project$UnderwaterGame$shark))
 			]));
 };
-var $author$project$Main$sharks1 = function (model) {
+var $author$project$UnderwaterGame$sharks1 = function (model) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
-					A4($author$project$Main$repeatDistance, 10, 280, 120, -model.time),
+					A4($author$project$UnderwaterGame$repeatDistance, 10, 280, 120, -model.time),
 					-10),
-				A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.4, $author$project$Main$shark)),
+				A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.4, $author$project$UnderwaterGame$shark)),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
-					A4($author$project$Main$repeatDistance, 20, 300, 150, -model.time),
+					A4($author$project$UnderwaterGame$repeatDistance, 20, 300, 150, -model.time),
 					30),
-				A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.4, $author$project$Main$shark)),
+				A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.4, $author$project$UnderwaterGame$shark)),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
-					A4($author$project$Main$repeatDistance, 40, 260, 100, -model.time),
+					A4($author$project$UnderwaterGame$repeatDistance, 40, 260, 100, -model.time),
 					10),
-				A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.1, $author$project$Main$shark)),
+				A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.1, $author$project$UnderwaterGame$shark)),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
-					A4($author$project$Main$repeatDistance, 10, 280, 120, -model.time),
+					A4($author$project$UnderwaterGame$repeatDistance, 10, 280, 120, -model.time),
 					40),
-				A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.2, $author$project$Main$shark)),
+				A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.2, $author$project$UnderwaterGame$shark)),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(
-					A4($author$project$Main$repeatDistance, 50, 240, 90, -model.time),
+					A4($author$project$UnderwaterGame$repeatDistance, 50, 240, 90, -model.time),
 					-20),
-				A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.1, $author$project$Main$shark))
+				A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.1, $author$project$UnderwaterGame$shark))
 			]));
 };
-var $author$project$Main$sparkle = A3(
+var $author$project$UnderwaterGame$sparkle = A3(
 	$MacCASOutreach$graphicsvg$GraphicSVG$html,
 	170,
 	128,
@@ -13261,7 +13261,7 @@ var $author$project$Main$sparkle = A3(
 				$elm$html$Html$Attributes$src('https://clipart.world/wp-content/uploads/2021/06/Sparkle-clipart-transparent.png')
 			]),
 		_List_Nil));
-var $author$project$Main$storytimebutton = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$storytimebutton = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -13284,7 +13284,7 @@ var $author$project$Main$storytimebutton = $MacCASOutreach$graphicsvg$GraphicSVG
 							6,
 							$MacCASOutreach$graphicsvg$GraphicSVG$text('Story Time'))))))
 		]));
-var $author$project$Main$successmsg1 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$successmsg1 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -13309,7 +13309,7 @@ var $author$project$Main$successmsg1 = $MacCASOutreach$graphicsvg$GraphicSVG$gro
 						12,
 						$MacCASOutreach$graphicsvg$GraphicSVG$text('You have completed Task 1!')))))
 		]));
-var $author$project$Main$successmsg2 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$successmsg2 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -13334,7 +13334,7 @@ var $author$project$Main$successmsg2 = $MacCASOutreach$graphicsvg$GraphicSVG$gro
 						12,
 						$MacCASOutreach$graphicsvg$GraphicSVG$text('You have completed Task 2!')))))
 		]));
-var $author$project$Main$successmsg3 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$successmsg3 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -13359,7 +13359,7 @@ var $author$project$Main$successmsg3 = $MacCASOutreach$graphicsvg$GraphicSVG$gro
 						12,
 						$MacCASOutreach$graphicsvg$GraphicSVG$text('You have completed Task 3!')))))
 		]));
-var $author$project$Main$tickmark = A3(
+var $author$project$UnderwaterGame$tickmark = A3(
 	$MacCASOutreach$graphicsvg$GraphicSVG$addOutline,
 	$MacCASOutreach$graphicsvg$GraphicSVG$solid(0.5),
 	$MacCASOutreach$graphicsvg$GraphicSVG$black,
@@ -13384,7 +13384,7 @@ var $author$project$Main$tickmark = A3(
 					$MacCASOutreach$graphicsvg$GraphicSVG$darkGreen,
 					A2($MacCASOutreach$graphicsvg$GraphicSVG$rect, 20, 5)))
 			])));
-var $author$project$Main$wrong1button = A2(
+var $author$project$UnderwaterGame$wrong1button = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$move,
 	_Utils_Tuple2(-40, 30),
 	$MacCASOutreach$graphicsvg$GraphicSVG$group(
@@ -13407,7 +13407,7 @@ var $author$project$Main$wrong1button = A2(
 								8,
 								$MacCASOutreach$graphicsvg$GraphicSVG$text('9'))))))
 			])));
-var $author$project$Main$wrong2button = A2(
+var $author$project$UnderwaterGame$wrong2button = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$move,
 	_Utils_Tuple2(40, 30),
 	$MacCASOutreach$graphicsvg$GraphicSVG$group(
@@ -13430,7 +13430,7 @@ var $author$project$Main$wrong2button = A2(
 								8,
 								$MacCASOutreach$graphicsvg$GraphicSVG$text('5'))))))
 			])));
-var $author$project$Main$wrong3button = A2(
+var $author$project$UnderwaterGame$wrong3button = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$move,
 	_Utils_Tuple2(40, -20),
 	$MacCASOutreach$graphicsvg$GraphicSVG$group(
@@ -13453,7 +13453,7 @@ var $author$project$Main$wrong3button = A2(
 								6,
 								$MacCASOutreach$graphicsvg$GraphicSVG$text('Where are you here?'))))))
 			])));
-var $author$project$Main$you = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$UnderwaterGame$you = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -13493,25 +13493,25 @@ var $author$project$Main$you = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(-40, 10),
-			A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.7, $author$project$Main$scubadiver))
+			A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.7, $author$project$UnderwaterGame$scubadiver))
 		]));
-var $author$project$Main$myShapes = function (model) {
+var $author$project$UnderwaterGame$myShapes = function (model) {
 	var _v0 = model.state;
 	switch (_v0.$) {
 		case 'Welcome':
 			return _List_fromArray(
 				[
-					$author$project$Main$background,
-					$author$project$Main$sharks(model),
-					$author$project$Main$sand,
+					$author$project$UnderwaterGame$background,
+					$author$project$UnderwaterGame$sharks(model),
+					$author$project$UnderwaterGame$sand,
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
 						1 * $elm$core$Basics$cos(3 * model.time),
 						3 * $elm$core$Basics$sin(model.time)),
-					$author$project$Main$bubbles),
-					$author$project$Main$seaweeds1(model),
-					$author$project$Main$fishes(model),
+					$author$project$UnderwaterGame$bubbles),
+					$author$project$UnderwaterGame$seaweeds1(model),
+					$author$project$UnderwaterGame$fishes(model),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
@@ -13520,7 +13520,7 @@ var $author$project$Main$myShapes = function (model) {
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(50, -30),
-						A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.75, $author$project$Main$seaweed))),
+						A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.75, $author$project$UnderwaterGame$seaweed))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
@@ -13529,7 +13529,7 @@ var $author$project$Main$myShapes = function (model) {
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(-70, -30),
-						A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.75, $author$project$Main$seaweed))),
+						A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.75, $author$project$UnderwaterGame$seaweed))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
@@ -13538,32 +13538,32 @@ var $author$project$Main$myShapes = function (model) {
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(-10, -30),
-						A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.75, $author$project$Main$seaweed))),
+						A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.75, $author$project$UnderwaterGame$seaweed))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(0, 10),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 1.25, $author$project$Main$intro)),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 1.25, $author$project$UnderwaterGame$intro)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$notifyTap,
-					$author$project$Main$Play,
+					$author$project$UnderwaterGame$Play,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(0, -30),
-						A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 2, $author$project$Main$playbutton)))
+						A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 2, $author$project$UnderwaterGame$playbutton)))
 				]);
 		case 'CharactersPage':
 			return _List_fromArray(
 				[
-					$author$project$Main$background,
-					$author$project$Main$sharks(model),
-					$author$project$Main$sand,
+					$author$project$UnderwaterGame$background,
+					$author$project$UnderwaterGame$sharks(model),
+					$author$project$UnderwaterGame$sand,
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
 						1 * $elm$core$Basics$cos(3 * model.time),
 						3 * $elm$core$Basics$sin(model.time)),
-					$author$project$Main$bubbles),
-					$author$project$Main$seaweeds2(model),
+					$author$project$UnderwaterGame$bubbles),
+					$author$project$UnderwaterGame$seaweeds2(model),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(0, 50),
@@ -13573,27 +13573,27 @@ var $author$project$Main$myShapes = function (model) {
 						$MacCASOutreach$graphicsvg$GraphicSVG$centered(
 							$MacCASOutreach$graphicsvg$GraphicSVG$bold(
 								$MacCASOutreach$graphicsvg$GraphicSVG$text('Introduction to the Characters!'))))),
-					$author$project$Main$you,
-					$author$project$Main$ruler,
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$notifyTap, $author$project$Main$Storytime, $author$project$Main$storytimebutton)
+					$author$project$UnderwaterGame$you,
+					$author$project$UnderwaterGame$ruler,
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$notifyTap, $author$project$UnderwaterGame$Storytime, $author$project$UnderwaterGame$storytimebutton)
 				]);
 		case 'Storyline1':
 			return _List_fromArray(
 				[
-					$author$project$Main$background1(model),
-					$author$project$Main$sharks(model),
+					$author$project$UnderwaterGame$background1(model),
+					$author$project$UnderwaterGame$sharks(model),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
 						-40,
 						$elm$core$Basics$sin(model.time) * 8),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.7, $author$project$Main$scuba)),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.7, $author$project$UnderwaterGame$scuba)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
 						0,
 						$elm$core$Basics$cos(model.time) * 3),
-					$author$project$Main$ruler1),
+					$author$project$UnderwaterGame$ruler1),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(0, 55),
@@ -13630,21 +13630,21 @@ var $author$project$Main$myShapes = function (model) {
 									$MacCASOutreach$graphicsvg$GraphicSVG$size,
 									6,
 									$MacCASOutreach$graphicsvg$GraphicSVG$text('Without the gems, A-ventura is in grave danger!')))))),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$notifyTap, $author$project$Main$Next1, $author$project$Main$next1button)
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$notifyTap, $author$project$UnderwaterGame$Next1, $author$project$UnderwaterGame$next1button)
 				]);
 		case 'Storyline2':
 			return _List_fromArray(
 				[
-					$author$project$Main$background1(model),
-					$author$project$Main$sharks(model),
+					$author$project$UnderwaterGame$background1(model),
+					$author$project$UnderwaterGame$sharks(model),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2((-10) * model.time, 0),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.8, $author$project$Main$scuba)),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.8, $author$project$UnderwaterGame$scuba)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(0, -20),
-					$author$project$Main$fishes2(model)),
+					$author$project$UnderwaterGame$fishes2(model)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(0, 55),
@@ -13669,13 +13669,13 @@ var $author$project$Main$myShapes = function (model) {
 									$MacCASOutreach$graphicsvg$GraphicSVG$size,
 									6,
 									$MacCASOutreach$graphicsvg$GraphicSVG$text('the underwater city in search of the 3 allure crown gems.')))))),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$notifyTap, $author$project$Main$Next2, $author$project$Main$next2button)
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$notifyTap, $author$project$UnderwaterGame$Next2, $author$project$UnderwaterGame$next2button)
 				]);
 		case 'Storyline3':
 			return _List_fromArray(
 				[
-					$author$project$Main$background1(model),
-					$author$project$Main$sharks(model),
+					$author$project$UnderwaterGame$background1(model),
+					$author$project$UnderwaterGame$sharks(model),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(0, 55),
@@ -13731,12 +13731,12 @@ var $author$project$Main$myShapes = function (model) {
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 						0.5 * $elm$core$Basics$sin(model.time),
-						A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.1, $author$project$Main$sparkle))),
+						A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.1, $author$project$UnderwaterGame$sparkle))),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2((-10) * model.time, 0),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.8, $author$project$Main$scuba)),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$notifyTap, $author$project$Main$Next3, $author$project$Main$next3button)
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.8, $author$project$UnderwaterGame$scuba)),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$notifyTap, $author$project$UnderwaterGame$Next3, $author$project$UnderwaterGame$next3button)
 				]);
 		case 'HollowCave':
 			return _List_fromArray(
@@ -13745,15 +13745,15 @@ var $author$project$Main$myShapes = function (model) {
 					$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 					$MacCASOutreach$graphicsvg$GraphicSVG$black,
 					A2($MacCASOutreach$graphicsvg$GraphicSVG$rect, 200, 150)),
-					$author$project$Main$background2,
-					$author$project$Main$hollowintro,
+					$author$project$UnderwaterGame$background2,
+					$author$project$UnderwaterGame$hollowintro,
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$notifyTap,
-					$author$project$Main$Enter,
+					$author$project$UnderwaterGame$Enter,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(0, -20),
-						A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 2, $author$project$Main$enterbutton)))
+						A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 2, $author$project$UnderwaterGame$enterbutton)))
 				]);
 		case 'Instructions':
 			return _List_fromArray(
@@ -13762,42 +13762,42 @@ var $author$project$Main$myShapes = function (model) {
 					$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 					$MacCASOutreach$graphicsvg$GraphicSVG$black,
 					A2($MacCASOutreach$graphicsvg$GraphicSVG$rect, 200, 150)),
-					$author$project$Main$background2,
-					$author$project$Main$instructions,
+					$author$project$UnderwaterGame$background2,
+					$author$project$UnderwaterGame$instructions,
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$notifyTap,
-					$author$project$Main$Next5,
+					$author$project$UnderwaterGame$Next5,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(0, -40),
-						A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 2, $author$project$Main$next4button)))
+						A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 2, $author$project$UnderwaterGame$next4button)))
 				]);
 		case 'GamesList':
 			return _List_fromArray(
 				[
-					$author$project$Main$background,
-					$author$project$Main$sharks1(model),
+					$author$project$UnderwaterGame$background,
+					$author$project$UnderwaterGame$sharks1(model),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(20 * model.time, 20),
-					$author$project$Main$sharks1(model)),
-					$author$project$Main$sand,
+					$author$project$UnderwaterGame$sharks1(model)),
+					$author$project$UnderwaterGame$sand,
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(0, 10),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 1.25, $author$project$Main$listofgames)),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 1.25, $author$project$UnderwaterGame$listofgames)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$notifyTap,
-					$author$project$Main$GotoTask1,
+					$author$project$UnderwaterGame$GotoTask1,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(60, -55),
-						A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 1.5, $author$project$Main$gototask1button)))
+						A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 1.5, $author$project$UnderwaterGame$gototask1button)))
 				]);
 		case 'Task1':
 			return _List_fromArray(
 				[
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$notifyTap, $author$project$Main$Backgroundtask1, $author$project$Main$backgroundtask1),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$notifyTap, $author$project$UnderwaterGame$Backgroundtask1, $author$project$UnderwaterGame$backgroundtask1),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(0, 50),
@@ -13811,12 +13811,12 @@ var $author$project$Main$myShapes = function (model) {
 										$MacCASOutreach$graphicsvg$GraphicSVG$size,
 										12,
 										$MacCASOutreach$graphicsvg$GraphicSVG$text('Find the seashell!'))))))),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$notifyTap, $author$project$Main$Seashell, $author$project$Main$seashellbutton)
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$notifyTap, $author$project$UnderwaterGame$Seashell, $author$project$UnderwaterGame$seashellbutton)
 				]);
 		case 'Task2':
 			return _List_fromArray(
 				[
-					$author$project$Main$backgroundtask2,
+					$author$project$UnderwaterGame$backgroundtask2,
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(0, 50),
@@ -13830,15 +13830,15 @@ var $author$project$Main$myShapes = function (model) {
 										$MacCASOutreach$graphicsvg$GraphicSVG$size,
 										12,
 										$MacCASOutreach$graphicsvg$GraphicSVG$text('How many dolphins are there?'))))))),
-					$author$project$Main$groupDolphins,
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$notifyTap, $author$project$Main$Wrong1, $author$project$Main$wrong1button),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$notifyTap, $author$project$Main$Wrong2, $author$project$Main$wrong2button),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$notifyTap, $author$project$Main$Righttask2, $author$project$Main$rightbutton)
+					$author$project$UnderwaterGame$groupDolphins,
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$notifyTap, $author$project$UnderwaterGame$Wrong1, $author$project$UnderwaterGame$wrong1button),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$notifyTap, $author$project$UnderwaterGame$Wrong2, $author$project$UnderwaterGame$wrong2button),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$notifyTap, $author$project$UnderwaterGame$Righttask2, $author$project$UnderwaterGame$rightbutton)
 				]);
 		case 'Task3':
 			return _List_fromArray(
 				[
-					$author$project$Main$backgroundtask3,
+					$author$project$UnderwaterGame$backgroundtask3,
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(0, 50),
@@ -13864,8 +13864,8 @@ var $author$project$Main$myShapes = function (model) {
 									$MacCASOutreach$graphicsvg$GraphicSVG$size,
 									8,
 									$MacCASOutreach$graphicsvg$GraphicSVG$text('What did the ocean say to the other ocean?')))))),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$notifyTap, $author$project$Main$Wrong3, $author$project$Main$wrong3button),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$notifyTap, $author$project$Main$Righttask3, $author$project$Main$rightbuttontask3)
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$notifyTap, $author$project$UnderwaterGame$Wrong3, $author$project$UnderwaterGame$wrong3button),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$notifyTap, $author$project$UnderwaterGame$Righttask3, $author$project$UnderwaterGame$rightbuttontask3)
 				]);
 		case 'Fail':
 			return _List_fromArray(
@@ -13874,15 +13874,15 @@ var $author$project$Main$myShapes = function (model) {
 					$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 					$MacCASOutreach$graphicsvg$GraphicSVG$black,
 					A2($MacCASOutreach$graphicsvg$GraphicSVG$rect, 200, 150)),
-					$author$project$Main$background2,
-					$author$project$Main$failmsg,
+					$author$project$UnderwaterGame$background2,
+					$author$project$UnderwaterGame$failmsg,
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$notifyTap,
-					$author$project$Main$Returntasks,
+					$author$project$UnderwaterGame$Returntasks,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(0, -20),
-						$author$project$Main$returntasksbutton))
+						$author$project$UnderwaterGame$returntasksbutton))
 				]);
 		case 'Success1':
 			return _List_fromArray(
@@ -13891,16 +13891,16 @@ var $author$project$Main$myShapes = function (model) {
 					$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 					$MacCASOutreach$graphicsvg$GraphicSVG$black,
 					A2($MacCASOutreach$graphicsvg$GraphicSVG$rect, 200, 150)),
-					$author$project$Main$background2,
-					$author$project$Main$successmsg1,
-					$author$project$Main$gem1,
+					$author$project$UnderwaterGame$background2,
+					$author$project$UnderwaterGame$successmsg1,
+					$author$project$UnderwaterGame$gem1,
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$notifyTap,
-					$author$project$Main$Returntasks1,
+					$author$project$UnderwaterGame$Returntasks1,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(0, -20),
-						$author$project$Main$returntasks1button))
+						$author$project$UnderwaterGame$returntasks1button))
 				]);
 		case 'Success2':
 			return _List_fromArray(
@@ -13909,16 +13909,16 @@ var $author$project$Main$myShapes = function (model) {
 					$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 					$MacCASOutreach$graphicsvg$GraphicSVG$black,
 					A2($MacCASOutreach$graphicsvg$GraphicSVG$rect, 200, 150)),
-					$author$project$Main$background2,
-					$author$project$Main$successmsg2,
-					$author$project$Main$gem2,
+					$author$project$UnderwaterGame$background2,
+					$author$project$UnderwaterGame$successmsg2,
+					$author$project$UnderwaterGame$gem2,
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$notifyTap,
-					$author$project$Main$Returntasks2,
+					$author$project$UnderwaterGame$Returntasks2,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(0, -20),
-						$author$project$Main$returntasks2button))
+						$author$project$UnderwaterGame$returntasks2button))
 				]);
 		case 'Success3':
 			return _List_fromArray(
@@ -13927,124 +13927,124 @@ var $author$project$Main$myShapes = function (model) {
 					$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 					$MacCASOutreach$graphicsvg$GraphicSVG$black,
 					A2($MacCASOutreach$graphicsvg$GraphicSVG$rect, 200, 150)),
-					$author$project$Main$background2,
-					$author$project$Main$successmsg3,
-					$author$project$Main$gem3,
+					$author$project$UnderwaterGame$background2,
+					$author$project$UnderwaterGame$successmsg3,
+					$author$project$UnderwaterGame$gem3,
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$notifyTap,
-					$author$project$Main$Returntasks3,
+					$author$project$UnderwaterGame$Returntasks3,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(0, -20),
-						$author$project$Main$returntasks3button))
+						$author$project$UnderwaterGame$returntasks3button))
 				]);
 		case 'GamesListTask1':
 			return _List_fromArray(
 				[
-					$author$project$Main$background,
-					$author$project$Main$sharks1(model),
+					$author$project$UnderwaterGame$background,
+					$author$project$UnderwaterGame$sharks1(model),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(20 * model.time, 20),
-					$author$project$Main$sharks1(model)),
-					$author$project$Main$sand,
+					$author$project$UnderwaterGame$sharks1(model)),
+					$author$project$UnderwaterGame$sand,
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(0, 10),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 1.25, $author$project$Main$listofgames1)),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 1.25, $author$project$UnderwaterGame$listofgames1)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-45, 30),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.75, $author$project$Main$tickmark)),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.75, $author$project$UnderwaterGame$tickmark)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$notifyTap,
-					$author$project$Main$Gototask2,
+					$author$project$UnderwaterGame$Gototask2,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(60, -55),
-						A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 1.5, $author$project$Main$gototask2button)))
+						A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 1.5, $author$project$UnderwaterGame$gototask2button)))
 				]);
 		case 'GamesListTask2':
 			return _List_fromArray(
 				[
-					$author$project$Main$background,
-					$author$project$Main$sharks1(model),
+					$author$project$UnderwaterGame$background,
+					$author$project$UnderwaterGame$sharks1(model),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(20 * model.time, 20),
-					$author$project$Main$sharks1(model)),
-					$author$project$Main$sand,
+					$author$project$UnderwaterGame$sharks1(model)),
+					$author$project$UnderwaterGame$sand,
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(0, 10),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 1.25, $author$project$Main$listofgames2)),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 1.25, $author$project$UnderwaterGame$listofgames2)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-45, 30),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.75, $author$project$Main$tickmark)),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.75, $author$project$UnderwaterGame$tickmark)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-45, 5),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.75, $author$project$Main$tickmark)),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.75, $author$project$UnderwaterGame$tickmark)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$notifyTap,
-					$author$project$Main$Gototask3,
+					$author$project$UnderwaterGame$Gototask3,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(60, -55),
-						A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 1.5, $author$project$Main$gototask3button)))
+						A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 1.5, $author$project$UnderwaterGame$gototask3button)))
 				]);
 		case 'GamesListTask3':
 			return _List_fromArray(
 				[
-					$author$project$Main$background,
-					$author$project$Main$sharks1(model),
+					$author$project$UnderwaterGame$background,
+					$author$project$UnderwaterGame$sharks1(model),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(20 * model.time, 20),
-					$author$project$Main$sharks1(model)),
-					$author$project$Main$sand,
+					$author$project$UnderwaterGame$sharks1(model)),
+					$author$project$UnderwaterGame$sand,
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(0, 10),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 1.25, $author$project$Main$listofgames3)),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 1.25, $author$project$UnderwaterGame$listofgames3)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-45, 30),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.75, $author$project$Main$tickmark)),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.75, $author$project$UnderwaterGame$tickmark)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-45, 5),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.75, $author$project$Main$tickmark)),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.75, $author$project$UnderwaterGame$tickmark)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-45, -20),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.75, $author$project$Main$tickmark)),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.75, $author$project$UnderwaterGame$tickmark)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$notifyTap,
-					$author$project$Main$Gotoruler,
+					$author$project$UnderwaterGame$Gotoruler,
 					A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$move,
 						_Utils_Tuple2(60, -55),
-						A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 1.5, $author$project$Main$rulerbutton)))
+						A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 1.5, $author$project$UnderwaterGame$rulerbutton)))
 				]);
 		default:
 			return _List_fromArray(
 				[
-					$author$project$Main$background1(model),
-					$author$project$Main$sharks(model),
+					$author$project$UnderwaterGame$background1(model),
+					$author$project$UnderwaterGame$sharks(model),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
 						-40,
 						$elm$core$Basics$sin(model.time) * 8),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.7, $author$project$Main$mermaid)),
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$scale, 0.7, $author$project$UnderwaterGame$mermaid)),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(
 						0,
 						$elm$core$Basics$cos(model.time) * 3),
-					$author$project$Main$ruler1),
+					$author$project$UnderwaterGame$ruler1),
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(0, 55),
@@ -14081,25 +14081,25 @@ var $author$project$Main$myShapes = function (model) {
 									$MacCASOutreach$graphicsvg$GraphicSVG$size,
 									6,
 									$MacCASOutreach$graphicsvg$GraphicSVG$text('as a reward, you gain the ability to turn into a mer-human!')))))),
-					A2($MacCASOutreach$graphicsvg$GraphicSVG$notifyTap, $author$project$Main$Restart, $author$project$Main$gameresetButton)
+					A2($MacCASOutreach$graphicsvg$GraphicSVG$notifyTap, $author$project$UnderwaterGame$Restart, $author$project$UnderwaterGame$gameresetButton)
 				]);
 	}
 };
-var $author$project$Main$view = function (model) {
+var $author$project$UnderwaterGame$view = function (model) {
 	return A3(
 		$MacCASOutreach$graphicsvg$GraphicSVG$collage,
 		192,
 		128,
-		$author$project$Main$myShapes(model));
+		$author$project$UnderwaterGame$myShapes(model));
 };
-var $author$project$Main$main = A2(
+var $author$project$UnderwaterGame$main = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$App$gameApp,
-	$author$project$Main$Tick,
-	{model: $author$project$Main$init, title: 'Game Slot', update: $author$project$Main$update, view: $author$project$Main$view});
-_Platform_export({'Main':{'init':$author$project$Main$main(
+	$author$project$UnderwaterGame$Tick,
+	{model: $author$project$UnderwaterGame$init, title: 'Game Slot', update: $author$project$UnderwaterGame$update, view: $author$project$UnderwaterGame$view});
+_Platform_export({'UnderwaterGame':{'init':$author$project$UnderwaterGame$main(
 	$elm$json$Json$Decode$succeed(_Utils_Tuple0))(0)}});}(this));
 
-  var app = Elm.Main.init({ node: document.getElementById("elm") });
+  var app = Elm.UnderwaterGame.init({ node: document.getElementById("elm") });
 }
 catch (e)
 {

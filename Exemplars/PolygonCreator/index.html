@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Main</title>
+  <title>PolygonCreator</title>
   <style>body { padding: 0; margin: 0; }</style>
 </head>
 
@@ -4430,7 +4430,7 @@ function _Time_getZoneName()
 		callback(_Scheduler_succeed(name));
 	});
 }
-var $author$project$Main$Tick = F2(
+var $author$project$PolygonCreator$Tick = F2(
 	function (a, b) {
 		return {$: 'Tick', a: a, b: b};
 	});
@@ -9261,12 +9261,12 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$App$gameApp = F2(
 				}
 			});
 	});
-var $author$project$Main$Waiting = function (a) {
+var $author$project$PolygonCreator$Waiting = function (a) {
 	return {$: 'Waiting', a: a};
 };
-var $author$project$Main$init = {
+var $author$project$PolygonCreator$init = {
 	flag: true,
-	state: $author$project$Main$Waiting(
+	state: $author$project$PolygonCreator$Waiting(
 		_List_fromArray(
 			[
 				_Utils_Tuple2(0, 0),
@@ -9274,15 +9274,15 @@ var $author$project$Main$init = {
 			])),
 	time: 0
 };
-var $author$project$Main$Deleting = F2(
+var $author$project$PolygonCreator$Deleting = F2(
 	function (a, b) {
 		return {$: 'Deleting', a: a, b: b};
 	});
-var $author$project$Main$Dragging = F2(
+var $author$project$PolygonCreator$Dragging = F2(
 	function (a, b) {
 		return {$: 'Dragging', a: a, b: b};
 	});
-var $author$project$Main$SO = F3(
+var $author$project$PolygonCreator$SO = F3(
 	function (a, b, c) {
 		return {$: 'SO', a: a, b: b, c: c};
 	});
@@ -9298,7 +9298,7 @@ var $elm$core$List$filter = F2(
 			list);
 	});
 var $elm$core$Basics$neq = _Utils_notEqual;
-var $author$project$Main$update = F2(
+var $author$project$PolygonCreator$update = F2(
 	function (msg, model) {
 		switch (msg.$) {
 			case 'Tick':
@@ -9314,7 +9314,7 @@ var $author$project$Main$update = F2(
 							var _v1 = model.state;
 							if (_v1.$ === 'Waiting') {
 								var points = _v1.a;
-								return $author$project$Main$Waiting(
+								return $author$project$PolygonCreator$Waiting(
 									A2(
 										$elm$core$List$cons,
 										_Utils_Tuple2(50, 50),
@@ -9343,9 +9343,9 @@ var $author$project$Main$update = F2(
 								case 'Waiting':
 									var points = _v5.a;
 									return A2(
-										$author$project$Main$Dragging,
+										$author$project$PolygonCreator$Dragging,
 										A3(
-											$author$project$Main$SO,
+											$author$project$PolygonCreator$SO,
 											before,
 											_Utils_Tuple2(xP, yP),
 											after),
@@ -9353,7 +9353,7 @@ var $author$project$Main$update = F2(
 								case 'Deleting':
 									var points = _v5.a;
 									return A2(
-										$author$project$Main$Deleting,
+										$author$project$PolygonCreator$Deleting,
 										A2(
 											$elm$core$List$filter,
 											function (a) {
@@ -9388,9 +9388,9 @@ var $author$project$Main$update = F2(
 								var xLast = _v10.a;
 								var yLast = _v10.b;
 								return A2(
-									$author$project$Main$Dragging,
+									$author$project$PolygonCreator$Dragging,
 									A3(
-										$author$project$Main$SO,
+										$author$project$PolygonCreator$SO,
 										before,
 										_Utils_Tuple2((xP + x) - xLast, (yP + y) - yLast),
 										after),
@@ -9419,7 +9419,7 @@ var $author$project$Main$update = F2(
 								var _v15 = _v12.b;
 								var xLast = _v15.a;
 								var yLast = _v15.b;
-								return $author$project$Main$Waiting(
+								return $author$project$PolygonCreator$Waiting(
 									_Utils_ap(
 										before,
 										A2(
@@ -9441,7 +9441,7 @@ var $author$project$Main$update = F2(
 								case 'Waiting':
 									var points = _v16.a;
 									return A2(
-										$author$project$Main$Deleting,
+										$author$project$PolygonCreator$Deleting,
 										points,
 										_Utils_Tuple2(10000, 10000));
 								case 'Deleting':
@@ -9449,7 +9449,7 @@ var $author$project$Main$update = F2(
 									var _v17 = _v16.b;
 									var x = _v17.a;
 									var y = _v17.b;
-									return $author$project$Main$Waiting(
+									return $author$project$PolygonCreator$Waiting(
 										A2(
 											$elm$core$List$filter,
 											function (a) {
@@ -9474,15 +9474,15 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$collage = F3(
 	function (w, h, shapes) {
 		return A3($MacCASOutreach$graphicsvg$GraphicSVG$Collage, w, h, shapes);
 	});
-var $author$project$Main$DragEnd = function (a) {
+var $author$project$PolygonCreator$DragEnd = function (a) {
 	return {$: 'DragEnd', a: a};
 };
-var $author$project$Main$DragMove = function (a) {
+var $author$project$PolygonCreator$DragMove = function (a) {
 	return {$: 'DragMove', a: a};
 };
-var $author$project$Main$NewPoint = {$: 'NewPoint'};
-var $author$project$Main$SwitchTo = {$: 'SwitchTo'};
-var $author$project$Main$Toggle = function (a) {
+var $author$project$PolygonCreator$NewPoint = {$: 'NewPoint'};
+var $author$project$PolygonCreator$SwitchTo = {$: 'SwitchTo'};
+var $author$project$PolygonCreator$Toggle = function (a) {
 	return {$: 'Toggle', a: a};
 };
 var $MacCASOutreach$graphicsvg$GraphicSVG$brown = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 193, 125, 17, 1);
@@ -9543,7 +9543,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$text = function (str) {
 		A8($MacCASOutreach$graphicsvg$GraphicSVG$Secret$Face, 12, false, false, false, false, false, $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Serif, $MacCASOutreach$graphicsvg$GraphicSVG$Secret$AlignLeft),
 		str);
 };
-var $author$project$Main$button = F2(
+var $author$project$PolygonCreator$button = F2(
 	function (txt, maybeMsg) {
 		var b = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 			_List_fromArray(
@@ -9586,7 +9586,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$scale = F2(
 	function (s, shape) {
 		return A3($MacCASOutreach$graphicsvg$GraphicSVG$Secret$Scale, s, s, shape);
 	});
-var $author$project$Main$button2 = F2(
+var $author$project$PolygonCreator$button2 = F2(
 	function (txt, maybeMsg) {
 		var b = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 			_List_fromArray(
@@ -9630,7 +9630,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Circle = function (a) {
 var $MacCASOutreach$graphicsvg$GraphicSVG$circle = function (r) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Circle(r);
 };
-var $author$project$Main$drawPoint = F2(
+var $author$project$PolygonCreator$drawPoint = F2(
 	function (clr, pos) {
 		return A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
@@ -9640,29 +9640,29 @@ var $author$project$Main$drawPoint = F2(
 				clr,
 				$MacCASOutreach$graphicsvg$GraphicSVG$circle(3)));
 	});
-var $author$project$Main$ClickOnPoint = F2(
+var $author$project$PolygonCreator$ClickOnPoint = F2(
 	function (a, b) {
 		return {$: 'ClickOnPoint', a: a, b: b};
 	});
-var $author$project$Main$normalColour = A3($MacCASOutreach$graphicsvg$GraphicSVG$rgb, 0, 0, 150);
+var $author$project$PolygonCreator$normalColour = A3($MacCASOutreach$graphicsvg$GraphicSVG$rgb, 0, 0, 150);
 var $MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseDownAt = F2(
 	function (msg, shape) {
 		return A2($MacCASOutreach$graphicsvg$GraphicSVG$Secret$MouseDownAt, msg, shape);
 	});
-var $author$project$Main$drawPointFromSingledOut = function (_v0) {
+var $author$project$PolygonCreator$drawPointFromSingledOut = function (_v0) {
 	var before = _v0.a;
 	var thisPoint = _v0.b;
 	var after = _v0.c;
 	return A2(
 		$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseDownAt,
-		$author$project$Main$ClickOnPoint(
-			A3($author$project$Main$SO, before, thisPoint, after)),
+		$author$project$PolygonCreator$ClickOnPoint(
+			A3($author$project$PolygonCreator$SO, before, thisPoint, after)),
 		A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			thisPoint,
 			A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$filled,
-				$author$project$Main$normalColour,
+				$author$project$PolygonCreator$normalColour,
 				$MacCASOutreach$graphicsvg$GraphicSVG$circle(3))));
 };
 var $elm$core$Basics$abs = function (n) {
@@ -9738,7 +9738,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$hsl = F3(
 		var b = _v0.c;
 		return A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, r, g, b, 1);
 	});
-var $author$project$Main$graphColour = A3($MacCASOutreach$graphicsvg$GraphicSVG$hsl, 3.371, 1, 0.562);
+var $author$project$PolygonCreator$graphColour = A3($MacCASOutreach$graphicsvg$GraphicSVG$hsl, 3.371, 1, 0.562);
 var $MacCASOutreach$graphicsvg$GraphicSVG$graphPaperCustom = F3(
 	function (s, th, c) {
 		return A3($MacCASOutreach$graphicsvg$GraphicSVG$Secret$GraphPaper, s, th, c);
@@ -10110,7 +10110,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$outlined = F3(
 		}();
 		return A3($MacCASOutreach$graphicsvg$GraphicSVG$Secret$Inked, $elm$core$Maybe$Nothing, lineStyle, stencil);
 	});
-var $author$project$Main$polyPoints = function (state) {
+var $author$project$PolygonCreator$polyPoints = function (state) {
 	switch (state.$) {
 		case 'Waiting':
 			var points = state.a;
@@ -10138,30 +10138,30 @@ var $author$project$Main$polyPoints = function (state) {
 				points);
 	}
 };
-var $author$project$Main$prependToBefore = F2(
+var $author$project$PolygonCreator$prependToBefore = F2(
 	function (x1, _v0) {
 		var before = _v0.a;
 		var selectedOne = _v0.b;
 		var after = _v0.c;
 		return A3(
-			$author$project$Main$SO,
+			$author$project$PolygonCreator$SO,
 			A2($elm$core$List$cons, x1, before),
 			selectedOne,
 			after);
 	});
-var $author$project$Main$singleOut = function (xs) {
+var $author$project$PolygonCreator$singleOut = function (xs) {
 	if (!xs.b) {
 		return _List_Nil;
 	} else {
 		var x1 = xs.a;
 		var x2plus = xs.b;
-		var x1WillBeInBefore = $author$project$Main$singleOut(x2plus);
+		var x1WillBeInBefore = $author$project$PolygonCreator$singleOut(x2plus);
 		return A2(
 			$elm$core$List$cons,
-			A3($author$project$Main$SO, _List_Nil, x1, x2plus),
+			A3($author$project$PolygonCreator$SO, _List_Nil, x1, x2plus),
 			A2(
 				$elm$core$List$map,
-				$author$project$Main$prependToBefore(x1),
+				$author$project$PolygonCreator$prependToBefore(x1),
 				x1WillBeInBefore));
 	}
 };
@@ -10194,8 +10194,8 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$solid = function (th) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Unbroken(th);
 };
 var $elm$core$Debug$toString = _Debug_toString;
-var $author$project$Main$KeyCmdCtrl = {$: 'KeyCmdCtrl'};
-var $author$project$Main$KeyLetter = function (a) {
+var $author$project$PolygonCreator$KeyCmdCtrl = {$: 'KeyCmdCtrl'};
+var $author$project$PolygonCreator$KeyLetter = function (a) {
 	return {$: 'KeyLetter', a: a};
 };
 var $MacCASOutreach$graphicsvg$GraphicSVG$Secret$NoLine = {$: 'NoLine'};
@@ -10596,8 +10596,8 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$customFont = F2(
 			return a;
 		}
 	});
-var $author$project$Main$codeFont = $MacCASOutreach$graphicsvg$GraphicSVG$customFont('Source Code Pro');
-var $author$project$Main$headlineFont = $MacCASOutreach$graphicsvg$GraphicSVG$customFont('Raleway');
+var $author$project$PolygonCreator$codeFont = $MacCASOutreach$graphicsvg$GraphicSVG$customFont('Source Code Pro');
+var $author$project$PolygonCreator$headlineFont = $MacCASOutreach$graphicsvg$GraphicSVG$customFont('Raleway');
 var $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Polygon = function (a) {
 	return {$: 'Polygon', a: a};
 };
@@ -10626,7 +10626,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$rotate = F2(
 	function (theta, shape) {
 		return A2($MacCASOutreach$graphicsvg$GraphicSVG$Secret$Rotate, theta, shape);
 	});
-var $author$project$Main$keyCap = function (key) {
+var $author$project$PolygonCreator$keyCap = function (key) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
@@ -10823,7 +10823,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$selectable = function (stencil) {
 		return a;
 	}
 };
-var $author$project$Main$yourCode = function (model) {
+var $author$project$PolygonCreator$yourCode = function (model) {
 	var points = function () {
 		var _v1 = model.state;
 		switch (_v1.$) {
@@ -10864,7 +10864,7 @@ var $author$project$Main$yourCode = function (model) {
 		return A3(
 			$MacCASOutreach$graphicsvg$GraphicSVG$addOutline,
 			$MacCASOutreach$graphicsvg$GraphicSVG$solid(0.5),
-			$author$project$Main$graphColour,
+			$author$project$PolygonCreator$graphColour,
 			A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 				A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 255, 255, 255, 0.85),
@@ -10880,12 +10880,12 @@ var $author$project$Main$yourCode = function (model) {
 				_Utils_Tuple2(-43, 15),
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$filled,
-					$author$project$Main$graphColour,
+					$author$project$PolygonCreator$graphColour,
 					$MacCASOutreach$graphicsvg$GraphicSVG$bold(
 						A2(
 							$MacCASOutreach$graphicsvg$GraphicSVG$size,
 							4,
-							$author$project$Main$headlineFont(
+							$author$project$PolygonCreator$headlineFont(
 								$MacCASOutreach$graphicsvg$GraphicSVG$text('Copiable Code')))))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
@@ -10893,7 +10893,7 @@ var $author$project$Main$yourCode = function (model) {
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 					0.7,
-					$author$project$Main$keyCap($author$project$Main$KeyCmdCtrl))),
+					$author$project$PolygonCreator$keyCap($author$project$PolygonCreator$KeyCmdCtrl))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(35, -8),
@@ -10912,15 +10912,15 @@ var $author$project$Main$yourCode = function (model) {
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 					0.7,
-					$author$project$Main$keyCap(
-						$author$project$Main$KeyLetter('A')))),
+					$author$project$PolygonCreator$keyCap(
+						$author$project$PolygonCreator$KeyLetter('A')))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(30, -15),
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 					0.7,
-					$author$project$Main$keyCap($author$project$Main$KeyCmdCtrl))),
+					$author$project$PolygonCreator$keyCap($author$project$PolygonCreator$KeyCmdCtrl))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(35, -16),
@@ -10939,8 +10939,8 @@ var $author$project$Main$yourCode = function (model) {
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$scale,
 					0.7,
-					$author$project$Main$keyCap(
-						$author$project$Main$KeyLetter('C')))),
+					$author$project$PolygonCreator$keyCap(
+						$author$project$PolygonCreator$KeyLetter('C')))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(-42, 11),
@@ -10948,7 +10948,7 @@ var $author$project$Main$yourCode = function (model) {
 					$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 					$MacCASOutreach$graphicsvg$GraphicSVG$charcoal,
 					$MacCASOutreach$graphicsvg$GraphicSVG$selectable(
-						$author$project$Main$codeFont(
+						$author$project$PolygonCreator$codeFont(
 							A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$size,
 								3,
@@ -10967,7 +10967,7 @@ var $author$project$Main$yourCode = function (model) {
 									$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 									$MacCASOutreach$graphicsvg$GraphicSVG$charcoal,
 									$MacCASOutreach$graphicsvg$GraphicSVG$selectable(
-										$author$project$Main$codeFont(
+										$author$project$PolygonCreator$codeFont(
 											A2(
 												$MacCASOutreach$graphicsvg$GraphicSVG$size,
 												3,
@@ -10977,14 +10977,14 @@ var $author$project$Main$yourCode = function (model) {
 					points))
 			]));
 };
-var $author$project$Main$myShapes = function (model) {
+var $author$project$PolygonCreator$myShapes = function (model) {
 	return _Utils_ap(
 		_List_fromArray(
 			[
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$makeTransparent,
 				model.flag ? 0 : 0.8,
-				A3($MacCASOutreach$graphicsvg$GraphicSVG$graphPaperCustom, 10, 0.2, $author$project$Main$normalColour)),
+				A3($MacCASOutreach$graphicsvg$GraphicSVG$graphPaperCustom, 10, 0.2, $author$project$PolygonCreator$normalColour)),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$makeTransparent,
 				model.flag ? 0 : 0.8,
@@ -10993,10 +10993,10 @@ var $author$project$Main$myShapes = function (model) {
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(80, -50),
 				A2(
-					$author$project$Main$button2,
+					$author$project$PolygonCreator$button2,
 					model.flag ? 'Show Graph' : 'Hide Graph',
 					$elm$core$Maybe$Just(
-						$author$project$Main$Toggle(model.flag)))),
+						$author$project$PolygonCreator$Toggle(model.flag)))),
 				A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(-93, -60),
@@ -11022,7 +11022,7 @@ var $author$project$Main$myShapes = function (model) {
 				$MacCASOutreach$graphicsvg$GraphicSVG$solid(0.5),
 				A3($MacCASOutreach$graphicsvg$GraphicSVG$rgb, 0, 0, 100),
 				$MacCASOutreach$graphicsvg$GraphicSVG$openPolygon(
-					$author$project$Main$polyPoints(model.state)))
+					$author$project$PolygonCreator$polyPoints(model.state)))
 			]),
 		_Utils_ap(
 			function () {
@@ -11030,7 +11030,7 @@ var $author$project$Main$myShapes = function (model) {
 				switch (_v1.$) {
 					case 'Waiting':
 						var points = _v1.a;
-						var pointsSingledOut = $author$project$Main$singleOut(points);
+						var pointsSingledOut = $author$project$PolygonCreator$singleOut(points);
 						return _Utils_ap(
 							_List_fromArray(
 								[
@@ -11038,16 +11038,16 @@ var $author$project$Main$myShapes = function (model) {
 									$MacCASOutreach$graphicsvg$GraphicSVG$move,
 									_Utils_Tuple2(85, 58),
 									A2(
-										$author$project$Main$button,
+										$author$project$PolygonCreator$button,
 										'+',
-										$elm$core$Maybe$Just($author$project$Main$NewPoint))),
+										$elm$core$Maybe$Just($author$project$PolygonCreator$NewPoint))),
 									A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$move,
 									_Utils_Tuple2(-85, 58),
 									A2(
-										$author$project$Main$button,
+										$author$project$PolygonCreator$button,
 										'-',
-										$elm$core$Maybe$Just($author$project$Main$SwitchTo))),
+										$elm$core$Maybe$Just($author$project$PolygonCreator$SwitchTo))),
 									A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$move,
 									_Utils_Tuple2(0, 58),
@@ -11056,7 +11056,7 @@ var $author$project$Main$myShapes = function (model) {
 										0.8,
 										A2(
 											$MacCASOutreach$graphicsvg$GraphicSVG$filled,
-											$author$project$Main$graphColour,
+											$author$project$PolygonCreator$graphColour,
 											A2($MacCASOutreach$graphicsvg$GraphicSVG$rect, 150, 7)))),
 									A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$scale,
@@ -11070,7 +11070,7 @@ var $author$project$Main$myShapes = function (model) {
 											$MacCASOutreach$graphicsvg$GraphicSVG$centered(
 												$MacCASOutreach$graphicsvg$GraphicSVG$text('All points added stack at (50,50). Click on that point to drag around')))))
 								]),
-							A2($elm$core$List$map, $author$project$Main$drawPointFromSingledOut, pointsSingledOut));
+							A2($elm$core$List$map, $author$project$PolygonCreator$drawPointFromSingledOut, pointsSingledOut));
 					case 'Dragging':
 						var _v2 = _v1.a;
 						var before = _v2.a;
@@ -11082,34 +11082,34 @@ var $author$project$Main$myShapes = function (model) {
 									A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$move,
 									_Utils_Tuple2(85, 58),
-									A2($author$project$Main$button, '+', $elm$core$Maybe$Nothing))
+									A2($author$project$PolygonCreator$button, '+', $elm$core$Maybe$Nothing))
 								]),
 							_Utils_ap(
 								A2(
 									$elm$core$List$map,
-									$author$project$Main$drawPoint($author$project$Main$normalColour),
+									$author$project$PolygonCreator$drawPoint($author$project$PolygonCreator$normalColour),
 									before),
 								_Utils_ap(
 									_List_fromArray(
 										[
-											A2($author$project$Main$drawPoint, $MacCASOutreach$graphicsvg$GraphicSVG$red, selected)
+											A2($author$project$PolygonCreator$drawPoint, $MacCASOutreach$graphicsvg$GraphicSVG$red, selected)
 										]),
 									_Utils_ap(
 										A2(
 											$elm$core$List$map,
-											$author$project$Main$drawPoint($author$project$Main$normalColour),
+											$author$project$PolygonCreator$drawPoint($author$project$PolygonCreator$normalColour),
 											after),
 										_List_fromArray(
 											[
 												A2(
 												$MacCASOutreach$graphicsvg$GraphicSVG$notifyLeaveAt,
-												$author$project$Main$DragEnd,
+												$author$project$PolygonCreator$DragEnd,
 												A2(
 													$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseUpAt,
-													$author$project$Main$DragEnd,
+													$author$project$PolygonCreator$DragEnd,
 													A2(
 														$MacCASOutreach$graphicsvg$GraphicSVG$notifyMouseMoveAt,
-														$author$project$Main$DragMove,
+														$author$project$PolygonCreator$DragMove,
 														A2(
 															$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 															A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 10, 10, 10, 0.005),
@@ -11120,7 +11120,7 @@ var $author$project$Main$myShapes = function (model) {
 						var _v3 = _v1.b;
 						var x = _v3.a;
 						var y = _v3.b;
-						var pointsSingledOut = $author$project$Main$singleOut(
+						var pointsSingledOut = $author$project$PolygonCreator$singleOut(
 							A2(
 								$elm$core$List$filter,
 								function (a) {
@@ -11136,9 +11136,9 @@ var $author$project$Main$myShapes = function (model) {
 									$MacCASOutreach$graphicsvg$GraphicSVG$move,
 									_Utils_Tuple2(-85, 58),
 									A2(
-										$author$project$Main$button,
+										$author$project$PolygonCreator$button,
 										'-',
-										$elm$core$Maybe$Just($author$project$Main$SwitchTo))),
+										$elm$core$Maybe$Just($author$project$PolygonCreator$SwitchTo))),
 									A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$move,
 									_Utils_Tuple2(0, 58),
@@ -11147,7 +11147,7 @@ var $author$project$Main$myShapes = function (model) {
 										0.8,
 										A2(
 											$MacCASOutreach$graphicsvg$GraphicSVG$filled,
-											$author$project$Main$graphColour,
+											$author$project$PolygonCreator$graphColour,
 											A2($MacCASOutreach$graphicsvg$GraphicSVG$rect, 150, 7)))),
 									A2(
 									$MacCASOutreach$graphicsvg$GraphicSVG$scale,
@@ -11161,7 +11161,7 @@ var $author$project$Main$myShapes = function (model) {
 											$MacCASOutreach$graphicsvg$GraphicSVG$centered(
 												$MacCASOutreach$graphicsvg$GraphicSVG$text('Select the point you want to delete. Click on \' - \' button to go back')))))
 								]),
-							A2($elm$core$List$map, $author$project$Main$drawPointFromSingledOut, pointsSingledOut));
+							A2($elm$core$List$map, $author$project$PolygonCreator$drawPointFromSingledOut, pointsSingledOut));
 				}
 			}(),
 			_List_fromArray(
@@ -11169,24 +11169,24 @@ var $author$project$Main$myShapes = function (model) {
 					A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(-50, -35),
-					$author$project$Main$yourCode(model))
+					$author$project$PolygonCreator$yourCode(model))
 				])));
 };
-var $author$project$Main$view = function (model) {
+var $author$project$PolygonCreator$view = function (model) {
 	return A3(
 		$MacCASOutreach$graphicsvg$GraphicSVG$collage,
 		192,
 		128,
-		$author$project$Main$myShapes(model));
+		$author$project$PolygonCreator$myShapes(model));
 };
-var $author$project$Main$main = A2(
+var $author$project$PolygonCreator$main = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$App$gameApp,
-	$author$project$Main$Tick,
-	{model: $author$project$Main$init, title: 'Game Slot', update: $author$project$Main$update, view: $author$project$Main$view});
-_Platform_export({'Main':{'init':$author$project$Main$main(
+	$author$project$PolygonCreator$Tick,
+	{model: $author$project$PolygonCreator$init, title: 'Game Slot', update: $author$project$PolygonCreator$update, view: $author$project$PolygonCreator$view});
+_Platform_export({'PolygonCreator':{'init':$author$project$PolygonCreator$main(
 	$elm$json$Json$Decode$succeed(_Utils_Tuple0))(0)}});}(this));
 
-  var app = Elm.Main.init({ node: document.getElementById("elm") });
+  var app = Elm.PolygonCreator.init({ node: document.getElementById("elm") });
 }
 catch (e)
 {

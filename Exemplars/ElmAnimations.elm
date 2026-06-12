@@ -1,7 +1,7 @@
 -- Your shapes go here!
 -- You can use model.time to animate things :)
 
-module Main exposing (..)
+module ElmAnimations exposing (..)
 
 import GraphicSVG exposing (..)
 import GraphicSVG.App exposing (..)

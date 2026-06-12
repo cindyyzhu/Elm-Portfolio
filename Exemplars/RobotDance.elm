@@ -1,4 +1,4 @@
-module Main exposing (..)
+module RobotDance exposing (..)
 
 import GraphicSVG exposing (..)
 import GraphicSVG.App exposing (..)
