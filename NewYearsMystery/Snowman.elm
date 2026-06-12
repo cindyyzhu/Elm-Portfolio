@@ -1,8 +1,10 @@
-module Main exposing (..)
+module Snowman exposing (..)
 
 import GraphicSVG exposing (..)
 import GraphicSVG.App exposing (..)
 import GraphicSVG.Secret exposing (..)
+import SpeechBubbles exposing (speechBubbleLeft, narrationBubble, shantellSansFont) -- Your shapes go here!
+type Actor = Robot
 
 type Msg = Tick Float GetKeyState
 
@@ -22,8 +24,7 @@ fractionalModBy m x = x - m * toFloat (floor (x / m))
 repeatDistance speed start end t =
   start + fractionalModBy (end - start) (speed * t)
   
-import SpeechBubbles exposing (speechBubbleLeft, narrationBubble, shantellSansFont) -- Your shapes go here!
-type Actor = Robot
+
 
 myShapes model =
   [

@@ -1,4 +1,4 @@
-module Main exposing (..)
+module Dog exposing (..)
 
 import GraphicSVG exposing (..)
 import GraphicSVG.App exposing (..)

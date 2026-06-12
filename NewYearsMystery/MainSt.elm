@@ -1,4 +1,4 @@
-module Main exposing (..)
+module MainSt exposing (..)
 
 import Types exposing (State(..), Msg(..))
 import Park

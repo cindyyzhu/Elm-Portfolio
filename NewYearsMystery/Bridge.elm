@@ -1,5 +1,5 @@
 -- Your shapes go here!
-module Main exposing (..)
+module Bridge exposing (..)
 
 import GraphicSVG exposing (..)
 import GraphicSVG.App exposing (..)

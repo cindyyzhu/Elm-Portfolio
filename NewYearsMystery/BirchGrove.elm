@@ -1,8 +1,13 @@
-module Main exposing (..)
+module BirchGrove exposing (..)
 
 import GraphicSVG exposing (..)
 import GraphicSVG.App exposing (..)
 import GraphicSVG.Secret exposing (..)
+import Robin
+
+import SpeechBubbles exposing (speechBubbleRight, speechBubbleLeft, shantellSansFont) -- Your shapes go here!
+type Actor = Robot 
+
 
 type Msg = Tick Float GetKeyState
 
@@ -22,10 +27,7 @@ fractionalModBy m x = x - m * toFloat (floor (x / m))
 repeatDistance speed start end t =
   start + fractionalModBy (end - start) (speed * t)
   -- Your shapes go here!
-import Robin
 
-import SpeechBubbles exposing (speechBubbleRight, speechBubbleLeft, shantellSansFont) -- Your shapes go here!
-type Actor = Robot 
 
 script = 
   [ (Robot,"Hey there! Addy was here. You just missed her.")

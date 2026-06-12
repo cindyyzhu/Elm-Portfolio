@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Main</title>
+  <title>Duck</title>
   <style>body { padding: 0; margin: 0; }</style>
 </head>
 
@@ -4430,7 +4430,7 @@ function _Time_getZoneName()
 		callback(_Scheduler_succeed(name));
 	});
 }
-var $author$project$Main$Tick = F2(
+var $author$project$Duck$Tick = F2(
 	function (a, b) {
 		return {$: 'Tick', a: a, b: b};
 	});
@@ -9261,8 +9261,8 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$App$gameApp = F2(
 				}
 			});
 	});
-var $author$project$Main$init = {time: 0};
-var $author$project$Main$update = F2(
+var $author$project$Duck$init = {time: 0};
+var $author$project$Duck$update = F2(
 	function (msg, model) {
 		var t = msg.a;
 		return {time: t};
@@ -9316,7 +9316,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$rotate = F2(
 		return A2($MacCASOutreach$graphicsvg$GraphicSVG$Secret$Rotate, theta, shape);
 	});
 var $MacCASOutreach$graphicsvg$GraphicSVG$yellow = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 237, 212, 0, 1);
-var $author$project$Main$myShapes = function (model) {
+var $author$project$Duck$myShapes = function (model) {
 	return _List_fromArray(
 		[
 			A2(
@@ -9451,21 +9451,21 @@ var $author$project$Main$myShapes = function (model) {
 					A2($MacCASOutreach$graphicsvg$GraphicSVG$oval, 2.5, 4.5))))
 		]);
 };
-var $author$project$Main$view = function (model) {
+var $author$project$Duck$view = function (model) {
 	return A3(
 		$MacCASOutreach$graphicsvg$GraphicSVG$collage,
 		192,
 		128,
-		$author$project$Main$myShapes(model));
+		$author$project$Duck$myShapes(model));
 };
-var $author$project$Main$main = A2(
+var $author$project$Duck$main = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$App$gameApp,
-	$author$project$Main$Tick,
-	{model: $author$project$Main$init, title: 'Game Slot', update: $author$project$Main$update, view: $author$project$Main$view});
-_Platform_export({'Main':{'init':$author$project$Main$main(
+	$author$project$Duck$Tick,
+	{model: $author$project$Duck$init, title: 'Game Slot', update: $author$project$Duck$update, view: $author$project$Duck$view});
+_Platform_export({'Duck':{'init':$author$project$Duck$main(
 	$elm$json$Json$Decode$succeed(_Utils_Tuple0))(0)}});}(this));
 
-  var app = Elm.Main.init({ node: document.getElementById("elm") });
+  var app = Elm.Duck.init({ node: document.getElementById("elm") });
 }
 catch (e)
 {

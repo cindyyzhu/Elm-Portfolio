@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Main</title>
+  <title>TalkingBookTwo</title>
   <style>body { padding: 0; margin: 0; }</style>
 </head>
 
@@ -4430,7 +4430,7 @@ function _Time_getZoneName()
 		callback(_Scheduler_succeed(name));
 	});
 }
-var $author$project$Main$Tick = F2(
+var $author$project$TalkingBookTwo$Tick = F2(
 	function (a, b) {
 		return {$: 'Tick', a: a, b: b};
 	});
@@ -9261,8 +9261,8 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$App$gameApp = F2(
 				}
 			});
 	});
-var $author$project$Main$init = {time: 0};
-var $author$project$Main$update = F2(
+var $author$project$TalkingBookTwo$init = {time: 0};
+var $author$project$TalkingBookTwo$update = F2(
 	function (msg, model) {
 		var t = msg.a;
 		return {time: t};
@@ -9303,7 +9303,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$rgb = F3(
 	function (r, g, b) {
 		return A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, r, g, b, 1);
 	});
-var $author$project$Main$back = A2(
+var $author$project$TalkingBookTwo$back = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 	A3($MacCASOutreach$graphicsvg$GraphicSVG$rgb, 0, 60, 163),
 	A2(
@@ -9334,7 +9334,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$scale = F2(
 	function (s, shape) {
 		return A3($MacCASOutreach$graphicsvg$GraphicSVG$Secret$Scale, s, s, shape);
 	});
-var $author$project$Main$eyes = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$TalkingBookTwo$eyes = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -9358,7 +9358,7 @@ var $author$project$Main$eyes = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 					$MacCASOutreach$graphicsvg$GraphicSVG$white,
 					$MacCASOutreach$graphicsvg$GraphicSVG$circle(4))))
 		]));
-var $author$project$Main$eyes2 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$TalkingBookTwo$eyes2 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -9382,7 +9382,7 @@ var $author$project$Main$eyes2 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 					$MacCASOutreach$graphicsvg$GraphicSVG$white,
 					$MacCASOutreach$graphicsvg$GraphicSVG$circle(4))))
 		]));
-var $author$project$Main$front = A2(
+var $author$project$TalkingBookTwo$front = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 	A3($MacCASOutreach$graphicsvg$GraphicSVG$rgb, 0, 60, 163),
 	A2(
@@ -9425,7 +9425,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Unbroken = function (a) {
 var $MacCASOutreach$graphicsvg$GraphicSVG$solid = function (th) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Unbroken(th);
 };
-var $author$project$Main$lips = A3(
+var $author$project$TalkingBookTwo$lips = A3(
 	$MacCASOutreach$graphicsvg$GraphicSVG$outlined,
 	$MacCASOutreach$graphicsvg$GraphicSVG$solid(1),
 	$MacCASOutreach$graphicsvg$GraphicSVG$black,
@@ -9443,7 +9443,7 @@ var $author$project$Main$lips = A3(
 				_Utils_Tuple2(8.9, -15.3),
 				_Utils_Tuple2(6.2, -12.8))
 			])));
-var $author$project$Main$pages = A2(
+var $author$project$TalkingBookTwo$pages = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 	A3($MacCASOutreach$graphicsvg$GraphicSVG$rgb, 0, 109, 163),
 	A2(
@@ -9464,7 +9464,7 @@ var $author$project$Main$pages = A2(
 				_Utils_Tuple2(15.9, -0.4),
 				_Utils_Tuple2(-27.5, 21.1))
 			])));
-var $author$project$Main$pages2 = A2(
+var $author$project$TalkingBookTwo$pages2 = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 	A3($MacCASOutreach$graphicsvg$GraphicSVG$rgb, 0, 109, 163),
 	A2(
@@ -9485,7 +9485,7 @@ var $author$project$Main$pages2 = A2(
 				_Utils_Tuple2(29.4, 14.1),
 				_Utils_Tuple2(9.5, 8.2))
 			])));
-var $author$project$Main$spine = A2(
+var $author$project$TalkingBookTwo$spine = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 	A3($MacCASOutreach$graphicsvg$GraphicSVG$rgb, 0, 49, 133),
 	A2(
@@ -9510,28 +9510,28 @@ var $author$project$Main$spine = A2(
 				_Utils_Tuple2(1.5, -17.9),
 				_Utils_Tuple2(0.0, 9.7))
 			])));
-var $author$project$Main$book = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$TalkingBookTwo$book = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
-		[$author$project$Main$front, $author$project$Main$back, $author$project$Main$spine, $author$project$Main$lips, $author$project$Main$pages, $author$project$Main$pages2, $author$project$Main$eyes, $author$project$Main$eyes2]));
-var $author$project$Main$myShapes = function (model) {
+		[$author$project$TalkingBookTwo$front, $author$project$TalkingBookTwo$back, $author$project$TalkingBookTwo$spine, $author$project$TalkingBookTwo$lips, $author$project$TalkingBookTwo$pages, $author$project$TalkingBookTwo$pages2, $author$project$TalkingBookTwo$eyes, $author$project$TalkingBookTwo$eyes2]));
+var $author$project$TalkingBookTwo$myShapes = function (model) {
 	return _List_fromArray(
-		[$author$project$Main$book]);
+		[$author$project$TalkingBookTwo$book]);
 };
-var $author$project$Main$view = function (model) {
+var $author$project$TalkingBookTwo$view = function (model) {
 	return A3(
 		$MacCASOutreach$graphicsvg$GraphicSVG$collage,
 		192,
 		128,
-		$author$project$Main$myShapes(model));
+		$author$project$TalkingBookTwo$myShapes(model));
 };
-var $author$project$Main$main = A2(
+var $author$project$TalkingBookTwo$main = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$App$gameApp,
-	$author$project$Main$Tick,
-	{model: $author$project$Main$init, title: 'Game Slot', update: $author$project$Main$update, view: $author$project$Main$view});
-_Platform_export({'Main':{'init':$author$project$Main$main(
+	$author$project$TalkingBookTwo$Tick,
+	{model: $author$project$TalkingBookTwo$init, title: 'Game Slot', update: $author$project$TalkingBookTwo$update, view: $author$project$TalkingBookTwo$view});
+_Platform_export({'TalkingBookTwo':{'init':$author$project$TalkingBookTwo$main(
 	$elm$json$Json$Decode$succeed(_Utils_Tuple0))(0)}});}(this));
 
-  var app = Elm.Main.init({ node: document.getElementById("elm") });
+  var app = Elm.TalkingBookTwo.init({ node: document.getElementById("elm") });
 }
 catch (e)
 {

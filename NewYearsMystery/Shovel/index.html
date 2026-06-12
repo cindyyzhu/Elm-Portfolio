@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Main</title>
+  <title>Shovel</title>
   <style>body { padding: 0; margin: 0; }</style>
 </head>
 
@@ -4430,7 +4430,7 @@ function _Time_getZoneName()
 		callback(_Scheduler_succeed(name));
 	});
 }
-var $author$project$Main$Tick = F2(
+var $author$project$Shovel$Tick = F2(
 	function (a, b) {
 		return {$: 'Tick', a: a, b: b};
 	});
@@ -9261,8 +9261,8 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$App$gameApp = F2(
 				}
 			});
 	});
-var $author$project$Main$init = {time: 0};
-var $author$project$Main$update = F2(
+var $author$project$Shovel$init = {time: 0};
+var $author$project$Shovel$update = F2(
 	function (msg, model) {
 		var t = msg.a;
 		return {time: t};
@@ -9652,7 +9652,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Unbroken = function (a) {
 var $MacCASOutreach$graphicsvg$GraphicSVG$solid = function (th) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Unbroken(th);
 };
-var $author$project$Main$handle = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$Shovel$handle = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A3(
@@ -9751,7 +9751,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$hsl = F3(
 		var b = _v0.c;
 		return A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, r, g, b, 1);
 	});
-var $author$project$Main$sub = A2(
+var $author$project$Shovel$sub = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 	$MacCASOutreach$graphicsvg$GraphicSVG$blank,
 	A2(
@@ -9772,7 +9772,7 @@ var $author$project$Main$sub = A2(
 				_Utils_Tuple2(-67.5, 47.0),
 				_Utils_Tuple2(-76.1, 40.4))
 			])));
-var $author$project$Main$shovel = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$Shovel$shovel = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A3(
@@ -9847,31 +9847,31 @@ var $author$project$Main$shovel = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 			$MacCASOutreach$graphicsvg$GraphicSVG$black,
 			A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$subtract,
-				$author$project$Main$sub,
+				$author$project$Shovel$sub,
 				A2(
 					$MacCASOutreach$graphicsvg$GraphicSVG$move,
 					_Utils_Tuple2(0, -1.5),
-					$author$project$Main$handle)))
+					$author$project$Shovel$handle)))
 		]));
-var $author$project$Main$myShapes = function (model) {
+var $author$project$Shovel$myShapes = function (model) {
 	return _List_fromArray(
-		[$author$project$Main$shovel]);
+		[$author$project$Shovel$shovel]);
 };
-var $author$project$Main$view = function (model) {
+var $author$project$Shovel$view = function (model) {
 	return A3(
 		$MacCASOutreach$graphicsvg$GraphicSVG$collage,
 		192,
 		128,
-		$author$project$Main$myShapes(model));
+		$author$project$Shovel$myShapes(model));
 };
-var $author$project$Main$main = A2(
+var $author$project$Shovel$main = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$App$gameApp,
-	$author$project$Main$Tick,
-	{model: $author$project$Main$init, title: 'Game Slot', update: $author$project$Main$update, view: $author$project$Main$view});
-_Platform_export({'Main':{'init':$author$project$Main$main(
+	$author$project$Shovel$Tick,
+	{model: $author$project$Shovel$init, title: 'Game Slot', update: $author$project$Shovel$update, view: $author$project$Shovel$view});
+_Platform_export({'Shovel':{'init':$author$project$Shovel$main(
 	$elm$json$Json$Decode$succeed(_Utils_Tuple0))(0)}});}(this));
 
-  var app = Elm.Main.init({ node: document.getElementById("elm") });
+  var app = Elm.Shovel.init({ node: document.getElementById("elm") });
 }
 catch (e)
 {

@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Main</title>
+  <title>Cat</title>
   <style>body { padding: 0; margin: 0; }</style>
 </head>
 
@@ -4430,7 +4430,7 @@ function _Time_getZoneName()
 		callback(_Scheduler_succeed(name));
 	});
 }
-var $author$project$Main$Tick = F2(
+var $author$project$Cat$Tick = F2(
 	function (a, b) {
 		return {$: 'Tick', a: a, b: b};
 	});
@@ -9261,8 +9261,8 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$App$gameApp = F2(
 				}
 			});
 	});
-var $author$project$Main$init = {time: 0};
-var $author$project$Main$update = F2(
+var $author$project$Cat$init = {time: 0};
+var $author$project$Cat$update = F2(
 	function (msg, model) {
 		var t = msg.a;
 		return {time: t};
@@ -9733,7 +9733,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Unbroken = function (a) {
 var $MacCASOutreach$graphicsvg$GraphicSVG$solid = function (th) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Unbroken(th);
 };
-var $author$project$Main$body = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$Cat$body = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A3(
@@ -10076,7 +10076,7 @@ var $author$project$Main$body = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 					])))
 		]));
 var $MacCASOutreach$graphicsvg$GraphicSVG$pink = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 255, 105, 180, 1);
-var $author$project$Main$ear = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$Cat$ear = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A3(
@@ -10136,7 +10136,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$circle = function (r) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Circle(r);
 };
 var $MacCASOutreach$graphicsvg$GraphicSVG$green = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 115, 210, 22, 1);
-var $author$project$Main$eye = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$Cat$eye = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A3(
@@ -10265,7 +10265,7 @@ var $author$project$Main$eye = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 var $MacCASOutreach$graphicsvg$GraphicSVG$mirrorX = function (shape) {
 	return A3($MacCASOutreach$graphicsvg$GraphicSVG$Secret$Scale, -1, 1, shape);
 };
-var $author$project$Main$nose = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$Cat$nose = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -10386,7 +10386,7 @@ var $author$project$Main$nose = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 						_Utils_Tuple2(-36.86, 32.060))
 					])))
 		]));
-var $author$project$Main$face = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$Cat$face = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A3(
@@ -10486,37 +10486,37 @@ var $author$project$Main$face = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 							_Utils_Tuple2(-13.68, 14.649),
 							_Utils_Tuple2(-13.32, 15.009))
 						])))),
-			$author$project$Main$eye,
+			$author$project$Cat$eye,
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(-75, 0),
-			$MacCASOutreach$graphicsvg$GraphicSVG$mirrorX($author$project$Main$eye)),
-			$author$project$Main$nose,
-			$author$project$Main$ear,
+			$MacCASOutreach$graphicsvg$GraphicSVG$mirrorX($author$project$Cat$eye)),
+			$author$project$Cat$nose,
+			$author$project$Cat$ear,
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(-77, 2),
-			$MacCASOutreach$graphicsvg$GraphicSVG$mirrorX($author$project$Main$ear))
+			$MacCASOutreach$graphicsvg$GraphicSVG$mirrorX($author$project$Cat$ear))
 		]));
-var $author$project$Main$myShapes = function (model) {
+var $author$project$Cat$myShapes = function (model) {
 	return _List_fromArray(
-		[$author$project$Main$body, $author$project$Main$face]);
+		[$author$project$Cat$body, $author$project$Cat$face]);
 };
-var $author$project$Main$view = function (model) {
+var $author$project$Cat$view = function (model) {
 	return A3(
 		$MacCASOutreach$graphicsvg$GraphicSVG$collage,
 		192,
 		128,
-		$author$project$Main$myShapes(model));
+		$author$project$Cat$myShapes(model));
 };
-var $author$project$Main$main = A2(
+var $author$project$Cat$main = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$App$gameApp,
-	$author$project$Main$Tick,
-	{model: $author$project$Main$init, title: 'Game Slot', update: $author$project$Main$update, view: $author$project$Main$view});
-_Platform_export({'Main':{'init':$author$project$Main$main(
+	$author$project$Cat$Tick,
+	{model: $author$project$Cat$init, title: 'Game Slot', update: $author$project$Cat$update, view: $author$project$Cat$view});
+_Platform_export({'Cat':{'init':$author$project$Cat$main(
 	$elm$json$Json$Decode$succeed(_Utils_Tuple0))(0)}});}(this));
 
-  var app = Elm.Main.init({ node: document.getElementById("elm") });
+  var app = Elm.Cat.init({ node: document.getElementById("elm") });
 }
 catch (e)
 {

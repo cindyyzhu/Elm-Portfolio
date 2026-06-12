@@ -1,5 +1,5 @@
 
-module Main exposing (..)
+module WiseOwl exposing (..)
 
 import GraphicSVG exposing (..)
 import GraphicSVG.App exposing (..)
@@ -22,7 +22,7 @@ fractionalModBy m x = x - m * toFloat (floor (x / m))
 
 repeatDistance speed start end t =
   start + fractionalModBy (end - start) (speed * t)
-  
+
 -- Your shapes go here!
 myShapes model =
   [

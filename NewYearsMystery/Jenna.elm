@@ -1,4 +1,4 @@
-module Main exposing (..)
+module Jenna exposing (..)
 
 import GraphicSVG exposing (..)
 import GraphicSVG.App exposing (..)
@@ -23,7 +23,6 @@ repeatDistance speed start end t =
   start + fractionalModBy (end - start) (speed * t)
   
   
-   Your shapes go here!
 myShapes model = [
     jenna
   ]

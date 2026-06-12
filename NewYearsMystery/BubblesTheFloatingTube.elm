@@ -1,5 +1,5 @@
 -- Your shapes go here!
-module Main exposing (..)
+module BubblesTheFloatingTube exposing (..)
 
 import GraphicSVG exposing (..)
 import GraphicSVG.App exposing (..)

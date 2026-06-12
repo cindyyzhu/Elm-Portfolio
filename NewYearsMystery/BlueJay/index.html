@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Main</title>
+  <title>BlueJay</title>
   <style>body { padding: 0; margin: 0; }</style>
 </head>
 
@@ -4430,7 +4430,7 @@ function _Time_getZoneName()
 		callback(_Scheduler_succeed(name));
 	});
 }
-var $author$project$Main$Tick = F2(
+var $author$project$BlueJay$Tick = F2(
 	function (a, b) {
 		return {$: 'Tick', a: a, b: b};
 	});
@@ -9261,8 +9261,8 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$App$gameApp = F2(
 				}
 			});
 	});
-var $author$project$Main$init = {time: 0};
-var $author$project$Main$update = F2(
+var $author$project$BlueJay$init = {time: 0};
+var $author$project$BlueJay$update = F2(
 	function (msg, model) {
 		var t = msg.a;
 		return {time: t};
@@ -9307,7 +9307,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Circle = function (a) {
 var $MacCASOutreach$graphicsvg$GraphicSVG$circle = function (r) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Circle(r);
 };
-var $author$project$Main$eye = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$BlueJay$eye = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -9353,7 +9353,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Unbroken = function (a) {
 var $MacCASOutreach$graphicsvg$GraphicSVG$solid = function (th) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Unbroken(th);
 };
-var $author$project$Main$shingles = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$BlueJay$shingles = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A3(
@@ -9483,7 +9483,7 @@ var $author$project$Main$shingles = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 						_Utils_Tuple2(-64.95, -59.22))
 					])))
 		]));
-var $author$project$Main$shingles2 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$BlueJay$shingles2 = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A3(
@@ -9683,7 +9683,7 @@ var $author$project$Main$shingles2 = $MacCASOutreach$graphicsvg$GraphicSVG$group
 						_Utils_Tuple2(-49.03, -24.19))
 					])))
 		]));
-var $author$project$Main$bluejay = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$BlueJay$bluejay = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -9751,7 +9751,7 @@ var $author$project$Main$bluejay = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 						_Utils_Tuple2(-23.82, 39.825),
 						_Utils_Tuple2(-18.14, 43.621))
 					]))),
-			$author$project$Main$shingles,
+			$author$project$BlueJay$shingles,
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 			$MacCASOutreach$graphicsvg$GraphicSVG$white,
@@ -9805,7 +9805,7 @@ var $author$project$Main$bluejay = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 						_Utils_Tuple2(6.3681, 33.114),
 						_Utils_Tuple2(3.5024, 38.527))
 					]))),
-			$author$project$Main$shingles2,
+			$author$project$BlueJay$shingles2,
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 			$MacCASOutreach$graphicsvg$GraphicSVG$lightGray,
@@ -9964,27 +9964,27 @@ var $author$project$Main$bluejay = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 			A2(
 				$MacCASOutreach$graphicsvg$GraphicSVG$move,
 				_Utils_Tuple2(-3.5, 37.5),
-				$author$project$Main$eye))
+				$author$project$BlueJay$eye))
 		]));
-var $author$project$Main$myShapes = function (model) {
+var $author$project$BlueJay$myShapes = function (model) {
 	return _List_fromArray(
-		[$author$project$Main$bluejay]);
+		[$author$project$BlueJay$bluejay]);
 };
-var $author$project$Main$view = function (model) {
+var $author$project$BlueJay$view = function (model) {
 	return A3(
 		$MacCASOutreach$graphicsvg$GraphicSVG$collage,
 		192,
 		128,
-		$author$project$Main$myShapes(model));
+		$author$project$BlueJay$myShapes(model));
 };
-var $author$project$Main$main = A2(
+var $author$project$BlueJay$main = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$App$gameApp,
-	$author$project$Main$Tick,
-	{model: $author$project$Main$init, title: 'Game Slot', update: $author$project$Main$update, view: $author$project$Main$view});
-_Platform_export({'Main':{'init':$author$project$Main$main(
+	$author$project$BlueJay$Tick,
+	{model: $author$project$BlueJay$init, title: 'Game Slot', update: $author$project$BlueJay$update, view: $author$project$BlueJay$view});
+_Platform_export({'BlueJay':{'init':$author$project$BlueJay$main(
 	$elm$json$Json$Decode$succeed(_Utils_Tuple0))(0)}});}(this));
 
-  var app = Elm.Main.init({ node: document.getElementById("elm") });
+  var app = Elm.BlueJay.init({ node: document.getElementById("elm") });
 }
 catch (e)
 {

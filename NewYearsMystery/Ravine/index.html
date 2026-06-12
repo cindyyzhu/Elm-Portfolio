@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Main</title>
+  <title>Ravine</title>
   <style>body { padding: 0; margin: 0; }</style>
 </head>
 
@@ -4430,7 +4430,7 @@ function _Time_getZoneName()
 		callback(_Scheduler_succeed(name));
 	});
 }
-var $author$project$Main$Tick = F2(
+var $author$project$Ravine$Tick = F2(
 	function (a, b) {
 		return {$: 'Tick', a: a, b: b};
 	});
@@ -9261,8 +9261,8 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$App$gameApp = F2(
 				}
 			});
 	});
-var $author$project$Main$init = {time: 0};
-var $author$project$Main$update = F2(
+var $author$project$Ravine$init = {time: 0};
+var $author$project$Ravine$update = F2(
 	function (msg, model) {
 		var t = msg.a;
 		return {time: t};
@@ -9271,7 +9271,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$collage = F3(
 	function (w, h, shapes) {
 		return A3($MacCASOutreach$graphicsvg$GraphicSVG$Collage, w, h, shapes);
 	});
-var $author$project$Main$farRailPoints = _List_fromArray(
+var $author$project$Ravine$farRailPoints = _List_fromArray(
 	[
 		_Utils_Tuple2(-93.0, 0.5),
 		_Utils_Tuple2(-67.1, 3.9),
@@ -9281,7 +9281,7 @@ var $author$project$Main$farRailPoints = _List_fromArray(
 		_Utils_Tuple2(94.3, 48.5)
 	]);
 var $MacCASOutreach$graphicsvg$GraphicSVG$grey = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 211, 215, 207, 1);
-var $author$project$Main$leftRailPoints = _List_fromArray(
+var $author$project$Ravine$leftRailPoints = _List_fromArray(
 	[
 		_Utils_Tuple2(-47.5, -4.4),
 		_Utils_Tuple2(-41.9, -1.2),
@@ -9290,7 +9290,7 @@ var $author$project$Main$leftRailPoints = _List_fromArray(
 		_Utils_Tuple2(-19.2, -12.9),
 		_Utils_Tuple2(-19.7, -55.8)
 	]);
-var $author$project$Main$bHeight = 8;
+var $author$project$Ravine$bHeight = 8;
 var $MacCASOutreach$graphicsvg$GraphicSVG$darkBrown = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 143, 89, 2, 1);
 var $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Path = function (a) {
 	return {$: 'Path', a: a};
@@ -9321,7 +9321,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$solid = function (th) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Unbroken(th);
 };
 var $elm$core$Basics$sqrt = _Basics_sqrt;
-var $author$project$Main$drawBallisters = F3(
+var $author$project$Ravine$drawBallisters = F3(
 	function (mult, add, points) {
 		if (points.b) {
 			if (points.b.b) {
@@ -9347,7 +9347,7 @@ var $author$project$Main$drawBallisters = F3(
 						A2(
 							$MacCASOutreach$graphicsvg$GraphicSVG$line,
 							_Utils_Tuple2(x1, y1),
-							_Utils_Tuple2(x1, y1 - (mult * $author$project$Main$bHeight)))),
+							_Utils_Tuple2(x1, y1 - (mult * $author$project$Ravine$bHeight)))),
 					_Utils_ap(
 						A2(
 							$elm$core$List$map,
@@ -9360,14 +9360,14 @@ var $author$project$Main$drawBallisters = F3(
 									A2(
 										$MacCASOutreach$graphicsvg$GraphicSVG$line,
 										_Utils_Tuple2(x1 + (s * dx), y1 + (s * dy)),
-										_Utils_Tuple2(x1 + (s * dx), (y1 + (s * dy)) - (mult * $author$project$Main$bHeight))));
+										_Utils_Tuple2(x1 + (s * dx), (y1 + (s * dy)) - (mult * $author$project$Ravine$bHeight))));
 							},
 							A2(
 								$elm$core$List$range,
 								1,
 								$elm$core$Basics$floor(((0.5 * dist) / mult) - 1))),
 						A3(
-							$author$project$Main$drawBallisters,
+							$author$project$Ravine$drawBallisters,
 							mult + add,
 							add,
 							A2(
@@ -9387,7 +9387,7 @@ var $author$project$Main$drawBallisters = F3(
 						A2(
 							$MacCASOutreach$graphicsvg$GraphicSVG$line,
 							_Utils_Tuple2(xLast, yLast),
-							_Utils_Tuple2(xLast, yLast - (mult * $author$project$Main$bHeight))))
+							_Utils_Tuple2(xLast, yLast - (mult * $author$project$Ravine$bHeight))))
 					]);
 			}
 		} else {
@@ -9397,7 +9397,7 @@ var $author$project$Main$drawBallisters = F3(
 var $MacCASOutreach$graphicsvg$GraphicSVG$openPolygon = function (ptList) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Path(ptList);
 };
-var $author$project$Main$makeBarrier = F3(
+var $author$project$Ravine$makeBarrier = F3(
 	function (mult, add, points) {
 		var top = function (clr) {
 			return A3(
@@ -9416,7 +9416,7 @@ var $author$project$Main$makeBarrier = F3(
 					return A2(
 						$elm$core$List$cons,
 						_Utils_Tuple2(x1, y1 + displacement),
-						A2(botPoints, displacement - ((0.85 * add) * $author$project$Main$bHeight), rest));
+						A2(botPoints, displacement - ((0.85 * add) * $author$project$Ravine$bHeight), rest));
 				} else {
 					return _List_Nil;
 				}
@@ -9427,7 +9427,7 @@ var $author$project$Main$makeBarrier = F3(
 				$MacCASOutreach$graphicsvg$GraphicSVG$solid(2),
 				clr,
 				$MacCASOutreach$graphicsvg$GraphicSVG$openPolygon(
-					A2(botPoints, (-$author$project$Main$bHeight) * mult, points)));
+					A2(botPoints, (-$author$project$Ravine$bHeight) * mult, points)));
 		};
 		return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 			_List_fromArray(
@@ -9438,7 +9438,7 @@ var $author$project$Main$makeBarrier = F3(
 					top($MacCASOutreach$graphicsvg$GraphicSVG$darkBrown)),
 					bot($MacCASOutreach$graphicsvg$GraphicSVG$darkBrown),
 					$MacCASOutreach$graphicsvg$GraphicSVG$group(
-					A3($author$project$Main$drawBallisters, mult, add, points)),
+					A3($author$project$Ravine$drawBallisters, mult, add, points)),
 					top($MacCASOutreach$graphicsvg$GraphicSVG$white)
 				]));
 	});
@@ -9779,7 +9779,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$makeTransparent = F2(
 		var c = shape.c;
 		return A3($MacCASOutreach$graphicsvg$GraphicSVG$Secret$Inked, a, b, c);
 	});
-var $author$project$Main$nearRailPoints = _List_fromArray(
+var $author$project$Ravine$nearRailPoints = _List_fromArray(
 	[
 		_Utils_Tuple2(-30.3, -1.6),
 		_Utils_Tuple2(-18.4, 1.3),
@@ -9813,7 +9813,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$curve = F2(
 			_Utils_Tuple2(a, b),
 			A2($elm$core$List$map, $MacCASOutreach$graphicsvg$GraphicSVG$curveListHelper, list));
 	});
-var $author$project$Main$nearRailTop = A2(
+var $author$project$Ravine$nearRailTop = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 	$MacCASOutreach$graphicsvg$GraphicSVG$white,
 	A2(
@@ -9846,7 +9846,7 @@ var $author$project$Main$nearRailTop = A2(
 				_Utils_Tuple2(-24.0, -38.2),
 				_Utils_Tuple2(-27.2, -63.4))
 			])));
-var $author$project$Main$rightRailPoints = _List_fromArray(
+var $author$project$Ravine$rightRailPoints = _List_fromArray(
 	[
 		_Utils_Tuple2(-30.3, -1.6),
 		_Utils_Tuple2(-19.7, 3.1),
@@ -9855,7 +9855,7 @@ var $author$project$Main$rightRailPoints = _List_fromArray(
 		_Utils_Tuple2(15.0, -6.6)
 	]);
 var $MacCASOutreach$graphicsvg$GraphicSVG$lightGrey = A4($MacCASOutreach$graphicsvg$GraphicSVG$rgba, 238, 238, 236, 1);
-var $author$project$Main$stairBed = A2(
+var $author$project$Ravine$stairBed = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 	$MacCASOutreach$graphicsvg$GraphicSVG$lightGrey,
 	A2(
@@ -9926,7 +9926,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Polygon = function (a) {
 var $MacCASOutreach$graphicsvg$GraphicSVG$polygon = function (ptList) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Polygon(ptList);
 };
-var $author$project$Main$trailBed = A2(
+var $author$project$Ravine$trailBed = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 	$MacCASOutreach$graphicsvg$GraphicSVG$lightGrey,
 	$MacCASOutreach$graphicsvg$GraphicSVG$polygon(
@@ -9936,19 +9936,19 @@ var $author$project$Main$trailBed = A2(
 				function (_v0) {
 					var x = _v0.a;
 					var y = _v0.b;
-					return _Utils_Tuple2(x, (y - 8) - $author$project$Main$bHeight);
+					return _Utils_Tuple2(x, (y - 8) - $author$project$Ravine$bHeight);
 				},
-				$author$project$Main$farRailPoints),
+				$author$project$Ravine$farRailPoints),
 			$elm$core$List$reverse(
 				A2(
 					$elm$core$List$map,
 					function (_v1) {
 						var x = _v1.a;
 						var y = _v1.b;
-						return _Utils_Tuple2(x, y - $author$project$Main$bHeight);
+						return _Utils_Tuple2(x, y - $author$project$Ravine$bHeight);
 					},
-					$author$project$Main$farRailPoints)))));
-var $author$project$Main$ravine = function (model) {
+					$author$project$Ravine$farRailPoints)))));
+var $author$project$Ravine$ravine = function (model) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 		_List_fromArray(
 			[
@@ -9959,36 +9959,36 @@ var $author$project$Main$ravine = function (model) {
 					$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 					$MacCASOutreach$graphicsvg$GraphicSVG$grey,
 					A2($MacCASOutreach$graphicsvg$GraphicSVG$rect, 192, 128))),
-				$author$project$Main$trailBed,
-				$author$project$Main$stairBed,
-				A3($author$project$Main$makeBarrier, 1, 0, $author$project$Main$farRailPoints),
-				A3($author$project$Main$makeBarrier, 1, 0, $author$project$Main$nearRailPoints),
-				A3($author$project$Main$makeBarrier, 1, 0.3, $author$project$Main$rightRailPoints),
-				A3($author$project$Main$makeBarrier, 1, 0.3, $author$project$Main$leftRailPoints),
-				$author$project$Main$nearRailTop
+				$author$project$Ravine$trailBed,
+				$author$project$Ravine$stairBed,
+				A3($author$project$Ravine$makeBarrier, 1, 0, $author$project$Ravine$farRailPoints),
+				A3($author$project$Ravine$makeBarrier, 1, 0, $author$project$Ravine$nearRailPoints),
+				A3($author$project$Ravine$makeBarrier, 1, 0.3, $author$project$Ravine$rightRailPoints),
+				A3($author$project$Ravine$makeBarrier, 1, 0.3, $author$project$Ravine$leftRailPoints),
+				$author$project$Ravine$nearRailTop
 			]));
 };
-var $author$project$Main$myShapes = function (model) {
+var $author$project$Ravine$myShapes = function (model) {
 	return _List_fromArray(
 		[
-			$author$project$Main$ravine(model)
+			$author$project$Ravine$ravine(model)
 		]);
 };
-var $author$project$Main$view = function (model) {
+var $author$project$Ravine$view = function (model) {
 	return A3(
 		$MacCASOutreach$graphicsvg$GraphicSVG$collage,
 		192,
 		128,
-		$author$project$Main$myShapes(model));
+		$author$project$Ravine$myShapes(model));
 };
-var $author$project$Main$main = A2(
+var $author$project$Ravine$main = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$App$gameApp,
-	$author$project$Main$Tick,
-	{model: $author$project$Main$init, title: 'Game Slot', update: $author$project$Main$update, view: $author$project$Main$view});
-_Platform_export({'Main':{'init':$author$project$Main$main(
+	$author$project$Ravine$Tick,
+	{model: $author$project$Ravine$init, title: 'Game Slot', update: $author$project$Ravine$update, view: $author$project$Ravine$view});
+_Platform_export({'Ravine':{'init':$author$project$Ravine$main(
 	$elm$json$Json$Decode$succeed(_Utils_Tuple0))(0)}});}(this));
 
-  var app = Elm.Main.init({ node: document.getElementById("elm") });
+  var app = Elm.Ravine.init({ node: document.getElementById("elm") });
 }
 catch (e)
 {

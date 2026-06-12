@@ -1,4 +1,4 @@
-module Main exposing (..)
+module BlueJay exposing (..)
 
 import GraphicSVG exposing (..)
 import GraphicSVG.App exposing (..)

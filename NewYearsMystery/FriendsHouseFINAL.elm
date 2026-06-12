@@ -1,9 +1,41 @@
+module FriendsHouseFINAL exposing (..)
+
+
+import SpeechBubbles exposing (speechBubbleRight, speechBubbleLeft, shantellSansFont) -- Your shapes go here!
+import GraphicSVG exposing (..)
+import GraphicSVG.App exposing (..)
+import GraphicSVG.Secret exposing (..)
+
 import JeffAmerotheMailmanFINAL
 import LilyAmero
 import Dog
 
-import SpeechBubbles exposing (speechBubbleRight, speechBubbleLeft, shantellSansFont) -- Your shapes go here!
+
+
+
+
+type Msg = Tick Float GetKeyState
+
+type alias Model = { time : Float }
+
 type Actor = Robot | Lily | Bark
+
+
+update msg model = case msg of
+                     Tick t _ -> { time = t }
+
+init = { time = 0 }
+
+main = gameApp Tick { model = init, view = view, update = update, title = "Game Slot" }
+
+view model = collage 192 128 (myShapes model)
+
+fractionalModBy m x = x - m * toFloat (floor (x / m))
+
+repeatDistance speed start end t =
+  start + fractionalModBy (end - start) (speed * t)
+  
+
 
 script = 
   [ (Robot,"Hey, good morning. It’s good that you are here.")

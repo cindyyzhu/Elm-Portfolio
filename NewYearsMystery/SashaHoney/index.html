@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Main</title>
+  <title>SashaHoney</title>
   <style>body { padding: 0; margin: 0; }</style>
 </head>
 
@@ -4430,7 +4430,7 @@ function _Time_getZoneName()
 		callback(_Scheduler_succeed(name));
 	});
 }
-var $author$project$Main$Tick = F2(
+var $author$project$SashaHoney$Tick = F2(
 	function (a, b) {
 		return {$: 'Tick', a: a, b: b};
 	});
@@ -9261,8 +9261,8 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$App$gameApp = F2(
 				}
 			});
 	});
-var $author$project$Main$init = {time: 0};
-var $author$project$Main$update = F2(
+var $author$project$SashaHoney$init = {time: 0};
+var $author$project$SashaHoney$update = F2(
 	function (msg, model) {
 		var t = msg.a;
 		return {time: t};
@@ -9652,7 +9652,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Unbroken = function (a) {
 var $MacCASOutreach$graphicsvg$GraphicSVG$solid = function (th) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Unbroken(th);
 };
-var $author$project$Main$eye = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$SashaHoney$eye = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -9852,7 +9852,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$scaleX = F2(
 	function (s, shape) {
 		return A3($MacCASOutreach$graphicsvg$GraphicSVG$Secret$Scale, s, 1, shape);
 	});
-var $author$project$Main$snowsuit = function (clr) {
+var $author$project$SashaHoney$snowsuit = function (clr) {
 	return A2(
 		$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 		clr,
@@ -9947,7 +9947,7 @@ var $author$project$Main$snowsuit = function (clr) {
 					_Utils_Tuple2(-69.45, -22.75))
 				])));
 };
-var $author$project$Main$molly = F2(
+var $author$project$SashaHoney$molly = F2(
 	function (isWinter, clr) {
 		return $MacCASOutreach$graphicsvg$GraphicSVG$group(
 			_Utils_ap(
@@ -11279,7 +11279,7 @@ var $author$project$Main$molly = F2(
 										_Utils_Tuple2(-40.46, -53.58),
 										_Utils_Tuple2(-42.56, -52.00))
 									])))),
-						$author$project$Main$eye,
+						$author$project$SashaHoney$eye,
 						A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$rotate,
 						-0.5,
@@ -11289,7 +11289,7 @@ var $author$project$Main$molly = F2(
 							A2(
 								$MacCASOutreach$graphicsvg$GraphicSVG$move,
 								_Utils_Tuple2(95, -22),
-								$author$project$Main$eye))),
+								$author$project$SashaHoney$eye))),
 						A2(
 						$MacCASOutreach$graphicsvg$GraphicSVG$filled,
 						A3($MacCASOutreach$graphicsvg$GraphicSVG$rgb, 255, 209, 133),
@@ -11439,36 +11439,36 @@ var $author$project$Main$molly = F2(
 					]),
 				isWinter ? _List_fromArray(
 					[
-						$author$project$Main$snowsuit(clr)
+						$author$project$SashaHoney$snowsuit(clr)
 					]) : _List_Nil));
 	});
-var $author$project$Main$myShapes = function (model) {
+var $author$project$SashaHoney$myShapes = function (model) {
 	return _List_fromArray(
 		[
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(50, 0),
 			A2(
-				$author$project$Main$molly,
+				$author$project$SashaHoney$molly,
 				true,
 				A3($MacCASOutreach$graphicsvg$GraphicSVG$rgb, 184, 92, 255)))
 		]);
 };
-var $author$project$Main$view = function (model) {
+var $author$project$SashaHoney$view = function (model) {
 	return A3(
 		$MacCASOutreach$graphicsvg$GraphicSVG$collage,
 		192,
 		128,
-		$author$project$Main$myShapes(model));
+		$author$project$SashaHoney$myShapes(model));
 };
-var $author$project$Main$main = A2(
+var $author$project$SashaHoney$main = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$App$gameApp,
-	$author$project$Main$Tick,
-	{model: $author$project$Main$init, title: 'Game Slot', update: $author$project$Main$update, view: $author$project$Main$view});
-_Platform_export({'Main':{'init':$author$project$Main$main(
+	$author$project$SashaHoney$Tick,
+	{model: $author$project$SashaHoney$init, title: 'Game Slot', update: $author$project$SashaHoney$update, view: $author$project$SashaHoney$view});
+_Platform_export({'SashaHoney':{'init':$author$project$SashaHoney$main(
 	$elm$json$Json$Decode$succeed(_Utils_Tuple0))(0)}});}(this));
 
-  var app = Elm.Main.init({ node: document.getElementById("elm") });
+  var app = Elm.SashaHoney.init({ node: document.getElementById("elm") });
 }
 catch (e)
 {

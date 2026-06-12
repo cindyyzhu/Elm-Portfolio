@@ -1,4 +1,4 @@
-module Main exposing (..)
+module Duck exposing (..)
 
 import GraphicSVG exposing (..)
 import GraphicSVG.App exposing (..)

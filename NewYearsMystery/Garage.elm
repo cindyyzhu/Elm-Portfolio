@@ -1,8 +1,11 @@
-module Main exposing (..)
+module Garage exposing (..)
 
 import GraphicSVG exposing (..)
 import GraphicSVG.App exposing (..)
 import GraphicSVG.Secret exposing (..)
+import SpeechBubbles exposing (narrationBubble, shantellSansFont) -- Your shapes go here!
+type Actor = Robot
+
 
 type Msg = Tick Float GetKeyState
 
@@ -24,8 +27,6 @@ repeatDistance speed start end t =
   
   -- Your shapes go here!
 
-import SpeechBubbles exposing (narrationBubble, shantellSansFont) -- Your shapes go here!
-type Actor = Robot
 
 script = 
   [ (Robot,"The garage looks normal at first glance")

@@ -1,8 +1,33 @@
+module ChildrensBedroom exposing (..)
+
+import GraphicSVG exposing (..)
+import GraphicSVG.App exposing (..)
+import GraphicSVG.Secret exposing (..)
 import Cat
 import PiggyBank
 
 import SpeechBubbles exposing (narrationBubble, speechBubbleLeft, speechBubbleRight, shantellSansFont) -- Your shapes go here!
 type Actor = Robot | Mittens
+
+
+type Msg = Tick Float GetKeyState
+
+type alias Model = { time : Float }
+
+update msg model = case msg of
+                     Tick t _ -> { time = t }
+
+init = { time = 0 }
+
+main = gameApp Tick { model = init, view = view, update = update, title = "Game Slot" }
+
+view model = collage 192 128 (myShapes model)
+
+fractionalModBy m x = x - m * toFloat (floor (x / m))
+
+repeatDistance speed start end t =
+  start + fractionalModBy (end - start) (speed * t)
+
 
 script = 
   [ (Robot,"You find that Addy’s childhood piggy bank has been broken into. ")

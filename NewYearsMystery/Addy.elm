@@ -1,4 +1,4 @@
-module Main exposing (..)
+module Addy exposing (..)
 
 import GraphicSVG exposing (..)
 import GraphicSVG.App exposing (..)

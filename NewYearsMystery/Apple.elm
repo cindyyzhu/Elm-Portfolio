@@ -1,4 +1,4 @@
-module Main exposing (..)
+module Apple exposing (..)
 
 import GraphicSVG exposing (..)
 import GraphicSVG.App exposing (..)

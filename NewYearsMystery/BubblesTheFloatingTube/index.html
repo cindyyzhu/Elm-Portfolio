@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Main</title>
+  <title>BubblesTheFloatingTube</title>
   <style>body { padding: 0; margin: 0; }</style>
 </head>
 
@@ -4430,7 +4430,7 @@ function _Time_getZoneName()
 		callback(_Scheduler_succeed(name));
 	});
 }
-var $author$project$Main$Tick = F2(
+var $author$project$BubblesTheFloatingTube$Tick = F2(
 	function (a, b) {
 		return {$: 'Tick', a: a, b: b};
 	});
@@ -9261,8 +9261,8 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$App$gameApp = F2(
 				}
 			});
 	});
-var $author$project$Main$init = {time: 0};
-var $author$project$Main$update = F2(
+var $author$project$BubblesTheFloatingTube$init = {time: 0};
+var $author$project$BubblesTheFloatingTube$update = F2(
 	function (msg, model) {
 		var t = msg.a;
 		return {time: t};
@@ -9308,7 +9308,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$scaleX = F2(
 	function (s, shape) {
 		return A3($MacCASOutreach$graphicsvg$GraphicSVG$Secret$Scale, s, 1, shape);
 	});
-var $author$project$Main$arms = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$BubblesTheFloatingTube$arms = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -9439,7 +9439,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Circle = function (a) {
 var $MacCASOutreach$graphicsvg$GraphicSVG$circle = function (r) {
 	return $MacCASOutreach$graphicsvg$GraphicSVG$Secret$Circle(r);
 };
-var $author$project$Main$eyes = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$BubblesTheFloatingTube$eyes = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -9485,7 +9485,7 @@ var $author$project$Main$eyes = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 				$MacCASOutreach$graphicsvg$GraphicSVG$white,
 				$MacCASOutreach$graphicsvg$GraphicSVG$circle(1.5)))
 		]));
-var $author$project$Main$legs = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$BubblesTheFloatingTube$legs = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -9643,7 +9643,7 @@ var $MacCASOutreach$graphicsvg$GraphicSVG$wedge = F2(
 							_Utils_Tuple2(0, 0)
 						]))) : _List_Nil);
 	});
-var $author$project$Main$mouth = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$BubblesTheFloatingTube$mouth = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -9657,7 +9657,7 @@ var $author$project$Main$mouth = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 					$MacCASOutreach$graphicsvg$GraphicSVG$black,
 					A2($MacCASOutreach$graphicsvg$GraphicSVG$wedge, 7, 0.5))))
 		]));
-var $author$project$Main$floatee = $MacCASOutreach$graphicsvg$GraphicSVG$group(
+var $author$project$BubblesTheFloatingTube$floatee = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 	_List_fromArray(
 		[
 			A2(
@@ -9702,35 +9702,35 @@ var $author$project$Main$floatee = $MacCASOutreach$graphicsvg$GraphicSVG$group(
 						_Utils_Tuple2(-5.8, -9.8),
 						_Utils_Tuple2(-40.9, -1.2))
 					]))),
-			$author$project$Main$eyes,
-			$author$project$Main$mouth,
-			$author$project$Main$arms,
-			$author$project$Main$legs
+			$author$project$BubblesTheFloatingTube$eyes,
+			$author$project$BubblesTheFloatingTube$mouth,
+			$author$project$BubblesTheFloatingTube$arms,
+			$author$project$BubblesTheFloatingTube$legs
 		]));
-var $author$project$Main$myShapes = function (model) {
+var $author$project$BubblesTheFloatingTube$myShapes = function (model) {
 	return _List_fromArray(
 		[
 			A2(
 			$MacCASOutreach$graphicsvg$GraphicSVG$move,
 			_Utils_Tuple2(0, 15),
-			$author$project$Main$floatee)
+			$author$project$BubblesTheFloatingTube$floatee)
 		]);
 };
-var $author$project$Main$view = function (model) {
+var $author$project$BubblesTheFloatingTube$view = function (model) {
 	return A3(
 		$MacCASOutreach$graphicsvg$GraphicSVG$collage,
 		192,
 		128,
-		$author$project$Main$myShapes(model));
+		$author$project$BubblesTheFloatingTube$myShapes(model));
 };
-var $author$project$Main$main = A2(
+var $author$project$BubblesTheFloatingTube$main = A2(
 	$MacCASOutreach$graphicsvg$GraphicSVG$App$gameApp,
-	$author$project$Main$Tick,
-	{model: $author$project$Main$init, title: 'Game Slot', update: $author$project$Main$update, view: $author$project$Main$view});
-_Platform_export({'Main':{'init':$author$project$Main$main(
+	$author$project$BubblesTheFloatingTube$Tick,
+	{model: $author$project$BubblesTheFloatingTube$init, title: 'Game Slot', update: $author$project$BubblesTheFloatingTube$update, view: $author$project$BubblesTheFloatingTube$view});
+_Platform_export({'BubblesTheFloatingTube':{'init':$author$project$BubblesTheFloatingTube$main(
 	$elm$json$Json$Decode$succeed(_Utils_Tuple0))(0)}});}(this));
 
-  var app = Elm.Main.init({ node: document.getElementById("elm") });
+  var app = Elm.BubblesTheFloatingTube.init({ node: document.getElementById("elm") });
 }
 catch (e)
 {
