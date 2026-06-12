@@ -1,3 +1,9 @@
+module Main exposing (..)
+
+import GraphicSVG exposing (..)
+import GraphicSVG.App exposing (..)
+import GraphicSVG.Secret exposing (..)
+
 import Types exposing (Msg(..), State(..), stateBit)
 import Ravine
 import Kitchen

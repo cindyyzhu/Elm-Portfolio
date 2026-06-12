@@ -1,3 +1,9 @@
+module Types exposing (..)
+
+import GraphicSVG exposing (..)
+import GraphicSVG.App exposing (..)
+import GraphicSVG.App exposing (..)
+
 type Msg = Tick Float GetKeyState
          | Kitchen2Backyard 
          | Kitchen2Bedroom 
@@ -106,6 +112,9 @@ init = { time = 0 }
 main = gameApp Tick { model = init, view = view, update = update, title = "Game Slot" }
 
 view model = collage 192 128 (myShapes model)
+
+
+
 
 
 

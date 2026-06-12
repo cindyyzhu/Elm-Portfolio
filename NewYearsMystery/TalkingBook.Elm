@@ -1,4 +1,4 @@
-module Main exposing (..)
+module TalkingBook exposing (..)
 
 import GraphicSVG exposing (..)
 import GraphicSVG.App exposing (..)

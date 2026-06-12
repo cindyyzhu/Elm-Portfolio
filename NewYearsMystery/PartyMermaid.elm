@@ -2,7 +2,8 @@ module PartyMermaid exposing (..)
 
 import GraphicSVG exposing (..)
 import GraphicSVG.App exposing (..)
-import GraphicSVG.Secret exposing (..)
+import GraphicSVG.Secret exposing (Pull(..))
+import Array
 
 type Msg = Tick Float GetKeyState
 
@@ -160,6 +161,18 @@ mermaid = group [
             |> move (-33, 16.7))
  ]
 
+
+animationPieces : List (Float, Float -> anytype) -> (Float -> anytype) -> Float -> anytype
+animationPieces intervals finalAnimation time =
+  case intervals of
+    (duration, animation) :: rest ->
+        if time <= duration then
+          animation time
+        else
+          animationPieces rest finalAnimation (time - duration)
+    [] ->
+        finalAnimation time
+
 -- this is called bilinear interpolation 
 -- it follows the line between two points, tracing out a polygon
 mkAnimationPiece listOfPoints =
@@ -312,3 +325,5 @@ partyHat colour1 colour2 colour3 colour4 colour5 colour6 = group [
     |> filled colour3
     |> addOutline (solid 1) black
     ]
+
+

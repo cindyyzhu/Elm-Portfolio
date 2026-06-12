@@ -1,3 +1,11 @@
+module SpeechBubbles exposing (..)
+
+import GraphicSVG exposing (..)
+import GraphicSVG.App exposing (..)
+import GraphicSVG.Secret exposing (Pull(..))
+
+
+
 -- Your shapes go here!
 myShapes model =
   [
