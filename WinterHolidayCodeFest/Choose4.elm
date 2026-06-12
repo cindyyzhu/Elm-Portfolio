@@ -1,7 +1,11 @@
 module Choose4 exposing (..)
+
 import GraphicSVG exposing (..)
 import GraphicSVG.App exposing (..)
 import GraphicSVG.Secret exposing (..)
+import Array
+import Random
+import String
 
 import Bee
 import Squirrel
@@ -94,7 +98,23 @@ import Umbrella
 import Volleyball
 import Watermelon
 
+arrayLength = Array.length wordArray
 
+getWord idx = case Array.get idx wordArray of
+    Just w -> w
+    Nothing -> (\ _ -> [], "")
+
+stringToChars s = String.toList s
+
+oneLetter tLeft badTime i c =
+    let
+        x = toFloat i * letterWidth - 40
+        fade = if badTime == 0 then 1 else min 1 (tLeft / badTime)
+    in
+        text (String.fromChar c)
+            |> fixedwidth
+            |> filled (rgba 0 0 0 fade)
+            |> move (x, -55)
 wordArray = Array.fromList 
   [
     Bee.pair
@@ -344,5 +364,8 @@ getRandChoices = Random.generate RandIdx (Random.map5 ( \ i j k l c -> ([i,j,k,l
 oneRandIdx = Random.int 0 (arrayLength - 1)
 rand0to3   = Random.int 0 3
 
-pair = (myShapes, word)
 
+main = gameApp Tick { model = init
+                    , view = view
+                    , update = update
+                    , title = "Choose4" }
