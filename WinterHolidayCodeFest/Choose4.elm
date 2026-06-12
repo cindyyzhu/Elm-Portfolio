@@ -77,7 +77,7 @@ import Tree
 import Goldfish
 import Head1
 import Moon
-import Mermaid
+import src.Exemplars.Mermaid
 import PartyHat
 import Jellyfish
 import Bear
@@ -93,7 +93,7 @@ import Mug
 import Ostrich
 import Penguin
 import Trefoil
-import Turtle
+import src.Exemplars.Turtle
 import Umbrella
 import Volleyball
 import Watermelon
@@ -188,7 +188,7 @@ wordArray = Array.fromList
   , Goldfish.pair
   , Head1.pair
   , Moon.pair
-  , Mermaid.pair
+  , src.Exemplars.Mermaid.pair
   , PartyHat.pair
   , Jellyfish.pair
   , Bear.pair
@@ -204,7 +204,7 @@ wordArray = Array.fromList
   , Ostrich.pair
   , Penguin.pair
   , Trefoil.pair
-  , Turtle.pair
+  , src.Exemplars.Turtle.pair
   , Umbrella.pair
   , Volleyball.pair
   , Watermelon.pair
