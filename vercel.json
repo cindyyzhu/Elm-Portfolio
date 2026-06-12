@@ -1,7 +1,0 @@
-{
-  "buildCommand": "bash build-demos.sh && npx elm-land build",
-  "outputDirectory": "dist",
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ]
-}

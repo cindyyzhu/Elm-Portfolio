@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cindy's Elm Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0d0d12;
+      --surface: #16161f;
+      --border: #2a2a3a;
+      --text: #e8e8f0;
+      --muted: #7a7a96;
+      --accent: #7b6cff;
+      --accent2: #c084fc;
+      --card-hover: #1e1e2e;
+    }
+
+    html, body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Space Grotesk', sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* ── HEADER ── */
+    header {
+      padding: 3rem 4rem 2rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .header-left h1 {
+      font-family: 'Space Mono', monospace;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      background: linear-gradient(135deg, var(--text) 40%, var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .header-left p {
+      margin-top: 0.5rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+      font-weight: 300;
+    }
+
+    .badge {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      padding: 0.3rem 0.7rem;
+      border-radius: 2px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      opacity: 0.8;
+    }
+
+    /* ── GRID ── */
+    main {
+      padding: 3rem 4rem;
+    }
+
+    .grid-label {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--muted);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    /* ── CARD ── */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      border-color: var(--accent);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 32px rgba(123, 108, 255, 0.15);
+    }
+
+    .card-thumb {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Each project gets a unique generative thumbnail */
+    .card-thumb canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .thumb-label {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.65rem;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+      z-index: 1;
+      background: rgba(13,13,18,0.7);
+      padding: 0.2rem 0.5rem;
+      border-radius: 2px;
+    }
+
+    .play-icon {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.2s;
+      background: rgba(123,108,255,0.15);
+      z-index: 2;
+    }
+
+    .play-icon svg {
+      width: 48px;
+      height: 48px;
+      fill: white;
+      filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5));
+    }
+
+    .card:hover .play-icon { opacity: 1; }
+
+    .card-body {
+      padding: 1rem 1.2rem 1.2rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: var(--text);
+    }
+
+    .card-desc {
+      font-size: 0.82rem;
+      color: var(--muted);
+      line-height: 1.55;
+      font-weight: 300;
+      flex: 1;
+    }
+
+    .card-tag {
+      margin-top: 0.6rem;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.65rem;
+      color: var(--accent2);
+      letter-spacing: 0.06em;
+      opacity: 0.7;
+    }
+
+    /* ── FULLSCREEN OVERLAY ── */
+    #overlay {
+      position: fixed;
+      inset: 0;
+      background: #000;
+      z-index: 100;
+      display: none;
+      flex-direction: column;
+    }
+
+    #overlay.active { display: flex; }
+
+    #overlay-bar {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.75rem 1.2rem;
+      background: rgba(13,13,18,0.95);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+      z-index: 101;
+      flex-shrink: 0;
+    }
+
+    #back-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.85rem;
+      padding: 0.4rem 0.9rem 0.4rem 0.6rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    #back-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    #back-btn svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+
+    #overlay-title {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.85rem;
+      color: var(--muted);
+      letter-spacing: 0.05em;
+    }
+
+    #overlay-frame-wrap {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #overlay-iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+
+    #overlay-loading {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      background: var(--bg);
+      color: var(--muted);
+      font-family: 'Space Mono', monospace;
+      font-size: 0.8rem;
+    }
+
+    .spinner {
+      width: 32px;
+      height: 32px;
+      border: 2px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    footer p {
+      font-size: 0.78rem;
+      color: var(--muted);
+      font-weight: 300;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      header, main, footer { padding-left: 1.5rem; padding-right: 1.5rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .card { transition: none; }
+      .spinner { animation: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <h1>Cindy's Elm Projects</h1>
+    <p>Interactive graphics &amp; animations built with Elm + GraphicSVG</p>
+  </div>
+  <span class="badge">Elm 0.19.1</span>
+</header>
+
+<main>
+  <p class="grid-label">19 projects</p>
+  <div class="grid" id="grid"></div>
+</main>
+
+<footer>
+  <p>Built with <a href="https://elm-lang.org" target="_blank">Elm</a> &amp; GraphicSVG from McMaster University</p>
+  <p>Click any project to run it fullscreen</p>
+</footer>
+
+<!-- Fullscreen overlay -->
+<div id="overlay">
+  <div id="overlay-bar">
+    <button id="back-btn" onclick="closeProject()">
+      <svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+      Back to portfolio
+    </button>
+    <span id="overlay-title"></span>
+  </div>
+  <div id="overlay-frame-wrap">
+    <div id="overlay-loading">
+      <div class="spinner"></div>
+      <span>Loading project…</span>
+    </div>
+    <iframe id="overlay-iframe" title="Project viewer" onload="hideLoading()"></iframe>
+  </div>
+</div>
+
+<script>
+  const projects = [
+    {
+      file: "AnglerFish",
+      title: "Angler Fish",
+      desc: "A deep-sea encounter — an animated anglerfish glows in the abyss, its bioluminescent lure pulsing rhythmically in the dark water.",
+      tag: "animation · biology",
+      colors: ["#0a1628", "#1a3a5c", "#00d4ff", "#004080"],
+      shape: "fish"
+    },
+    {
+      file: "AnimationPiecesExit",
+      title: "Animation Pieces Exit",
+      desc: "Geometric shapes choreograph an exit sequence — each piece animates off-screen in a precisely timed cascade of motion.",
+      tag: "animation · composition",
+      colors: ["#1a0a28", "#4a1a6e", "#c084fc", "#7b6cff"],
+      shape: "squares"
+    },
+    {
+      file: "CrabInSpace",
+      title: "Crab in Space",
+      desc: "A crab navigates the cosmos, floating through a field of stars in a whimsical zero-gravity adventure far from the ocean floor.",
+      tag: "animation · whimsy",
+      colors: ["#050510", "#1a1a3e", "#ff6b6b", "#ffd93d"],
+      shape: "circle"
+    },
+    {
+      file: "CurveCreator",
+      title: "Curve Creator",
+      desc: "An interactive tool for drawing and manipulating Bézier curves — drag control points to sculpt smooth paths in real time.",
+      tag: "interactive · drawing",
+      colors: ["#0d1a0d", "#1a3a1a", "#4ade80", "#86efac"],
+      shape: "curve"
+    },
+    {
+      file: "DiversityMatters",
+      title: "Diversity Matters",
+      desc: "A visual celebration of inclusion — animated figures in a spectrum of colours come together to illustrate the strength found in diversity.",
+      tag: "animation · social",
+      colors: ["#1a0808", "#ff6b6b", "#ffd93d", "#6bcb77", "#4d96ff"],
+      shape: "circles"
+    },
+    {
+      file: "ElmAnimations",
+      title: "Elm Animations",
+      desc: "A showcase of Elm's animation capabilities — multiple techniques from easing functions to physics-based motion demonstrated side by side.",
+      tag: "animation · demo",
+      colors: ["#0d0d1a", "#1e1e3f", "#7b6cff", "#c084fc"],
+      shape: "wave"
+    },
+    {
+      file: "FoxInForest",
+      title: "Fox in Forest",
+      desc: "A fox trots through a stylised forest at dusk — trees sway, leaves drift, and the warm colours of golden hour paint the scene.",
+      tag: "animation · nature",
+      colors: ["#1a0d00", "#3d2200", "#ff8c00", "#ffb347"],
+      shape: "triangle"
+    },
+    {
+      file: "Mermaid",
+      title: "Mermaid",
+      desc: "Under the sea, a mermaid glides through kelp and coral — fluid tail movements and shimmering scales rendered entirely in SVG.",
+      tag: "animation · fantasy",
+      colors: ["#001a1a", "#003d3d", "#00b4d8", "#90e0ef"],
+      shape: "wave"
+    },
+    {
+      file: "PolygonCreator",
+      title: "Polygon Creator",
+      desc: "Build custom polygons by clicking to place vertices — explore how changing the number of sides transforms shapes from triangles to circles.",
+      tag: "interactive · geometry",
+      colors: ["#0d0d0d", "#1a1a2e", "#e94560", "#0f3460"],
+      shape: "polygon"
+    },
+    {
+      file: "PredatorPrey",
+      title: "Predator & Prey",
+      desc: "A Lotka–Volterra simulation visualised — watch populations of predators and prey oscillate in real time as the ecosystem finds its rhythm.",
+      tag: "simulation · math",
+      colors: ["#0a1a0a", "#1a3a1a", "#ff4444", "#44ff44"],
+      shape: "circles"
+    },
+    {
+      file: "RobotDance",
+      title: "Robot Dance",
+      desc: "A robot grooves to an imagined beat — limbs articulate in a charming mechanical dance, each joint animated with satisfying precision.",
+      tag: "animation · character",
+      colors: ["#0d0d0d", "#1a1a1a", "#00d4ff", "#7b6cff"],
+      shape: "squares"
+    },
+    {
+      file: "SELena",
+      title: "SELena",
+      desc: "A social-emotional learning companion — Selena guides interactions through expressive animations that respond to user choices.",
+      tag: "interactive · education",
+      colors: ["#1a0a1a", "#3d1a3d", "#ff77ff", "#ffaaff"],
+      shape: "circle"
+    },
+    {
+      file: "SinCosTan",
+      title: "Sin Cos Tan",
+      desc: "Trigonometric functions come to life — watch sin, cos, and tan waves trace across the canvas as the unit circle animates in sync.",
+      tag: "animation · math",
+      colors: ["#0a0a1a", "#1a1a3e", "#ff6b6b", "#ffd93d", "#6bcb77"],
+      shape: "wave"
+    },
+    {
+      file: "SnowingSnowman",
+      title: "Snowing Snowman",
+      desc: "A cheerful snowman stands in a winter scene as snowflakes drift lazily from above — a cosy, looping holiday animation.",
+      tag: "animation · seasonal",
+      colors: ["#0a1428", "#1a2a4a", "#a8d8f0", "#ffffff"],
+      shape: "circles"
+    },
+    {
+      file: "StarfishGradient",
+      title: "Starfish Gradient",
+      desc: "A starfish rendered with radial gradient fills pulses gently — exploring how SVG gradients can breathe life into simple organic shapes.",
+      tag: "animation · ocean",
+      colors: ["#1a0800", "#3d1a00", "#ff6b35", "#ffa07a"],
+      shape: "star"
+    },
+    {
+      file: "Turtle",
+      title: "Turtle Graphics",
+      desc: "Logo-style turtle graphics in Elm — command a turtle to draw intricate geometric patterns using simple forward, turn, and repeat instructions.",
+      tag: "interactive · drawing",
+      colors: ["#0a1a0a", "#1a3a1a", "#2ecc71", "#27ae60"],
+      shape: "polygon"
+    },
+    {
+      file: "UnderwaterGame",
+      title: "Underwater Game",
+      desc: "Dive in and dodge obstacles in this side-scrolling underwater adventure — collect pearls, avoid jellyfish, and see how deep you can go.",
+      tag: "game · interactive",
+      colors: ["#001428", "#002a50", "#0077b6", "#00b4d8"],
+      shape: "fish"
+    },
+    {
+      file: "WhaleWiggle",
+      title: "Whale Wiggle",
+      desc: "A blue whale undulates through open ocean, its body rippling with fluid motion — a study in sinusoidal animation applied to character design.",
+      tag: "animation · ocean",
+      colors: ["#000a1a", "#001a3d", "#0077b6", "#48cae4"],
+      shape: "wave"
+    },
+    {
+      file: "WordByHues",
+      title: "Word by Hues",
+      desc: "Words are painted in colour — each letter or syllable takes on a unique hue, turning language into a visual palette of meaning and sound.",
+      tag: "animation · language",
+      colors: ["#0d0d0d", "#ff6b6b", "#ffd93d", "#6bcb77", "#4d96ff", "#c084fc"],
+      shape: "circles"
+    }
+  ];
+
+  // ── Generative thumbnails ──
+  function drawThumb(canvas, project) {
+    const ctx = canvas.getContext('2d');
+    const w = canvas.width, h = canvas.height;
+    const cols = project.colors;
+
+    // Background gradient
+    const bg = ctx.createLinearGradient(0, 0, w, h);
+    bg.addColorStop(0, cols[0]);
+    bg.addColorStop(1, cols[1] || cols[0]);
+    ctx.fillStyle = bg;
+    ctx.fillRect(0, 0, w, h);
+
+    const accent = cols[2] || '#7b6cff';
+    const accent2 = cols[3] || accent;
+
+    ctx.save();
+    ctx.globalAlpha = 0.85;
+
+    switch(project.shape) {
+      case 'wave': {
+        for (let i = 0; i < 4; i++) {
+          ctx.beginPath();
+          ctx.strokeStyle = i % 2 === 0 ? accent : accent2;
+          ctx.lineWidth = 1.5;
+          ctx.globalAlpha = 0.4 + i * 0.12;
+          const yOff = h * 0.3 + i * 14;
+          const amp = 18 - i * 3;
+          ctx.moveTo(0, yOff);
+          for (let x = 0; x <= w; x += 4) {
+            ctx.lineTo(x, yOff + Math.sin((x / w) * Math.PI * 4 + i) * amp);
+          }
+          ctx.stroke();
+        }
+        break;
+      }
+      case 'circles': {
+        for (let i = 0; i < 6; i++) {
+          const col = cols[i % cols.length];
+          ctx.beginPath();
+          ctx.fillStyle = col;
+          ctx.globalAlpha = 0.25 + (i % 3) * 0.15;
+          const r = 12 + i * 8;
+          const cx = w * (0.2 + (i * 0.13) % 0.7);
+          const cy = h * (0.25 + (i * 0.17) % 0.55);
+          ctx.arc(cx, cy, r, 0, Math.PI * 2);
+          ctx.fill();
+        }
+        break;
+      }
+      case 'squares': {
+        for (let i = 0; i < 5; i++) {
+          ctx.save();
+          ctx.translate(w * (0.15 + i * 0.17), h * 0.5);
+          ctx.rotate(Math.PI / 6 + i * 0.3);
+          ctx.fillStyle = cols[i % cols.length];
+          ctx.globalAlpha = 0.2 + i * 0.1;
+          const s = 20 + i * 10;
+          ctx.fillRect(-s/2, -s/2, s, s);
+          ctx.restore();
+        }
+        break;
+      }
+      case 'curve': {
+        ctx.beginPath();
+        ctx.strokeStyle = accent;
+        ctx.lineWidth = 2;
+        ctx.globalAlpha = 0.7;
+        ctx.moveTo(w * 0.1, h * 0.8);
+        ctx.bezierCurveTo(w * 0.3, h * 0.1, w * 0.7, h * 0.9, w * 0.9, h * 0.2);
+        ctx.stroke();
+        // Control point dots
+        [
+          [w*0.1, h*0.8], [w*0.3, h*0.1], [w*0.7, h*0.9], [w*0.9, h*0.2]
+        ].forEach(([x, y]) => {
+          ctx.beginPath();
+          ctx.arc(x, y, 4, 0, Math.PI * 2);
+          ctx.fillStyle = accent2;
+          ctx.globalAlpha = 0.9;
+          ctx.fill();
+        });
+        break;
+      }
+      case 'triangle': {
+        ctx.beginPath();
+        ctx.fillStyle = accent;
+        ctx.globalAlpha = 0.5;
+        ctx.moveTo(w/2, h*0.15);
+        ctx.lineTo(w*0.85, h*0.8);
+        ctx.lineTo(w*0.15, h*0.8);
+        ctx.closePath();
+        ctx.fill();
+        ctx.beginPath();
+        ctx.fillStyle = accent2;
+        ctx.globalAlpha = 0.3;
+        ctx.moveTo(w*0.35, h*0.55);
+        ctx.lineTo(w*0.65, h*0.55);
+        ctx.lineTo(w*0.5, h*0.3);
+        ctx.closePath();
+        ctx.fill();
+        break;
+      }
+      case 'polygon': {
+        const sides = 6;
+        ctx.beginPath();
+        ctx.fillStyle = accent;
+        ctx.globalAlpha = 0.4;
+        for (let i = 0; i < sides; i++) {
+          const angle = (i / sides) * Math.PI * 2 - Math.PI / 2;
+          const r = Math.min(w, h) * 0.32;
+          const x = w/2 + Math.cos(angle) * r;
+          const y = h/2 + Math.sin(angle) * r;
+          i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+        }
+        ctx.closePath();
+        ctx.fill();
+        ctx.strokeStyle = accent2;
+        ctx.lineWidth = 1.5;
+        ctx.globalAlpha = 0.7;
+        ctx.stroke();
+        break;
+      }
+      case 'star': {
+        ctx.beginPath();
+        ctx.fillStyle = accent;
+        ctx.globalAlpha = 0.5;
+        const pts = 5, outer = Math.min(w,h)*0.32, inner = outer*0.45;
+        for (let i = 0; i < pts * 2; i++) {
+          const angle = (i / (pts*2)) * Math.PI * 2 - Math.PI / 2;
+          const r = i % 2 === 0 ? outer : inner;
+          const x = w/2 + Math.cos(angle) * r;
+          const y = h/2 + Math.sin(angle) * r;
+          i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+        }
+        ctx.closePath();
+        ctx.fill();
+        break;
+      }
+      case 'fish': {
+        // Body
+        ctx.beginPath();
+        ctx.fillStyle = accent;
+        ctx.globalAlpha = 0.55;
+        ctx.ellipse(w*0.45, h*0.5, w*0.28, h*0.2, 0, 0, Math.PI*2);
+        ctx.fill();
+        // Tail
+        ctx.beginPath();
+        ctx.fillStyle = accent2;
+        ctx.globalAlpha = 0.45;
+        ctx.moveTo(w*0.2, h*0.5);
+        ctx.lineTo(w*0.07, h*0.28);
+        ctx.lineTo(w*0.07, h*0.72);
+        ctx.closePath();
+        ctx.fill();
+        // Eye
+        ctx.beginPath();
+        ctx.fillStyle = '#fff';
+        ctx.globalAlpha = 0.9;
+        ctx.arc(w*0.58, h*0.45, 5, 0, Math.PI*2);
+        ctx.fill();
+        break;
+      }
+      case 'circle':
+      default: {
+        const grad = ctx.createRadialGradient(w*0.5, h*0.5, 0, w*0.5, h*0.5, Math.min(w,h)*0.38);
+        grad.addColorStop(0, accent);
+        grad.addColorStop(1, 'transparent');
+        ctx.fillStyle = grad;
+        ctx.globalAlpha = 0.6;
+        ctx.beginPath();
+        ctx.arc(w/2, h/2, Math.min(w,h)*0.38, 0, Math.PI*2);
+        ctx.fill();
+        break;
+      }
+    }
+
+    ctx.restore();
+
+    // Subtle grid overlay
+    ctx.globalAlpha = 0.04;
+    ctx.strokeStyle = '#fff';
+    ctx.lineWidth = 0.5;
+    for (let x = 0; x < w; x += 20) {
+      ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, h); ctx.stroke();
+    }
+    for (let y = 0; y < h; y += 20) {
+      ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(w, y); ctx.stroke();
+    }
+  }
+
+  // ── Build grid ──
+  const grid = document.getElementById('grid');
+
+  projects.forEach((p, i) => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('role', 'button');
+    card.setAttribute('aria-label', `Open ${p.title}`);
+
+    card.innerHTML = `
+      <div class="card-thumb">
+        <canvas width="480" height="270"></canvas>
+        <div class="play-icon">
+          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-title">${p.title}</div>
+        <div class="card-desc">${p.desc}</div>
+        <div class="card-tag">${p.tag}</div>
+      </div>
+    `;
+
+    const canvas = card.querySelector('canvas');
+    drawThumb(canvas, p);
+
+    card.addEventListener('click', () => openProject(p));
+    card.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openProject(p); }
+    });
+
+    grid.appendChild(card);
+  });
+
+  // ── Overlay logic ──
+  function openProject(p) {
+    document.getElementById('overlay-title').textContent = p.title;
+    document.getElementById('overlay-loading').style.display = 'flex';
+    document.getElementById('overlay-iframe').src = `exemplars/${p.file}/index.html`;
+    document.getElementById('overlay').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeProject() {
+    document.getElementById('overlay').classList.remove('active');
+    document.getElementById('overlay-iframe').src = '';
+    document.body.style.overflow = '';
+  }
+
+  function hideLoading() {
+    document.getElementById('overlay-loading').style.display = 'none';
+  }
+
+  // Close on Escape
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeProject();
+  });
+</script>
+</body>
+</html>
