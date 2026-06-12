@@ -27,6 +27,18 @@
       --card-hover: #1e1e2e;
     }
 
+    /* LIGHT MODE */
+    .light-mode {
+      --bg: #f7f7fb;
+      --surface: #ffffff;
+      --border: #d9d9e3;
+      --text: #1a1a1f;
+      --muted: #5a5a6a;
+      --accent: #5b4bff;
+      --accent2: #8b5cf6;
+      --card-hover: #f0f0f6;
+    }
+
     html, body {
       background: var(--bg);
       color: var(--text);
@@ -308,6 +320,23 @@
       font-size: 0.8rem;
     }
 
+    #theme-toggle {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-family: 'Space Mono', monospace;
+      font-size: 0.75rem;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    #theme-toggle:hover {
+      border-color: var(--accent);
+      transform: translateY(-1px);
+    }
+
     .spinner {
       width: 32px;
       height: 32px;
@@ -359,7 +388,9 @@
     <h1>Welcome to My Elm Portfolio!</h1>
     <p>Made with ♡ by Cindy Zhu </p>
   </div>
-  <span class="badge">Elm 0.19.1</span>
+  <button id="theme-toggle" onclick="toggleTheme()">
+  Toggle theme ☾ / ☀︎
+  </button>
 </header>
 
 <main>
@@ -481,8 +512,8 @@
     
     
     
-    { file: "../WinterHolidayCodeFest/Choose4", title: "Winter Holiday CodeFest Wordathon", desc: "An interactive wordathon game made with girls in grades 7-12 in 2024", tag: "game · wordathon", colors: ["#1a0a28","#3d1a5c","#ff77ff","#c084fc"], shape: "circles" }
-    ,
+    //{ file: "../WinterHolidayCodeFest/Choose4", title: "Winter Holiday CodeFest Wordathon", desc: "An interactive wordathon game made with girls in grades 7-12 in 2024", tag: "game · wordathon", colors: ["#1a0a28","#3d1a5c","#ff77ff","#c084fc"], shape: "circles" }
+    //,
 
     {
       file: "../Exemplars/AnimationPiecesExit",
@@ -864,5 +895,28 @@ function openProject(p) {
     if (e.key === 'Escape') closeProject();
   });
 </script>
+
+  <script>
+  function toggleTheme() {
+    const root = document.documentElement;
+    root.classList.toggle("light-mode");
+
+    // optional: save preference
+    if (root.classList.contains("light-mode")) {
+      localStorage.setItem("theme", "light");
+    } else {
+      localStorage.setItem("theme", "dark");
+    }
+  }
+
+  // load saved theme on page load
+  (function () {
+    const saved = localStorage.getItem("theme");
+    if (saved === "light") {
+      document.documentElement.classList.add("light-mode");
+    }
+  })();
+</script>
+
 </body>
 </html>
