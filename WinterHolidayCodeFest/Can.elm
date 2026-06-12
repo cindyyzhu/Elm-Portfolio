@@ -1,6 +1,8 @@
-module WinterHolidayCodeFest.Can exposing (..)
+module Can exposing (..)
 import GraphicSVG exposing (..)
-pair = (myShapes, word)
+import GraphicSVG.App exposing (..)
+import GraphicSVG.Secret exposing (..)
+import GraphicSVG exposing (..)
 -- 1. type your word in between the "can"s
 word = "can"
 
@@ -22,4 +24,5 @@ myShapes t =
   ]
 
 pair = (myShapes, word)
+
 

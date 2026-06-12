@@ -1,4 +1,7 @@
-module WinterHolidayCodeFest.Flower exposing (..)
+module Flower exposing (..)
+import GraphicSVG exposing (..)
+import GraphicSVG.App exposing (..)
+import GraphicSVG.Secret exposing (..)
 
 
 -- Made by MerryGoldfish

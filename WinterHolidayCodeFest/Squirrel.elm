@@ -1,4 +1,7 @@
-module WinterHolidayCodeFest.Squirrel exposing (..)
+module Squirrel exposing (..)
+import GraphicSVG exposing (..)
+import GraphicSVG.App exposing (..)
+import GraphicSVG.Secret exposing (..)
 
 word = "Squirrel"
 
@@ -7,7 +10,6 @@ myShapes t =
   [
      squirrel |> move (0,-13)
   ]
-pair = (word, myShapes)
 
 acorn = group
   [
@@ -185,4 +187,5 @@ squirrel = group
   ]
 
 pair = (myShapes, word)
+
 

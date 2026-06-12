@@ -1,4 +1,7 @@
-module WinterHolidayCodeFest.Zebra exposing (..)
+module Zebra exposing (..)
+import GraphicSVG exposing (..)
+import GraphicSVG.App exposing (..)
+import GraphicSVG.Secret exposing (..)
 
 -- 1. type your word in between the ""s
 word = "zebra"
@@ -15,7 +18,7 @@ myShapes t =
     |> rotate (degrees(15 - 15 * sin (4*t)))
   ]
 
-zebra : Shape msg
+zebra : GraphicSVG.Shape msg
 zebra =  
   [
      oval 26 35

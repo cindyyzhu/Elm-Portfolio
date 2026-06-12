@@ -1,6 +1,8 @@
-module WinterHolidayCodeFest.Bridge exposing (..)
+module Bridge exposing (..)
 import GraphicSVG exposing (..)
-pair = (myShapes, word)
+import GraphicSVG.App exposing (..)
+import GraphicSVG.Secret exposing (..)
+import GraphicSVG exposing (..)
 -- 1. type your word in between the ""s
 word = "bridge"
 
@@ -124,4 +126,5 @@ waves t = group [
     ]
 
 pair = (myShapes, word)
+
 

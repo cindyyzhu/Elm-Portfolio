@@ -1,6 +1,8 @@
-module WinterHolidayCodeFest.Bear exposing (..)
+module Bear exposing (..)
 import GraphicSVG exposing (..)
-pair = (myShapes, word)
+import GraphicSVG.App exposing (..)
+import GraphicSVG.Secret exposing (..)
+import GraphicSVG exposing (..)
 -- 1. type your word in between the ""s
 word = "bear"
 
@@ -70,4 +72,5 @@ myShapes t =
   ]
 
 pair = (myShapes, word)
+
 

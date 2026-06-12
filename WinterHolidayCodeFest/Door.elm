@@ -1,4 +1,7 @@
-module WinterHolidayCodeFest.Door exposing (..)
+module Door exposing (..)
+import GraphicSVG exposing (..)
+import GraphicSVG.App exposing (..)
+import GraphicSVG.Secret exposing (..)
 
 -- 1. type your word in between the ""s
 word = "Door"

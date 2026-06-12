@@ -1,4 +1,7 @@
-module WinterHolidayCodeFest.Snail exposing (..)
+module Snail exposing (..)
+import GraphicSVG exposing (..)
+import GraphicSVG.App exposing (..)
+import GraphicSVG.Secret exposing (..)
 
 -- 1. type your word in between the ""s
 word = "snails"
@@ -96,7 +99,7 @@ eyes =  [
   |> move (-1 , 1)
  ]
  |> group
-orangesnail : Shape msg
+orangesnail : GraphicSVG.Shape msg
 orangesnail = group[
   rect 15 9 -- body
   |> filled (rgb 250 200 150)

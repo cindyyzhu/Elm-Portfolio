@@ -1,4 +1,7 @@
-module WinterHolidayCodeFest.Cherries exposing (..)
+module Cherries exposing (..)
+import GraphicSVG exposing (..)
+import GraphicSVG.App exposing (..)
+import GraphicSVG.Secret exposing (..)
 
 -- 1. type your word in between the ""s
 word = "cherries"
@@ -11,7 +14,7 @@ myShapes t =
       |> move (-18, 10 * sin t)
   ]
 
-cherries : Shape msg
+cherries : GraphicSVG.Shape msg
 cherries =
   [
     square 3

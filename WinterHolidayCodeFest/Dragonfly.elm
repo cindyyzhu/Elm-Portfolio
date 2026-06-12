@@ -1,4 +1,7 @@
-module WinterHolidayCodeFest.Dragonfly exposing (..)
+module Dragonfly exposing (..)
+import GraphicSVG exposing (..)
+import GraphicSVG.App exposing (..)
+import GraphicSVG.Secret exposing (..)
 
 -- 1. type your word in between the ""s
 word = "Dragonfly"
@@ -8,7 +11,6 @@ myShapes t =
   [
      dragonfly |> scale 1.5
   ]
-pair = (word, myShapes)
 
 dragonfly = group
   [
@@ -78,4 +80,5 @@ dragonfly = group
   ]
 
 pair = (myShapes, word)
+
 

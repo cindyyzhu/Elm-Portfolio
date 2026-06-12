@@ -1,7 +1,9 @@
-module WinterHolidayCodeFest.Ball exposing (..)
+module Ball exposing (..)
+import GraphicSVG exposing (..)
+import GraphicSVG.App exposing (..)
+import GraphicSVG.Secret exposing (..)
 
 import GraphicSVG exposing (..)
-pair = (myShapes, word)
 -- 1. type your word in between the ""s
 word = "ball"
 
@@ -19,4 +21,5 @@ myShapes t =
   ]
 
 pair = (myShapes, word)
+
 

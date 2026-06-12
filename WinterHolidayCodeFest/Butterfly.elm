@@ -1,6 +1,8 @@
-module WinterHolidayCodeFest.Butterfly exposing (..)
+module Butterfly exposing (..)
 import GraphicSVG exposing (..)
-pair = (myShapes, word)
+import GraphicSVG.App exposing (..)
+import GraphicSVG.Secret exposing (..)
+import GraphicSVG exposing (..)
 -- 1. type your word in between the ""s
 word = "Butterfly"
 
@@ -9,7 +11,6 @@ myShapes t =
   [
      butterfly |> scale 1.3
   ]
-pair = (word, myShapes)
 
 butterfly = group 
   [
@@ -83,4 +84,5 @@ butterfly = group
   ]
 
 pair = (myShapes, word)
+
 

@@ -1,4 +1,7 @@
-module WinterHolidayCodeFest.Mermaid exposing (..)
+module Mermaid exposing (..)
+import GraphicSVG exposing (..)
+import GraphicSVG.App exposing (..)
+import GraphicSVG.Secret exposing (Pull(..))
 
 import Array 
 -- Your shapes go here!

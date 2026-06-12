@@ -1,6 +1,8 @@
-module WinterHolidayCodeFest.Candle exposing (..)
+module Candle exposing (..)
 import GraphicSVG exposing (..)
-pair = (myShapes, word)
+import GraphicSVG.App exposing (..)
+import GraphicSVG.Secret exposing (..)
+import GraphicSVG exposing (..)
 -- 1. type your word in between the ""s
 word = "candle"
 
@@ -16,7 +18,7 @@ myShapes t =
     |> rotate (degrees(10-15 * sin (4*t)))
   ]
 
-candle : Shape msg
+candle : GraphicSVG.Shape msg
 candle =
   [
     oval 24 12
@@ -41,4 +43,5 @@ candle =
     |> group
 
 pair = (myShapes, word)
+
 

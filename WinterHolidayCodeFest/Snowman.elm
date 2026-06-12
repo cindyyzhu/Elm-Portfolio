@@ -1,4 +1,7 @@
-module WinterHolidayCodeFest.Snowman exposing (..)
+module Snowman exposing (..)
+import GraphicSVG exposing (..)
+import GraphicSVG.App exposing (..)
+import GraphicSVG.Secret exposing (..)
 
 -- 1. type your word in between the ""s
 word = "Snowman"
@@ -12,8 +15,7 @@ myShapes model =
     |> filled (hsl (degrees 181) 0.842 0.964)
     |> move (0,-13),
       circle 14
-    |> filled hsl (degrees 181) 0.842 0.959)
-    |> move (0,19),
+    |> filled (hsl (degrees 181) 0.842 0.959)  |> move (0,19),
          circle 3
     |> filled black
     |> move (-7,23),

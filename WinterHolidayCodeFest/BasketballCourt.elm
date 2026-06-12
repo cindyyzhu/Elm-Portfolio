@@ -1,6 +1,8 @@
-module WinterHolidayCodeFest.BasketballCourt exposing (..)
+module BasketballCourt exposing (..)
 import GraphicSVG exposing (..)
-pair = (myShapes, word)
+import GraphicSVG.App exposing (..)
+import GraphicSVG.Secret exposing (..)
+import GraphicSVG exposing (..)
 -- 1. type your word in between the ""s
 word = "basketball"
 
@@ -86,4 +88,5 @@ ball =
     |> group
 
 pair = (myShapes, word)
+
 

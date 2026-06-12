@@ -1,6 +1,8 @@
-module WinterHolidayCodeFest.Blink exposing (..)
+module Blink exposing (..)
 import GraphicSVG exposing (..)
-pair = (myShapes, word)
+import GraphicSVG.App exposing (..)
+import GraphicSVG.Secret exposing (..)
+import GraphicSVG exposing (..)
 -- 1. type your word in between the ""s
 word = "blink"
 
@@ -12,7 +14,7 @@ myShapes t =
       |> move (0,-4.5 + 5 * sin t)
 
   ]
-happy : Shape msg
+happy : GraphicSVG.Shape msg
 happy = 
     [
     circle 27
@@ -35,7 +37,7 @@ happy =
     |> move (12,8.5)
     ]
     |> group
-blink : Shape msg
+blink : GraphicSVG.Shape msg
 blink = 
   [
     wedge 8 0.5
@@ -50,4 +52,5 @@ blink =
     |> group
 
 pair = (myShapes, word)
+
 

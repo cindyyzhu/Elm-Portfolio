@@ -1,7 +1,9 @@
-module WinterHolidayCodeFest.Addition exposing (..)-- 1. type your word in between the ""s
+module Addition exposing (..)-- 1. type your word in between the ""s
+import GraphicSVG exposing (..)
+import GraphicSVG.App exposing (..)
+import GraphicSVG.Secret exposing (..)
 
 import GraphicSVG exposing (..)
-pair = (myShapes, word)
 
 word = "Addition"
 
@@ -16,4 +18,5 @@ myShapes t =
   ]
 
 pair = (myShapes, word)
+
 

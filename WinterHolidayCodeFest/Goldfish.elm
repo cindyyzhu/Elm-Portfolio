@@ -1,4 +1,7 @@
-module WinterHolidayCodeFest.Goldfish exposing (..)
+module Goldfish exposing (..)
+import GraphicSVG exposing (..)
+import GraphicSVG.App exposing (..)
+import GraphicSVG.Secret exposing (..)
 
 
 -- 1. type your word in between the ""s
@@ -13,7 +16,7 @@ myShapes t =
   goldfish
   |> move (0,0 + 7 *sin t)
   ]
-goldfish : Shape msg
+goldfish : GraphicSVG.Shape msg
 goldfish = 
     [
        wedge 18 0.97

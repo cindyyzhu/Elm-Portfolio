@@ -1,6 +1,8 @@
-module WinterHolidayCodeFest.Bee exposing (..)
+module Bee exposing (..)
 import GraphicSVG exposing (..)
-pair = (myShapes, word)
+import GraphicSVG.App exposing (..)
+import GraphicSVG.Secret exposing (..)
+import GraphicSVG exposing (..)
 -- 1. type your word in between the ""s
 word = "Bee"
 
@@ -10,7 +12,6 @@ myShapes t =
      bee |> scale 1.5
   ]
 
-pair = (word,myShapes)
 
 bee = group [
   oval 15 20 -- right wing
@@ -69,4 +70,5 @@ stripes = group [
   ]
 
 pair = (myShapes, word)
+
 

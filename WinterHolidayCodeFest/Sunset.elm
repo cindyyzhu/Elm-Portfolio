@@ -1,4 +1,7 @@
-module WinterHolidayCodeFest.Sunset exposing (..)
+module Sunset exposing (..)
+import GraphicSVG exposing (..)
+import GraphicSVG.App exposing (..)
+import GraphicSVG.Secret exposing (..)
 
 -- 1. type your word in between the ""s
 word = "Sunset"
@@ -25,7 +28,7 @@ tap t =
     else
       angle + 5
         
-terrain : Shape msg
+terrain : GraphicSVG.Shape msg
 terrain = 
   [
   wedge 60 0.5
@@ -34,7 +37,7 @@ terrain =
     |> makeTransparent 1
   ]
    |> group
-sun : Shape msg
+sun : GraphicSVG.Shape msg
 sun =
   [
    circle 15.5
@@ -107,7 +110,7 @@ sun =
      |> move (25,-11)
    ]
     |> group
-arrow : Shape msg
+arrow : GraphicSVG.Shape msg
 arrow =
   [
    rect 5 15
@@ -120,7 +123,7 @@ arrow =
   ]
     |> group
     
-plotGraph : (Float -> Float) -> Float -> Shape a
+plotGraph : (Float -> Float) -> Float -> GraphicSVG.Shape a
 plotGraph f time =
   group
     [ openPolygon (List.map (\ t -> (-96+(toFloat t)/2.5 - 200 * toFloat (floor (time / 10)),f (toFloat t / 50))) <| List.range (500 * floor (time / 10)) (500 * ceiling (time / 10))) |> outlined (solid 1) (rgb 0 0 200)

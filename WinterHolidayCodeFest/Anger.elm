@@ -1,6 +1,8 @@
-module WinterHolidayCodeFest.Anger exposing (..)
+module Anger exposing (..)
 import GraphicSVG exposing (..)
-pair = (myShapes, word)
+import GraphicSVG.App exposing (..)
+import GraphicSVG.Secret exposing (..)
+import GraphicSVG exposing (..)
 -- 1. type your word in between the ""s
 word = "anger"
 
@@ -48,4 +50,5 @@ steam t = group
     ]
 
 pair = (myShapes, word)
+
 

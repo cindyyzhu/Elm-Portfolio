@@ -1,4 +1,7 @@
-module WinterHolidayCodeFest.Ghosts exposing (..)
+module Ghosts exposing (..)
+import GraphicSVG exposing (..)
+import GraphicSVG.App exposing (..)
+import GraphicSVG.Secret exposing (..)
 
 -- 1. type your word in between the ""s
 word = "Ghosts"
@@ -17,7 +20,7 @@ myShapes t =
      |> makeTransparent 0.5
   ]    
 
-ghost : Shape msg
+ghost : GraphicSVG.Shape msg
 ghost = [
       wedge 30 (1/2) 
         |> filled red |> rotate (degrees 90) 

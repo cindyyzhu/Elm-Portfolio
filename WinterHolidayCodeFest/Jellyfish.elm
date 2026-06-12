@@ -1,4 +1,7 @@
-module WinterHolidayCodeFest.Jellyfish exposing (..)
+module Jellyfish exposing (..)
+import GraphicSVG exposing (..)
+import GraphicSVG.App exposing (..)
+import GraphicSVG.Secret exposing (..)
 
 import Html
 import Html.Attributes
