@@ -31,6 +31,11 @@ echo "📦 Building exemplars..."
 EXEMPLARS_SRC="$ROOT_DIR/public/exemplars"
 EXEMPLARS_OUT="$ROOT_DIR/public/exemplars-built"
 
+# Install exemplar dependencies
+(cd "$EXEMPLARS_SRC" && elm make --help > /dev/null 2>&1 || true)
+(cd "$EXEMPLARS_SRC" && yes | elm install MacCASOutreach/graphicsvg 2>/dev/null || true)
+
+
 for elm_file in "$EXEMPLARS_SRC"/*.elm; do
   name=$(basename "$elm_file" .elm)
   out_dir="$EXEMPLARS_OUT/$name"
