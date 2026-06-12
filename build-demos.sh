@@ -37,7 +37,7 @@ for elm_file in "$EXEMPLARS_SRC"/*.elm; do
   mkdir -p "$out_dir"
 
   echo "  🔨 Compiling exemplar: $name"
-  elm make "$elm_file" --output="$out_dir/elm.js" --optimize
+  (cd "$EXEMPLARS_SRC" && elm make "$name.elm" --output="$out_dir/elm.js" --optimize)
 
   # Write a minimal HTML wrapper
   cat > "$out_dir/index.html" << EOF
