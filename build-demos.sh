@@ -7,7 +7,7 @@
 set -e
 
 PORTFOLIO_DIR="$(cd "$(dirname "$0")" && pwd)"
-ROOT_DIR="$(dirname "$PORTFOLIO_DIR")"
+ROOT_DIR="$PORTFOLIO_DIR"
 
 echo "📦 Building Elm demo apps..."
 
