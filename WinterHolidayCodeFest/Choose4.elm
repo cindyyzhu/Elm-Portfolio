@@ -217,6 +217,9 @@ timeToAppear = 2 * halfToAppear
 letterWidth = 7
 dScale = 0.4375 -- 7/16 < 1/2
 
+main = gameApp Tick { model = init, view = view, update = update, title = "Choose4" }
+
+
 type alias Model = { time : Float
                    , animation : GuessState
                    , score : Int
@@ -269,7 +272,7 @@ pickPositions = [ (Pick0, (-42, 36))
                 , (Pick2, (-42,-36))
                 , (Pick3, ( 42,-36))
                 ]
-update : Msg -> Model -> ( Model, Cmd Msg )
+update : Msg -> Model -> Model
 update msg m =
  let model = case msg of
                Tick _ _ -> m
@@ -288,27 +291,26 @@ update msg m =
                           else n
       in
           if model.animation == Startup
-                                then let
-                                       fourWords = List.map getWord idxs
-                                       w = Tuple.second <| listPick correct fourWords
-                                     in
-                                       ( { model | animation = Waiting
-                                                 , correct = int2Pick correct
-                                                 , pics = List.map Tuple.first fourWords
-                                                 , letters = stringToChars w
-                                         }
-                                       , getRandChoices )
-                                else ( { model | nextRand = (idxs,correct) }, Cmd.none )
+            then let
+                   fourWords = List.map getWord idxs
+                   w = Tuple.second <| listPick correct fourWords
+                 in
+                   { model | animation = Waiting
+                           , correct = int2Pick correct
+                           , pics = List.map Tuple.first fourWords
+                           , letters = stringToChars w
+                   }
+            else { model | nextRand = (idxs,correct) }
 
     Tick t _ ->
       let lastTime = if model.time > 0 then model.time else t
       in case model.animation of
-           Startup ->  ( { model | time = t, animation = Startup }, Cmd.none )
-           Waiting ->  ( { model | time = t, animation = Waiting }, Cmd.none )
+           Startup ->  { model | time = t, animation = Startup }
+           Waiting ->  { model | time = t, animation = Waiting }
            BadPick pick tLeft
              -> if tLeft < t - lastTime
-                  then ( { model | time = t, animation = Waiting }, Cmd.none )
-                  else ( { model | time = t, animation = BadPick pick (tLeft - (t - lastTime)) }, Cmd.none )
+                  then { model | time = t, animation = Waiting }
+                  else { model | time = t, animation = BadPick pick (tLeft - (t - lastTime)) }
            GoodPick tLeft
              -> if tLeft < t - lastTime
                   then let
@@ -316,23 +318,22 @@ update msg m =
                          fourWords = List.map getWord idxs
                          w = Tuple.second <| listPick correct fourWords
                        in
-                         ( { model | animation = Waiting
-                                   , correct = int2Pick correct
-                                   , pics = List.map Tuple.first fourWords
-                                   , letters = stringToChars w
-                                   , badTime = model.badTime * 0.9
-                                   , time = t
-                           }
-                         , getRandChoices )
-                  else ( { model | time = t, animation = GoodPick (tLeft - (t - lastTime)) }, Cmd.none )
+                         { model | animation = Waiting
+                                 , correct = int2Pick correct
+                                 , pics = List.map Tuple.first fourWords
+                                 , letters = stringToChars w
+                                 , badTime = model.badTime * 0.9
+                                 , time = t
+                         }
+                  else { model | time = t, animation = GoodPick (tLeft - (t - lastTime)) }
 
     Choice pick
       -> case model.animation of
            Waiting
              -> if pick == model.correct
-                  then ( { model | animation = GoodPick <| model.badTime, score = model.score + 1 }, getRandChoices )
-                  else ( { model | animation = BadPick pick model.badTime }, Cmd.none )
-           other -> ( model , Cmd.none )
+                  then { model | animation = GoodPick model.badTime, score = model.score + 1 }
+                  else { model | animation = BadPick pick model.badTime }
+           other -> model
 
 view : Model -> Collage Msg
 view model = collage 192 128
@@ -364,8 +365,3 @@ getRandChoices = Random.generate RandIdx (Random.map5 ( \ i j k l c -> ([i,j,k,l
 oneRandIdx = Random.int 0 (arrayLength - 1)
 rand0to3   = Random.int 0 3
 
-
-main = gameApp Tick { model = init
-                    , view = view
-                    , update = update
-                    , title = "Choose4" }

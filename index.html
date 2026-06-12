@@ -236,6 +236,24 @@
       flex-shrink: 0;
     }
 
+    #overlay-iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+      image-rendering: pixelated;
+    }
+
+    #overlay-frame-wrap {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg);
+    }
+
     #back-btn {
       display: flex;
       align-items: center;
@@ -651,7 +669,7 @@
     { file: "../NewYearsMystery/WisdomTree", title: "Wisdom Tree", desc: "A wisdom tree scene.", tag: "story · NewYearsMystery", colors: ["#0a1a0a","#1a3a1a","#4ade80","#86efac"], shape: "triangle" },
     { file: "../NewYearsMystery/WiseOwl", title: "Wise Owl", desc: "A wise owl scene.", tag: "story · NewYearsMystery", colors: ["#050510","#1a1a3e","#7b6cff","#c084fc"], shape: "circle" },
     { file: "../NewYearsMystery/Zane", title: "Zane", desc: "A scene featuring Zane.", tag: "story · NewYearsMystery", colors: ["#0d0d12","#1e1e2e","#ff6b6b","#7b6cff"], shape: "circle" },
-
+    { file: "../WinterHolidayCodeFest/Choose4", title: "Choose4", desc: "A word-guessing game where you match words to animations.", tag: "game · WinterHolidayCodeFest", colors: ["#1a1a2e", "#16213e", "#e94560", "#f5a623"], shape: "circle" }
 
   ];
 
